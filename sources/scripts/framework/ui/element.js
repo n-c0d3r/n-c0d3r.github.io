@@ -39,6 +39,13 @@ export default function UIElement(tag){
         return result;
     };
 
+    result.on = function(name, callback){
+
+        result.addEventListener(name, callback);
+
+        return result;
+    };
+
     result.appendInner = function(...childs){
         
         for(let childName in childs){

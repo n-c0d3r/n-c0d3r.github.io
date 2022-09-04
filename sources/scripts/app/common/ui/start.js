@@ -1,4 +1,4 @@
-import framework from "../../framework/framework.js"
+import framework from "../../../framework/framework.js"
 
 
 
@@ -16,7 +16,20 @@ export default function UIStart(){
 
             display : "flex",
 
-            flexFlow : "row"
+            flexFlow : "row",
+
+            overflowY : "hidden",
+            overflowX : "hidden",
+
+            transition : "2s",
+
+            position : "fixed",
+
+            top : 0,
+
+            backgroundColor : "rgba(34, 34, 33, 1.0)",
+
+            zIndex : "0"
 
         })
         .setInner(
@@ -25,18 +38,22 @@ export default function UIStart(){
             .setId("start-left")
             .setStyle({
     
-                width : "50%",
+                width : "100%",
                 height : "100%",
 
                 display : "flex",
     
                 flexFlow : "row",
-                flexDirection: "row-reverse"
+                flexDirection: "row-reverse",
+
+                transition : "1s",
+
+                position : "relative"
     
             })
             .setInner(
                 framework.UIElement("div")
-                .setId("start-left-logo-container-x")
+                .setId("start-left-logo-container-y")
                 .setStyle({
         
                     height : "100%",
@@ -46,16 +63,21 @@ export default function UIStart(){
                     flexFlow : "column",
                     flexDirection: "column",
 
-                    justifyContent : "center"
+                    justifyContent : "center",
+
+                    transition : "0.5s"
         
                 })
                 .setInner(
 
                     framework.UIElement("div")
-                    .setId("start-left-logo-container-y")
+                    .setId("start-left-logo-container-x")
                     .setStyle({
-            
-                        
+
+                        overflowY : "hidden",
+                        overflowX : "hidden",
+
+                        transition : "0.5s"
             
                     })
                     .setInner(
@@ -65,10 +87,16 @@ export default function UIStart(){
                         .setStyle({
                 
                             width : "260px",
-                            height : "260px",
+                            height : "180px",
                 
                             backgroundImage : `url("${window.location.origin}/resources/images/logo1024.png")`,
-                            backgroundSize : 'cover'
+                            backgroundSize : 'cover',
+
+                            position : "relative",
+
+                            right : "-260px",
+
+                            transition : "0.5s"
                 
                         })
         
@@ -77,23 +105,32 @@ export default function UIStart(){
                 )
             ),
 
-            
-
             framework.UIElement("div")
             .setId("start-right")
             .setStyle({
     
                 backgroundColor : "rgb(116, 255, 253)",
     
-                width : "50%",
-                height : "100%"
+                width : "0%",
+                height : "100%",
+
+                display : "flex",
+    
+                flexFlow : "row",
+
+                overflowY : "hidden",
+                overflowX : "hidden",
+
+                transition : "0.5s",
+
+                position : "relative"
     
             })
-            .setInner(
+            .setInner(                
                 framework.UIElement("div")
-                .setId("start-right-text-container-x")
+                .setId("start-right-text-container-y")
                 .setStyle({
-        
+
                     height : "100%",
         
                     display : "flex",
@@ -101,16 +138,19 @@ export default function UIStart(){
                     flexFlow : "column",
                     flexDirection: "column",
 
-                    justifyContent : "center"
+                    justifyContent : "center",
+
+                    transition : "0.5s"
         
                 })
                 .setInner(
 
                     framework.UIElement("div")
-                    .setId("start-right-text-container-y")
+                    .setId("start-right-text-container-x")
                     .setStyle({
-            
-                        
+
+                        overflowY : "hidden",
+                        overflowX : "hidden"
             
                     })
                     .setInner(
@@ -120,10 +160,16 @@ export default function UIStart(){
                         .setStyle({
                 
                             width : "400px",
-                            height : "100px",
+                            height : "110px",
                 
                             backgroundImage : `url("${window.location.origin}/resources/images/coderText.png")`,
-                            backgroundSize : 'cover'
+                            backgroundSize : 'cover',
+
+                            position : "relative",
+
+                            left : "-400px",
+
+                            transition : "0.5s"
                 
                         })
         
