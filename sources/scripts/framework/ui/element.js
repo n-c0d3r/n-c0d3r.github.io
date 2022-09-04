@@ -34,7 +34,7 @@ export default function UIElement(tag){
 
             result.style[configName] = styleConfig[configName];
 
-        }
+        } 
 
         return result;
     };
