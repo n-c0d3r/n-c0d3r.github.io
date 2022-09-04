@@ -93,7 +93,7 @@ export default function ShowStartAnimation(){
 
 
             (async ()=>{
-    
+     
     
     
                 await state.wait(500);
