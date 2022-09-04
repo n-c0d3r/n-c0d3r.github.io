@@ -58,7 +58,10 @@ export default function ShowStartAnimation(){
                 $('#start-left-logo-container-y')
                 .setStyle({
         
-                    height : "66px"
+                    //height : "66px"
+                    height : "75px",
+    
+                    backgroundColor : "rgb(34, 34, 33)",
     
                 })   
     
@@ -66,7 +69,11 @@ export default function ShowStartAnimation(){
                 .setStyle({
     
                     width : "70px",        
-                    height : "40px"
+                    height : "40px",
+
+                    bottom : "5px",
+                    
+                    right : "10px"
     
                 }) 
 
@@ -84,7 +91,7 @@ export default function ShowStartAnimation(){
         
                     height : "30px",
     
-                    left : "-4px"
+                    left : "3px"
     
                 })
 
@@ -103,14 +110,14 @@ export default function ShowStartAnimation(){
                 $('#start-left')
                 .setStyle({
     
-                    width : "274px"
+                    width : "90px"
     
                 })
     
                 $('#start-right')
                 .setStyle({
     
-                    width : "calc(100% - 274px)"
+                    width : "calc(100% - 90px)"
     
                 })
     
@@ -120,6 +127,19 @@ export default function ShowStartAnimation(){
                     transition : "0.3s"
     
                 });
+     
+    
+    
+                await state.wait(500);
+
+
+
+                $('#start-left')
+                .setStyle({
+    
+                    
+    
+                })
 
             })();
             
