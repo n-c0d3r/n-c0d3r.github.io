@@ -37,41 +37,7 @@ export default function UIContentContainer(){
 
             
 
-        )        
-        .on('mouseover', function(){
-
-            $("#start")
-            .setStyle({
-                
-
-
-            });
-
-            $("#content-container")
-            .setStyle({
-    
-                
-
-            });
-
-        })
-        .on('mouseout', function(){
-
-            $("#start")
-            .setStyle({
-                
-
-
-            });
-
-            $("#content-container")
-            .setStyle({
-    
-                
-
-            });
-
-        })
+        )
     )
 
 }
