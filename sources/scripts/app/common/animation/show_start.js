@@ -103,14 +103,14 @@ export default function ShowStartAnimation(){
                 $('#start-left')
                 .setStyle({
     
-                    width : "110px"
+                    width : "274px"
     
                 })
     
                 $('#start-right')
                 .setStyle({
     
-                    width : "calc(100% - 110px)"
+                    width : "calc(100% - 274px)"
     
                 })
     
