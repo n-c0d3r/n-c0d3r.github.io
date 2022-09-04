@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function StartAnimation(){
+export default function ShowStartAnimation(){
 
     return framework.Animation(
 
@@ -65,11 +65,10 @@ export default function StartAnimation(){
                 $('#start-left-logo')
                 .setStyle({
     
-                    width : "70px",
-        
+                    width : "70px",        
                     height : "40px"
     
-                })
+                }) 
 
                 $('#start-right-text-container-y')
                 .setStyle({

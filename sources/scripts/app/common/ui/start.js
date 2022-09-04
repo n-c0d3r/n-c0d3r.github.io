@@ -96,7 +96,9 @@ export default function UIStart(){
 
                             right : "-260px",
 
-                            transition : "0.5s"
+                            transition : "0.5s",
+
+                            imageRendering : "crisp-edges"
                 
                         })
         

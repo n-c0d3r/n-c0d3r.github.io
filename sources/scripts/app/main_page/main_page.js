@@ -1,10 +1,16 @@
 import framework from "../../framework/framework.js"
 
-import StartAnimation from "../common/animation/start.js"
+import ShowStartAnimation from "../common/animation/show_start.js"
 import UIStart from "../common/ui/start.js"
 
 import ShowContentAnimation from "../common/animation/show_content.js"
 import UIContentContainer from "../common/ui/content_container.js";
+
+import ShowHeaderMenu from "../common/animation/show_header_menu.js";
+import UIHeaderMenu from "../common/ui/header_menu.js"
+
+import ShowBasicInfoAnimation from "../basic_info/animation/show_basic_info.js";
+import UIBasicInfo from "../basic_info/ui/basic_info.js"
 
 
 
@@ -22,15 +28,30 @@ framework.UIElement('body')
 
     UIStart(),
 
+    UIHeaderMenu(),
+
     UIContentContainer()
 
 )
 
 
 
-await StartAnimation().play();
+await ShowStartAnimation().play();
 
 await ShowContentAnimation().play();
+
+await ShowHeaderMenu().play();
+
+
+
+$("#content-container")
+.setInner(
+
+    UIBasicInfo()
+
+);
+
+ShowBasicInfoAnimation().play();
 
 
 
