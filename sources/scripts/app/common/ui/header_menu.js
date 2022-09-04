@@ -29,7 +29,7 @@ function UIPageBtn(name, width){
             paddingRight : "40px",
 
             fontSize : "20px",
-            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+            fontFamily : "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
             fontWeight : "240",
             textAlign : "center",
 
