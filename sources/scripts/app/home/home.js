@@ -15,7 +15,7 @@ framework.UIElement('body')
 
     backgroundColor : "rgb(34, 34, 33)",
 
-    transition : "0s"
+    transition : "0.0s"
 
 })
 .setInner(
@@ -31,3 +31,19 @@ framework.UIElement('body')
 await StartAnimation().play();
 
 await ShowContentAnimation().play();
+
+
+
+$("#start")
+.setStyle({
+
+    transition : "0.0s"
+
+})
+
+$("#content-container")
+.setStyle({
+
+    transition : "0.0s"
+
+})

@@ -10,7 +10,7 @@ export default function UIContentContainer(){
         .setStyle({
 
             width : "100vw",
-            height : "calc(100vh - 100px)",
+            height : "calc(100vh - 70px)",
 
             display : "flex",
 

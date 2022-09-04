@@ -25,7 +25,7 @@ export default function ShowContentAnimation(){
                 $('#content-container')
                 .setStyle({
 
-                    transition : "0.2s",
+                    transition : "0.0s",
     
                 })  
 

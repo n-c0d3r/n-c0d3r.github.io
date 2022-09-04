@@ -58,41 +58,34 @@ export default function StartAnimation(){
                 $('#start-left-logo-container-y')
                 .setStyle({
         
-                    height : "70px"
+                    height : "66px"
     
-                })  
-
-                $('#start-right-text-container-y')
-                .setStyle({
-        
-                    height : "70px"
-    
-                })  
+                })   
     
                 $('#start-left-logo')
                 .setStyle({
     
-                    width : "110px",
+                    width : "70px",
         
-                    height : "70px"
+                    height : "40px"
     
                 })
 
                 $('#start-right-text-container-y')
                 .setStyle({
         
-                    height : "80px"
+                    height : "75px"
     
                 })
     
                 $('#start-right-text')
                 .setStyle({
     
-                    width : "140px",
+                    width : "120px",
         
-                    height : "36px",
+                    height : "30px",
     
-                    left : "0"
+                    left : "-4px"
     
                 })
 
@@ -100,30 +93,36 @@ export default function StartAnimation(){
 
 
 
-            await state.wait(500);
+            (async ()=>{
+    
+    
+    
+                await state.wait(500);
+    
+    
+    
+                $('#start-left')
+                .setStyle({
+    
+                    width : "110px"
+    
+                })
+    
+                $('#start-right')
+                .setStyle({
+    
+                    width : "calc(100% - 110px)"
+    
+                })
+    
+                $("#start")
+                .setStyle({
+    
+                    transition : "0.3s"
+    
+                });
 
-
-
-            $('#start-left')
-            .setStyle({
-
-                width : "110px"
-
-            })
-
-            $('#start-right')
-            .setStyle({
-
-                width : "calc(100% - 110px)"
-
-            })
-
-            $("#start")
-            .setStyle({
-
-                transition : "0.3s"
-
-            });
+            })();
             
         })
         
