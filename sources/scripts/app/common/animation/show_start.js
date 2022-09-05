@@ -89,11 +89,21 @@ export default function ShowStartAnimation(){
     
                     width : "120px",
         
-                    height : "30px",
+                    height : "40px",
     
-                    left : "3px"
+                    left : "0",
+
+                    fontSize : "24px",
+                    fontWeight : "220",
+
+                    transform : "translateX(20px) translateY(2px)",
+
+                    padding : "0"
     
                 })
+
+                $('#start').showed = true;
+                $('#start').applyResponsiveStyle();
 
             }
 

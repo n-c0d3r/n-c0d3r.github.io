@@ -32,6 +32,13 @@ export default function UIStart(){
             zIndex : "0"
 
         })
+        .exe(function(){
+
+            window.uistart = this;
+
+            this.showed = false;
+
+        })
         .setInner(
 
             framework.UIElement("div")
@@ -152,27 +159,45 @@ export default function UIStart(){
                     .setStyle({
 
                         overflowY : "hidden",
-                        overflowX : "hidden"
+                        overflowX : "hidden",
+
+                        transition : "0.5s",
             
                     })
                     .setInner(
 
                         framework.UIElement("div")
                         .setId("start-right-text")
+                        .setClass("noselect")
                         .setStyle({
                 
                             width : "400px",
                             height : "110px",
-                
-                            backgroundImage : `url("${window.location.origin}/resources/images/coderText.png")`,
-                            backgroundSize : 'cover',
 
                             position : "relative",
 
                             left : "-400px",
 
-                            transition : "0.5s"
+                            transition : "0.5s",
+
+                            fontSize : "105px",
+                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                            fontWeight : "325",
+
+                            color : "rgb(34, 34, 33)",
+
+                            transform : "translateX(60px) translateY(-20px)"
                 
+                        })
+                        .setInner(
+
+                            "Coder"
+
+                        )
+                        .exe(function(){
+                            
+                            window.uistart.rightText = this;
+
                         })
         
                     )
@@ -181,5 +206,48 @@ export default function UIStart(){
             )
 
         )
+        .exe(function(){
+
+            var start = this;
+
+            const applyResponsiveStyle = function(){
+
+                //check is mobile
+                if(window.innerWidth <= 1027){
+                    
+                    if(start.showed)
+                        start.rightText 
+                        .setStyle({
+
+                            //opacity : "0"
+                
+                        });
+
+                }
+                else{
+                    
+                    start.rightText 
+                    .setStyle({
+
+                        //opacity : "1"
+            
+                    });
+
+
+                }
+
+            }
+
+            this.applyResponsiveStyle = applyResponsiveStyle;
+
+            window.addEventListener("resize", ()=>{
+
+                applyResponsiveStyle();
+
+            });
+            
+            applyResponsiveStyle();
+
+        })
     );
 }

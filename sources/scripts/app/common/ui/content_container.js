@@ -16,8 +16,6 @@ export default function UIContentContainer(){
 
             flexFlow : "column",
             flexDirection: "column",
-
-            justifyContent : "center",
                        
             overflowY : "auto",
             overflowX : "auto",
@@ -33,11 +31,49 @@ export default function UIContentContainer(){
             zIndex : "2"
 
         })
-        .setInner(
+        .exe(function(){
 
+            var contentContainer = this;
+
+            const applyResponsiveStyle = function(){
+
+                //check is mobile
+                if(window.innerWidth <= 1027){            
+                    
+                    contentContainer
+                    .setStyle({
+
+                        height : "calc(100vh - 145px)",
+
+                        paddingTop : "75px"
             
+                    });
 
-        )
+                }
+                else{
+                    
+                    contentContainer
+                    .setStyle({
+
+                        height : "calc(100vh - 70px)",
+
+                        paddingTop : "0"
+            
+                    });
+
+                }
+
+            }
+
+            contentContainer.applyResponsiveStyle = applyResponsiveStyle;
+
+            window.addEventListener("resize", ()=>{
+
+                applyResponsiveStyle();
+
+            });
+
+        })
     )
 
 }

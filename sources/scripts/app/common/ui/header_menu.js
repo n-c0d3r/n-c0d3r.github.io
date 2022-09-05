@@ -22,10 +22,11 @@ function UIPageBtn(name, width){
         .setStyle({
 
             width : `${width}px`,
+            minWidth : `${width}px`,
             height : "100%",
 
             paddingLeft : "40px",
-            paddingTop : "26px",
+            paddingTop : "23px",
             paddingRight : "40px",
 
             fontSize : "20px",
@@ -33,9 +34,9 @@ function UIPageBtn(name, width){
             fontWeight : "240",
             textAlign : "center",
 
-            color : "rgb(34,34,33)",
+            transition : "0s",
 
-            transition : "0.2s"
+            justifyContent : "space-around",
 
         })
         .setInner(
@@ -51,15 +52,65 @@ function UIPageBtn(name, width){
 
             });
 
+            //check is mobile
+            if(window.innerWidth <= 1027){            
+                
+                this
+                .setStyle({
+
+                    color : "rgb(240, 240, 239)",
+        
+                });
+
+            }
+            else{
+                
+                this
+                .setStyle({
+
+                    color : "inherit",
+        
+                });
+
+            }
+
         })
-        .on("mouseout", function(){
+        .on("mouseleave", function(){
 
             this.setStyle({
 
                 fontWeight : "240",
 
             });
+
+            //check is mobile
+            if(window.innerWidth <= 1027){            
+                
+                this
+                .setStyle({
+
+                    color : "inherit",
+                    
+        
+                });
+
+            }
+            else{
+                
+                this
+                .setStyle({
+
+                    color : "inherit",
+        
+                });
+
+            }
             
+        })
+        .exe(function(){
+
+            this.defaultWidth = width;
+
         })
     );
 }
@@ -70,12 +121,15 @@ function UIVR(){
 
     return (
         framework.UIElement("div")
+        .setClass("vr noselect")
         .setStyle({
 
-            width : "1px",
-            height : "55%",
+            width : "6px",
+            height : "40px",
 
-            marginTop : "2%",
+            marginTop : "19px",
+
+            borderRadius : "4px",
 
             backgroundColor : "rgb(34,34,33)"
 
@@ -90,9 +144,9 @@ export default function UIHeaderMenu(){
     return (
         framework.UIElement("div")
         .setId("header-menu")
+        .setClass("noscrollbar")
         .setStyle({
 
-            width : "100vw",
             height : "75px",
 
             margin : "0",
@@ -100,110 +154,216 @@ export default function UIHeaderMenu(){
             display : "flex",
 
             flexFlow : "row",
-
-            justifyContent : "space-around",
+            flexDirection : "row-reverse",
 
             transition : "0.75s",
 
             position : "fixed",
 
-            top : 0,
+            top : "-75px",
 
-            zIndex : "2"
+            right : "0",
+
+            zIndex : "2",
+
+            color : "rgb(34,34,33)",
+
+            backgroundColor : "rgb(116, 255, 253)",
+
+            zIndex : "3"
+
+        })
+        .exe(function(){
+
+            this.showed = false;
 
         })
         .setInner(
 
-            framework.UIElement("div")
-            .setId("header-page-btn-container")
-            .setStyle({
-    
-                height : "100%",
-    
-                margin : "0",
-    
-                display : "flex",
-    
-                flexFlow : "row",
-    
-                justifyContent : "space-around",
-    
-                transition : "0.75s",
-    
-                position : "relative",
-    
-                top : "-75px",
-    
-                zIndex : "2"
-    
-            })
-            .setInner(
-    
-                UIPageBtn("Basic Info", 100)
-                .on('click', function(){
+            UIPageBtn("Experiences", 125)
+            .setClass("page-btn")
+            .on('click', function(){
 
-                    $("#content-container")
-                    .setInner(
+                $("#content-container")
+                .setInner(
 
-                        UIBasicInfo()
+                    UIExperiences()
 
-                    );
+                );
 
-                    ShowBasicInfoAnimation().play();
+                ShowExperiences().play();
 
-                }),
+            }),
 
-                UIVR(),
-    
-                UIPageBtn("Skills And Knowledge", 200)
-                .on('click', function(){
+            UIVR(),
 
-                    $("#content-container")
-                    .setInner(
+            UIPageBtn("Projects", 100)
+            .setClass("page-btn")
+            .on('click', function(){
 
-                        UISkillsAndKnowledge()
+                $("#content-container")
+                .setInner(
 
-                    );
+                    UIProjects()
 
-                    ShowSkillsAndKnowledge().play();
+                );
 
-                }),
+                ShowProjects().play();
 
-                UIVR(),
-    
-                UIPageBtn("Projects", 100)
-                .on('click', function(){
+            }),
 
-                    $("#content-container")
-                    .setInner(
+            UIVR(),
 
-                        UIProjects()
+            UIPageBtn("Skills And Knowledge", 220)
+            .setClass("page-btn")
+            .on('click', function(){
 
-                    );
+                $("#content-container")
+                .setInner(
 
-                    ShowProjects().play();
+                    UISkillsAndKnowledge()
 
-                }),
+                );
 
-                UIVR(),
-    
-                UIPageBtn("Experiences", 125)
-                .on('click', function(){
+                ShowSkillsAndKnowledge().play();
 
-                    $("#content-container")
-                    .setInner(
+            }),
 
-                        UIExperiences()
+            UIVR(),
 
-                    );
+            UIPageBtn("Basic Info", 100)
+            .setClass("page-btn")
+            .on('click', function(){
 
-                    ShowExperiences().play();
+                $("#content-container")
+                .setInner(
 
-                }),
-    
-            )
+                    UIBasicInfo()
+
+                );
+
+                ShowBasicInfoAnimation().play();
+
+            }),
 
         )
+        .exe(function(){
+
+            var headerMenu = this;
+
+            const applyResponsiveStyle = function(){
+
+                //check is mobile
+                if(window.innerWidth <= 1027){            
+                    
+                    headerMenu
+                    .setStyle({
+
+                        overflowX: "scroll",
+
+                        width : "calc(100% - 40px)",
+                        height : "40px",
+
+                        overflowY: "hidden",
+
+                        display : "flex",
+
+                        flexFlow : "row",
+                        flexDirection : "row-reverse",
+
+                        backgroundColor : "rgba(40, 40, 39, 1)",
+
+                        top : "75px",
+                        left : "20px",
+
+                        color : "rgba(160, 160, 159, 0.5)",
+
+                        zIndex : "3"
+            
+                    });
+
+                    for(var btn of headerMenu.getElementsByClassName("page-btn")){
+
+                        btn.setStyle({
+                            
+                            paddingTop : "5px",
+
+                        });
+
+                    }
+
+                    for(var vr of headerMenu.getElementsByClassName("vr")){
+
+                        vr.setStyle({
+
+                            height : "25px",
+                            marginTop : "8px",
+
+                        });
+
+                    }
+
+                }
+                else{
+                    
+                    headerMenu
+                    .setStyle({
+
+                        overflow: "hidden",
+
+                        width : "100%",
+                        height : "75px",
+
+                        display : "flex",
+
+                        flexFlow : "row",
+                        flexDirection : "row-reverse",
+
+                        backgroundColor : "rgba(34, 34, 33, 0.0)",
+
+                        top : "0px",
+                        left : "0",
+
+                        color : "rgb(34, 34, 33)",
+
+                        zIndex : "3"
+            
+                    });
+
+                    for(var btn of headerMenu.getElementsByClassName("page-btn")){
+
+                        btn.setStyle({
+                            
+                            paddingTop : "23px",
+
+                        });
+
+                    }
+
+                    for(var vr of headerMenu.getElementsByClassName("vr")){
+
+                        vr.setStyle({
+
+                            height : "40px",
+                            marginTop : "19px",
+
+                        });
+
+                    }
+
+                }
+
+            }
+
+            headerMenu.applyResponsiveStyle = applyResponsiveStyle;
+
+            window.addEventListener("resize", ()=>{
+
+                applyResponsiveStyle();
+
+            });
+
+        })
     )
 
 }

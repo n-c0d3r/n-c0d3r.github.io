@@ -9,12 +9,7 @@ export default function ShowHeaderMenu(){
         //begin
         framework.AnimationState(async (state)=>{
 
-            $("#header-page-btn-container")
-            .setStyle({
-
-                top : "0px"
-
-            });
+            $("#header-menu").applyResponsiveStyle();
 
             await state.wait(750);
 
@@ -25,12 +20,7 @@ export default function ShowHeaderMenu(){
 
             });
 
-            $("#header-page-btn-container")
-            .setStyle({
-
-                transition : "0.0s"
-
-            });
+            $("#header-menu").applyResponsiveStyle();
 
         })
 
