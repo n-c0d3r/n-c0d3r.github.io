@@ -108,34 +108,6 @@ export default function UIStart(){
                             imageRendering : "crisp-edges"
                 
                         })
-                        .on("mouseover", function(){
-
-                            this
-                            .setStyle({
-                    
-                                width : "76px",        
-                                height : "46px",
-
-                                bottom : "2px",                                
-                                right : "7px"
-
-                            });
-
-                        })
-                        .on("mouseout", function(){
-
-                            this
-                            .setStyle({
-                    
-                                width : "70px",        
-                                height : "40px",
-
-                                bottom : "5px",                                
-                                right : "10px"
-
-                            });
-
-                        })
         
                     )
     
@@ -225,26 +197,6 @@ export default function UIStart(){
                         .exe(function(){
                             
                             window.uistart.rightText = this;
-
-                        })
-                        .on("mouseenter", function(){
-
-                            this
-                            .setStyle({
-                    
-                                fontWeight : "400",
-
-                            });
-
-                        })
-                        .on("mouseout", function(){
-
-                            this
-                            .setStyle({
-                    
-                                fontWeight : "325",
-
-                            });
 
                         })
         
