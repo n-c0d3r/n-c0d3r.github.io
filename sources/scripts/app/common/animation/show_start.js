@@ -13,6 +13,8 @@ export default function ShowStartAnimation(){
 
             if(window.innerWidth <= 1050)
             {
+                
+                await state.wait(500);
 
                 $('#start-left')
                 .setStyle({

@@ -204,6 +204,38 @@ export default function UIStart(){
     
                 )
             )
+            .on("mouseover", function(){
+            
+                $("#start-right")
+                .setStyle({
+    
+                    transform : "translateX(30px)",
+        
+                })
+                $("#start-left")
+                .setStyle({
+    
+                    transform : "translateX(15px)",
+        
+                })
+
+            })
+            .on("mouseout", function(){
+            
+                $("#start-right")
+                .setStyle({
+    
+                    transform : "translateX(0)",
+        
+                })
+                $("#start-left")
+                .setStyle({
+    
+                    transform : "translateX(0)",
+        
+                })
+                
+            }),
 
         )
         .exe(function(){
