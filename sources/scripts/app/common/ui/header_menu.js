@@ -511,7 +511,7 @@ export default function UIHeaderMenu(){
                     .setInner(
 
                         UIPageMobileBtn("Basic Info")
-                        .on('mousedown', function(){
+                        .on('click', function(){
             
                             $("#content-container")
                             .setInner(
@@ -529,7 +529,7 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Skills And Knownledge")
-                        .on('mousedown', function(){
+                        .on('click', function(){
             
                             $("#content-container")
                             .setInner(
@@ -547,7 +547,7 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Projects")
-                        .on('mousedown', function(){
+                        .on('click', function(){
             
                             $("#content-container")
                             .setInner(
@@ -565,7 +565,7 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Experiences")
-                        .on('mousedown', function(){
+                        .on('click', function(){
             
                             $("#content-container")
                             .setInner(

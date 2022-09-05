@@ -26,7 +26,9 @@ export default function UIContentContainer(){
 
             transform : "translateY(100vh)",
 
-            backgroundColor : "rgb(29, 29, 28)",
+            backgroundColor : "rgb(25, 25, 25)",
+
+            boxShadow : "40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1)",
 
             zIndex : "2"
 

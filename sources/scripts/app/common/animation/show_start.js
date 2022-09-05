@@ -9,10 +9,10 @@ export default function ShowStartAnimation(){
         //begin
         framework.AnimationState(async (state)=>{
 
+            await state.wait(500);
+
             if(window.innerWidth <= 1050)
             {
-
-                await state.wait(500);
 
                 $('#start-left')
                 .setStyle({
@@ -81,8 +81,6 @@ export default function ShowStartAnimation(){
             else
             {
 
-                await state.wait(500);
-
                 $('#start-left')
                 .setStyle({
     
@@ -102,14 +100,20 @@ export default function ShowStartAnimation(){
                 $('#start-left-logo')
                 .setStyle({
     
-                    right : "0"
+                    right : "0",
+                
+                    width : "260px",
+                    height : "180px",
     
                 })
     
                 $('#start-right-text')
                 .setStyle({
     
-                    left : "-12px"
+                    left : "-12px",
+                
+                    width : "400px",
+                    height : "110px",
     
                 })
                 
@@ -202,6 +206,20 @@ export default function ShowStartAnimation(){
                 .setStyle({
     
                     transition : "0.3s"
+    
+                });
+    
+                $("#start-left-logo")
+                .setStyle({
+    
+                    transition : "0.2s"
+    
+                });
+    
+                $("#start-right-text")
+                .setStyle({
+    
+                    transition : "0.0s"
     
                 });
      

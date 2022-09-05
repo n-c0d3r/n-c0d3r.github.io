@@ -9,7 +9,16 @@ export default function ShowBasicInfoAnimation(){
         //begin
         framework.AnimationState(async (state)=>{
 
-            
+            await state.wait(500);
+
+            $("#basic-info")
+            .setStyle({
+
+                opacity : "1",
+
+            });
+
+            await state.wait(1000);
 
         })
 
