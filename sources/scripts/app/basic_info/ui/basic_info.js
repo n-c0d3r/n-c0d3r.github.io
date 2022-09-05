@@ -737,7 +737,7 @@ export default function UIBasicInfo(){
 
                             transform : "rotate(30deg)",
 
-                            backgroundColor : "rgba(116, 255, 253, 0.3)",
+                            backgroundColor : "rgba(150, 250, 30, 0.27)",
                             
                         })
 
