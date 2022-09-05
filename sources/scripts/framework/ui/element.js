@@ -16,7 +16,7 @@ export default function UIElement(tag){
 
     result.setClass = function(name){
 
-        result.className = name;
+        result.classList.add(...name.split(' '));
 
         return result;
     }

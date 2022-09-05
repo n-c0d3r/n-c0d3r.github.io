@@ -13,6 +13,8 @@ export default function ShowHeaderMenu(){
 
             await state.wait(750);
 
+            $("#header-menu").showed = true;
+
             $("#header-menu")
             .setStyle({
 

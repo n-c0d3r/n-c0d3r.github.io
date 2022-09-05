@@ -37,31 +37,7 @@ export default function UIContentContainer(){
 
             const applyResponsiveStyle = function(){
 
-                //check is mobile
-                if(window.innerWidth <= 1027){            
-                    
-                    contentContainer
-                    .setStyle({
-
-                        height : "calc(100vh - 145px)",
-
-                        paddingTop : "75px"
-            
-                    });
-
-                }
-                else{
-                    
-                    contentContainer
-                    .setStyle({
-
-                        height : "calc(100vh - 70px)",
-
-                        paddingTop : "0"
-            
-                    });
-
-                }
+                
 
             }
 

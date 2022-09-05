@@ -9,7 +9,8 @@ export default function UIBasicInfo(){
         .setId("basic-info")
         .setStyle({
 
-            
+            width : "100%",
+            height : "100%"
 
         })
         .setInner(

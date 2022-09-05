@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function ShowSkillsAndKnowledge(){
+export default function ShowSkillsAndKnownledgeAnimation(){
 
     return framework.Animation(
 

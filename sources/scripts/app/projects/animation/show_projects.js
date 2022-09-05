@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function ShowProjects(){
+export default function ShowProjectsAnimation(){
 
     return framework.Animation(
 

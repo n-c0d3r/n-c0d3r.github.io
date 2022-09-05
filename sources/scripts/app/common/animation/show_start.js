@@ -9,6 +9,76 @@ export default function ShowStartAnimation(){
         //begin
         framework.AnimationState(async (state)=>{
 
+            if(window.innerWidth <= 1050)
+            {
+
+                await state.wait(500);
+
+                $('#start-left')
+                .setStyle({
+    
+                    width : "50%"
+    
+                })
+    
+                $('#start-right')
+                .setStyle({
+    
+                    width : "50%"
+    
+                })
+                
+                await state.wait(250);
+    
+                $('#start-left-logo-container-y')
+                .setStyle({
+        
+                    //height : "66px"
+                    height : "75px",
+    
+                    backgroundColor : "rgb(34, 34, 33)",
+    
+                })   
+    
+                $('#start-left-logo')
+                .setStyle({
+    
+                    width : "70px",        
+                    height : "40px",
+
+                    bottom : "5px",
+                    
+                    right : "10px"
+    
+                }) 
+
+                $('#start-right-text-container-y')
+                .setStyle({
+        
+                    height : "80px"
+    
+                })
+    
+                $('#start-right-text')
+                .setStyle({
+    
+                    width : "120px",
+        
+                    height : "40px",
+    
+                    left : "0",
+
+                    fontSize : "24px",
+                    fontWeight : "220",
+
+                    transform : "translateX(20px) translateY(2px)",
+
+                    padding : "0"
+    
+                })
+
+            }
+            else
             {
 
                 await state.wait(500);
@@ -45,11 +115,11 @@ export default function ShowStartAnimation(){
                 
                 await state.wait(250);
 
-            }
-
 
             
-            await state.wait(1000);
+                await state.wait(1000);
+
+            }
 
 
 
@@ -80,7 +150,7 @@ export default function ShowStartAnimation(){
                 $('#start-right-text-container-y')
                 .setStyle({
         
-                    height : "75px"
+                    height : "80px"
     
                 })
     
@@ -101,9 +171,6 @@ export default function ShowStartAnimation(){
                     padding : "0"
     
                 })
-
-                $('#start').showed = true;
-                $('#start').applyResponsiveStyle();
 
             }
 

@@ -3,18 +3,18 @@ import framework from "../../../framework/framework.js"
 import ShowBasicInfoAnimation from "../../basic_info/animation/show_basic_info.js";
 import UIBasicInfo from "../../basic_info/ui/basic_info.js"
 
-import ShowSkillsAndKnowledge from "../../skills_and_knowledge/animation/show_skills_and_knowledge.js";
-import UISkillsAndKnowledge from "../../skills_and_knowledge/ui/skills_and_knowledge.js";
+import ShowSkillsAndKnownledgeAnimation from "../../skills_and_knownledge/animation/show_skills_and_knownledge.js";
+import UISkillsAndKnownledge from "../../skills_and_knownledge/ui/skills_and_knownledge.js";
 
-import ShowProjects from "../../projects/animation/show_projects.js";
+import ShowProjectsAnimation from "../../projects/animation/show_projects.js";
 import UIProjects from "../../projects/ui/projects.js";
 
-import ShowExperiences from "../../experiences/animation/show_experiences.js";
+import ShowExperiencesAnimation from "../../experiences/animation/show_experiences.js";
 import UIExperiences from "../../experiences/ui/experiences.js";
 
 
 
-function UIPageBtn(name, width){
+function UIPageDesktopBtn(name, width){
 
     return (
         framework.UIElement("div")
@@ -44,64 +44,42 @@ function UIPageBtn(name, width){
             name
 
         )
+        .exe(function(){
+
+            this.addEventListener("mousedown", function(){
+
+                if(window.currPage != null){
+
+                    window.currPage.setStyle({
+
+                        fontWeight : "240",
+        
+                    });
+    
+                }
+
+                window.currPage = this;
+
+            });
+
+        })
         .on("mouseenter", function(){
 
             this.setStyle({
 
-                fontWeight : "400",
+                fontWeight : "600",
 
             });
-
-            //check is mobile
-            if(window.innerWidth <= 1027){            
-                
-                this
-                .setStyle({
-
-                    color : "rgb(240, 240, 239)",
-        
-                });
-
-            }
-            else{
-                
-                this
-                .setStyle({
-
-                    color : "inherit",
-        
-                });
-
-            }
 
         })
         .on("mouseleave", function(){
 
-            this.setStyle({
+            if(window.currPage != this){
+            
+                this.setStyle({
 
-                fontWeight : "240",
-
-            });
-
-            //check is mobile
-            if(window.innerWidth <= 1027){            
-                
-                this
-                .setStyle({
-
-                    color : "inherit",
-                    
-        
-                });
-
-            }
-            else{
-                
-                this
-                .setStyle({
-
-                    color : "inherit",
-        
+                    fontWeight : "240",
+    
                 });
 
             }
@@ -117,6 +95,69 @@ function UIPageBtn(name, width){
 
 
 
+function UIPageMobileBtn(name){
+
+    return (
+        framework.UIElement("div")
+        .setClass("page-btn noselect")
+        .setStyle({
+
+            width : `100%`,
+            height : "40px",
+
+            fontSize : "20px",
+            fontFamily : "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+            fontWeight : "240",
+            textAlign : "center",
+
+            transition : "0s",
+            
+            display : "flex",
+
+            flexFlow : "row",
+
+            justifyContent : "space-around",
+
+            color : "rgb(140, 140, 139)",
+
+        })
+        .setInner(
+
+            name
+
+        )
+        .on("mouseenter", function(){
+
+            this.setStyle({
+
+                fontWeight : "400",
+
+                color : "rgb(240, 240, 239)",
+
+            });
+
+        })
+        .on("mouseleave", function(){
+
+            this.setStyle({
+
+                fontWeight : "240",
+
+                color : "rgb(140, 140, 139)",
+
+            });
+            
+        })
+        .exe(function(){
+
+            
+
+        })
+    );
+}
+
+
+
 function UIVR(){
 
     return (
@@ -124,14 +165,34 @@ function UIVR(){
         .setClass("vr noselect")
         .setStyle({
 
-            width : "6px",
+            width : "1px",
             height : "40px",
 
             marginTop : "19px",
 
-            borderRadius : "4px",
-
             backgroundColor : "rgb(34,34,33)"
+
+        })
+    );
+}
+
+
+
+function UIHR(){
+
+    return (
+        framework.UIElement("div")
+        .setClass("vr noselect")
+        .setStyle({
+
+            width : "80%",
+            height : "1px",
+
+            marginBottom : "10px",
+
+            marginLeft : "10%",
+
+            backgroundColor : "rgb(37,37,36)"
 
         })
     );
@@ -168,9 +229,9 @@ export default function UIHeaderMenu(){
 
             color : "rgb(34,34,33)",
 
-            backgroundColor : "rgb(116, 255, 253)",
+            backgroundColor : "rgba(116, 255, 253, 0)",
 
-            zIndex : "3"
+            zIndex : "3",
 
         })
         .exe(function(){
@@ -180,71 +241,431 @@ export default function UIHeaderMenu(){
         })
         .setInner(
 
-            UIPageBtn("Experiences", 125)
-            .setClass("page-btn")
-            .on('click', function(){
+            framework.UIElement("div")
+            .setId("header-menu-desktop")
+            .setStyle({
+    
+                height : "75px",
+    
+                display : "flex",
+    
+                flexFlow : "row",
+                flexDirection : "row-reverse",
 
-                $("#content-container")
+                visibility : "hidden",
+
+                position : "relative"
+    
+            })
+            .setInner(
+
+                UIPageDesktopBtn("Experiences", 125)
+                .setClass("page-btn")
+                .on('click', function(){
+    
+                    $("#content-container")
+                    .setInner(
+    
+                        UIExperiences()
+    
+                    );
+    
+                    ShowExperiencesAnimation().play();
+    
+                }),
+    
+                UIVR(),
+    
+                UIPageDesktopBtn("Projects", 100)
+                .setClass("page-btn")
+                .on('click', function(){
+    
+                    $("#content-container")
+                    .setInner(
+    
+                        UIProjects()
+    
+                    );
+    
+                    ShowProjectsAnimation().play();
+    
+                }),
+    
+                UIVR(),
+    
+                UIPageDesktopBtn("Skills And Knowledge", 220)
+                .setClass("page-btn")
+                .on('click', function(){
+    
+                    $("#content-container")
+                    .setInner(
+    
+                        UISkillsAndKnownledge()
+    
+                    );
+    
+                    ShowSkillsAndKnownledgeAnimation().play();
+    
+                }),
+    
+                UIVR(),
+    
+                UIPageDesktopBtn("Basic Info", 100)
+                .setClass("page-btn")
+                .on('click', function(){
+    
+                    $("#content-container")
+                    .setInner(
+    
+                        UIBasicInfo()
+    
+                    );
+    
+                    ShowBasicInfoAnimation().play();
+    
+                }),
+
+            ),
+
+            
+
+            framework.UIElement("div")
+            .setId("header-menu-mobile")
+            .setStyle({
+    
+                height : "75px",
+    
+                width : "75px",
+    
+                display : "flex",
+    
+                flexFlow : "row",
+                flexDirection : "row-reverse",
+
+                visibility : "hidden",
+
+                position : "absolute",
+
+                zIndex : "11"
+    
+            })
+            .exe(function(){
+
+                this.open = async function(){
+
+                    $("#header-menu-mobile-btn")
+                    .setStyle({
+
+                        transform : "rotate(180deg)",
+
+                    });
+
+                    $("#header-menu-mobile-btn > div")
+                    .setStyle({
+
+                        transform : "translateY(-24px)",
+
+                        borderTop : "22px solid rgba(116, 255, 253, 1)",
+
+                    });
+
+                    $("#header-menu-mobile-container")
+                    .setStyle({
+
+                        visibility : "visible",
+
+                    });
+
+                    $("#header-menu-mobile-container")
+                    .setStyle({
+
+                        opacity : "1",
+
+                    });
+
+                    await (new Promise(resolve=>{return setTimeout(resolve, 250)}));
+
+                    $("#header-menu-mobile-btn > div")
+                    .setStyle({
+
+                        transform : "translateY(0px)",
+                        
+                        borderTop : "22px solid rgba(116, 255, 253, 1)",
+
+                    });
+
+                    await (new Promise(resolve=>{return setTimeout(resolve, 250)}));
+
+                    this.isOpening = true;
+
+                }
+
+                this.close = async function(){
+
+                    $("#header-menu-mobile-btn")
+                    .setStyle({
+
+                        transform : "rotate(0deg)"
+
+                    });
+
+                    $("#header-menu-mobile-btn > div")
+                    .setStyle({
+
+                        transform : "translateY(-24px)",
+                        
+                        borderTop : "22px solid rgba(34, 34, 33, 1)",
+
+                    });
+
+                    $("#header-menu-mobile-container")
+                    .setStyle({
+
+                        opacity : "0",
+
+                    });
+
+                    await (new Promise(resolve=>{return setTimeout(resolve, 250)}));
+
+                    $("#header-menu-mobile-btn > div")
+                    .setStyle({
+
+                        transform : "translateY(-0px)",
+                        
+                        borderTop : "22px solid rgba(34, 34, 33, 1)",
+
+                    });
+
+                    await (new Promise(resolve=>{return setTimeout(resolve, 250)}));
+
+                    $("#header-menu-mobile-container")
+                    .setStyle({
+
+                        visibility : "hidden",
+
+                    });
+
+                    this.isOpening = false;
+
+                }
+
+                this.inverse = function(){
+
+                    if(!this.isOpening){
+
+                        this.open();
+
+                    }
+                    else{
+
+                        this.close();
+
+                    }
+
+                }
+
+            })
+            .setInner(
+
+                framework.UIElement("div")
+                .setId("header-menu-mobile-container")
+                .setStyle({
+    
+                    position : "fixed",
+
+                    width : "100vw",
+                    height : "100vh",
+
+                    transition : "0.5s",
+
+                    visibility : "hidden",
+
+                    zIndex : "10",
+
+                    top : "0",
+                    right : "0",
+
+                    backgroundColor : "rgba(24, 24, 23, 0.98)",
+
+                    opacity : "0",
+
+                    display : "flex",
+
+                    flexFlow : "column",
+
+                    justifyContent : "space-evenly",
+        
+                })
                 .setInner(
 
-                    UIExperiences()
+                    framework.UIElement("div")
+                    .setStyle({
 
-                );
+                        display : "flex",
 
-                ShowExperiences().play();
+                        flexFlow : "column",
 
-            }),
+                        justifyContent : "space-evenly",
+            
+                    })
+                    .setInner(
 
-            UIVR(),
+                        UIPageMobileBtn("Basic Info")
+                        .on('mousedown', function(){
+            
+                            $("#content-container")
+                            .setInner(
+            
+                                UIBasicInfo()
+            
+                            );
+            
+                            ShowBasicInfoAnimation().play();
+                            
+                            $("#header-menu-mobile").close();
+            
+                        }),
 
-            UIPageBtn("Projects", 100)
-            .setClass("page-btn")
-            .on('click', function(){
+                        UIHR(),
 
-                $("#content-container")
+                        UIPageMobileBtn("Skills And Knownledge")
+                        .on('mousedown', function(){
+            
+                            $("#content-container")
+                            .setInner(
+            
+                                UISkillsAndKnownledge()
+            
+                            );
+            
+                            ShowSkillsAndKnownledgeAnimation().play();
+                            
+                            $("#header-menu-mobile").close();
+            
+                        }),
+
+                        UIHR(),
+
+                        UIPageMobileBtn("Projects")
+                        .on('mousedown', function(){
+            
+                            $("#content-container")
+                            .setInner(
+            
+                                UIProjects()
+            
+                            );
+            
+                            ShowProjectsAnimation().play();
+                            
+                            $("#header-menu-mobile").close();
+            
+                        }),
+
+                        UIHR(),
+
+                        UIPageMobileBtn("Experiences")
+                        .on('mousedown', function(){
+            
+                            $("#content-container")
+                            .setInner(
+            
+                                UIExperiences()
+            
+                            );
+            
+                            ShowExperiencesAnimation().play();
+                            
+                            $("#header-menu-mobile").close();
+            
+                        }),
+
+                    ),
+
+                ),
+
+                framework.UIElement("div")
+                .setId("header-menu-mobile-btn")
+                .setStyle({
+    
+                    position : "absolute",
+    
+                    right : "23px",
+                    top : "23px",
+
+                    width : "30px",
+                    height : "30px",
+
+                    borderRadius : "15px",
+
+                    transition : "0.5s",
+
+                    zIndex : "11",
+        
+                })
                 .setInner(
+    
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+    
+                        right : "0px",
+                        top : "5px",
+    
+                        borderRight : "15px solid rgba(0,0,0,0)",
+                        borderLeft : "15px solid rgba(0,0,0,0)",
+                        borderTop : "22px solid rgba(34, 34, 33, 1)",
 
-                    UIProjects()
+                        transition : "0.5s",
 
-                );
+                        zIndex : "14",
+            
+                    })
+                    .setInner(
+        
+                        
+        
+                    )
+                    .on("mouseover", function(){
 
-                ShowProjects().play();
+                        this
+                        .setStyle({
+        
+                            right : "-2px",
+                            top : "4px",
+        
+                            borderRightWidth : "17px",
+                            borderLeftWidth : "17px",
+                            borderTopWidth : "25px",
+                
+                        })
 
-            }),
+                    })
+                    .on("mousedown", function(){
 
-            UIVR(),
+                        $("#header-menu-mobile").inverse();
 
-            UIPageBtn("Skills And Knowledge", 220)
-            .setClass("page-btn")
-            .on('click', function(){
+                    })
+                    .on("mouseout", function(){
 
-                $("#content-container")
-                .setInner(
+                        this
+                        .setStyle({
+        
+                            right : "0px",
+                            top : "5px",
+        
+                            borderRightWidth : "15px",
+                            borderLeftWidth : "15px",
+                            borderTopWidth : "22px",
+                
+                        })
+                        
+                    })
+    
+                )
 
-                    UISkillsAndKnowledge()
-
-                );
-
-                ShowSkillsAndKnowledge().play();
-
-            }),
-
-            UIVR(),
-
-            UIPageBtn("Basic Info", 100)
-            .setClass("page-btn")
-            .on('click', function(){
-
-                $("#content-container")
-                .setInner(
-
-                    UIBasicInfo()
-
-                );
-
-                ShowBasicInfoAnimation().play();
-
-            }),
+            )
 
         )
         .exe(function(){
@@ -254,102 +675,58 @@ export default function UIHeaderMenu(){
             const applyResponsiveStyle = function(){
 
                 //check is mobile
-                if(window.innerWidth <= 1027){            
+                if(window.innerWidth <= 1070){   
                     
                     headerMenu
                     .setStyle({
 
-                        overflowX: "scroll",
+                        transition : "0.75s",
 
-                        width : "calc(100% - 40px)",
-                        height : "40px",
-
-                        overflowY: "hidden",
-
-                        display : "flex",
-
-                        flexFlow : "row",
-                        flexDirection : "row-reverse",
-
-                        backgroundColor : "rgba(40, 40, 39, 1)",
-
-                        top : "75px",
-                        left : "20px",
-
-                        color : "rgba(160, 160, 159, 0.5)",
-
-                        zIndex : "3"
+                        top : "0px",
             
                     });
 
-                    for(var btn of headerMenu.getElementsByClassName("page-btn")){
+                    $("#header-menu-desktop")
+                    .setStyle({
 
-                        btn.setStyle({
-                            
-                            paddingTop : "5px",
+                        visibility : "hidden"
 
-                        });
+                    });
 
-                    }
+                    $("#header-menu-mobile")
+                    .setStyle({
 
-                    for(var vr of headerMenu.getElementsByClassName("vr")){
+                        visibility : "visible"
 
-                        vr.setStyle({
-
-                            height : "25px",
-                            marginTop : "8px",
-
-                        });
-
-                    }
+                    });
 
                 }
                 else{
+
+                    $("#header-menu-mobile").close();
                     
                     headerMenu
                     .setStyle({
 
-                        overflow: "hidden",
-
-                        width : "100%",
-                        height : "75px",
-
-                        display : "flex",
-
-                        flexFlow : "row",
-                        flexDirection : "row-reverse",
-
-                        backgroundColor : "rgba(34, 34, 33, 0.0)",
+                        transition : "0.75s",
 
                         top : "0px",
-                        left : "0",
-
-                        color : "rgb(34, 34, 33)",
-
-                        zIndex : "3"
             
                     });
 
-                    for(var btn of headerMenu.getElementsByClassName("page-btn")){
+                    $("#header-menu-desktop")
+                    .setStyle({
 
-                        btn.setStyle({
-                            
-                            paddingTop : "23px",
+                        visibility : "visible"
 
-                        });
+                    });
 
-                    }
+                    $("#header-menu-mobile")
+                    .setStyle({
 
-                    for(var vr of headerMenu.getElementsByClassName("vr")){
+                        visibility : "hidden"
 
-                        vr.setStyle({
-
-                            height : "40px",
-                            marginTop : "19px",
-
-                        });
-
-                    }
+                    });
 
                 }
 

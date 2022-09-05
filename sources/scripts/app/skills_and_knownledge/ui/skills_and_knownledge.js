@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function UISkillsAndKnowledge(name, width){
+export default function UISkillsAndKnownledge(name, width){
 
     return (
         framework.UIElement("div")

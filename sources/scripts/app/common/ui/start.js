@@ -207,46 +207,8 @@ export default function UIStart(){
 
         )
         .exe(function(){
-
-            var start = this;
-
-            const applyResponsiveStyle = function(){
-
-                //check is mobile
-                if(window.innerWidth <= 1027){
-                    
-                    if(start.showed)
-                        start.rightText 
-                        .setStyle({
-
-                            //opacity : "0"
-                
-                        });
-
-                }
-                else{
-                    
-                    start.rightText 
-                    .setStyle({
-
-                        //opacity : "1"
             
-                    });
-
-
-                }
-
-            }
-
-            this.applyResponsiveStyle = applyResponsiveStyle;
-
-            window.addEventListener("resize", ()=>{
-
-                applyResponsiveStyle();
-
-            });
             
-            applyResponsiveStyle();
 
         })
     );
