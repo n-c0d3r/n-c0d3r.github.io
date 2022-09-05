@@ -51,20 +51,24 @@ $("#content-container")
 
 );
 
-ShowBasicInfoAnimation().play();
+await ShowBasicInfoAnimation().play();
 
 
 
-$("#start")
-.setStyle({
+setInterval(function () {
 
-    transition : "0.0s"
+    $("#start")
+    .setStyle({
+    
+        transition : "0.0s"
+    
+    })
+    
+    $("#content-container")
+    .setStyle({
+    
+        transition : "0.0s"
+    
+    })
 
-})
-
-$("#content-container")
-.setStyle({
-
-    transition : "0.0s"
-
-})
+}, 1000);
