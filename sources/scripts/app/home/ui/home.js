@@ -132,7 +132,7 @@ export default function UIHome(){
                 
     
                 framework.UIElement("div")
-                .setId("home-mobile-content-container")
+                .setId("home-content-container")
                 .setStyle({
     
                     position : "relative",
@@ -861,7 +861,7 @@ zIndex : "8",
 
                             width : "3px",
                             height : "2000px",
-                            transform : "rotate(75deg) translateX(-800px)",
+                            transform : "rotate(68deg) translateX(-800px)",
 
                             backgroundColor : "#6EF0FF",
                             
@@ -958,10 +958,10 @@ zIndex : "8",
             
                     });
 
-                    basicInfo.querySelector("#home-mobile-content-container")
+                    basicInfo.querySelector("#home-content-container")
                     .setStyle({
 
-                        height : "70%",
+                        height : "55%",
             
                     });
 
@@ -992,10 +992,10 @@ zIndex : "8",
             
                     });
 
-                    basicInfo.querySelector("#home-mobile-content-container")
+                    basicInfo.querySelector("#home-content-container")
                     .setStyle({
 
-                        height : "40%",
+                        height : "55%",
             
                     });
 
