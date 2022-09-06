@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function ShowBasicInfoAnimation(){
+export default function ShowHomeAnimation(){
 
     return framework.Animation(
 
@@ -11,7 +11,7 @@ export default function ShowBasicInfoAnimation(){
 
             await state.wait(500);
 
-            $("#basic-info")
+            $("#home")
             .setStyle({
 
                 opacity : "1",

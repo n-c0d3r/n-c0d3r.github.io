@@ -9,8 +9,8 @@ import UIContentContainer from "../common/ui/content_container.js";
 import ShowHeaderMenu from "../common/animation/show_header_menu.js";
 import UIHeaderMenu from "../common/ui/header_menu.js"
 
-import ShowBasicInfoAnimation from "../basic_info/animation/show_basic_info.js";
-import UIBasicInfo from "../basic_info/ui/basic_info.js"
+import ShowHomeAnimation from "../home/animation/show_home.js";
+import UIHome from "../home/ui/home.js"
 
 
 
@@ -47,11 +47,11 @@ await ShowHeaderMenu().play();
 $("#content-container")
 .setInner(
 
-    UIBasicInfo()
+    UIHome()
 
 );
 
-await ShowBasicInfoAnimation().play();
+await ShowHomeAnimation().play();
 
 
 

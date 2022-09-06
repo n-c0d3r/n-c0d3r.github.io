@@ -2,11 +2,11 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function UIBasicInfo(){
+export default function UIHome(){
 
     return (
         framework.UIElement("div")
-        .setId("basic-info")
+        .setId("home")
         .setStyle({
 
             position : "relative",
@@ -37,7 +37,7 @@ export default function UIBasicInfo(){
                 // overflowX : "hidden",
                 // overflowY : "scroll"
 
-                backgroundColor : "rgb(32, 32, 32)",
+                backgroundColor : "rgb(28, 28, 27)",
     
             })
             .setInner(
@@ -96,7 +96,7 @@ export default function UIBasicInfo(){
                 )
                 .on("mouseover", function(){
                     
-                    $("#basic-info > div > div > div")
+                    $("#home > div > div > div")
                     .setStyle({
 
                         color : "rgb(255, 255, 255)",
@@ -106,14 +106,14 @@ export default function UIBasicInfo(){
                     this
                     .setStyle({
                         
-                        backgroundColor : "rgba(20, 20, 20, 1)",
+                        backgroundColor : "rgba(21, 21, 20, 1)",
             
                     })
 
                 })
                 .on("mouseout", function(){
                     
-                    $("#basic-info > div > div > div")
+                    $("#home > div > div > div")
                     .setStyle({
 
                         color : "rgb(0, 0, 0)",
@@ -132,7 +132,7 @@ export default function UIBasicInfo(){
                 
     
                 framework.UIElement("div")
-                .setId("basic-info-mobile-content-container")
+                .setId("home-mobile-content-container")
                 .setStyle({
     
                     position : "relative",
@@ -146,13 +146,13 @@ export default function UIBasicInfo(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(15, 15, 16, 0.3)",
+                    backgroundColor : "rgba(14, 14, 13, 0.3)",
         
                 })
                 .setInner(
         
                     framework.UIElement("div")
-                    .setId("basic-info-mobile-content")
+                    .setId("home-mobile-content")
                     .setStyle({
         
                         position : "absolute",
@@ -178,19 +178,22 @@ export default function UIBasicInfo(){
 
         
                     framework.UIElement("div")
-                    .setId("basic-info-desktop-content")
+                    .setId("home-desktop-content")
                     .setStyle({
         
                         position : "absolute",
             
-                        width : "100%",
+                        width : "calc(100% - 34px)",
                         height : "100%",
+
+                        paddingLeft : "17px",
+                        paddingRight : "17px",
     
                         display : "flex",
     
                         flexFlow : "row",
                         
-                        justifyContent : "center",
+                        justifyContent : "space-around",
                         
                         visibility : "hidden",
                         
@@ -205,20 +208,21 @@ export default function UIBasicInfo(){
             
                             position : "relative",
                 
-                            width : "calc(50% - 25%)",
-                            height : "calc(100% - 200px)",
-
-                            marginLeft : "12%",
-                            marginRight : "150px",
-
-                            marginTop : "100px",
-                            marginBottom : "100px",
+                            width : "calc(40%)",
+                            height : "calc(100% - 0%)",
         
                             display : "flex",
         
                             flexFlow : "column",
                             
                             justifyContent : "space-evenly",
+                        
+                            overflowY : "hidden",                        
+                            overflowX : "hidden",
+                
+                            zIndex : "6",
+
+                            opacity : "1",
                 
                         })
                         .setInner(
@@ -260,11 +264,17 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/name.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
                         
                                 })
                                 .setInner(
                         
-                                    "Real Name:",
+                                    
                         
                                 ),
 
@@ -285,7 +295,8 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+zIndex : "8",
                         
                                 })
                                 .setInner(
@@ -335,11 +346,17 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/birthday.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
                         
                                 })
                                 .setInner(
                         
-                                    "Birthday:",
+                                    
                         
                                 ),
 
@@ -360,7 +377,8 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+zIndex : "8",
                         
                                 })
                                 .setInner(
@@ -408,11 +426,17 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/hotline.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
                         
                                 })
                                 .setInner(
                         
-                                    "Hotline:",
+                                    
                         
                                 ),
 
@@ -433,7 +457,8 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+zIndex : "8",
                         
                                 })
                                 .setInner(
@@ -452,17 +477,65 @@ export default function UIBasicInfo(){
                         .setStyle({
             
                             position : "absolute",
-                    
-                            width : "800px",
+                
+                            width : "300px",
                             height : "300px",
 
                             transform : "rotate(40deg) translateX(40px)",
 
-                            backgroundColor : "rgba(70, 255, 150, 0.3)",
+                            backgroundColor : "rgb(40,40,39)",
 
-                            transition : "0.4s",
+                            transition : "0.55s",
                 
-                            zIndex : "7",
+                            zIndex : "2",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "rotate(40deg) translateX(40px)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            transition : "0.55s",
+                
+                            zIndex : "3",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "rotate(40deg) translateX(40px)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            transition : "0.55s",
                             
                         })
                         .setInner(
@@ -478,19 +551,19 @@ export default function UIBasicInfo(){
             
                             position : "relative",
                 
-                            width : "calc(50% - 150px)",
-                            height : "calc(100% - 200px)",
-
-                            marginRight : "150px",
-
-                            marginTop : "100px",
-                            marginBottom : "100px",
+                            width : "calc(40%)",
+                            height : "calc(100% - 0%)",
         
                             display : "flex",
         
                             flexFlow : "column",
                             
                             justifyContent : "space-evenly",
+                        
+                            overflowY : "hidden",                        
+                            overflowX : "hidden",
+                
+                            zIndex : "6",
                 
                         })
                         .setInner(
@@ -519,9 +592,6 @@ export default function UIBasicInfo(){
 
                                     top : "0px",
                                     left : "10px",
-                                                            
-                                    width : "100%",
-                                    height : "100%",
                 
                                     textAlign : "left",
     
@@ -530,11 +600,19 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/email.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "Email:",
+                                    
                         
                                 ),
 
@@ -555,12 +633,19 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+                                    
+zIndex : "8",
+
+                                    display : "flex",
+                                    flexFlow : "row",
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "ncoderft3t@outlook.com",
+                                    "ncoderft3t@outlook.com"
                         
                                 ),
                     
@@ -603,11 +688,19 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/youtube.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "Youtube:",
+                                    
                         
                                 ),
 
@@ -629,21 +722,28 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+                                    
+zIndex : "8",
+
+                                    display : "flex",
+                                    flexFlow : "row",
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "https://www.youtube.com/chann...",
+                                    `https://www.youtube.com/chann...`
                         
-                                )
-                                .on("click", function(){
-
-                                    window.open("https://www.youtube.com/channel/UCpliLhWxstPpFBx8R7ckSsQ");
-
-                                }),
+                                ),
                     
-                            ),
+                            )
+                            .on("click", function(){
+
+                                window.open("https://www.youtube.com/channel/UCpliLhWxstPpFBx8R7ckSsQ");
+
+                            }),
 
 
                 
@@ -682,11 +782,19 @@ export default function UIBasicInfo(){
                                     fontWeight : "200",
     
                                     color : "rgba(255,255,255,0.2)",
+                
+                                    backgroundImage : `url("${window.location.origin}/resources/images/github.png")`,
+                                    backgroundSize : 'cover',  
+
+                                    width : "50px",                                                    
+                                    height : "30px",  
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "GitHub:",
+                                    
                         
                                 ),
 
@@ -708,51 +816,105 @@ export default function UIBasicInfo(){
                                     fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                     fontWeight : "400",
     
-                                    color : "rgb(240,240,239)",
+                                    color : "rgb(255,255,255)",
+                                    
+zIndex : "8",
+
+                                    display : "flex",
+                                    flexFlow : "row",
+
+                                    zIndex : "8px",
                         
                                 })
                                 .setInner(
                         
-                                    "https://github.com/n...",
+                                    `https://www.github.com/n-...`
                         
-                                )
-                                .on("click", function(){
-
-                                    window.open("https://github.com/n-c0d3r");
-
-                                }),
+                                ),
                     
-                            ),
+                            )
+                            .on("click", function(){
+
+                                window.open("https://github.com/n-c0d3r");
+
+                            }),
                 
                         ),
             
                     )
                     .on("mouseover", function(){
 
-                        this.querySelector("#basic-info-desktop-content > div:nth-child(2)")
+                        this.querySelector("#home-desktop-content > div:nth-child(2)")
                         .setStyle({
                 
-                            width : "1000px",
-                            height : "300px",
+                            width : "1px",
+                            height : "2000px",
 
-                            transform : "rotate(30deg)",
+                            transform : "scaleY(10) rotate(70deg) translateY(170px) translateX(-100px)",
 
-                            backgroundColor : "rgba(150, 250, 30, 0.27)",
+                            backgroundColor : "#FCEC79",
+                            
+                        })
+
+                        this.querySelector("#home-desktop-content > div:nth-child(3)")
+                        .setStyle({
+
+                            width : "3px",
+                            height : "2000px",
+                            transform : "rotate(75deg) translateX(-800px)",
+
+                            backgroundColor : "#6EF0FF",
+                            
+                        })
+
+                        this.querySelector("#home-desktop-content > div:nth-child(4)")
+                        .setStyle({
+                
+                            width : "3px",
+                            height : "2000px",
+
+                            transform : "rotate(-50deg) translateX(-250px) translateX(700px)",
+
+                            backgroundColor : "#FC60B5",
                             
                         })
 
                     })
                     .on("mouseout", function(){
 
-                        this.querySelector("#basic-info-desktop-content > div:nth-child(2)")
+                        this.querySelector("#home-desktop-content > div:nth-child(2)")
                         .setStyle({
                 
-                            width : "800px",
+                            width : "300px",
                             height : "300px",
 
                             transform : "rotate(40deg) translateX(40px)",
 
-                            backgroundColor : "rgba(70, 255, 150, 0.3)",
+                            backgroundColor : "rgb(40,40,39)",
+                            
+                        })
+
+                        this.querySelector("#home-desktop-content > div:nth-child(3)")
+                        .setStyle({
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "rotate(40deg) translateX(40px)",
+
+                            backgroundColor : "rgb(40,40,39)",
+                            
+                        })
+
+                        this.querySelector("#home-desktop-content > div:nth-child(4)")
+                        .setStyle({
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "rotate(40deg) translateX(40px)",
+
+                            backgroundColor : "rgb(40,40,39)",
                             
                         })
 
@@ -770,7 +932,7 @@ export default function UIBasicInfo(){
             const applyResponsiveStyle = function(){
 
                 //check is mobile
-                if(window.innerWidth <= 1070){   
+                if(window.innerWidth <= 1200){   
                     
                     basicInfo.querySelector("div")
                     .setStyle({
@@ -782,21 +944,21 @@ export default function UIBasicInfo(){
             
                     });
 
-                    basicInfo.querySelector("#basic-info-desktop-content")
+                    basicInfo.querySelector("#home-desktop-content")
                     .setStyle({
 
                         visibility : "hidden"
             
                     });
 
-                    basicInfo.querySelector("#basic-info-mobile-content")
+                    basicInfo.querySelector("#home-mobile-content")
                     .setStyle({
 
                         visibility : "visible"
             
                     });
 
-                    basicInfo.querySelector("#basic-info-mobile-content-container")
+                    basicInfo.querySelector("#home-mobile-content-container")
                     .setStyle({
 
                         height : "70%",
@@ -816,21 +978,21 @@ export default function UIBasicInfo(){
             
                     });
 
-                    basicInfo.querySelector("#basic-info-desktop-content")
+                    basicInfo.querySelector("#home-desktop-content")
                     .setStyle({
 
                         visibility : "visible"
             
                     });
 
-                    basicInfo.querySelector("#basic-info-mobile-content")
+                    basicInfo.querySelector("#home-mobile-content")
                     .setStyle({
 
                         visibility : "hidden"
             
                     });
 
-                    basicInfo.querySelector("#basic-info-mobile-content-container")
+                    basicInfo.querySelector("#home-mobile-content-container")
                     .setStyle({
 
                         height : "40%",

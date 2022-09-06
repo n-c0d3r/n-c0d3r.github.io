@@ -1,7 +1,7 @@
 import framework from "../../../framework/framework.js"
 
-import ShowBasicInfoAnimation from "../../basic_info/animation/show_basic_info.js";
-import UIBasicInfo from "../../basic_info/ui/basic_info.js"
+import ShowHomeAnimation from "../../home/animation/show_home.js";
+import UIHome from "../../home/ui/home.js"
 
 import ShowSkillsAndKnownledgeAnimation from "../../skills_and_knownledge/animation/show_skills_and_knownledge.js";
 import UISkillsAndKnownledge from "../../skills_and_knownledge/ui/skills_and_knownledge.js";
@@ -310,18 +310,18 @@ export default function UIHeaderMenu(){
     
                 UIVR(),
     
-                UIPageDesktopBtn("Basic Info", 100)
+                UIPageDesktopBtn("Home", 100)
                 .setClass("page-btn")
                 .on('click', function(){
     
                     $("#content-container")
                     .setInner(
     
-                        UIBasicInfo()
+                        UIHome()
     
                     );
     
-                    ShowBasicInfoAnimation().play();
+                    ShowHomeAnimation().play();
     
                 }),
 
@@ -485,7 +485,7 @@ export default function UIHeaderMenu(){
                     top : "0",
                     right : "0",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.98)",
+                    backgroundColor : "rgba(24, 24, 23, 0.99)",
 
                     opacity : "0",
 
@@ -510,17 +510,17 @@ export default function UIHeaderMenu(){
                     })
                     .setInner(
 
-                        UIPageMobileBtn("Basic Info")
+                        UIPageMobileBtn("Home")
                         .on('click', function(){
             
                             $("#content-container")
                             .setInner(
             
-                                UIBasicInfo()
+                                UIHome()
             
                             );
             
-                            ShowBasicInfoAnimation().play();
+                            ShowHomeAnimation().play();
                             
                             $("#header-menu-mobile").close();
             
