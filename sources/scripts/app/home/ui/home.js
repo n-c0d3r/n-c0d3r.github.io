@@ -462,7 +462,7 @@ export default function UIHome(){
                     position : "relative",
         
                     width : "100%",
-                    height : "30vh",
+                    height : "50vh",
 
                     display : "flex",
 
@@ -487,7 +487,7 @@ export default function UIHome(){
             
                         maxWidth : "500px",            
                         width : "70%",
-                        height : "50%",
+                        height : "35%",
             
                         zIndex : "5",
 
@@ -552,9 +552,9 @@ export default function UIHome(){
         
                         position : "absolute",
 
-                        height : "50%",
+                        height : "65%",
 
-                        top : "50%",
+                        top : "35%",
 
                         zIndex : "7",
 
