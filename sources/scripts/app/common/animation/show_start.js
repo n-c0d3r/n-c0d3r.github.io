@@ -229,6 +229,30 @@ export default function ShowStartAnimation(){
     
                 await state.wait(500);
 
+            
+
+                document.body.appendChild(
+    
+                    framework.UIElement("div")
+                    .setStyle({
+    
+                        position : "fixed",
+    
+                        width : "100vw",
+                        height : "75px",
+    
+                        top : "0",
+    
+                        boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.2)",
+    
+                        zIndex : "9",
+                        
+                        pointerEvents : "none",
+    
+                    })
+    
+                );
+
 
 
                 $('#start-left')

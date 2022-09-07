@@ -7,10 +7,11 @@ export default function UIContentContainer(){
     return (
         framework.UIElement("div")
         .setId("content-container")
+        .setClass("noscrollbar")
         .setStyle({
 
             width : "100vw",
-            height : "calc(100vh - 70px)",
+            height : "calc(100vh - 75px)",
 
             display : "flex",
 
@@ -26,16 +27,59 @@ export default function UIContentContainer(){
 
             transform : "translateY(100vh)",
 
-            backgroundColor : "rgb(25, 25, 25)",
+            //backgroundColor : "rgb(25, 25, 25)",
 
-            boxShadow : "40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1)",
+            //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(35, 35, 35))",
+            background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(15, 15, 15))",
+            //background : "linear-gradient(to bottom, rgb(235, 235, 235), rgb(200, 200, 200))",
+                
+            // backgroundImage : `url("${window.location.origin}/resources/images/background1.png")`,
+            // backgroundSize : 'cover',
 
-            zIndex : "2"
+            //boxShadow : "40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1), 40px 40px 40px 40px rgba(0,0,0,0.1)",
+
+            zIndex : "2",
 
         })
         .exe(function(){
 
             var contentContainer = this;
+
+
+
+            contentContainer.setInner = function(...childs){
+
+                contentContainer.innerHTML = "";
+                
+                for(let childName in childs){
+        
+                    let child = childs[childName];
+        
+                    try {
+        
+                        contentContainer.appendChild(child);
+        
+                    }
+                    catch
+                    {
+        
+                        try{
+        
+                            contentContainer.innerHTML += child;
+        
+                        }
+                        catch{
+        
+        
+        
+                        }
+        
+                    }
+        
+                }
+        
+                return contentContainer;
+            }
 
             const applyResponsiveStyle = function(){
 

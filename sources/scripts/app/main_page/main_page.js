@@ -24,7 +24,7 @@ framework.UIElement('body')
     transition : "0.0s"
 
 })
-.setInner(
+.appendInner(
 
     UIStart(),
 
