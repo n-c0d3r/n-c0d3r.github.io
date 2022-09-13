@@ -9,8 +9,7 @@ function UIVR(){
         .setStyle({
 
             width : "100%",
-            //height : "17vh",
-            height : "0",
+            height : "10vh",
 
             //backgroundColor : "rgb(25, 25, 25)",
 
@@ -79,6 +78,10 @@ export default function UIHome(){
                     transition : "0.5s",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
                     
                 })
                 .setInner(
@@ -126,7 +129,7 @@ export default function UIHome(){
                     this
                     .setStyle({
                         
-                        backgroundColor : "rgba(31, 31, 30, 1)",
+                        backgroundColor : "rgba(25, 25, 25, 1)",
             
                     })
 
@@ -191,6 +194,10 @@ export default function UIHome(){
                     backgroundColor: "rgb(116, 255, 253)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
         
                 })
                 .setInner(
@@ -240,7 +247,7 @@ export default function UIHome(){
 
                                 fontSize : "2.5vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                                fontWeight : "300",
+                                fontWeight : "400",
 
                                 color : "rgb(40, 40, 39)",
 
@@ -255,6 +262,305 @@ export default function UIHome(){
                             .setInner(
 
 `I'm a game, game engine programmer, currently learning game engine development. `,
+
+                            ),
+    
+                        ),
+
+                    ),
+
+
+        
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        width : "calc(100% - 34px)",
+                        height : "100%",
+
+                        paddingLeft : "17px",
+                        paddingRight : "17px",
+    
+                        display : "flex",
+    
+                        flexFlow : "row",
+                        
+                        justifyContent : "space-around",
+                        
+                        visibility : "visible",
+
+                        overflowX : "hidden",
+                        overflowY : "hidden",
+                        borderRadius : "15px",
+            
+                    })
+                    .setInner(
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(350px) rotate(80deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+
+                            transition : "0.55s",
+                
+                            zIndex : "2",
+
+                            opacity : "0.3",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(-220px) translateX(300px) rotate(50deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+
+                            transition : "0.55s",
+                
+                            zIndex : "3",
+
+                            opacity : "0.6",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(-20px) translateX(-480px) rotate(20deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+
+                            transition : "0.55s",
+
+                            opacity : "0.8",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+            
+                    )
+                    .on("mouseover", function(){
+
+                        this.querySelector("div:nth-child(1)")
+                        .setStyle({
+                
+                            width : "1px",
+                            height : "2000px",
+
+                            transform : "scaleY(10) rotate(70deg) translateY(170px) translateX(-100px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(2)")
+                        .setStyle({
+
+                            width : "3px",
+                            height : "2000px",
+                            transform : "rotate(68deg) translateX(-800px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(3)")
+                        .setStyle({
+                
+                            width : "3px",
+                            height : "4000px",
+
+                            transform : "rotate(-50deg) translateX(-250px) translateX(1700px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                    })
+                    .on("mouseout", function(){
+
+                        this.querySelector("div:nth-child(1)")
+                        .setStyle({
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(350px) rotate(80deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(2)")
+                        .setStyle({
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(-220px) translateX(300px) rotate(50deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(3)")
+                        .setStyle({
+                
+                            width : "300px",
+                            height : "300px",
+
+                            transform : "translateY(-20px) translateX(-480px) rotate(20deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
+                            
+                        })
+
+                    })
+        
+                ),
+
+
+
+                UIVR(),
+
+                /*
+    
+                framework.UIElement("div")
+                .setId("home-low-level")
+                .setStyle({
+    
+                    position : "relative",
+        
+                    width : "100%",
+                    height : "45vh",
+
+                    display : "flex",
+
+                    flexFlow : "row",
+                    
+                    justifyContent : "center",
+
+                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+    
+                    boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
+        
+                })
+                .setInner(
+                        
+
+
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        maxWidth : "500px",            
+                        width : "70%",
+                        height : "30%",
+            
+                        zIndex : "5",
+
+                        pointerEvents: "none",
+
+                        display : "flex",
+
+                        flexFlow : "row",
+
+                        justifyContent : "center",
+                        
+                    })
+                    .setInner(
+
+                        framework.UIElement("div")
+                        .setStyle({
+    
+                            display : "flex",
+    
+                            flexFlow : "column",
+    
+                            justifyContent : "center",
+                            
+                        })
+                        .setInner(
+    
+                            framework.UIElement("div")
+                            .setStyle({
+                
+                                whiteSpace : "pre-wrap",
+            
+                                maxWidth : "500px",
+
+                                fontSize : "2.5vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "200",
+
+                                color : "rgba(240, 240, 239, 0.7)",
+
+                                lineBreak: "auto",
+                                wordBreak: "break-word",
+
+                                display : "flex",
+
+                                flexFlow : "row",
+                                
+                            })
+                            .setInner(
+
+`I'm mostly programming in low level`,
 
                             ),
     
@@ -456,7 +762,299 @@ export default function UIHome(){
                 
     
                 framework.UIElement("div")
-                .setId("home-projects")
+                .setId("home-cg")
+                .setStyle({
+    
+                    position : "relative",
+        
+                    width : "100%",
+                    height : "45vh",
+
+                    display : "flex",
+
+                    flexFlow : "row",
+                    
+                    justifyContent : "center",
+
+                    backgroundColor: "rgb(80, 255, 120)",
+    
+                    boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
+        
+                })
+                .setInner(
+                        
+
+
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        maxWidth : "500px",            
+                        width : "70%",
+                        height : "100%",
+            
+                        zIndex : "5",
+
+                        pointerEvents: "none",
+
+                        display : "flex",
+
+                        flexFlow : "row",
+
+                        justifyContent : "center",
+                        
+                    })
+                    .setInner(
+
+                        framework.UIElement("div")
+                        .setStyle({
+    
+                            display : "flex",
+    
+                            flexFlow : "column",
+    
+                            justifyContent : "center",
+                            
+                        })
+                        .setInner(
+    
+                            framework.UIElement("div")
+                            .setStyle({
+                
+                                whiteSpace : "pre-wrap",
+            
+                                maxWidth : "500px",
+
+                                fontSize : "2.5vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "400",
+
+                                color : "rgb(40, 40, 39)",
+
+                                lineBreak: "auto",
+                                wordBreak: "break-word",
+
+                                display : "flex",
+
+                                flexFlow : "row",
+                                
+                            })
+                            .setInner(
+
+`I'm a game, game engine programmer, currently learning game engine development. `,
+
+                            ),
+    
+                        ),
+
+                    ),
+
+
+        
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        width : "calc(100% - 34px)",
+                        height : "100%",
+
+                        paddingLeft : "17px",
+                        paddingRight : "17px",
+    
+                        display : "flex",
+    
+                        flexFlow : "row",
+                        
+                        justifyContent : "space-around",
+                        
+                        visibility : "visible",
+                        
+                        overflowY : "hidden",                        
+                        overflowX : "hidden",
+            
+                    })
+                    .setInner(
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "4000px",
+                            height : "300px",
+
+                            transform : "translateY(250px) rotate(40deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            transition : "0.55s",
+                
+                            zIndex : "2",
+
+                            opacity : "0.3",
+
+                            boxShadow : "0px 0px -7px -7px rgba(0,0,0,0.7)",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "4000px",
+                            height : "1000px",
+
+                            transform : "translateY(-220px) translateX(920px) rotate(135deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            transition : "0.55s",
+                
+                            zIndex : "3",
+
+                            opacity : "0.6",
+
+                            boxShadow : "0px 0px -7px -7px rgba(0,0,0,0.7)",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+                        
+
+
+                        framework.UIElement("div")
+                        .setStyle({
+            
+                            position : "absolute",
+                
+                            width : "4000px",
+                            height : "300px",
+
+                            transform : "translateY(-20px) translateX(-540px) rotate(135deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+
+                            transition : "0.55s",
+
+                            opacity : "0.9",
+
+                            boxShadow : "0px 0px -7px -7px rgba(0,0,0,0.7)",
+                            
+                        })
+                        .setInner(
+
+
+
+                        ),
+            
+                    )
+                    .on("mouseover", function(){
+
+                        this.querySelector("div:nth-child(1)")
+                        .setStyle({
+                
+                            width : "1px",
+                            height : "2000px",
+
+                            transform : "scaleY(10) rotate(70deg) translateY(170px) translateX(-100px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(2)")
+                        .setStyle({
+
+                            width : "3px",
+                            height : "2000px",
+                            transform : "rotate(68deg) translateX(-800px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(3)")
+                        .setStyle({
+                
+                            width : "3px",
+                            height : "2000px",
+
+                            transform : "rotate(-50deg) translateX(-250px) translateX(700px)",
+
+                            backgroundColor : "rgb(34,34,33)",
+                            
+                        })
+
+                    })
+                    .on("mouseout", function(){
+
+                        this.querySelector("div:nth-child(1)")
+                        .setStyle({
+                
+                            width : "4000px",
+                            height : "300px",
+
+                            transform : "translateY(250px) rotate(40deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(2)")
+                        .setStyle({
+                
+                            width : "4000px",
+                            height : "1000px",
+
+                            transform : "translateY(-220px) translateX(920px) rotate(135deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+                            
+                        })
+
+                        this.querySelector("div:nth-child(3)")
+                        .setStyle({
+                
+                            width : "4000px",
+                            height : "300px",
+
+                            transform : "translateY(-20px) translateX(-540px) rotate(135deg)",
+
+                            backgroundColor : "rgb(40,40,39)",
+                            
+                        })
+
+                    })
+        
+                ),
+
+
+
+                UIVR(),*/
+
+                
+    
+                framework.UIElement("div")
+                .setId("home-ing-project")
                 .setStyle({
     
                     position : "relative",
@@ -471,11 +1069,12 @@ export default function UIHome(){
                     justifyContent : "center",
 
                     backgroundColor : "rgba(24, 24, 23, 0.3)",
-                        
-                    overflowY : "hidden",                        
-                    overflowX : "hidden",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
         
                 })
                 .setInner(
@@ -631,6 +1230,8 @@ export default function UIHome(){
 
                             backgroundColor : "rgb(40,40,39)",
 
+                            borderRadius : "150px",
+
                             transition : "0.55s",
                 
                             zIndex : "2",
@@ -658,6 +1259,8 @@ export default function UIHome(){
 
                             backgroundColor : "rgb(40,40,39)",
 
+                            borderRadius : "150px",
+
                             transition : "0.55s",
                 
                             zIndex : "3",
@@ -684,6 +1287,8 @@ export default function UIHome(){
                             transform : "rotate(70deg) translateX(400px)",
 
                             backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
 
                             transition : "0.55s",
 
@@ -746,6 +1351,8 @@ export default function UIHome(){
                             transform : "rotate(40deg) translateX(-250px)",
 
                             backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
                             
                         })
 
@@ -758,6 +1365,8 @@ export default function UIHome(){
                             transform : "rotate(30deg) translateX(300px)",
 
                             backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
                             
                         })
 
@@ -770,6 +1379,8 @@ export default function UIHome(){
                             transform : "rotate(70deg) translateX(400px)",
 
                             backgroundColor : "rgb(40,40,39)",
+
+                            borderRadius : "150px",
                             
                         })
 
@@ -838,15 +1449,15 @@ export default function UIHome(){
             const applyResponsiveStyle = function(){
 
                 //check is mobile
-                if(window.innerWidth <= 1200){   
+                if(window.innerWidth <= 1000){   
                     
                     basicInfo.querySelector("div")
                     .setStyle({
 
-                        width : "100%",
+                        width : "94%",
                         fontSize : "10px",
 
-                        marginLeft : "0%",
+                        marginLeft : "3%",
             
                     });
 
@@ -856,10 +1467,10 @@ export default function UIHome(){
                     basicInfo.querySelector("div")
                     .setStyle({
 
-                        width : "70%",
+                        width : "60%",
                         fontSize : "20px",
 
-                        marginLeft : "15%",
+                        marginLeft : "20%",
             
                     });
 
