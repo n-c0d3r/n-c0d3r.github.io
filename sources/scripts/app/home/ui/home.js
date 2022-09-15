@@ -1350,7 +1350,7 @@ export default function UIHome(){
                             })
                             .setInner(
 
-`ING is my biggest projects, its a game engine for windows `,
+`ING is my biggest project, its a game engine for windows `,
 
                             ),
     
