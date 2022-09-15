@@ -9,14 +9,15 @@ function UIVR(){
         .setStyle({
 
             width : "calc(100% - 30px)",
-            height : "2px",
+            height : "12px",
+            // height : "2px",
 
-            marginTop : "45px",
-            marginBottom : "45px",
+            // marginTop : "45px",
+            // marginBottom : "45px",
 
-            marginLeft : "15px",
+            // marginLeft : "15px",
 
-            backgroundColor : "rgba(155, 155, 155, 0.2)",
+            //backgroundColor : "rgba(155, 155, 155, 0.2)",
 
         })
     );
@@ -53,7 +54,7 @@ export default function UIHome(){
     
                 width : "100%",
 
-                marginLeft : "15%",
+                marginLeft : "15px",
     
             })
             .setInner(
@@ -69,7 +70,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "45vh",
 
                     display : "flex",
@@ -171,7 +172,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "45vh",
 
                     display : "flex",
@@ -325,7 +326,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "50vh",
 
                     display : "flex",
@@ -567,7 +568,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "50vh",
 
                     display : "flex",
@@ -877,7 +878,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "50vh",
 
                     display : "flex",
@@ -1391,7 +1392,7 @@ export default function UIHome(){
     
                     position : "relative",
         
-                    width : "100%",
+                    width : "calc(100% - 4px)",
                     height : "50vh",
 
                     display : "flex",
