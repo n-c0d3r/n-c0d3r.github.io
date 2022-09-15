@@ -440,7 +440,7 @@ export default function UIHeaderMenu(){
 
                         transform : "translateY(-24px)",
                         
-                        borderTop : "22px solid rgba(34, 34, 33, 1)",
+                        borderTop : "22px solid rgba(64, 64, 64, 1)",
 
                     });
 
@@ -458,7 +458,7 @@ export default function UIHeaderMenu(){
 
                         transform : "translateY(-0px)",
                         
-                        borderTop : "22px solid rgba(34, 34, 33, 1)",
+                        borderTop : "22px solid rgba(64, 64, 64, 1)",
 
                     });
 
@@ -647,6 +647,8 @@ export default function UIHeaderMenu(){
                     transition : "0.5s",
 
                     zIndex : "11",
+
+                    cursor : "pointer",
         
                 })
                 .setInner(
@@ -661,7 +663,7 @@ export default function UIHeaderMenu(){
     
                         borderRight : "15px solid rgba(0,0,0,0)",
                         borderLeft : "15px solid rgba(0,0,0,0)",
-                        borderTop : "22px solid rgba(34, 34, 33, 1)",
+                        borderTop : "22px solid rgba(64, 64, 64, 1)",
 
                         transition : "0.5s",
 
@@ -753,7 +755,7 @@ export default function UIHeaderMenu(){
             const applyResponsiveStyle = function(){
 
                 //check is mobile
-                if(window.innerWidth <= 1070){   
+                if(true){//window.innerWidth <= 1070){   
                     
                     headerMenu
                     .setStyle({
