@@ -27,6 +27,8 @@ export default function UIContentContainer(){
 
             transform : "translateY(100vh)",
 
+            border : "1px solid rgb(50,50,50)",
+
             //backgroundColor : "rgb(25, 25, 25)",
 
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(35, 35, 35))",
