@@ -105,9 +105,22 @@ export default function UIStart(){
 
                             transition : "0.5s",
 
-                            imageRendering : "crisp-edges"
+                            imageRendering : "crisp-edges",
+    
+                            cursor: "pointer",
                 
                         })
+                        .exe(function(){
+
+                            this.addEventListener("click", ()=>{
+
+                                window.location.href = window.location.origin;
+
+                                console.log("ok");
+
+                            });
+
+                        }),
         
                     )
     

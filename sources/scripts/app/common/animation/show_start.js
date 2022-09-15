@@ -231,6 +231,7 @@ export default function ShowStartAnimation(){
 
             
 
+                /*
                 document.body.appendChild(
     
                     framework.UIElement("div")
@@ -251,7 +252,7 @@ export default function ShowStartAnimation(){
     
                     })
     
-                );
+                );*/
 
 
 

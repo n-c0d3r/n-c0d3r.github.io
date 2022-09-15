@@ -8,10 +8,15 @@ function UIVR(){
         framework.UIElement("div")
         .setStyle({
 
-            width : "100%",
-            height : "10vh",
+            width : "calc(100% - 30px)",
+            height : "2px",
 
-            //backgroundColor : "rgb(25, 25, 25)",
+            marginTop : "45px",
+            marginBottom : "45px",
+
+            marginLeft : "15px",
+
+            backgroundColor : "rgba(155, 155, 155, 0.2)",
 
         })
     );
@@ -645,7 +650,7 @@ export default function UIHome(){
                             })
                             .setInner(
 
-`Here are game engines that I can use:`,
+`Here are game engines that I used:`,
 
                             ),
     
@@ -726,6 +731,8 @@ export default function UIHome(){
                                 height : "9vh",
     
                                 textAlign : "center",
+
+                                cursor: "pointer",
                     
                             })
                             .setInner(
@@ -736,6 +743,12 @@ export default function UIHome(){
                             .exe(function(){
     
                                 this.src = `${window.location.origin}/resources/images/unity.png`;
+
+                                this.addEventListener('click', function(){
+
+                                    window.open(`https://unity.com/`);
+
+                                });
     
                             }),
 
@@ -763,6 +776,8 @@ export default function UIHome(){
                                 height : "9vh",
     
                                 textAlign : "center",
+
+                                cursor: "pointer",
                     
                             })
                             .setInner(
@@ -773,6 +788,12 @@ export default function UIHome(){
                             .exe(function(){
     
                                 this.src = `${window.location.origin}/resources/images/ue.png`;
+
+                                this.addEventListener('click', function(){
+
+                                    window.open(`https://www.unrealengine.com/`);
+
+                                });
     
                             }),
 
@@ -800,6 +821,8 @@ export default function UIHome(){
                                 height : "9vh",
     
                                 textAlign : "center",
+
+                                cursor: "pointer",
                     
                             })
                             .setInner(
@@ -810,6 +833,12 @@ export default function UIHome(){
                             .exe(function(){
     
                                 this.src = `${window.location.origin}/resources/images/godot.png`;
+
+                                this.addEventListener('click', function(){
+
+                                    window.open(`https://godotengine.org/`);
+
+                                });
     
                             }),
 
@@ -946,7 +975,7 @@ export default function UIHome(){
         
                         position : "absolute",
             
-                        width : "calc(100% - 34px)",
+                        width : "calc(100% - 154px)",
                         height : "calc(65% - 40px)",
 
                         bottom : "0",
@@ -954,8 +983,8 @@ export default function UIHome(){
                         paddingTop : "20px",
                         paddingBottom : "20px",
 
-                        paddingLeft : "17px",
-                        paddingRight : "17px",
+                        paddingLeft : "97px",
+                        paddingRight : "97px",
     
                         display : "flex",
     
@@ -973,12 +1002,12 @@ export default function UIHome(){
                     })
                     .setInner(
 
+                        
+
                         framework.UIElement("div")
                         .setStyle({
 
                             position : "relative",
-    
-                            zIndex : "6",
     
                             display : "flex",
         
@@ -986,51 +1015,70 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
-                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                            fontWeight : "300",
-
-                            color : "rgba(240, 240, 240, 0.8)",
-
-                            minWidth : "330px",
-
-                            textAlign : "center",
+                            transform : "translateX(-30px)",
                 
                         })
                         .setInner(
 
                             framework.UIElement("div")
                             .setStyle({
-
-                                position : "absolute",
+    
+                                position : "relative",
         
-                                zIndex : "7",
-
-                                left : "3px",
-
-                                width : "30px",
-                                height : "30px",
+                                zIndex : "6",
         
-                                backgroundImage : `url("${window.location.origin}/resources/images/engine.png")`,
-                                backgroundSize : "cover",
+                                display : "flex",
+            
+                                flexFlow : "row",
+                                
+                                justifyContent : "center",
+    
+                                fontSize : "2.3vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "300",
+    
+                                color : "rgba(240, 240, 240, 0.8)",
+    
+                                minWidth : "330px",
+    
+                                textAlign : "center",
                     
                             })
                             .setInner(
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    width : "30px",
+                                    height : "30px",
+    
+                                    marginLeft : "20px",
+                                    marginRight : "20px",
+            
+                                    backgroundImage : `url("${window.location.origin}/resources/images/engine.png")`,
+                                    backgroundSize : "cover",
+                        
+                                })
+                                .setInner(
+            
+                                    
+                        
+                                ),
         
-                                
+                                "Game Engine Architecture"
                     
                             ),
-    
-                            "Game Engine Architecture"
-                
+
                         ),
 
+                        
+
                         framework.UIElement("div")
                         .setStyle({
 
                             position : "relative",
-    
-                            zIndex : "6",
     
                             display : "flex",
         
@@ -1038,51 +1086,70 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
-                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                            fontWeight : "300",
-
-                            color : "rgba(240, 240, 240, 0.8)",
-
-                            minWidth : "330px",
-
-                            textAlign : "center",
+                            transform : "translateX(-30px)",
                 
                         })
                         .setInner(
 
                             framework.UIElement("div")
                             .setStyle({
-
-                                position : "absolute",
+    
+                                position : "relative",
         
-                                zIndex : "7",
-
-                                left : "29px",
-
-                                width : "30px",
-                                height : "30px",
+                                zIndex : "6",
         
-                                backgroundImage : `url("${window.location.origin}/resources/images/game.png")`,
-                                backgroundSize : "cover",
+                                display : "flex",
+            
+                                flexFlow : "row",
+                                
+                                justifyContent : "center",
+    
+                                fontSize : "2.3vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "300",
+    
+                                color : "rgba(240, 240, 240, 0.8)",
+    
+                                minWidth : "330px",
+    
+                                textAlign : "center",
                     
                             })
                             .setInner(
+    
+                                framework.UIElement("div")
+                                .setStyle({
+                                    
+                                    zIndex : "7",
+    
+                                    width : "30px",
+                                    height : "30px",
+    
+                                    marginLeft : "20px",
+                                    marginRight : "20px",
+            
+                                    backgroundImage : `url("${window.location.origin}/resources/images/game.png")`,
+                                    backgroundSize : "cover",
+                        
+                                })
+                                .setInner(
+            
+                                    
+                        
+                                ),
         
-                                
+                                "Game Programming"
                     
                             ),
-    
-                            "Game Programming"
-                
+
                         ),
 
+                        
+
                         framework.UIElement("div")
                         .setStyle({
 
                             position : "relative",
-    
-                            zIndex : "6",
     
                             display : "flex",
         
@@ -1090,51 +1157,70 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
-                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                            fontWeight : "300",
-
-                            color : "rgba(240, 240, 240, 0.8)",
-
-                            minWidth : "330px",
-
-                            textAlign : "center",
+                            transform : "translateX(-30px)",
                 
                         })
                         .setInner(
 
                             framework.UIElement("div")
                             .setStyle({
-
-                                position : "absolute",
+    
+                                position : "relative",
         
-                                zIndex : "7",
-
-                                left : "38px",
-
-                                width : "30px",
-                                height : "30px",
+                                zIndex : "6",
         
-                                backgroundImage : `url("${window.location.origin}/resources/images/cg.png")`,
-                                backgroundSize : "cover",
+                                display : "flex",
+            
+                                flexFlow : "row",
+                                
+                                justifyContent : "center",
+    
+                                fontSize : "2.3vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "300",
+    
+                                color : "rgba(240, 240, 240, 0.8)",
+    
+                                minWidth : "330px",
+    
+                                textAlign : "center",
                     
                             })
                             .setInner(
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    width : "30px",
+                                    height : "30px",
+    
+                                    marginLeft : "20px",
+                                    marginRight : "20px",
+            
+                                    backgroundImage : `url("${window.location.origin}/resources/images/cg.png")`,
+                                    backgroundSize : "cover",
+                        
+                                })
+                                .setInner(
+            
+                                    
+                        
+                                ),
         
-                                
+                                "Computer Graphics"
                     
                             ),
-    
-                            "Computer Graphics"
-                
+
                         ),
 
+                        
+
                         framework.UIElement("div")
                         .setStyle({
 
                             position : "relative",
-    
-                            zIndex : "6",
     
                             display : "flex",
         
@@ -1142,51 +1228,70 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
-                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                            fontWeight : "300",
-
-                            color : "rgba(240, 240, 240, 0.8)",
-
-                            minWidth : "330px",
-
-                            textAlign : "center",
+                            transform : "translateX(-30px)",
                 
                         })
                         .setInner(
 
                             framework.UIElement("div")
                             .setStyle({
-
-                                position : "absolute",
+    
+                                position : "relative",
         
-                                zIndex : "7",
-
-                                left : "85px",
-
-                                width : "30px",
-                                height : "30px",
+                                zIndex : "6",
         
-                                backgroundImage : `url("${window.location.origin}/resources/images/calculus.png")`,
-                                backgroundSize : "cover",
+                                display : "flex",
+            
+                                flexFlow : "row",
+                                
+                                justifyContent : "center",
+    
+                                fontSize : "2.3vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "300",
+    
+                                color : "rgba(240, 240, 240, 0.8)",
+    
+                                minWidth : "330px",
+    
+                                textAlign : "center",
                     
                             })
                             .setInner(
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    width : "30px",
+                                    height : "30px",
+    
+                                    marginLeft : "20px",
+                                    marginRight : "20px",
+            
+                                    backgroundImage : `url("${window.location.origin}/resources/images/calculus.png")`,
+                                    backgroundSize : "cover",
+                        
+                                })
+                                .setInner(
+            
+                                    
+                        
+                                ),
         
-                                
+                                "Calculus"
                     
                             ),
-    
-                            "Calculus"
-                
+
                         ),
 
+                        
+
                         framework.UIElement("div")
                         .setStyle({
 
                             position : "relative",
-    
-                            zIndex : "6",
     
                             display : "flex",
         
@@ -1194,43 +1299,62 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
-                            fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                            fontWeight : "300",
-
-                            color : "rgba(240, 240, 240, 0.8)",
-
-                            minWidth : "330px",
-
-                            textAlign : "center",
+                            transform : "translateX(-30px)",
                 
                         })
                         .setInner(
 
                             framework.UIElement("div")
                             .setStyle({
-
-                                position : "absolute",
-
-                                left : "57px",
+    
+                                position : "relative",
         
-                                zIndex : "7",
-
-                                width : "30px",
-                                height : "30px",
+                                zIndex : "6",
         
-                                backgroundImage : `url("${window.location.origin}/resources/images/linearAlgebra.png")`,
-                                backgroundSize : "cover",
+                                display : "flex",
+            
+                                flexFlow : "row",
+                                
+                                justifyContent : "center",
+    
+                                fontSize : "2.3vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "300",
+    
+                                color : "rgba(240, 240, 240, 0.8)",
+    
+                                minWidth : "330px",
+    
+                                textAlign : "center",
                     
                             })
                             .setInner(
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    width : "30px",
+                                    height : "30px",
+    
+                                    marginLeft : "20px",
+                                    marginRight : "20px",
+            
+                                    backgroundImage : `url("${window.location.origin}/resources/images/linearAlgebra.png")`,
+                                    backgroundSize : "cover",
+                        
+                                })
+                                .setInner(
+            
+                                    
+                        
+                                ),
         
-                                
+                                "Linear Algebra",
                     
                             ),
-    
-                            "Linear Algebra",
-                
+
                         ),
             
                     )
@@ -1372,6 +1496,8 @@ export default function UIHome(){
                         zIndex : "7",
 
                         pointerEvents : "click",
+
+                        cursor: "pointer",
 
                     })
                     .exe(function(){

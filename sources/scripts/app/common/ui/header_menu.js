@@ -233,6 +233,8 @@ export default function UIHeaderMenu(){
 
             zIndex : "3",
 
+            pointerEvents : "none",
+
         })
         .exe(function(){
 
@@ -254,13 +256,20 @@ export default function UIHeaderMenu(){
 
                 visibility : "hidden",
 
-                position : "relative"
+                position : "relative",
+
+                pointerEvents: "auto",
     
             })
             .setInner(
 
                 UIPageDesktopBtn("Experiences", 125)
                 .setClass("page-btn")
+                .setStyle({
+
+                    cursor: "pointer",
+
+                })
                 .on('click', function(){
     
                     $("#content-container")
@@ -278,6 +287,11 @@ export default function UIHeaderMenu(){
     
                 UIPageDesktopBtn("Projects", 100)
                 .setClass("page-btn")
+                .setStyle({
+
+                    cursor: "pointer",
+
+                })
                 .on('click', function(){
     
                     $("#content-container")
@@ -295,6 +309,11 @@ export default function UIHeaderMenu(){
     
                 UIPageDesktopBtn("Skills And Knowledge", 220)
                 .setClass("page-btn")
+                .setStyle({
+
+                    cursor: "pointer",
+
+                })
                 .on('click', function(){
     
                     $("#content-container")
@@ -312,6 +331,11 @@ export default function UIHeaderMenu(){
     
                 UIPageDesktopBtn("Home", 100)
                 .setClass("page-btn")
+                .setStyle({
+
+                    cursor: "pointer",
+
+                })
                 .on('click', function(){
     
                     $("#content-container")
@@ -346,7 +370,9 @@ export default function UIHeaderMenu(){
 
                 position : "absolute",
 
-                zIndex : "11"
+                zIndex : "11",
+
+                pointerEvents: "auto",
     
             })
             .exe(function(){
@@ -511,6 +537,11 @@ export default function UIHeaderMenu(){
                     .setInner(
 
                         UIPageMobileBtn("Home")
+                        .setStyle({
+
+                            cursor: "pointer",
+
+                        })
                         .on('click', function(){
             
                             $("#content-container")
@@ -529,6 +560,11 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Skills And Knownledge")
+                        .setStyle({
+
+                            cursor: "pointer",
+
+                        })
                         .on('click', function(){
             
                             $("#content-container")
@@ -547,6 +583,11 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Projects")
+                        .setStyle({
+
+                            cursor: "pointer",
+
+                        })
                         .on('click', function(){
             
                             $("#content-container")
@@ -565,6 +606,11 @@ export default function UIHeaderMenu(){
                         UIHR(),
 
                         UIPageMobileBtn("Experiences")
+                        .setStyle({
+
+                            cursor: "pointer",
+
+                        })
                         .on('click', function(){
             
                             $("#content-container")
