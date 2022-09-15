@@ -1016,7 +1016,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            transform : "translateX(-30px)",
+                            transform : "translateX(-5px)",
                 
                         })
                         .setInner(
@@ -1055,8 +1055,7 @@ export default function UIHome(){
                                     width : "30px",
                                     height : "30px",
     
-                                    marginLeft : "20px",
-                                    marginRight : "20px",
+                                    marginLeft : "5px",
             
                                     backgroundImage : `url("${window.location.origin}/resources/images/engine.png")`,
                                     backgroundSize : "cover",
@@ -1087,7 +1086,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            transform : "translateX(-30px)",
+                            transform : "translateX(-5px)",
                 
                         })
                         .setInner(
@@ -1126,8 +1125,7 @@ export default function UIHome(){
                                     width : "30px",
                                     height : "30px",
     
-                                    marginLeft : "20px",
-                                    marginRight : "20px",
+                                    marginLeft : "5px",
             
                                     backgroundImage : `url("${window.location.origin}/resources/images/game.png")`,
                                     backgroundSize : "cover",
@@ -1158,7 +1156,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            transform : "translateX(-30px)",
+                            transform : "translateX(-5px)",
                 
                         })
                         .setInner(
@@ -1197,8 +1195,7 @@ export default function UIHome(){
                                     width : "30px",
                                     height : "30px",
     
-                                    marginLeft : "20px",
-                                    marginRight : "20px",
+                                    marginLeft : "5px",
             
                                     backgroundImage : `url("${window.location.origin}/resources/images/cg.png")`,
                                     backgroundSize : "cover",
@@ -1229,7 +1226,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            transform : "translateX(-30px)",
+                            transform : "translateX(-5px)",
                 
                         })
                         .setInner(
@@ -1268,8 +1265,7 @@ export default function UIHome(){
                                     width : "30px",
                                     height : "30px",
     
-                                    marginLeft : "20px",
-                                    marginRight : "20px",
+                                    marginLeft : "5px",
             
                                     backgroundImage : `url("${window.location.origin}/resources/images/calculus.png")`,
                                     backgroundSize : "cover",
@@ -1300,7 +1296,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            transform : "translateX(-30px)",
+                            transform : "translateX(-5px)",
                 
                         })
                         .setInner(
@@ -1339,8 +1335,7 @@ export default function UIHome(){
                                     width : "30px",
                                     height : "30px",
     
-                                    marginLeft : "20px",
-                                    marginRight : "20px",
+                                    marginLeft : "5px",
             
                                     backgroundImage : `url("${window.location.origin}/resources/images/linearAlgebra.png")`,
                                     backgroundSize : "cover",

@@ -30,10 +30,10 @@ export default function UIContentContainer(){
 
             border : "1px solid rgb(50,50,50)",
 
-            //backgroundColor : "rgb(25, 25, 25)",
+            backgroundColor : "rgb(55, 55, 55)",
 
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(35, 35, 35))",
-            background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(15, 15, 15))",
+            //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(15, 15, 15))",
 
             borderTopLeftRadius : "20px",
             borderTopRightRadius : "20px",
