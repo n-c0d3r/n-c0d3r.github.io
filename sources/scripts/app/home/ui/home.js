@@ -9,7 +9,7 @@ function UIVR(){
         .setStyle({
 
             width : "calc(100% - 30px)",
-            height : "12px",
+            height : "15px",
             // height : "2px",
 
             // marginTop : "45px",
@@ -110,7 +110,7 @@ export default function UIHome(){
                         
                         justifyContent : "center",
 
-                        fontSize : "350%",
+                        fontSize : "6vh",
                         fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                         fontWeight : "325",
 
@@ -239,7 +239,7 @@ export default function UIHome(){
             
                                 maxWidth : "500px",
 
-                                fontSize : "2.5vh",
+                                fontSize : "2.3vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "400",
 
@@ -393,7 +393,7 @@ export default function UIHome(){
             
                                 maxWidth : "500px",
 
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "200",
 
@@ -462,7 +462,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
+                            fontSize : "2vh",
                             fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                             fontWeight : "300",
 
@@ -490,7 +490,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
+                            fontSize : "2vh",
                             fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                             fontWeight : "300",
 
@@ -518,7 +518,7 @@ export default function UIHome(){
                             
                             justifyContent : "center",
 
-                            fontSize : "2.3vh",
+                            fontSize : "2vh",
                             fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                             fontWeight : "300",
 
@@ -635,7 +635,7 @@ export default function UIHome(){
             
                                 maxWidth : "500px",
 
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "200",
 
@@ -879,7 +879,7 @@ export default function UIHome(){
                     position : "relative",
         
                     width : "calc(100% - 4px)",
-                    height : "50vh",
+                    height : "55vh",
 
                     display : "flex",
 
@@ -909,7 +909,7 @@ export default function UIHome(){
             
                         maxWidth : "500px",            
                         width : "70%",
-                        height : "35%",
+                        height : "calc(35% - 30px)",
             
                         zIndex : "5",
 
@@ -945,7 +945,7 @@ export default function UIHome(){
             
                                 maxWidth : "500px",
 
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "200",
 
@@ -977,12 +977,12 @@ export default function UIHome(){
                         position : "absolute",
             
                         width : "calc(100% - 154px)",
-                        height : "calc(65% - 40px)",
+                        height : "calc(65% - 30px)",
 
                         bottom : "0",
 
-                        paddingTop : "20px",
-                        paddingBottom : "20px",
+                        paddingTop : "30px",
+                        paddingBottom : "30px",
 
                         paddingLeft : "97px",
                         paddingRight : "97px",
@@ -1034,7 +1034,7 @@ export default function UIHome(){
                                 
                                 justifyContent : "center",
     
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "300",
     
@@ -1066,8 +1066,24 @@ export default function UIHome(){
                                     
                         
                                 ),
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    display : "flex",
+
+                                    flexFlow : "column",
+
+                                    justifyContent : "center",
+                        
+                                })
+                                .setInner(
         
-                                "Game Engine Architecture"
+                                    "Game Engine Architecture"
+                        
+                                ),
                     
                             ),
 
@@ -1104,7 +1120,7 @@ export default function UIHome(){
                                 
                                 justifyContent : "center",
     
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "300",
     
@@ -1136,8 +1152,24 @@ export default function UIHome(){
                                     
                         
                                 ),
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    display : "flex",
+
+                                    flexFlow : "column",
+
+                                    justifyContent : "center",
+                        
+                                })
+                                .setInner(
         
-                                "Game Programming"
+                                    "Game Programming"
+                        
+                                ),
                     
                             ),
 
@@ -1174,7 +1206,7 @@ export default function UIHome(){
                                 
                                 justifyContent : "center",
     
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "300",
     
@@ -1206,8 +1238,24 @@ export default function UIHome(){
                                     
                         
                                 ),
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    display : "flex",
+
+                                    flexFlow : "column",
+
+                                    justifyContent : "center",
+                        
+                                })
+                                .setInner(
         
-                                "Computer Graphics"
+                                    "Computer Graphics"
+                        
+                                ),
                     
                             ),
 
@@ -1244,7 +1292,7 @@ export default function UIHome(){
                                 
                                 justifyContent : "center",
     
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "300",
     
@@ -1276,8 +1324,24 @@ export default function UIHome(){
                                     
                         
                                 ),
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    display : "flex",
+
+                                    flexFlow : "column",
+
+                                    justifyContent : "center",
+                        
+                                })
+                                .setInner(
         
-                                "Calculus"
+                                    "Calculus"
+                        
+                                ),
                     
                             ),
 
@@ -1314,7 +1378,7 @@ export default function UIHome(){
                                 
                                 justifyContent : "center",
     
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "300",
     
@@ -1346,8 +1410,24 @@ export default function UIHome(){
                                     
                         
                                 ),
+    
+                                framework.UIElement("div")
+                                .setStyle({
+            
+                                    zIndex : "7",
+    
+                                    display : "flex",
+
+                                    flexFlow : "column",
+
+                                    justifyContent : "center",
+                        
+                                })
+                                .setInner(
         
-                                "Linear Algebra",
+                                    "Linear Algebra",
+                        
+                                ),
                     
                             ),
 
@@ -1382,7 +1462,6 @@ export default function UIHome(){
                 
     
                 framework.UIElement("div")
-                .setId("home-ing-project")
                 .setStyle({
     
                     position : "relative",
@@ -1454,7 +1533,7 @@ export default function UIHome(){
             
                                 maxWidth : "500px",
 
-                                fontSize : "2.3vh",
+                                fontSize : "2vh",
                                 fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                                 fontWeight : "200",
 
@@ -1503,6 +1582,206 @@ export default function UIHome(){
                         this.addEventListener("click", function(){
 
                             window.open("https://github.com/INGTechnologies/ING");
+
+                        });
+
+                    }),
+
+
+
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+
+                        width : "100%",
+                        height : "50%",
+
+                        top : "50%",
+
+                        backgroundColor : "#FFFFFF",
+
+                        zIndex : "6",
+
+                        pointerEvents : "none",
+
+                    }),
+
+
+        
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        width : "calc(100% - 34px)",
+                        height : "100%",
+
+                        paddingLeft : "17px",
+                        paddingRight : "17px",
+    
+                        display : "flex",
+    
+                        flexFlow : "row",
+                        
+                        justifyContent : "space-around",
+                        
+                        visibility : "visible",
+            
+                    })
+                    .setInner(
+
+                        
+            
+                    )
+                    
+                )                                  
+                .on("mouseover", function(){
+
+                    this.setStyle({
+
+                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+
+                    });
+                    
+                })               
+                .on("mouseout", function(){
+
+                    this.setStyle({
+
+                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+
+                    });
+                    
+                }),
+
+
+
+                UIVR(),
+                
+                
+    
+                framework.UIElement("div")
+                .setStyle({
+    
+                    position : "relative",
+        
+                    width : "calc(100% - 4px)",
+                    height : "50vh",
+
+                    display : "flex",
+
+                    flexFlow : "row",
+                    
+                    justifyContent : "center",
+
+                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+    
+                    boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
+
+                    overflowX : "hidden",
+                    overflowY : "hidden",
+                    borderRadius : "15px",
+
+                    border : "2px solid rgba(24,24,24,0.3)",
+
+                    transition : "0.3s",
+        
+                })
+                .setInner(
+
+                    framework.UIElement("div")
+                    .setStyle({
+        
+                        position : "absolute",
+            
+                        maxWidth : "500px",            
+                        width : "70%",
+                        height : "35%",
+            
+                        zIndex : "5",
+
+                        pointerEvents: "none",
+
+                        display : "flex",
+
+                        flexFlow : "row",
+
+                        justifyContent : "center",
+
+                        transition : "0.4s",
+                        
+                    })
+                    .setInner(
+
+                        framework.UIElement("div")
+                        .setStyle({
+    
+                            display : "flex",
+    
+                            flexFlow : "column",
+    
+                            justifyContent : "center",
+                            
+                        })
+                        .setInner(
+    
+                            framework.UIElement("div")
+                            .setStyle({
+                
+                                whiteSpace : "pre-wrap",
+            
+                                maxWidth : "500px",
+
+                                fontSize : "2vh",
+                                fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                                fontWeight : "200",
+
+                                color : "rgba(240, 240, 239, 0.5)",
+
+                                lineBreak: "auto",
+                                wordBreak: "break-word",
+
+                                display : "flex",
+
+                                flexFlow : "row",
+                                
+                            })
+                            .setInner(
+
+`NFramework is my framework for website developing `,
+
+                            ),
+    
+                        ),
+
+                    ),
+
+
+
+                    framework.UIElement("img")
+                    .setStyle({
+        
+                        position : "absolute",
+
+                        height : "65%",
+
+                        top : "35%",
+
+                        zIndex : "7",
+
+                        pointerEvents : "click",
+
+                        cursor: "pointer",
+
+                    })
+                    .exe(function(){
+
+                        this.src = `${window.location.origin}/resources/images/nframework.png`;
+
+                        this.addEventListener("click", function(){
+
+                            window.open("https://github.com/N1ghtTeam/NFramework");
 
                         });
 
@@ -1632,33 +1911,39 @@ export default function UIHome(){
         )
         .exe(function(){
 
-            var basicInfo = this;
+            var home = this;
 
             const applyResponsiveStyle = function(){
 
                 //check is mobile
                 if(window.innerWidth <= 1000){   
                     
-                    basicInfo.querySelector("div")
+                    home.querySelector("div")
                     .setStyle({
 
                         width : "calc(100% - 30px)",
-                        fontSize : "10px",
-
                         marginLeft : "15px",
+
+
+
+                        fontSize : "10px",
             
                     });
 
                 }
                 else{
                     
-                    basicInfo.querySelector("div")
+                    home.querySelector("div")
                     .setStyle({
 
-                        width : "50%",
-                        fontSize : "20px",
+                        //width : "50%",
+                        width : "calc(100% - 30px)",
+                        marginLeft : "15px",
 
-                        marginLeft : "25%",
+
+
+                        fontSize : "20px",
+                        //marginLeft : "25%",
             
                     });
 
@@ -1666,7 +1951,7 @@ export default function UIHome(){
 
             }
 
-            basicInfo.applyResponsiveStyle = applyResponsiveStyle;
+            home.applyResponsiveStyle = applyResponsiveStyle;
 
             window.addEventListener("resize", ()=>{
 

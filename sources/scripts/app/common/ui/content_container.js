@@ -35,8 +35,8 @@ export default function UIContentContainer(){
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(35, 35, 35))",
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(15, 15, 15))",
 
-            borderTopLeftRadius : "20px",
-            borderTopRightRadius : "20px",
+            borderTopLeftRadius : "28px",
+            borderTopRightRadius : "28px",
             //background : "linear-gradient(to bottom, rgb(235, 235, 235), rgb(200, 200, 200))",
                 
             // backgroundImage : `url("${window.location.origin}/resources/images/background1.png")`,
@@ -89,15 +89,43 @@ export default function UIContentContainer(){
 
             const applyResponsiveStyle = function(){
 
-                
+                //check is mobile
+                if(window.innerWidth <= 1000){   
+    
+                    this
+                    .setStyle({
+
+                        width : "100vw",
+                        height : "calc(100vh - 75px)",
+
+                        marginLeft : "0",
+            
+                    });
+
+                }
+                else{
+                    
+                    this
+                    .setStyle({
+
+                        width : "50vw",
+                        height : "calc(100vh - 75px)",
+
+                        marginLeft : "25vw",
+            
+                    });
+
+                }
 
             }
 
             contentContainer.applyResponsiveStyle = applyResponsiveStyle;
 
+            contentContainer.applyResponsiveStyle();
+
             window.addEventListener("resize", ()=>{
 
-                applyResponsiveStyle();
+                contentContainer.applyResponsiveStyle();
 
             });
 
