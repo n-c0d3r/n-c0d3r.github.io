@@ -1642,10 +1642,10 @@ export default function UIHome(){
                     basicInfo.querySelector("div")
                     .setStyle({
 
-                        width : "94%",
+                        width : "calc(100% - 30px)",
                         fontSize : "10px",
 
-                        marginLeft : "3%",
+                        marginLeft : "15px",
             
                     });
 
