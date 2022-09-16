@@ -35,8 +35,8 @@ export default function UIContentContainer(){
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(35, 35, 35))",
             //background : "linear-gradient(to bottom, rgb(75, 75, 75), rgb(15, 15, 15))",
 
-            borderTopLeftRadius : "28px",
-            borderTopRightRadius : "28px",
+            borderTopLeftRadius : "4vh",
+            borderTopRightRadius : "4vh",
             //background : "linear-gradient(to bottom, rgb(235, 235, 235), rgb(200, 200, 200))",
                 
             // backgroundImage : `url("${window.location.origin}/resources/images/background1.png")`,

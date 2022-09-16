@@ -8,14 +8,14 @@ function UIVR(){
         framework.UIElement("div")
         .setStyle({
 
-            width : "calc(100% - 30px)",
-            height : "15px",
+            width : "calc(100% - 1vh)",
+            height : "1vh",
             // height : "2px",
 
             // marginTop : "45px",
             // marginBottom : "45px",
 
-            // marginLeft : "15px",
+            marginLeft : "2vh",
 
             //backgroundColor : "rgba(155, 155, 155, 0.2)",
 
@@ -87,7 +87,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
                     
@@ -187,7 +187,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -286,7 +286,7 @@ export default function UIHome(){
 
                         overflowX : "hidden",
                         overflowY : "hidden",
-                        borderRadius : "15px",
+                        borderRadius : "3vh",
             
                     })
                     .setInner(
@@ -341,7 +341,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -583,7 +583,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -893,7 +893,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -1481,7 +1481,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -1681,7 +1681,7 @@ export default function UIHome(){
 
                     overflowX : "hidden",
                     overflowY : "hidden",
-                    borderRadius : "15px",
+                    borderRadius : "3vh",
 
                     border : "2px solid rgba(24,24,24,0.3)",
 
@@ -1921,8 +1921,8 @@ export default function UIHome(){
                     home.querySelector("div")
                     .setStyle({
 
-                        width : "calc(100% - 30px)",
-                        marginLeft : "15px",
+                        width : "calc(100% - 2vh)",
+                        marginLeft : "1vh",
 
 
 
@@ -1936,14 +1936,12 @@ export default function UIHome(){
                     home.querySelector("div")
                     .setStyle({
 
-                        //width : "50%",
-                        width : "calc(100% - 30px)",
-                        marginLeft : "15px",
+                        width : "calc(100% - 2vh)",
+                        marginLeft : "1vh",
 
 
 
                         fontSize : "20px",
-                        //marginLeft : "25%",
             
                     });
 
