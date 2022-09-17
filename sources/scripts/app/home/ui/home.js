@@ -110,7 +110,7 @@ export default function UIHome(){
                         
                         justifyContent : "center",
 
-                        fontSize : "6vh",
+                        fontSize : "calc(2vw  + 3vh)",
                         fontFamily : "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",//"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                         fontWeight : "325",
 
@@ -335,7 +335,7 @@ export default function UIHome(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+                    backgroundColor : "rgb(38, 38, 38)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
 
@@ -542,7 +542,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+                        backgroundColor : "rgb(48, 48, 48)",
 
                     });
                     
@@ -551,7 +551,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+                        backgroundColor : "rgb(38, 38, 38)",
 
                     });
                     
@@ -577,7 +577,7 @@ export default function UIHome(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+                    backgroundColor : "rgb(38, 38, 38)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
 
@@ -852,7 +852,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+                        backgroundColor : "rgb(48, 48, 48)",
 
                     });
                     
@@ -861,7 +861,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+                        backgroundColor : "rgb(38, 38, 38)",
 
                     });
                     
@@ -887,7 +887,7 @@ export default function UIHome(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+                    backgroundColor : "rgb(38, 38, 38)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
 
@@ -1440,7 +1440,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+                        backgroundColor : "rgb(48, 48, 48)",
 
                     });
                     
@@ -1449,7 +1449,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+                        backgroundColor : "rgb(38, 38, 38)",
 
                     });
                     
@@ -1475,7 +1475,7 @@ export default function UIHome(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+                    backgroundColor : "rgb(38, 38, 38)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
 
@@ -1640,7 +1640,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+                        backgroundColor : "rgb(48, 48, 48)",
 
                     });
                     
@@ -1649,7 +1649,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+                        backgroundColor : "rgb(38, 38, 38)",
 
                     });
                     
@@ -1675,7 +1675,7 @@ export default function UIHome(){
                     
                     justifyContent : "center",
 
-                    backgroundColor : "rgba(24, 24, 23, 0.3)",
+                    backgroundColor : "rgb(38, 38, 38)",
     
                     boxShadow : "0px 0px 4px 4px rgba(0,0,0,0.1)",
 
@@ -1840,7 +1840,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.5)",
+                        backgroundColor : "rgb(48, 48, 48)",
 
                     });
                     
@@ -1849,7 +1849,7 @@ export default function UIHome(){
 
                     this.setStyle({
 
-                        backgroundColor : "rgba(24, 24, 23, 0.3)",
+                        backgroundColor : "rgb(38, 38, 38)",
 
                     });
                     
