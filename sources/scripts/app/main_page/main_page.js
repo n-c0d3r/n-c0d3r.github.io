@@ -14,6 +14,7 @@ import UIHome from "../home/ui/home.js"
 
 
 
+//create elements
 framework.UIElement('body')    
 .setStyle({
 
@@ -36,6 +37,7 @@ framework.UIElement('body')
 
 
 
+//show animations
 await ShowStartAnimation().play();
 
 await ShowContentAnimation().play();

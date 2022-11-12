@@ -14,6 +14,8 @@ const framework = {
 
 }
 
+
+
 window.framework = framework;
 window.$ = (selector)=>{return document.querySelector(selector)}
 window.$s = (selector)=>{return document.querySelectorAll(selector)}
