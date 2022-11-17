@@ -1,0 +1,64 @@
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.noscrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    margin : 0;
+
+    width: calc(100vw - 0px);
+
+    padding-right: 0px;
+
+    display: flex;
+    flex-flow: column;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: rgb(26, 26, 25);
+    
+}
+
+
+
+* {
+
+    font-family: monospace;
+
+}
+
+
+
+@media (min-width: 725px) {
+
+    body {
+    
+        
+    
+    }
+    
+}
+
+
+
+@media (max-width: 725px) {
+
+    body {
+    
+        
+    
+    }
+    
+}

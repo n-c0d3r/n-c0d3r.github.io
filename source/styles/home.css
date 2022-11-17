@@ -1,0 +1,216 @@
+
+#home {
+    
+    width: 100%;
+
+}
+
+
+
+@media (min-width: 725px) {
+
+    #home {
+
+        
+    
+    }
+   
+    #home-first-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/wpp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-second-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/stgp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-third-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/impill.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-fourth-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/gtiu.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-5th-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/k.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-6th-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/ing.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+    
+}
+
+
+
+@media (max-width: 725px) {
+   
+    #home-first-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/wpp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-second-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/stgp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-third-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/impill.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-fourth-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/gtiu.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-5th-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/k.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+   
+    #home-6th-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/ing.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+    }
+    
+}
