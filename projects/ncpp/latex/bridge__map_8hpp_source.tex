@@ -1,0 +1,174 @@
+\hypertarget{bridge__map_8hpp_source}{}\doxysection{bridge\+\_\+map.\+hpp}
+\label{bridge__map_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/containers/bridge\_map.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/containers/bridge\_map.hpp}}
+\mbox{\hyperlink{bridge__map_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{utilities_8hpp}{ncpp/utilities.hpp}}>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{tmp__helper_8hpp}{ncpp/tmp\_helper/tmp\_helper.hpp}}>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{handle__map_8hpp}{ncpp/containers/handle\_map.hpp}}>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{namespace\ }containers\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ item1\_type,\ \textcolor{keyword}{typename}\ item2\_type,\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ data\_type>\ \textcolor{keyword}{class\ }allocator\_t\ =\ std::allocator>}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{utilities_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}{NCPP\_DEFAULT\_ALIGN}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#pragma\ region\ Typedefs}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map1\_type}}\ =\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map\_t<item1\_type,\ allocator\_t>}};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map2\_type}}\ =\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map\_t<item2\_type,\ allocator\_t>}};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_af73de035cd670a28d226936306b2b4fd}{id\_type1}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1containers_1_1handle__map__t_1_1id__type}{handle\_map1\_type::id\_type}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3a48d85e443d3b84726ab7c2c1824cc7}{id\_type2}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1containers_1_1handle__map__t_1_1id__type}{handle\_map1\_type::id\_type}};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3026dabceeb8612324a43bdf0f73e330}{index\_set\_type}}\ =\ std::vector<uint32\_t>;}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#pragma\ region\ Properties}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map1\_type}}\&\ map1\_;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map2\_type}}\&\ map2\_;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3026dabceeb8612324a43bdf0f73e330}{index\_set\_type}}\ map1\_to\_map2\_index\_set\_;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3026dabceeb8612324a43bdf0f73e330}{index\_set\_type}}\ map2\_to\_map1\_index\_set\_;}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#pragma\ region\ Getters\ and\ Setters}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#pragma\ region\ Constructors,\ Destructor\ and\ Operators}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_ade6e441a7bdc277ef974d15a24d1854d}{bridge\_map\_t}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map1\_type}}\&\ map1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{handle\_map2\_type}}\&\ map2)\ :}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_(map1),}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_(map2)}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_.reserve(map1.capacity());}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_.reserve(map2.capacity());}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_ae55513bd37425a244195fab5e13300b5}{\string~bridge\_map\_t}}()\ \{}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clear();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_aea569aff0106d4f58d99d1ebaa872d34}{bridge\_map\_t}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\ other)\ :}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_(other.map1\_),}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_(other.map2\_),}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_(other.map1\_to\_map2\_index\_set\_),}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_(other.map2\_to\_map1\_index\_set\_)}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\ operator\ =\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\ other)\ \{}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_\ =\ other.map1\_;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_\ =\ other.map2\_;}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_\ =\ other.map1\_to\_map2\_index\_set\_;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_\ =\ other.map2\_to\_map1\_index\_set\_;}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_accccfbebbad1c67eeb645e3971368193}{bridge\_map\_t}}(\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\&\ other)\ :}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_(other.map1\_),}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_(other.map2\_),}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_(std::move(other.map1\_to\_map2\_index\_set\_)),}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_(std::move(other.map2\_to\_map1\_index\_set\_))}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\ operator\ =\ (\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t}{bridge\_map\_t}}\&\&\ other)\ \{}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_\ =\ other.map1\_;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_\ =\ other.map2\_;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_\ =\ std::move(other.map1\_to\_map2\_index\_set\_);}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_\ =\ std::move(other.map2\_to\_map1\_index\_set\_);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#pragma\ region\ Methods}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ id\_type2\ get\_handle2(uint32\_t\ outer\_index)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ id\_type2\ handle\ =\ map2\_.sparse\_id\_set()[outer\_index];}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ handle.index\ =\ outer\_index;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ handle;}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ id\_type1\ get\_handle1(uint32\_t\ outer\_index)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ id\_type1\ handle\ =\ map1\_.sparse\_id\_set()[outer\_index];}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ handle.index\ =\ outer\_index;}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ handle;}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3a48d85e443d3b84726ab7c2c1824cc7}{id\_type2}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a76f5d7632443733fd6e565ba5ef1ce9f}{right}}(\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_af73de035cd670a28d226936306b2b4fd}{id\_type1}}\ handle1)\textcolor{keyword}{\ const\ \ }\{}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ assert(handle1.index\ <\ map1\_to\_map2\_index\_set\_.size()\ \&\&\ \textcolor{stringliteral}{"{}handle1.index\ out\ of\ range"{}});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ get\_handle2(map1\_to\_map2\_index\_set\_[handle1.index]);}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\_CONSTEXPR}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_af73de035cd670a28d226936306b2b4fd}{id\_type1}}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3a4afebea44c608ec7107462d7e30e51}{left}}(\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3a48d85e443d3b84726ab7c2c1824cc7}{id\_type2}}\ handle2)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ assert(handle2.index\ <\ map2\_to\_map1\_index\_set\_.size()\ \&\&\ \textcolor{stringliteral}{"{}handle2.index\ out\ of\ range"{}});}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ get\_handle1(map2\_to\_map1\_index\_set\_[handle2.index]);}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a1ce654e1e3cf26c257121c9de5221835}{connect}}(\mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_af73de035cd670a28d226936306b2b4fd}{id\_type1}}\ handle1,\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_a3a48d85e443d3b84726ab7c2c1824cc7}{id\_type2}}\ handle2)\ \{}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_.resize(map1\_.sparse\_id\_set().size());}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_.resize(map2\_.sparse\_id\_set().size());}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_[handle1.index]\ =\ handle2.index;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_[handle2.index]\ =\ handle1.index;}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1containers_1_1bridge__map__t_ad346290ed328197f38dc7703e4bcc4ea}{clear}}()\ \{}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map1\_to\_map2\_index\_set\_.clear();}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ map2\_to\_map1\_index\_set\_.clear();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \}}
+
+\end{DoxyCode}

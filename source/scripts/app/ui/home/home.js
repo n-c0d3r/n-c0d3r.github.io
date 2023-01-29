@@ -124,7 +124,36 @@ export default function Home(){
     
                 
     
-            ),
+            )
+            .on('click', function(){
+
+                window.open(`https://www.github.com/INGTechnologies/ING`);
+
+            }),
+
+            framework.UIElement("div")
+            .setStyle({
+
+                width: "100%",
+
+                backgroundColor: "rgba(102,255,255,0)",
+
+                marginTop: "7px",
+
+            }),
+
+            framework.UIElement("div")
+            .setId("home-7th-post")
+            .setInner(
+    
+                
+    
+            )
+            .on('click', function(){
+
+                window.open(`https://www.github.com/n-c0d3r/ncpp`);
+
+            }),
 
             framework.UIElement("div")
             .setStyle({

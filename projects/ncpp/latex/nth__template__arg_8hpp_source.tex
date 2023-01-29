@@ -1,0 +1,71 @@
+\hypertarget{nth__template__arg_8hpp_source}{}\doxysection{nth\+\_\+template\+\_\+arg.\+hpp}
+\label{nth__template__arg_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/tmp\_helper/nth\_template\_arg.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/tmp\_helper/nth\_template\_arg.hpp}}
+\mbox{\hyperlink{nth__template__arg_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{utilities_8hpp}{ncpp/utilities.hpp}}>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{namespace\ }tmp\_helper\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }nth\_template\_arg\_helper\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{bool}\ is\_single,\ \textcolor{keywordtype}{bool}\ is\_nth,\ \textcolor{keywordtype}{size\_t}\ nth\_remain,\ \textcolor{keyword}{typename}...\ arg\_types>}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_a0595cd60e5f2ddd131d36f0fbef6d9d3}{type}}\ =\ void;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ nth\_remain,\ \textcolor{keyword}{typename}\ arg\_type>}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}<true,\ true,\ nth\_remain,\ arg\_type>\ \{}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01tc00997f4b2cf747780e630a81030c467_ad662a3dbdb3506234076c02cab537e91}{type}}\ =\ arg\_type;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ nth\_remain,\ \textcolor{keyword}{typename}\ arg\_type>}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}<true,\ false,\ nth\_remain,\ arg\_type>\ \{}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01ffdc9cfadb39697954ad9e8e7f5a6adec_ab09712e90f691fd36278061dd2ecabbd}{type}}\ =\ void;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ nth\_remain,\ \textcolor{keyword}{typename}\ nth\_arg\_type,\ \textcolor{keyword}{typename}...\ rest>}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}<false,\ true,\ nth\_remain,\ nth\_arg\_type,\ rest...>\ \{}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01false_00_01af54c1a221aa8e2be6d25cbf18ce4a6d_a2203a2502d2c6251f75f2cf721e72cfd}{type}}\ =\ nth\_arg\_type;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ nth\_remain,\ \textcolor{keyword}{typename}\ nth\_arg\_type,\ \textcolor{keyword}{typename}...\ rest>}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}<false,\ false,\ nth\_remain,\ nth\_arg\_type,\ rest...>\ \{}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01false_00_01ea922dadeb8feccdffc04e20faf78118_a62c5e4f04703d99a39b6bc271bc2a066}{type}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}<\textcolor{keyword}{sizeof}...(rest)\ ==\ 1,\ nth\_remain\ ==\ 1,\ nth\_remain\ -\/\ 1,\ rest...>\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_a0595cd60e5f2ddd131d36f0fbef6d9d3}{::type}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ nth,\ \textcolor{keyword}{typename}...\ arg\_types>}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\_template\_arg\_t}}\ \{}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(nth\ <\ \textcolor{keyword}{sizeof}...(arg\_types),\ \textcolor{stringliteral}{"{}invalid\ 'nth'\ value!"{}});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t_a6f39b78eb6fc2faea16a1118a716bc7f}{type}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t}{nth\_template\_arg\_helper::nth\_template\_arg\_t}}<\textcolor{keyword}{sizeof}...(arg\_types)\ ==\ 1,\ nth\ ==\ 0,\ nth,\ arg\_types...>\mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t_a6f39b78eb6fc2faea16a1118a716bc7f}{::type}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}

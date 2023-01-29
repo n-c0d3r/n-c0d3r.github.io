@@ -1,0 +1,53 @@
+\hypertarget{namespacencpp_1_1tmp__helper}{}\doxysection{ncpp\+::tmp\+\_\+helper Namespace Reference}
+\label{namespacencpp_1_1tmp__helper}\index{ncpp::tmp\_helper@{ncpp::tmp\_helper}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1tmp__helper_1_1nth__template__arg__helper}{nth\+\_\+template\+\_\+arg\+\_\+helper}}
+\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1tmp__helper_1_1templated__for__helper}{templated\+\_\+for\+\_\+helper}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... arg\+\_\+types$>$ }\\using \mbox{\hyperlink{namespacencpp_1_1tmp__helper_a84c9dea28ea06ee256fb35c58cce16b7}{first\+\_\+template\+\_\+arg\+\_\+t}} = typename \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ 0, arg\+\_\+types... $>$
+\item 
+{\footnotesize template$<$typename... arg\+\_\+types$>$ }\\using \mbox{\hyperlink{namespacencpp_1_1tmp__helper_a205100d6b2020927f8d94aacf01b97f7}{last\+\_\+template\+\_\+arg\+\_\+t}} = typename \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ sizeof...(arg\+\_\+types) -\/ 1, arg\+\_\+types... $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, size\+\_\+t begin, size\+\_\+t end, typename... arg\+\_\+types$>$ }\\void \mbox{\hyperlink{namespacencpp_1_1tmp__helper_a4a0748be1edba3970e7f41ef40f2cee1}{templated\+\_\+for\+\_\+t}} (arg\+\_\+types \&\&... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacencpp_1_1tmp__helper_a84c9dea28ea06ee256fb35c58cce16b7}\label{namespacencpp_1_1tmp__helper_a84c9dea28ea06ee256fb35c58cce16b7}} 
+\index{ncpp::tmp\_helper@{ncpp::tmp\_helper}!first\_template\_arg\_t@{first\_template\_arg\_t}}
+\index{first\_template\_arg\_t@{first\_template\_arg\_t}!ncpp::tmp\_helper@{ncpp::tmp\_helper}}
+\doxysubsubsection{\texorpdfstring{first\_template\_arg\_t}{first\_template\_arg\_t}}
+{\footnotesize\ttfamily template$<$typename... arg\+\_\+types$>$ \\
+using \mbox{\hyperlink{namespacencpp_1_1tmp__helper_a84c9dea28ea06ee256fb35c58cce16b7}{ncpp\+::tmp\+\_\+helper\+::first\+\_\+template\+\_\+arg\+\_\+t}} = typedef typename \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$0, arg\+\_\+types...$>$}
+
+\mbox{\Hypertarget{namespacencpp_1_1tmp__helper_a205100d6b2020927f8d94aacf01b97f7}\label{namespacencpp_1_1tmp__helper_a205100d6b2020927f8d94aacf01b97f7}} 
+\index{ncpp::tmp\_helper@{ncpp::tmp\_helper}!last\_template\_arg\_t@{last\_template\_arg\_t}}
+\index{last\_template\_arg\_t@{last\_template\_arg\_t}!ncpp::tmp\_helper@{ncpp::tmp\_helper}}
+\doxysubsubsection{\texorpdfstring{last\_template\_arg\_t}{last\_template\_arg\_t}}
+{\footnotesize\ttfamily template$<$typename... arg\+\_\+types$>$ \\
+using \mbox{\hyperlink{namespacencpp_1_1tmp__helper_a205100d6b2020927f8d94aacf01b97f7}{ncpp\+::tmp\+\_\+helper\+::last\+\_\+template\+\_\+arg\+\_\+t}} = typedef typename \mbox{\hyperlink{structncpp_1_1tmp__helper_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$sizeof...(arg\+\_\+types) -\/ 1, arg\+\_\+types...$>$}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacencpp_1_1tmp__helper_a4a0748be1edba3970e7f41ef40f2cee1}\label{namespacencpp_1_1tmp__helper_a4a0748be1edba3970e7f41ef40f2cee1}} 
+\index{ncpp::tmp\_helper@{ncpp::tmp\_helper}!templated\_for\_t@{templated\_for\_t}}
+\index{templated\_for\_t@{templated\_for\_t}!ncpp::tmp\_helper@{ncpp::tmp\_helper}}
+\doxysubsubsection{\texorpdfstring{templated\_for\_t()}{templated\_for\_t()}}
+{\footnotesize\ttfamily template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, size\+\_\+t begin, size\+\_\+t end, typename... arg\+\_\+types$>$ \\
+void ncpp\+::tmp\+\_\+helper\+::templated\+\_\+for\+\_\+t (\begin{DoxyParamCaption}\item[{arg\+\_\+types \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

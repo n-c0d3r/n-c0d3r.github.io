@@ -103,6 +103,25 @@
 
         box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
 
+        cursor: pointer;
+
+    }
+   
+    #home-7th-post {
+
+        width: 60vw;
+        height: 33vw;
+
+        background-image: url("/resources/images/ncpp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+        cursor: pointer;
+
     }
     
 }
@@ -210,6 +229,27 @@
         margin: 7px;
 
         box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+        cursor: pointer;
+
+    }
+   
+    #home-7th-post {
+
+        width: calc(100vw - 14px);
+        height: calc(56vw - 14px);
+
+        background-image: url("/resources/images/ncpp.png");
+
+        background-size: cover;
+
+        border-radius: 1vh;
+
+        margin: 7px;
+
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+
+        cursor: pointer;
 
     }
     

@@ -1,0 +1,135 @@
+\hypertarget{utilities_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/utilities.hpp File Reference}
+\label{utilities_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/utilities.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/utilities.hpp}}
+{\ttfamily \#include $<$ncpp/config.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdetail_1_1true__type}{detail\+::true\+\_\+type}}
+\item 
+struct \mbox{\hyperlink{structdetail_1_1false__type}{detail\+::false\+\_\+type}}
+\item 
+struct \mbox{\hyperlink{structdetail_1_1converter}{detail\+::converter$<$ test $>$}}
+\item 
+struct \mbox{\hyperlink{structdetail_1_1converter_3_010_01_4}{detail\+::converter$<$ 0 $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedetail}{detail}}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\+\_\+\+CONSTEXPR}}~inline constexpr
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a336ed91e7b40743f948fa30cfe243ec2}{NCPP\+\_\+\+GETTER}}(Getter)~\mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\+\_\+\+CONSTEXPR}} Getter
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a593a29c4a6f45db1a60cf42bcb3347e8}{NCPP\+\_\+\+SETTER}}(Setter)~\mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\+\_\+\+CONSTEXPR}} Setter
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}{NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGN}}~NCPP\+\_\+\+ALIGN(NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGNMENT)
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a3c58dfb3df72f9b065c7ff39ee965663}{NCPP\+\_\+\+LOOP\+\_\+\+FUNCTION\+\_\+T}}(Name,  Params,  Body)
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\+\_\+\+CAT}}(x,  y)~\mbox{\hyperlink{utilities_8hpp_ad500211ccb9303ebbd3c800e9ccfce53}{PP\+\_\+\+CAT1}}(x,y)
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_ad500211ccb9303ebbd3c800e9ccfce53}{PP\+\_\+\+CAT1}}(x,  y)~x\#\#y
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\+\_\+warning}}(cond,  msg)
+\item 
+\#define \mbox{\hyperlink{utilities_8hpp_a133a0f94028b594251d80720b674e29f}{static\+\_\+warning\+\_\+template}}(token,  cond,  msg)~    \mbox{\hyperlink{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\+\_\+warning}}(cond, msg) \mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\+\_\+\+CAT}}(\mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\+\_\+\+CAT}}(\+\_\+localvar\+\_\+, token),\+\_\+\+\_\+\+LINE\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}\label{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}} 
+\index{utilities.hpp@{utilities.hpp}!NCPP\_CONSTEXPR@{NCPP\_CONSTEXPR}}
+\index{NCPP\_CONSTEXPR@{NCPP\_CONSTEXPR}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_CONSTEXPR}{NCPP\_CONSTEXPR}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+CONSTEXPR~inline constexpr}
+
+\mbox{\Hypertarget{utilities_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}\label{utilities_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}} 
+\index{utilities.hpp@{utilities.hpp}!NCPP\_DEFAULT\_ALIGN@{NCPP\_DEFAULT\_ALIGN}}
+\index{NCPP\_DEFAULT\_ALIGN@{NCPP\_DEFAULT\_ALIGN}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_DEFAULT\_ALIGN}{NCPP\_DEFAULT\_ALIGN}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGN~NCPP\+\_\+\+ALIGN(NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGNMENT)}
+
+\mbox{\Hypertarget{utilities_8hpp_a336ed91e7b40743f948fa30cfe243ec2}\label{utilities_8hpp_a336ed91e7b40743f948fa30cfe243ec2}} 
+\index{utilities.hpp@{utilities.hpp}!NCPP\_GETTER@{NCPP\_GETTER}}
+\index{NCPP\_GETTER@{NCPP\_GETTER}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_GETTER}{NCPP\_GETTER}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+GETTER(\begin{DoxyParamCaption}\item[{}]{Getter }\end{DoxyParamCaption})~\mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\+\_\+\+CONSTEXPR}} Getter}
+
+\mbox{\Hypertarget{utilities_8hpp_a3c58dfb3df72f9b065c7ff39ee965663}\label{utilities_8hpp_a3c58dfb3df72f9b065c7ff39ee965663}} 
+\index{utilities.hpp@{utilities.hpp}!NCPP\_LOOP\_FUNCTION\_T@{NCPP\_LOOP\_FUNCTION\_T}}
+\index{NCPP\_LOOP\_FUNCTION\_T@{NCPP\_LOOP\_FUNCTION\_T}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_LOOP\_FUNCTION\_T}{NCPP\_LOOP\_FUNCTION\_T}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+LOOP\+\_\+\+FUNCTION\+\_\+T(\begin{DoxyParamCaption}\item[{}]{Name,  }\item[{}]{Params,  }\item[{}]{Body }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ index>\(\backslash\)}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }Name\ \{\(\backslash\)}
+\DoxyCodeLine{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ invoke\ Params\ \{\ Body;\ \};\ \(\backslash\)}
+\DoxyCodeLine{\(\backslash\)}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{utilities_8hpp_a593a29c4a6f45db1a60cf42bcb3347e8}\label{utilities_8hpp_a593a29c4a6f45db1a60cf42bcb3347e8}} 
+\index{utilities.hpp@{utilities.hpp}!NCPP\_SETTER@{NCPP\_SETTER}}
+\index{NCPP\_SETTER@{NCPP\_SETTER}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_SETTER}{NCPP\_SETTER}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+SETTER(\begin{DoxyParamCaption}\item[{}]{Setter }\end{DoxyParamCaption})~\mbox{\hyperlink{utilities_8hpp_a9ebbbdcabab524fb467598045e6f4db4}{NCPP\+\_\+\+CONSTEXPR}} Setter}
+
+\mbox{\Hypertarget{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}\label{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}} 
+\index{utilities.hpp@{utilities.hpp}!PP\_CAT@{PP\_CAT}}
+\index{PP\_CAT@{PP\_CAT}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{PP\_CAT}{PP\_CAT}}
+{\footnotesize\ttfamily \#define PP\+\_\+\+CAT(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~\mbox{\hyperlink{utilities_8hpp_ad500211ccb9303ebbd3c800e9ccfce53}{PP\+\_\+\+CAT1}}(x,y)}
+
+\mbox{\Hypertarget{utilities_8hpp_ad500211ccb9303ebbd3c800e9ccfce53}\label{utilities_8hpp_ad500211ccb9303ebbd3c800e9ccfce53}} 
+\index{utilities.hpp@{utilities.hpp}!PP\_CAT1@{PP\_CAT1}}
+\index{PP\_CAT1@{PP\_CAT1}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{PP\_CAT1}{PP\_CAT1}}
+{\footnotesize\ttfamily \#define PP\+\_\+\+CAT1(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~x\#\#y}
+
+\mbox{\Hypertarget{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}\label{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}} 
+\index{utilities.hpp@{utilities.hpp}!static\_warning@{static\_warning}}
+\index{static\_warning@{static\_warning}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{static\_warning}{static\_warning}}
+{\footnotesize\ttfamily \#define static\+\_\+warning(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }\mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\_CAT}}(\mbox{\hyperlink{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\_warning}},\_\_LINE\_\_)\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ DEPRECATE(\textcolor{keywordtype}{void}\ \_(\mbox{\hyperlink{structdetail_1_1false__type}{::detail::false\_type}}\ \textcolor{keyword}{const}\&\ ),msg)\ \{\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \_(\mbox{\hyperlink{structdetail_1_1true__type}{::detail::true\_type}}\ \textcolor{keyword}{const}\&\ )\ \{\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ PP\_CAT(\mbox{\hyperlink{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\_warning}},\_\_LINE\_\_)()\ \{\_(\mbox{\hyperlink{structdetail_1_1converter}{::detail::converter}}<(cond)>());\}\ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{utilities_8hpp_a133a0f94028b594251d80720b674e29f}\label{utilities_8hpp_a133a0f94028b594251d80720b674e29f}} 
+\index{utilities.hpp@{utilities.hpp}!static\_warning\_template@{static\_warning\_template}}
+\index{static\_warning\_template@{static\_warning\_template}!utilities.hpp@{utilities.hpp}}
+\doxysubsubsection{\texorpdfstring{static\_warning\_template}{static\_warning\_template}}
+{\footnotesize\ttfamily \#define static\+\_\+warning\+\_\+template(\begin{DoxyParamCaption}\item[{}]{token,  }\item[{}]{cond,  }\item[{}]{msg }\end{DoxyParamCaption})~    \mbox{\hyperlink{utilities_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\+\_\+warning}}(cond, msg) \mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\+\_\+\+CAT}}(\mbox{\hyperlink{utilities_8hpp_a1e6f6ac191d108c6c152f389d353e114}{PP\+\_\+\+CAT}}(\+\_\+localvar\+\_\+, token),\+\_\+\+\_\+\+LINE\+\_\+\+\_\+)}
+
