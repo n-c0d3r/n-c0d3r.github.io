@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ncpp: F:/NCoder/NCPP/ncpp/source/ncpp/tmp_helper/templated_for.hpp Source File</title>
+<title>NCPP: F:/NCoder/NCPP/ncpp/source/ncpp/utilities/templated_for.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ncpp
+   <div id="projectname">NCPP
    </div>
+   <div id="projectbrief">Ncoder&#39;s Game Engine Learning Aimed C++ Library.</div>
   </td>
  </tr>
  </tbody>
@@ -96,86 +97,92 @@ $(document).ready(function(){initNavTree('templated__for_8hpp_source.html',''); 
 <div class="contents">
 <a href="templated__for_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="utilities_8hpp.html">ncpp/utilities.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="nth__template__arg_8hpp.html">ncpp/tmp_helper/nth_template_arg.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacencpp.html">ncpp</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="prerequisites_8hpp.html">ncpp/prerequisites.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">namespace </span>tmp_helper {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="nth__template__arg_8hpp.html">ncpp/utilities/nth_template_arg.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html">   13</a></span>        <span class="keyword">namespace </span>templated_for_helper {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">bool</span> is_end, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">   16</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">step_t</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacencpp.html">ncpp</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">namespace </span>utilities {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            };</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">bool</span> is_end, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">   23</a></span>            <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">step_invoke_t</a>(arg_types&amp;&amp;... args) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">namespace </span>templated_for_helper {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">bool</span> is_end, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">   22</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">step_t</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <a class="code hl_struct" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">step_t&lt;f_type_t, is_end, end, index, arg_types...&gt;::invoke</a>(std::forward&lt;arg_types&gt;(args)...);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            };</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3.html">   29</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">step_t</a>&lt;f_type_t, true, end, index, arg_types...&gt; {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">bool</span> is_end, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">inline</span> <span class="keywordtype">void</span> step_invoke_t(arg_types&amp;&amp;... args) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3.html#a3bc063dbea7d93b0986c6d704ae719f6">   31</a></span>                <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3.html#a3bc063dbea7d93b0986c6d704ae719f6">invoke</a>(arg_types&amp;&amp;... args) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <a class="code hl_struct" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">step_t&lt;f_type_t, is_end, end, index, arg_types...&gt;::invoke</a>(std::forward&lt;arg_types&gt;(args)...);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01end_0ebfb1135fc17354960f6f51b147d43b0.html">   35</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">step_t</a>&lt;f_type_t, true, end, index, arg_types...&gt; {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> invoke(arg_types&amp;&amp;... args) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15.html">   40</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">step_t</a>&lt;f_type_t, false, end, index, arg_types...&gt; {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15.html#a732198a5504312b6607f0a4e88b42baf">   42</a></span>                <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15.html#a732198a5504312b6607f0a4e88b42baf">invoke</a>(arg_types&amp;&amp;... args) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    f_type_t&lt;index&gt;::invoke(std::forward&lt;arg_types&gt;(args)...);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <a class="code hl_function" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">step_invoke_t</a>&lt;f_type_t, index + 1 == end, end, index + 1, arg_types...&gt;(std::forward&lt;arg_types&gt;(args)...);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> end, <span class="keywordtype">size_t</span> index, <span class="keyword">typename</span>... arg_types&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end_5e59338bab27ffa3a9dc69a6102632ea.html">   46</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">step_t</a>&lt;f_type_t, false, end, index, arg_types...&gt; {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> invoke(arg_types&amp;&amp;... args) {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            };</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    f_type_t&lt;index&gt;::invoke(std::forward&lt;arg_types&gt;(args)...);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    step_invoke_t&lt;f_type_t, index + 1 == end, end, index + 1, arg_types...&gt;(std::forward&lt;arg_types&gt;(args)...);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> begin, <span class="keywordtype">size_t</span> end, <span class="keyword">typename</span>... arg_types&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacencpp_1_1tmp__helper.html#a4a0748be1edba3970e7f41ef40f2cee1">   57</a></span>        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacencpp_1_1tmp__helper.html#a4a0748be1edba3970e7f41ef40f2cee1">templated_for_t</a>(arg_types&amp;&amp;... args) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_define" href="utilities_8hpp.html#ab77abb04c6b367804302b90edc1d8a56">static_warning</a>(end &gt; begin, <span class="stringliteral">&quot;end &gt; begin, templated_for_t will not be executed.&quot;</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_function" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">templated_for_helper::step_invoke_t</a>&lt;f_type_t, (end &lt;= begin), end, begin, arg_types...&gt;(std::forward&lt;arg_types&gt;(args)...);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
-<div class="ttc" id="anamespacencpp_1_1tmp__helper_1_1templated__for__helper_html_ab393c35f8138c4ae88081bce7d5da9bb"><div class="ttname"><a href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">ncpp::tmp_helper::templated_for_helper::step_invoke_t</a></div><div class="ttdeci">void step_invoke_t(arg_types &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> templated_for.hpp:23</div></div>
-<div class="ttc" id="anamespacencpp_1_1tmp__helper_html_a4a0748be1edba3970e7f41ef40f2cee1"><div class="ttname"><a href="namespacencpp_1_1tmp__helper.html#a4a0748be1edba3970e7f41ef40f2cee1">ncpp::tmp_helper::templated_for_t</a></div><div class="ttdeci">void templated_for_t(arg_types &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> templated_for.hpp:57</div></div>
-<div class="ttc" id="anamespacencpp_html"><div class="ttname"><a href="namespacencpp.html">ncpp</a></div><div class="ttdef"><b>Definition:</b> bridge_map.hpp:11</div></div>
-<div class="ttc" id="anth__template__arg_8hpp_html"><div class="ttname"><a href="nth__template__arg_8hpp.html">nth_template_arg.hpp</a></div></div>
-<div class="ttc" id="astructncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15_html_a732198a5504312b6607f0a4e88b42baf"><div class="ttname"><a href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15.html#a732198a5504312b6607f0a4e88b42baf">ncpp::tmp_helper::templated_for_helper::step_t&lt; f_type_t, false, end, index, arg_types... &gt;::invoke</a></div><div class="ttdeci">static void invoke(arg_types &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> templated_for.hpp:42</div></div>
-<div class="ttc" id="astructncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3_html_a3bc063dbea7d93b0986c6d704ae719f6"><div class="ttname"><a href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3.html#a3bc063dbea7d93b0986c6d704ae719f6">ncpp::tmp_helper::templated_for_helper::step_t&lt; f_type_t, true, end, index, arg_types... &gt;::invoke</a></div><div class="ttdeci">static void invoke(arg_types &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> templated_for.hpp:31</div></div>
-<div class="ttc" id="astructncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_html"><div class="ttname"><a href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">ncpp::tmp_helper::templated_for_helper::step_t</a></div><div class="ttdef"><b>Definition:</b> templated_for.hpp:16</div></div>
-<div class="ttc" id="autilities_8hpp_html"><div class="ttname"><a href="utilities_8hpp.html">utilities.hpp</a></div></div>
-<div class="ttc" id="autilities_8hpp_html_ab77abb04c6b367804302b90edc1d8a56"><div class="ttname"><a href="utilities_8hpp.html#ab77abb04c6b367804302b90edc1d8a56">static_warning</a></div><div class="ttdeci">#define static_warning(cond, msg)</div><div class="ttdef"><b>Definition:</b> utilities.hpp:90</div></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="templated__for_8hpp.html#a3c58dfb3df72f9b065c7ff39ee965663">   65</a></span><span class="preprocessor">        #define NCPP_LOOP_FUNCTION_T(Name, Params, Body) \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">        template&lt;size_t index&gt;\</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">        struct Name {\</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">        \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">            static inline void invoke Params { Body; }; \</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">        \</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">        };</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">template</span>&lt;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt; <span class="keyword">typename</span> f_type_t, <span class="keywordtype">size_t</span> begin, <span class="keywordtype">size_t</span> end, <span class="keyword">typename</span>... arg_types&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027">   84</a></span>        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027">templated_for_t</a>(arg_types&amp;&amp;... args) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            static_warning(end &gt; begin, <span class="stringliteral">&quot;end &gt; begin, templated_for_t will not be executed.&quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            templated_for_helper::step_invoke_t&lt;f_type_t, (end &lt;= begin), end, begin, arg_types...&gt;(std::forward&lt;arg_types&gt;(args)...);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="ttc" id="anamespacencpp_1_1utilities_html_a61b43c2ee122a2c1598b54b61d3b3027"><div class="ttname"><a href="namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027">ncpp::utilities::templated_for_t</a></div><div class="ttdeci">void templated_for_t(arg_types &amp;&amp;... args)</div><div class="ttdoc">The function template helping run a loop which the index be a template argument.</div><div class="ttdef"><b>Definition:</b> templated_for.hpp:84</div></div>
+<div class="ttc" id="anamespacencpp_html"><div class="ttname"><a href="namespacencpp.html">ncpp</a></div><div class="ttdoc">The root namespace of ncpp project.</div><div class="ttdef"><b>Definition:</b> .cpp:5</div></div>
+<div class="ttc" id="anth__template__arg_8hpp_html"><div class="ttname"><a href="nth__template__arg_8hpp.html">nth_template_arg.hpp</a></div><div class="ttdoc">Implementing nth_template_arg_t.</div></div>
+<div class="ttc" id="aprerequisites_8hpp_html"><div class="ttname"><a href="prerequisites_8hpp.html">prerequisites.hpp</a></div><div class="ttdoc">The file that is always included on the top.</div></div>
+<div class="ttc" id="astructncpp_1_1utilities_1_1templated__for__helper_1_1step__t_html"><div class="ttname"><a href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">ncpp::utilities::templated_for_helper::step_t</a></div><div class="ttdef"><b>Definition:</b> templated_for.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_3c2fb89c4773d0bcacfa59bb62226a89.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_8d5f6d02bf3a9f5475123b1578a561d8.html">source</a></li><li class="navelem"><a class="el" href="dir_30a9dc02078d4756c9816c3dcbc8f1b9.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_d367d9776f25fe01ebc21049c08d9441.html">tmp_helper</a></li><li class="navelem"><a class="el" href="templated__for_8hpp.html">templated_for.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_3c2fb89c4773d0bcacfa59bb62226a89.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_8d5f6d02bf3a9f5475123b1578a561d8.html">source</a></li><li class="navelem"><a class="el" href="dir_30a9dc02078d4756c9816c3dcbc8f1b9.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_0734f1c88567a93be41e1108e92689e5.html">utilities</a></li><li class="navelem"><a class="el" href="templated__for_8hpp.html">templated_for.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

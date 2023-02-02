@@ -1,0 +1,91 @@
+\hypertarget{structncpp_1_1cbjs_1_1job}{}\doxysection{ncpp\+::cbjs\+::job Struct Reference}
+\label{structncpp_1_1cbjs_1_1job}\index{ncpp::cbjs::job@{ncpp::cbjs::job}}
+
+
+Be a function, and also storing job\textquotesingle{}s informations (priority, is\+\_\+done,...).  
+
+
+
+
+{\ttfamily \#include $<$job.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structncpp_1_1cbjs_1_1job_a08a26d62b683762dfb333a5db45830e3}{functor\+\_\+type}} = std\+::function$<$ void(\mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}} \&j, \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}} \&c)$>$
+\begin{DoxyCompactList}\small\item\em The main function type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a42a7697abcaa24ec6520257313cd63cc}\label{structncpp_1_1cbjs_1_1job_a42a7697abcaa24ec6520257313cd63cc}} 
+void {\bfseries reset} ()
+\begin{DoxyCompactList}\small\item\em Resetting the states to be kicked again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a9c6e38b2d18de4ba219da559eb826d3a}\label{structncpp_1_1cbjs_1_1job_a9c6e38b2d18de4ba219da559eb826d3a}} 
+\mbox{\hyperlink{structncpp_1_1cbjs_1_1job_a08a26d62b683762dfb333a5db45830e3}{functor\+\_\+type}} {\bfseries functor}
+\begin{DoxyCompactList}\small\item\em The main function of the job. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structncpp_1_1cbjs_1_1job_a511f35b52c49a2cad9e62c2f7c6c9eb5}{priority}} = 0
+\begin{DoxyCompactList}\small\item\em Storing the priority of the job when scheduling. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a31270575f4bbce61d06e6614bf47b2ad}\label{structncpp_1_1cbjs_1_1job_a31270575f4bbce61d06e6614bf47b2ad}} 
+bool {\bfseries is\+\_\+done} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a3952580d756e0765f8ee3bba6bc910dd}\label{structncpp_1_1cbjs_1_1job_a3952580d756e0765f8ee3bba6bc910dd}} 
+class {\bfseries system}
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a1798b9ed562f957fa2660287f0dd0fb5}\label{structncpp_1_1cbjs_1_1job_a1798b9ed562f957fa2660287f0dd0fb5}} 
+class {\bfseries worker\+\_\+thread}
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_ad7f7b46db6980e87d1556f5caf9b170a}\label{structncpp_1_1cbjs_1_1job_ad7f7b46db6980e87d1556f5caf9b170a}} 
+class {\bfseries coroutine}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Be a function, and also storing job\textquotesingle{}s informations (priority, is\+\_\+done,...). 
+
+Can be allocated in the stack and owned by a coroutine after scheduled. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a08a26d62b683762dfb333a5db45830e3}\label{structncpp_1_1cbjs_1_1job_a08a26d62b683762dfb333a5db45830e3}} 
+\index{ncpp::cbjs::job@{ncpp::cbjs::job}!functor\_type@{functor\_type}}
+\index{functor\_type@{functor\_type}!ncpp::cbjs::job@{ncpp::cbjs::job}}
+\doxysubsubsection{\texorpdfstring{functor\_type}{functor\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structncpp_1_1cbjs_1_1job_a08a26d62b683762dfb333a5db45830e3}{ncpp\+::cbjs\+::job\+::functor\+\_\+type}} =  std\+::function$<$void(\mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\& j, \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}\& c)$>$}
+
+
+
+The main function type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+{\em coroutine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1job_a511f35b52c49a2cad9e62c2f7c6c9eb5}\label{structncpp_1_1cbjs_1_1job_a511f35b52c49a2cad9e62c2f7c6c9eb5}} 
+\index{ncpp::cbjs::job@{ncpp::cbjs::job}!priority@{priority}}
+\index{priority@{priority}!ncpp::cbjs::job@{ncpp::cbjs::job}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily uint16\+\_\+t ncpp\+::cbjs\+::job\+::priority = 0}
+
+
+
+Storing the priority of the job when scheduling. 
+
+The strongest value is 0 (the highest priority). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/cbjs/job.\+hpp\end{DoxyCompactItemize}

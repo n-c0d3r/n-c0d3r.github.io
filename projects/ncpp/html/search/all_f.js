@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['reset_0',['reset',['../classncpp_1_1containers_1_1handle__map__t.html#a1345e3c341b0ad1826f88d8aa8445c43',1,'ncpp::containers::handle_map_t']]],
-  ['right_1',['right',['../classncpp_1_1containers_1_1bridge__map__t.html#a76f5d7632443733fd6e565ba5ef1ce9f',1,'ncpp::containers::bridge_map_t']]],
-  ['rttr_2ehpp_2',['rttr.hpp',['../rttr_8hpp.html',1,'']]]
+  ['templated_5ffor_2ehpp_0',['templated_for.hpp',['../de/d94/templated__for_8hpp.html',1,'']]],
+  ['templated_5ffor_5ft_1',['templated_for_t',['../d3/dd2/namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027',1,'ncpp::utilities']]],
+  ['thread_5ffiber_5fp_5f_2',['thread_fiber_p_',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#ac40c6a9aa06cde73b95c98b048e6569d',1,'ncpp::cbjs::coroutine']]],
+  ['true_5ftype_3',['true_type',['../d2/d6a/structncpp_1_1static__warning__helper_1_1true__type.html',1,'ncpp::static_warning_helper']]]
 ];

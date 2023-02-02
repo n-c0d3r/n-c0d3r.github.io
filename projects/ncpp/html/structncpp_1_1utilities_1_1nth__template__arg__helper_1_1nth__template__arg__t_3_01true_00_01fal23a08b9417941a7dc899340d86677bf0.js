@@ -1,0 +1,4 @@
+var structncpp_1_1utilities_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01fal23a08b9417941a7dc899340d86677bf0 =
+[
+    [ "type", "structncpp_1_1utilities_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01fal23a08b9417941a7dc899340d86677bf0.html#ac65f2bbbbd55db1927f192536d7f2491", null ]
+];

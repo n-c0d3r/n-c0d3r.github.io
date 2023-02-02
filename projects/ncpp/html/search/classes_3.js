@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handle_5fmap_5ft_0',['handle_map_t',['../classncpp_1_1containers_1_1handle__map__t.html',1,'ncpp::containers']]]
+  ['job_0',['job',['../df/dd4/structncpp_1_1cbjs_1_1job.html',1,'ncpp::cbjs']]]
 ];

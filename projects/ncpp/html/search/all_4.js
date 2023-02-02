@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ecs_2ehpp_0',['ecs.hpp',['../ecs_8hpp.html',1,'']]],
-  ['erase_1',['erase',['../classncpp_1_1containers_1_1handle__map__t.html#a077034014580a49259bb76db0ba2ffbd',1,'ncpp::containers::handle_map_t']]]
+  ['entry_5fjob_0',['entry_job',['../dc/dc8/structncpp_1_1cbjs_1_1system__settings.html#a5bccac08a78135110ddccd530a15a8a6',1,'ncpp::cbjs::system_settings']]]
 ];

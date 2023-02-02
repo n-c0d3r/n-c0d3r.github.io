@@ -1,5 +1,4 @@
 var namespaces_dup =
 [
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
-    [ "ncpp", "namespacencpp.html", "namespacencpp" ]
+    [ "ncpp", "d7/de4/namespacencpp.html", "d7/de4/namespacencpp" ]
 ];

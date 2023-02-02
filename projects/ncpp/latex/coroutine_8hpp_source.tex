@@ -1,0 +1,197 @@
+\hypertarget{coroutine_8hpp_source}{}\doxysection{coroutine.\+hpp}
+\label{coroutine_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/cbjs/coroutine.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/cbjs/coroutine.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prerequisites_8hpp}{ncpp/prerequisites.hpp}}>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <ncpp/utilities/.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <ncpp/containers/.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <ncpp/pac/.hpp>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{namespace\ }cbjs\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }worker\_thread;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }job;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ struct}\ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ \{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ WAITING\ =\ 0,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ RUNNABLE\ =\ 1}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}\ \{}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}()\{\}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ update()\ \{}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ coroutine\_state::RUNNABLE;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{extern}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}\ \mbox{\hyperlink{namespacencpp_1_1cbjs_a4b034e1de85bf3e9c38ce195d498f21b}{default\_coroutine\_state\_updater\_g}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1wait__job__done}{wait\_job\_done}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}\ \{}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\&\ job\_;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1wait__job__done}{wait\_job\_done}}(\mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\&\ j)\ :\ job\_(j)\ \{\}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ update()\ \{}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}})(job\_.is\_done);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}\ final}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ pac::fiber\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_aacb511212afd28e07cf19cce6bc6ec73}{fiber\_}};\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ pac::fiber*\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_ac40c6a9aa06cde73b95c98b048e6569d}{thread\_fiber\_p\_}};\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}*\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a2e88ebebf39395a5b2103c8529c26dbd}{job\_p\_}};\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}*\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a03cf69e72dfa1716783157cc10d25040}{state\_updater\_p\_}};\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_af8667f6c4140381f90f49b08d5d564b9}{state\_}};\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ state()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ state\_;\ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a70237319281dd5df0566ffadfbdd7711}{is\_has\_job}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ job\_p\_\ !=\ 0;\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}();}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{\string~coroutine}}();}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ loop();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_aee70175b8cb596acecf6c2fb922feb4c}{bind\_thread\_fiber}}(pac::fiber\&\ thread\_fiber)\ \{}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ thread\_fiber\_p\_\ =\ \&thread\_fiber;}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a71a22744728bc9a1006073d933141fd1}{bind\_job}}(\mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\&\ j)\ \{}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ job\_p\_\ =\ \&j;}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ state\_updater\_type,\ \textcolor{keyword}{typename}...\ arg\_types>}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a5be66adee15a21f99bd1c702dce7d60d}{yield\_t}}(arg\_types\&\&...\ args)\ \{}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_updater\_type\ sate\_updater(std::forward<arg\_types>(args)...);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_updater\_p\_\ =\ \&sate\_updater;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ thread\_fiber\_p\_-\/>switch\_to\_this();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_ab32e08deb7eb9c083e5d31f0400b4618}{yield}}(\mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\_state\_updater}}\&\ state\_updater)\ \{}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_updater\_p\_\ =\ \&state\_updater;}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_\ =\ coroutine\_state::WAITING;}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ thread\_fiber\_p\_-\/>switch\_to\_this();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_ae762cb99a24d6bb13a1e01c71d523775}{yield}}()\ \{}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ job\_p\_\ =\ 0;}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_updater\_p\_\ =\ \&\mbox{\hyperlink{namespacencpp_1_1cbjs_a4b034e1de85bf3e9c38ce195d498f21b}{default\_coroutine\_state\_updater\_g}};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_\ =\ coroutine\_state::RUNNABLE;}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ thread\_fiber\_p\_-\/>switch\_to\_this();}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a9d3452ebbedca138715c2c3e76389dad}{switch\_to\_this}}()\ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fiber\_.switch\_to\_this();}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\_state}}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine_a1ab4d96813b7c2b458121e8de6866073}{update\_state}}()\ \{}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ state\_\ =\ state\_updater\_p\_-\/>update();}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ state\_;}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool}{coroutine\_pool}}\ final}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ capacity\_;}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__stack__t}{containers::fixed\_vector\_stack\_t<coroutine*>}}\ coroutine\_p\_stack\_;}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<coroutine>\ coroutine\_vector\_;}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}\&\ worker\_thread\_;}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{size\_t}\ capacity()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ capacity\_;\ \}}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}\&\ get\_worker\_thread()\ \{\ \textcolor{keywordflow}{return}\ worker\_thread\_;\ \}}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}\&\ get\_worker\_thread()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ worker\_thread\_;\ \}}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool}{coroutine\_pool}}(\textcolor{keywordtype}{size\_t}\ capacity,\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}\&\ wt\_);}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool}{\string~coroutine\_pool}}();}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool_afba727db343e4e8a0257b5986284b721}{push}}(\mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}*\ c)\ \{}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ coroutine\_p\_stack\_.\mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__stack__t_a23fbd6ab440021822af8edcc4ea6e12b}{push}}(c);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}*\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool_a99cf4c5f12947f6ad86f1a932c4c1498}{pop}}()\ \{}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ assert(coroutine\_p\_stack\_.size()\ >\ 0);}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}*\ result\ =\ coroutine\_p\_stack\_.back();}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ coroutine\_p\_stack\_.\mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__stack__t_af8c2f5e354be640cddbe12a4a7899b19}{pop}}();}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \}}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \}}
+
+\end{DoxyCode}

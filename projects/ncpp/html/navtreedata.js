@@ -24,13 +24,15 @@
 */
 var NAVTREE =
 [
-  [ "ncpp", "index.html", [
+  [ "NCPP", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -57,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"utilities_8hpp.html#a1e6f6ac191d108c6c152f389d353e114"
+"df/dd4/structncpp_1_1cbjs_1_1job.html#a9c6e38b2d18de4ba219da559eb826d3a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

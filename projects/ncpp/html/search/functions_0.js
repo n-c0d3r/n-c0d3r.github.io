@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['at_0',['at',['../classncpp_1_1containers_1_1handle__map__t.html#aac02311a7121cc36ff413ffb64cc6d40',1,'ncpp::containers::handle_map_t::at(id_type handle)'],['../classncpp_1_1containers_1_1handle__map__t.html#a2535e328f70603da56b69d3259c4797e',1,'ncpp::containers::handle_map_t::at(uint32_t inner_index)']]]
+  ['bind_5fjob_0',['bind_job',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#a71a22744728bc9a1006073d933141fd1',1,'ncpp::cbjs::coroutine']]],
+  ['bind_5fthread_5ffiber_1',['bind_thread_fiber',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#aee70175b8cb596acecf6c2fb922feb4c',1,'ncpp::cbjs::coroutine']]]
 ];

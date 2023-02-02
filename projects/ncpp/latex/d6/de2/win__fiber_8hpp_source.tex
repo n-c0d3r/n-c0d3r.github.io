@@ -1,0 +1,60 @@
+\hypertarget{win__fiber_8hpp_source}{}\doxysection{win\+\_\+fiber.\+hpp}
+\label{win__fiber_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/pac/win\_fiber.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/pac/win\_fiber.hpp}}
+\mbox{\hyperlink{win__fiber_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prerequisites_8hpp}{ncpp/prerequisites.hpp}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <ncpp/utilities/.hpp>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{fiber_8hpp}{ncpp/pac/fiber.hpp}}>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{namespace\ }pac\ \{}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber}{win\_fiber}}\ \{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }functor\_type\ =\ std::function<void(\mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber}{win\_fiber}}\&)>;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespacencpp_1_1pac_a60446d445abb1985eb31f68a7413cf85}{fiber\_creation\_mode}}\ creation\_mode\_;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ LPVOID\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_a02c2e7080d8fa126c68f93a6ee3e7ff9}{platform\_fiber\_}};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ functor\_type\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_a1d336d2bf95f3a430692269802e669d8}{functor\_}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespacencpp_1_1pac_a60446d445abb1985eb31f68a7413cf85}{fiber\_creation\_mode}}\ creation\_mode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ creation\_mode\_;\ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ LPVOID\ platform\_fiber()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ platform\_fiber\_;\ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ functor\_type\&\ functor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ functor\_;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ win\_fiber(fiber\_creation\_mode\ mode,\ functor\_type\&\&\ functor\ =\ [](win\_fiber\&\ fiber)\ \{\});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \string~win\_fiber();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ VOID\ WINAPI\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_a515dc99aae1703dc1c7d360e62c71f8f}{proc}}(LPVOID\ data)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber}{win\_fiber}}*\textcolor{keyword}{>}(data)-\/>functor\_(*\textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber}{win\_fiber}}*\textcolor{keyword}{>}(data));}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_aa6dc86ef3a4e9c131d02540ef5166728}{switch\_to\_this}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \}\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \}}
+
+\end{DoxyCode}

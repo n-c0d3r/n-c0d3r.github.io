@@ -1,0 +1,31 @@
+\hypertarget{coroutine_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/cbjs/coroutine.hpp File Reference}
+\label{coroutine_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/cbjs/coroutine.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/cbjs/coroutine.hpp}}
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/pac/.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{ncpp\+::cbjs\+::coroutine\+\_\+state\+\_\+updater}}
+\begin{DoxyCompactList}\small\item\em Responsible for updating the coroutine state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classncpp_1_1cbjs_1_1wait__job__done}{ncpp\+::cbjs\+::wait\+\_\+job\+\_\+done}}
+\begin{DoxyCompactList}\small\item\em A coroutine state updater that only update coroutine state to \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159eab887eaf73362255df616aba88fea4c94}{coroutine\+\_\+state\+::\+RUNNABLE}} after the indicated job done. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{ncpp\+::cbjs\+::coroutine}}
+\begin{DoxyCompactList}\small\item\em A coroutine is a function that can suspend execution to be resumed later. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool}{ncpp\+::cbjs\+::coroutine\+\_\+pool}}
+\begin{DoxyCompactList}\small\item\em Storing coroutines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp project. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1cbjs}{ncpp\+::cbjs}}
+\begin{DoxyCompactList}\small\item\em Implementing coroutine based job system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum struct \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{ncpp\+::cbjs\+::coroutine\+\_\+state}} \{ \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159ea1869d56535e8b1449a6da54ff5e11f50}{ncpp\+::cbjs\+::\+WAITING}} = 0
+, \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159eab887eaf73362255df616aba88fea4c94}{ncpp\+::cbjs\+::\+RUNNABLE}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Indicating whether the coroutine is able to run . \end{DoxyCompactList}\end{DoxyCompactItemize}

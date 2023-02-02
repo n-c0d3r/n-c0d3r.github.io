@@ -1,0 +1,49 @@
+\hypertarget{structncpp_1_1cbjs_1_1system__settings}{}\doxysection{ncpp\+::cbjs\+::system\+\_\+settings Struct Reference}
+\label{structncpp_1_1cbjs_1_1system__settings}\index{ncpp::cbjs::system\_settings@{ncpp::cbjs::system\_settings}}
+
+
+Storing the settings to create job system.  
+
+
+
+
+{\ttfamily \#include $<$system.\+hpp$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}} \& \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings_a5bccac08a78135110ddccd530a15a8a6}{entry\+\_\+job}}
+\begin{DoxyCompactList}\small\item\em The job to be kicked first. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1system__settings_af2a4ba04b18232c617eba2ce49a67454}\label{structncpp_1_1cbjs_1_1system__settings_af2a4ba04b18232c617eba2ce49a67454}} 
+uint32\+\_\+t {\bfseries worker\+\_\+thread\+\_\+count} = std\+::thread\+::hardware\+\_\+concurrency()
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1system__settings_a46d37775ad84c69570e069ce1c57b8dc}\label{structncpp_1_1cbjs_1_1system__settings_a46d37775ad84c69570e069ce1c57b8dc}} 
+uint32\+\_\+t {\bfseries job\+\_\+queue\+\_\+capacity} = NCPP\+\_\+\+DEFAULT\+\_\+\+JOB\+\_\+\+QUEUE\+\_\+\+CAPACITY
+\item 
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1system__settings_a7d41f7352a3c482edeff0f0a382a836f}\label{structncpp_1_1cbjs_1_1system__settings_a7d41f7352a3c482edeff0f0a382a836f}} 
+uint32\+\_\+t {\bfseries coroutine\+\_\+count\+\_\+per\+\_\+worker\+\_\+thread} = NCPP\+\_\+\+DEFAULT\+\_\+\+COROUTINE\+\_\+\+COUNT\+\_\+\+PER\+\_\+\+WORKER\+\_\+\+THREAD
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Storing the settings to create job system. 
+
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structncpp_1_1cbjs_1_1system__settings_a5bccac08a78135110ddccd530a15a8a6}\label{structncpp_1_1cbjs_1_1system__settings_a5bccac08a78135110ddccd530a15a8a6}} 
+\index{ncpp::cbjs::system\_settings@{ncpp::cbjs::system\_settings}!entry\_job@{entry\_job}}
+\index{entry\_job@{entry\_job}!ncpp::cbjs::system\_settings@{ncpp::cbjs::system\_settings}}
+\doxysubsubsection{\texorpdfstring{entry\_job}{entry\_job}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\& ncpp\+::cbjs\+::system\+\_\+settings\+::entry\+\_\+job}
+
+
+
+The job to be kicked first. 
+
+The job system will stop when the entry job done. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/cbjs/system.\+hpp\end{DoxyCompactItemize}

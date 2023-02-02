@@ -1,0 +1,124 @@
+\hypertarget{prerequisites_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/prerequisites.hpp File Reference}
+\label{prerequisites_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/prerequisites.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/prerequisites.hpp}}
+
+
+The file that is always included on the top.  
+
+
+{\ttfamily \#include $<$ncpp/config.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$semaphore$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1true__type}{ncpp\+::static\+\_\+warning\+\_\+helper\+::true\+\_\+type}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1false__type}{ncpp\+::static\+\_\+warning\+\_\+helper\+::false\+\_\+type}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1converter}{ncpp\+::static\+\_\+warning\+\_\+helper\+::converter$<$ test $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1converter_3_010_01_4}{ncpp\+::static\+\_\+warning\+\_\+helper\+::converter$<$ 0 $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{prerequisites_8hpp_a9ebbbdcabab524fb467598045e6f4db4}\label{prerequisites_8hpp_a9ebbbdcabab524fb467598045e6f4db4}} 
+\#define {\bfseries NCPP\+\_\+\+CONSTEXPR}~inline constexpr
+\item 
+\mbox{\Hypertarget{prerequisites_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}\label{prerequisites_8hpp_a6c60b0ccad752e3e2c16e181d6fb6d04}} 
+\#define {\bfseries NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGN}~NCPP\+\_\+\+ALIGN(NCPP\+\_\+\+DEFAULT\+\_\+\+ALIGNMENT)
+\item 
+\mbox{\Hypertarget{prerequisites_8hpp_a4bb2cbce71b5b7ec9a505230df5ee35a}\label{prerequisites_8hpp_a4bb2cbce71b5b7ec9a505230df5ee35a}} 
+\#define {\bfseries NCPP\+\_\+\+PP\+\_\+\+CAT}(x,  y)~NCPP\+\_\+\+PP\+\_\+\+CAT1(x,y)
+\item 
+\mbox{\Hypertarget{prerequisites_8hpp_a54842a5b07aaf74dfa65fefc761ff98b}\label{prerequisites_8hpp_a54842a5b07aaf74dfa65fefc761ff98b}} 
+\#define {\bfseries NCPP\+\_\+\+PP\+\_\+\+CAT1}(x,  y)~x\#\#y
+\item 
+\#define \mbox{\hyperlink{prerequisites_8hpp_ab77abb04c6b367804302b90edc1d8a56}{static\+\_\+warning}}(cond,  msg)
+\item 
+\mbox{\Hypertarget{prerequisites_8hpp_a133a0f94028b594251d80720b674e29f}\label{prerequisites_8hpp_a133a0f94028b594251d80720b674e29f}} 
+\#define {\bfseries static\+\_\+warning\+\_\+template}(token,  cond,  msg)~    static\+\_\+warning(cond, msg) NCPP\+\_\+\+PP\+\_\+\+CAT(NCPP\+\_\+\+PP\+\_\+\+CAT(\+\_\+localvar\+\_\+, token),\+\_\+\+\_\+\+LINE\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}\label{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}} 
+using {\bfseries ncpp\+::u8} = uint8\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_ac639dbecb13818df840f0f32d4c27c5f}\label{namespacencpp_ac639dbecb13818df840f0f32d4c27c5f}} 
+using {\bfseries ncpp\+::u16} = uint16\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}\label{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}} 
+using {\bfseries ncpp\+::u32} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_abea3680fc16f71355a78e25085f5ceec}\label{namespacencpp_abea3680fc16f71355a78e25085f5ceec}} 
+using {\bfseries ncpp\+::u64} = uint64\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a2effbb72917027f50063789945039aed}\label{namespacencpp_a2effbb72917027f50063789945039aed}} 
+using {\bfseries ncpp\+::i8} = int8\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a2e4d3b7ee4bc1aebc5f3316c2fcd35fc}\label{namespacencpp_a2e4d3b7ee4bc1aebc5f3316c2fcd35fc}} 
+using {\bfseries ncpp\+::i16} = int16\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a2cfcadebf19da9723133123bbf3d9bbc}\label{namespacencpp_a2cfcadebf19da9723133123bbf3d9bbc}} 
+using {\bfseries ncpp\+::i32} = int32\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a6210edcd44290f3f8b4a34ac7ff37b19}\label{namespacencpp_a6210edcd44290f3f8b4a34ac7ff37b19}} 
+using {\bfseries ncpp\+::i64} = int64\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacencpp_a609d57fd0d903f667c43c803493f958f}\label{namespacencpp_a609d57fd0d903f667c43c803493f958f}} 
+using {\bfseries ncpp\+::f32} = float
+\item 
+\mbox{\Hypertarget{namespacencpp_a233bba7d356dd21e50b35340c3290306}\label{namespacencpp_a233bba7d356dd21e50b35340c3290306}} 
+using {\bfseries ncpp\+::f64} = double
+\item 
+\mbox{\Hypertarget{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}\label{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}} 
+using {\bfseries ncpp\+::b8} = bool
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The file that is always included on the top. 
+
+Including stl headers, platform api headers, and defining some macros,... 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{prerequisites_8hpp_ab77abb04c6b367804302b90edc1d8a56}\label{prerequisites_8hpp_ab77abb04c6b367804302b90edc1d8a56}} 
+\index{prerequisites.hpp@{prerequisites.hpp}!static\_warning@{static\_warning}}
+\index{static\_warning@{static\_warning}!prerequisites.hpp@{prerequisites.hpp}}
+\doxysubsubsection{\texorpdfstring{static\_warning}{static\_warning}}
+{\footnotesize\ttfamily \#define static\+\_\+warning(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }NCPP\_PP\_CAT(static\_warning,\_\_LINE\_\_)\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ DEPRECATE(\textcolor{keywordtype}{void}\ \_(\mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1false__type}{::ncpp::static\_warning\_helper::false\_type}}\ \textcolor{keyword}{const}\&\ ),msg)\ \{\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \_(\mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1true__type}{::ncpp::static\_warning\_helper::true\_type}}\ \textcolor{keyword}{const}\&\ )\ \{\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ NCPP\_PP\_CAT(static\_warning,\_\_LINE\_\_)()\ \{\_(\mbox{\hyperlink{structncpp_1_1static__warning__helper_1_1converter}{ncpp::static\_warning\_helper::converter}}<(cond)>());\}\ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

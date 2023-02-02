@@ -1,6 +1,18 @@
 var searchData=
 [
-  ['false_5ftype_0',['false_type',['../structdetail_1_1false__type.html',1,'detail']]],
-  ['first_5ftemplate_5farg_2ehpp_1',['first_template_arg.hpp',['../first__template__arg_8hpp.html',1,'']]],
-  ['first_5ftemplate_5farg_5ft_2',['first_template_arg_t',['../namespacencpp_1_1tmp__helper.html#a84c9dea28ea06ee256fb35c58cce16b7',1,'ncpp::tmp_helper']]]
+  ['false_5ftype_0',['false_type',['../d5/ddf/structncpp_1_1static__warning__helper_1_1false__type.html',1,'ncpp::static_warning_helper']]],
+  ['fiber_2ehpp_1',['fiber.hpp',['../d9/d8e/fiber_8hpp.html',1,'']]],
+  ['fiber_5f_2',['fiber_',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#aacb511212afd28e07cf19cce6bc6ec73',1,'ncpp::cbjs::coroutine']]],
+  ['fiber_5fcreation_5fmode_3',['fiber_creation_mode',['../da/d12/namespacencpp_1_1pac.html#a60446d445abb1985eb31f68a7413cf85',1,'ncpp::pac']]],
+  ['fiber_5fp_5f_4',['fiber_p_',['../d9/d3d/classncpp_1_1cbjs_1_1worker__thread.html#a1c28b5ec43c612bd27c62e6e4511df94',1,'ncpp::cbjs::worker_thread']]],
+  ['first_5ftemplate_5farg_2ehpp_5',['first_template_arg.hpp',['../d3/d57/first__template__arg_8hpp.html',1,'']]],
+  ['first_5ftemplate_5farg_5ft_6',['first_template_arg_t',['../d3/dd2/namespacencpp_1_1utilities.html#a0ed33b938e311979d486ec708f2c7389',1,'ncpp::utilities']]],
+  ['fixed_5fvector_5fqueue_2ehpp_7',['fixed_vector_queue.hpp',['../dc/d16/fixed__vector__queue_8hpp.html',1,'']]],
+  ['fixed_5fvector_5fqueue_5ft_8',['fixed_vector_queue_t',['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a9f32206f5be4e12d4e56c17e834914c9',1,'ncpp::containers::fixed_vector_queue_t::fixed_vector_queue_t(size_t capacity)'],['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#aa8d44e6bac46c9b5a2a3c2645067f27a',1,'ncpp::containers::fixed_vector_queue_t::fixed_vector_queue_t()'],['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a28b3e2d0e1a64998bc1d70254cf53877',1,'ncpp::containers::fixed_vector_queue_t::fixed_vector_queue_t(const fixed_vector_queue_t &amp;other)'],['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a241c1ee96e03e37f23ced81c6735800b',1,'ncpp::containers::fixed_vector_queue_t::fixed_vector_queue_t(fixed_vector_queue_t &amp;&amp;other)'],['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html',1,'ncpp::containers::fixed_vector_queue_t&lt; item_type, allocator_t &gt;']]],
+  ['fixed_5fvector_5fstack_2ehpp_9',['fixed_vector_stack.hpp',['../d0/de1/fixed__vector__stack_8hpp.html',1,'']]],
+  ['fixed_5fvector_5fstack_5ft_10',['fixed_vector_stack_t',['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#a3d1d145b731df6bed6c003e326b6ddb1',1,'ncpp::containers::fixed_vector_stack_t::fixed_vector_stack_t(size_t capacity)'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#a5655acf26af581e1b8edee452e4a4752',1,'ncpp::containers::fixed_vector_stack_t::fixed_vector_stack_t()'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#a8431a06b33e889ed3f006e8804dd41a0',1,'ncpp::containers::fixed_vector_stack_t::fixed_vector_stack_t(const fixed_vector_stack_t &amp;other)'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#a5a2a98cb3dc65cab2df0fb13721ceddd',1,'ncpp::containers::fixed_vector_stack_t::fixed_vector_stack_t(fixed_vector_stack_t &amp;&amp;other)'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html',1,'ncpp::containers::fixed_vector_stack_t&lt; item_type, allocator_t &gt;']]],
+  ['fixed_5fvector_5fstack_5ft_3c_20ncpp_3a_3acbjs_3a_3acoroutine_20_2a_20_3e_11',['fixed_vector_stack_t&lt; ncpp::cbjs::coroutine * &gt;',['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html',1,'ncpp::containers']]],
+  ['functor_12',['functor',['../df/dd4/structncpp_1_1cbjs_1_1job.html#a9c6e38b2d18de4ba219da559eb826d3a',1,'ncpp::cbjs::job']]],
+  ['functor_5f_13',['functor_',['../dc/dba/classncpp_1_1pac_1_1win__fiber.html#a1d336d2bf95f3a430692269802e669d8',1,'ncpp::pac::win_fiber']]],
+  ['functor_5ftype_14',['functor_type',['../df/dd4/structncpp_1_1cbjs_1_1job.html#a08a26d62b683762dfb333a5db45830e3',1,'ncpp::cbjs::job']]]
 ];

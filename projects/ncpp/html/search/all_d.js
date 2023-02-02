@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../structncpp_1_1containers_1_1handle__map__t_1_1id__type.html#aaaf5b4b6be7f505b0c7cee2afce7faa7',1,'ncpp::containers::handle_map_t::id_type']]],
-  ['operator_3c_1',['operator&lt;',['../structncpp_1_1containers_1_1handle__map__t_1_1id__type.html#a71459c85ebfd8c84a91fc7b2c479c43f',1,'ncpp::containers::handle_map_t::id_type']]],
-  ['operator_3d_2',['operator=',['../classncpp_1_1containers_1_1bridge__map__t.html#a5818fddb0f0f8f1406dfcdb8c677b0bb',1,'ncpp::containers::bridge_map_t::operator=(const bridge_map_t &amp;other)'],['../classncpp_1_1containers_1_1bridge__map__t.html#aa3db6398f22e95b0f81151be5b260c2c',1,'ncpp::containers::bridge_map_t::operator=(bridge_map_t &amp;&amp;other)'],['../classncpp_1_1containers_1_1handle__map__t.html#ab083f41fb93f8f1f6f23123bb42c8d9e',1,'ncpp::containers::handle_map_t::operator=(const handle_map_t &amp;other)'],['../classncpp_1_1containers_1_1handle__map__t.html#a64611adfe9aae2dee821ad3e0b634a48',1,'ncpp::containers::handle_map_t::operator=(handle_map_t &amp;&amp;other)']]],
-  ['operator_3d_3d_3',['operator==',['../structncpp_1_1containers_1_1handle__map__t_1_1id__type.html#a804634bedef4523c6fb8121bb46374e4',1,'ncpp::containers::handle_map_t::id_type']]],
-  ['operator_3e_4',['operator&gt;',['../structncpp_1_1containers_1_1handle__map__t_1_1id__type.html#ab3ab9e4f7fbaaec604f8f90bc4857329',1,'ncpp::containers::handle_map_t::id_type']]],
-  ['operator_5b_5d_5',['operator[]',['../classncpp_1_1containers_1_1handle__map__t.html#a917b30cfd5733cf2848fc99fc152662c',1,'ncpp::containers::handle_map_t::operator[](id_type handle)'],['../classncpp_1_1containers_1_1handle__map__t.html#a78bb2e606096c74044b977aa85bc34c0',1,'ncpp::containers::handle_map_t::operator[](uint32_t inner_index)']]],
-  ['outer_5findex_6',['outer_index',['../structncpp_1_1containers_1_1handle__map__t_1_1meta__type.html#ac8173b76b8f94a5953aefcd3e226870d',1,'ncpp::containers::handle_map_t::meta_type']]]
+  ['request_5fstop_0',['request_stop',['../da/db1/classncpp_1_1cbjs_1_1system.html#ac70d7fac24ef0388ff96999ce7d1b24e',1,'ncpp::cbjs::system']]],
+  ['reset_1',['reset',['../df/dd4/structncpp_1_1cbjs_1_1job.html#a42a7697abcaa24ec6520257313cd63cc',1,'ncpp::cbjs::job']]],
+  ['resize_2',['resize',['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a85fa55b5f3c44daf68974c5985a1e945',1,'ncpp::containers::fixed_vector_queue_t::resize()'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#abe45aa88b9c00a915a46ed52cfd7787b',1,'ncpp::containers::fixed_vector_stack_t::resize()']]]
 ];

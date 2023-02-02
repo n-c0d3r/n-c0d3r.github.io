@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bridge_5fmap_2ehpp_0',['bridge_map.hpp',['../bridge__map_8hpp.html',1,'']]],
-  ['bridge_5fmap_5ft_1',['bridge_map_t',['../classncpp_1_1containers_1_1bridge__map__t.html#ade6e441a7bdc277ef974d15a24d1854d',1,'ncpp::containers::bridge_map_t::bridge_map_t(const handle_map1_type &amp;map1, const handle_map2_type &amp;map2)'],['../classncpp_1_1containers_1_1bridge__map__t.html#aea569aff0106d4f58d99d1ebaa872d34',1,'ncpp::containers::bridge_map_t::bridge_map_t(const bridge_map_t &amp;other)'],['../classncpp_1_1containers_1_1bridge__map__t.html#accccfbebbad1c67eeb645e3971368193',1,'ncpp::containers::bridge_map_t::bridge_map_t(bridge_map_t &amp;&amp;other)'],['../classncpp_1_1containers_1_1bridge__map__t.html',1,'ncpp::containers::bridge_map_t&lt; item1_type, item2_type, allocator_t &gt;']]]
+  ['bind_5fjob_0',['bind_job',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#a71a22744728bc9a1006073d933141fd1',1,'ncpp::cbjs::coroutine']]],
+  ['bind_5fthread_5ffiber_1',['bind_thread_fiber',['../d1/d8f/classncpp_1_1cbjs_1_1coroutine.html#aee70175b8cb596acecf6c2fb922feb4c',1,'ncpp::cbjs::coroutine']]]
 ];

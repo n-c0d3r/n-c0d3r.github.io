@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['meta_5fset_5ftype_0',['meta_set_type',['../classncpp_1_1containers_1_1handle__map__t.html#acc48de8d7f9df5a6a4b652bf1406b7cc',1,'ncpp::containers::handle_map_t']]],
-  ['meta_5ftype_1',['meta_type',['../structncpp_1_1containers_1_1handle__map__t_1_1meta__type.html',1,'ncpp::containers::handle_map_t']]]
+  ['operator_3d_0',['operator=',['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a8f6bae31d679ac0e337b799cd965923b',1,'ncpp::containers::fixed_vector_queue_t::operator=(const fixed_vector_queue_t &amp;other)'],['../dd/d67/classncpp_1_1containers_1_1fixed__vector__queue__t.html#a8c985c81cc97f8b9f83846284054f5ca',1,'ncpp::containers::fixed_vector_queue_t::operator=(fixed_vector_queue_t &amp;&amp;other)'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#adcf56378bf248347e0107c968b1089ff',1,'ncpp::containers::fixed_vector_stack_t::operator=(const fixed_vector_stack_t &amp;other)'],['../d4/d4c/classncpp_1_1containers_1_1fixed__vector__stack__t.html#a89c0be1ad5eafd9ab07d1cf570dd3548',1,'ncpp::containers::fixed_vector_stack_t::operator=(fixed_vector_stack_t &amp;&amp;other)']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ncpp: F:/NCoder/NCPP/ncpp/source/ncpp/tmp_helper/templated_for.hpp File Reference</title>
+<title>NCPP: F:/NCoder/NCPP/ncpp/source/ncpp/utilities/templated_for.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ncpp
+   <div id="projectname">NCPP
    </div>
+   <div id="projectbrief">Ncoder&#39;s Game Engine Learning Aimed C++ Library.</div>
   </td>
  </tr>
  </tbody>
@@ -94,48 +95,105 @@ $(document).ready(function(){initNavTree('templated__for_8hpp.html',''); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">templated_for.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="utilities_8hpp_source.html">ncpp/utilities.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="nth__template__arg_8hpp_source.html">ncpp/tmp_helper/nth_template_arg.hpp</a>&gt;</code><br />
+
+<p>Containing macros and functions to create the loop template.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="prerequisites_8hpp_source.html">ncpp/prerequisites.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="nth__template__arg_8hpp_source.html">ncpp/utilities/nth_template_arg.hpp</a>&gt;</code><br />
 </div>
 <p><a href="templated__for_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t.html">ncpp::tmp_helper::templated_for_helper::step_t&lt; f_type_t, is_end, end, index, arg_types &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html">ncpp::utilities::templated_for_helper::step_t&lt; f_type_t, is_end, end, index, arg_types &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01enda1f07291b4c09f7196a3190aedca3da3.html">ncpp::tmp_helper::templated_for_helper::step_t&lt; f_type_t, true, end, index, arg_types... &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01end_0ebfb1135fc17354960f6f51b147d43b0.html">ncpp::utilities::templated_for_helper::step_t&lt; f_type_t, true, end, index, arg_types... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1tmp__helper_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end0c3456c3caa562c2ca61f47b56a1e15.html">ncpp::tmp_helper::templated_for_helper::step_t&lt; f_type_t, false, end, index, arg_types... &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end_5e59338bab27ffa3a9dc69a6102632ea.html">ncpp::utilities::templated_for_helper::step_t&lt; f_type_t, false, end, index, arg_types... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacencpp"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp.html">ncpp</a></td></tr>
+<tr class="memdesc:namespacencpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root namespace of ncpp project. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacencpp_1_1tmp__helper"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1tmp__helper.html">ncpp::tmp_helper</a></td></tr>
+<tr class="memitem:namespacencpp_1_1utilities"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1utilities.html">ncpp::utilities</a></td></tr>
+<tr class="memdesc:namespacencpp_1_1utilities"><td class="mdescLeft">&#160;</td><td class="mdescRight">Containing the utilities in ncpp project. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacencpp_1_1tmp__helper_1_1templated__for__helper"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html">ncpp::tmp_helper::templated_for_helper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3c58dfb3df72f9b065c7ff39ee965663"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templated__for_8hpp.html#a3c58dfb3df72f9b065c7ff39ee965663">NCPP_LOOP_FUNCTION_T</a>(Name,  Params,  Body)</td></tr>
+<tr class="memdesc:a3c58dfb3df72f9b065c7ff39ee965663"><td class="mdescLeft">&#160;</td><td class="mdescRight">The macro using to create the body function of loop template.  <br /></td></tr>
+<tr class="separator:a3c58dfb3df72f9b065c7ff39ee965663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab393c35f8138c4ae88081bce7d5da9bb"><td class="memTemplParams" colspan="2">template&lt;template&lt; size_t index &gt; typename f_type_t, bool is_end, size_t end, size_t index, typename... arg_types&gt; </td></tr>
-<tr class="memitem:ab393c35f8138c4ae88081bce7d5da9bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1tmp__helper_1_1templated__for__helper.html#ab393c35f8138c4ae88081bce7d5da9bb">ncpp::tmp_helper::templated_for_helper::step_invoke_t</a> (arg_types &amp;&amp;... args)</td></tr>
-<tr class="separator:ab393c35f8138c4ae88081bce7d5da9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0748be1edba3970e7f41ef40f2cee1"><td class="memTemplParams" colspan="2">template&lt;template&lt; size_t index &gt; typename f_type_t, size_t begin, size_t end, typename... arg_types&gt; </td></tr>
-<tr class="memitem:a4a0748be1edba3970e7f41ef40f2cee1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1tmp__helper.html#a4a0748be1edba3970e7f41ef40f2cee1">ncpp::tmp_helper::templated_for_t</a> (arg_types &amp;&amp;... args)</td></tr>
-<tr class="separator:a4a0748be1edba3970e7f41ef40f2cee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7594ed1866e8967ae00b609c173c7772"><td class="memTemplParams" colspan="2"><a id="a7594ed1866e8967ae00b609c173c7772" name="a7594ed1866e8967ae00b609c173c7772"></a>
+template&lt;template&lt; size_t index &gt; typename f_type_t, bool is_end, size_t end, size_t index, typename... arg_types&gt; </td></tr>
+<tr class="memitem:a7594ed1866e8967ae00b609c173c7772"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::utilities::templated_for_helper::step_invoke_t</b> (arg_types &amp;&amp;... args)</td></tr>
+<tr class="separator:a7594ed1866e8967ae00b609c173c7772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memTemplParams" colspan="2">template&lt;template&lt; size_t index &gt; typename f_type_t, size_t begin, size_t end, typename... arg_types&gt; </td></tr>
+<tr class="memitem:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027">ncpp::utilities::templated_for_t</a> (arg_types &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a61b43c2ee122a2c1598b54b61d3b3027"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function template helping run a loop which the index be a template argument.  <br /></td></tr>
+<tr class="separator:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Containing macros and functions to create the loop template. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3c58dfb3df72f9b065c7ff39ee965663" name="a3c58dfb3df72f9b065c7ff39ee965663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c58dfb3df72f9b065c7ff39ee965663">&#9670;&#160;</a></span>NCPP_LOOP_FUNCTION_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NCPP_LOOP_FUNCTION_T</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Params, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Body&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> index&gt;\</div>
+<div class="line">        <span class="keyword">struct </span>Name {\</div>
+<div class="line">        \</div>
+<div class="line">            <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> invoke Params { Body; }; \</div>
+<div class="line">        \</div>
+<div class="line">        };</div>
+</div><!-- fragment -->
+<p>The macro using to create the body function of loop template. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_3c2fb89c4773d0bcacfa59bb62226a89.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_8d5f6d02bf3a9f5475123b1578a561d8.html">source</a></li><li class="navelem"><a class="el" href="dir_30a9dc02078d4756c9816c3dcbc8f1b9.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_d367d9776f25fe01ebc21049c08d9441.html">tmp_helper</a></li><li class="navelem"><a class="el" href="templated__for_8hpp.html">templated_for.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_3c2fb89c4773d0bcacfa59bb62226a89.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_8d5f6d02bf3a9f5475123b1578a561d8.html">source</a></li><li class="navelem"><a class="el" href="dir_30a9dc02078d4756c9816c3dcbc8f1b9.html">ncpp</a></li><li class="navelem"><a class="el" href="dir_0734f1c88567a93be41e1108e92689e5.html">utilities</a></li><li class="navelem"><a class="el" href="templated__for_8hpp.html">templated_for.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

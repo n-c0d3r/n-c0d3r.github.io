@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['ncpp_5fdefault_5falign_0',['NCPP_DEFAULT_ALIGN',['../structncpp_1_1containers_1_1handle__map__t_1_1meta__type_1_1_n_c_p_p___d_e_f_a_u_l_t___a_l_i_g_n.html',1,'ncpp::containers::handle_map_t::meta_type']]],
-  ['nth_5ftemplate_5farg_5ft_1',['nth_template_arg_t',['../structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t.html',1,'ncpp::tmp_helper::nth_template_arg_helper::nth_template_arg_t&lt; is_single, is_nth, nth_remain, arg_types &gt;'],['../structncpp_1_1tmp__helper_1_1nth__template__arg__t.html',1,'ncpp::tmp_helper::nth_template_arg_t&lt; nth, arg_types &gt;']]],
-  ['nth_5ftemplate_5farg_5ft_3c_20false_2c_20false_2c_20nth_5fremain_2c_20nth_5farg_5ftype_2c_20rest_2e_2e_2e_20_3e_2',['nth_template_arg_t&lt; false, false, nth_remain, nth_arg_type, rest... &gt;',['../structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01false_00_01ea922dadeb8feccdffc04e20faf78118.html',1,'ncpp::tmp_helper::nth_template_arg_helper']]],
-  ['nth_5ftemplate_5farg_5ft_3c_20false_2c_20true_2c_20nth_5fremain_2c_20nth_5farg_5ftype_2c_20rest_2e_2e_2e_20_3e_3',['nth_template_arg_t&lt; false, true, nth_remain, nth_arg_type, rest... &gt;',['../structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01false_00_01af54c1a221aa8e2be6d25cbf18ce4a6d.html',1,'ncpp::tmp_helper::nth_template_arg_helper']]],
-  ['nth_5ftemplate_5farg_5ft_3c_20true_2c_20false_2c_20nth_5fremain_2c_20arg_5ftype_20_3e_4',['nth_template_arg_t&lt; true, false, nth_remain, arg_type &gt;',['../structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01ffdc9cfadb39697954ad9e8e7f5a6adec.html',1,'ncpp::tmp_helper::nth_template_arg_helper']]],
-  ['nth_5ftemplate_5farg_5ft_3c_20true_2c_20true_2c_20nth_5fremain_2c_20arg_5ftype_20_3e_5',['nth_template_arg_t&lt; true, true, nth_remain, arg_type &gt;',['../structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01tc00997f4b2cf747780e630a81030c467.html',1,'ncpp::tmp_helper::nth_template_arg_helper']]]
+  ['semaphore_5ft_0',['semaphore_t',['../d5/da3/classncpp_1_1pac_1_1semaphore__t.html',1,'ncpp::pac']]],
+  ['singleton_5ft_1',['singleton_t',['../d2/d39/classncpp_1_1utilities_1_1singleton__t.html',1,'ncpp::utilities']]],
+  ['singleton_5ft_3c_20system_20_3e_2',['singleton_t&lt; system &gt;',['../d2/d39/classncpp_1_1utilities_1_1singleton__t.html',1,'ncpp::utilities']]],
+  ['spinlock_3',['spinlock',['../d1/d35/classncpp_1_1pac_1_1spinlock.html',1,'ncpp::pac']]],
+  ['step_5ft_4',['step_t',['../d1/d90/structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html',1,'ncpp::utilities::templated_for_helper']]],
+  ['step_5ft_3c_20f_5ftype_5ft_2c_20false_2c_20end_2c_20index_2c_20arg_5ftypes_2e_2e_2e_20_3e_5',['step_t&lt; f_type_t, false, end, index, arg_types... &gt;',['../dc/d88/structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01false_00_01end_5e59338bab27ffa3a9dc69a6102632ea.html',1,'ncpp::utilities::templated_for_helper']]],
+  ['step_5ft_3c_20f_5ftype_5ft_2c_20true_2c_20end_2c_20index_2c_20arg_5ftypes_2e_2e_2e_20_3e_6',['step_t&lt; f_type_t, true, end, index, arg_types... &gt;',['../d9/d0a/structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_00_01true_00_01end_0ebfb1135fc17354960f6f51b147d43b0.html',1,'ncpp::utilities::templated_for_helper']]],
+  ['system_7',['system',['../da/db1/classncpp_1_1cbjs_1_1system.html',1,'ncpp::cbjs']]],
+  ['system_5fsettings_8',['system_settings',['../dc/dc8/structncpp_1_1cbjs_1_1system__settings.html',1,'ncpp::cbjs']]]
 ];
