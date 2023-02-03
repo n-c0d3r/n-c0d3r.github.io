@@ -1,4 +1,0 @@
-var structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01tc00997f4b2cf747780e630a81030c467 =
-[
-    [ "type", "structncpp_1_1tmp__helper_1_1nth__template__arg__helper_1_1nth__template__arg__t_3_01true_00_01tc00997f4b2cf747780e630a81030c467.html#ad662a3dbdb3506234076c02cab537e91", null ]
-];

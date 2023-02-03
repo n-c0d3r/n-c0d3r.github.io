@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('namespacencpp_1_1cbjs.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Implementing coroutine based job system.  
+<p>Implements coroutine based job system.  
 <a href="namespacencpp_1_1cbjs.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -109,7 +109,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A coroutine is a function that can suspend execution to be resumed later.  <a href="classncpp_1_1cbjs_1_1coroutine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1cbjs_1_1coroutine__pool.html">coroutine_pool</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storing coroutines.  <a href="classncpp_1_1cbjs_1_1coroutine__pool.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores and manages coroutines.  <a href="classncpp_1_1cbjs_1_1coroutine__pool.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1cbjs_1_1coroutine__state__updater.html">coroutine_state_updater</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for updating the coroutine state.  <a href="classncpp_1_1cbjs_1_1coroutine__state__updater.html#details">More...</a><br /></td></tr>
@@ -118,10 +118,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Be a function, and also storing job's informations (priority, is_done,...).  <a href="structncpp_1_1cbjs_1_1job.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1cbjs_1_1system.html">system</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managing worker threads and overall states.  <a href="classncpp_1_1cbjs_1_1system.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages worker threads and overall states.  <a href="classncpp_1_1cbjs_1_1system.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1cbjs_1_1system__settings.html">system_settings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storing the settings to create job system.  <a href="structncpp_1_1cbjs_1_1system__settings.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the settings to create job system.  <a href="structncpp_1_1cbjs_1_1system__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1cbjs_1_1wait__job__done.html">wait_job_done</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A coroutine state updater that only update coroutine state to coroutine_state::RUNNABLE after the indicated job done.  <a href="classncpp_1_1cbjs_1_1wait__job__done.html#details">More...</a><br /></td></tr>
@@ -135,7 +135,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a35e48e1335bc568d09d6bf6eda6a159e"><td class="memItemLeft" align="right" valign="top"><a id="a35e48e1335bc568d09d6bf6eda6a159e" name="a35e48e1335bc568d09d6bf6eda6a159e"></a>enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1cbjs.html#a35e48e1335bc568d09d6bf6eda6a159e">coroutine_state</a> { <b>WAITING</b> = 0
 , <b>RUNNABLE</b> = 1
  }</td></tr>
-<tr class="memdesc:a35e48e1335bc568d09d6bf6eda6a159e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicating whether the coroutine is able to run . <br /></td></tr>
+<tr class="memdesc:a35e48e1335bc568d09d6bf6eda6a159e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the coroutine is able to run . <br /></td></tr>
 <tr class="separator:a35e48e1335bc568d09d6bf6eda6a159e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -145,7 +145,7 @@ Variables</h2></td></tr>
 <tr class="separator:a4b034e1de85bf3e9c38ce195d498f21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementing coroutine based job system. </p>
+<div class="textblock"><p>Implements coroutine based job system. </p>
 </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a4b034e1de85bf3e9c38ce195d498f21b" name="a4b034e1de85bf3e9c38ce195d498f21b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b034e1de85bf3e9c38ce195d498f21b">&#9670;&#160;</a></span>default_coroutine_state_updater_g</h2>

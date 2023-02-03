@@ -58,8 +58,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"df/dd4/structncpp_1_1cbjs_1_1job.html#a9c6e38b2d18de4ba219da559eb826d3a"
+"_8hpp_source.html",
+"semaphore_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

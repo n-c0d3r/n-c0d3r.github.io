@@ -35,7 +35,7 @@
 \DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ }
 \DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_a69c650d8652c0f2a14d42f6eed4e9e53}{index\_}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_a69be2a1670642d615469281df5b0c2fe}{index\_}};}
 \DoxyCodeLine{00043\ }
 \DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ std::thread\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_a6a1190b310809d46566d96741d8db154}{std\_thread\_}};}
 \DoxyCodeLine{00048\ }
@@ -44,43 +44,43 @@
 \DoxyCodeLine{00059\ }
 \DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ coroutine\_p\_queue\_array\_type\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_aeb3ba378233f41efccbad12f48d65734}{coroutine\_p\_queue\_array\_}};}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<pac::fiber>\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_a1c28b5ec43c612bd27c62e6e4511df94}{fiber\_p\_}};}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<coroutine\_pool>\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_ad49ddd243111410474b8f60f0d9491ec}{coroutine\_pool\_p\_}};}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<pac::fiber>\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_a1c28b5ec43c612bd27c62e6e4511df94}{fiber\_p\_}};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<coroutine\_pool>\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread_ad49ddd243111410474b8f60f0d9491ec}{coroutine\_pool\_p\_}};}
 \DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ uint32\_t\ index()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ index\_;\ \}}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ std::thread\&\ std\_thread()\ \{\ \textcolor{keywordflow}{return}\ std\_thread\_;\ \}}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ std::thread\&\ std\_thread()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ std\_thread\_;\ \}}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ pac::fiber\&\ fiber()\ \{\ \textcolor{keywordflow}{return}\ *fiber\_p\_;\ \}}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ pac::fiber\&\ fiber()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *fiber\_p\_;\ \}}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ coroutine\_pool\&\ get\_coroutine\_pool()\ \{\ \textcolor{keywordflow}{return}\ *coroutine\_pool\_p\_;\ \}}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ coroutine\_pool\&\ get\_coroutine\_pool()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *coroutine\_pool\_p\_;\ \}}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ index()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ index\_;\ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ std::thread\&\ std\_thread()\ \{\ \textcolor{keywordflow}{return}\ std\_thread\_;\ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ std::thread\&\ std\_thread()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ std\_thread\_;\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ pac::fiber\&\ fiber()\ \{\ \textcolor{keywordflow}{return}\ *fiber\_p\_;\ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ pac::fiber\&\ fiber()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *fiber\_p\_;\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ coroutine\_pool\&\ get\_coroutine\_pool()\ \{\ \textcolor{keywordflow}{return}\ *coroutine\_pool\_p\_;\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ coroutine\_pool\&\ get\_coroutine\_pool()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *coroutine\_pool\_p\_;\ \}}
 \DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ worker\_thread(uint32\_t\ index);}
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \string~worker\_thread();}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ worker\_thread(u32\ index);}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \string~worker\_thread();}
 \DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ start();}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ join();}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ loop();}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ schedule(job\&\ j);}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ start();}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ join();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ loop();}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ schedule(job\&\ j);}
 \DoxyCodeLine{00119\ }
-\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00121\ }
-\DoxyCodeLine{00122\ \}}
+\DoxyCodeLine{00122\ \ \ \ \ \}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \}}
 
 \end{DoxyCode}

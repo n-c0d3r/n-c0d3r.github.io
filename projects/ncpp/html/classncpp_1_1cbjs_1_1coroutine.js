@@ -2,7 +2,7 @@ var classncpp_1_1cbjs_1_1coroutine =
 [
     [ "bind_job", "classncpp_1_1cbjs_1_1coroutine.html#a71a22744728bc9a1006073d933141fd1", null ],
     [ "bind_thread_fiber", "classncpp_1_1cbjs_1_1coroutine.html#aee70175b8cb596acecf6c2fb922feb4c", null ],
-    [ "is_has_job", "classncpp_1_1cbjs_1_1coroutine.html#a70237319281dd5df0566ffadfbdd7711", null ],
+    [ "is_has_job", "classncpp_1_1cbjs_1_1coroutine.html#af23efe1b5449a66364b558554c048e13", null ],
     [ "loop", "classncpp_1_1cbjs_1_1coroutine.html#a3d7202645b2de22c80e42bfad0cccc9e", null ],
     [ "switch_to_this", "classncpp_1_1cbjs_1_1coroutine.html#a9d3452ebbedca138715c2c3e76389dad", null ],
     [ "update_state", "classncpp_1_1cbjs_1_1coroutine.html#a1ab4d96813b7c2b458121e8de6866073", null ],

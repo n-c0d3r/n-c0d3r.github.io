@@ -24,9 +24,9 @@
 \DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings}{system\_settings}}\ \{}
 \DoxyCodeLine{00024\ }
 \DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}\&\ \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings_a5bccac08a78135110ddccd530a15a8a6}{entry\_job}};}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ worker\_thread\_count\ =\ std::thread::hardware\_concurrency();}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ job\_queue\_capacity\ =\ NCPP\_DEFAULT\_JOB\_QUEUE\_CAPACITY;}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ coroutine\_count\_per\_worker\_thread\ =\ NCPP\_DEFAULT\_COROUTINE\_COUNT\_PER\_WORKER\_THREAD;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ worker\_thread\_count\ =\ std::thread::hardware\_concurrency();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ job\_queue\_capacity\ =\ NCPP\_DEFAULT\_JOB\_QUEUE\_CAPACITY;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ coroutine\_count\_per\_worker\_thread\ =\ NCPP\_DEFAULT\_COROUTINE\_COUNT\_PER\_WORKER\_THREAD;}
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00035\ }
@@ -55,10 +55,10 @@
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings}{system\_settings}}\&\ settings()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ settings\_;\ \}}
 \DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs::worker\_thread}}\&\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}(uint32\_t\ index)\ \{\ \textcolor{keywordflow}{return}\ *(worker\_thread\_vector\_.at(index));\ \}}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs::worker\_thread}}\&\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}(uint32\_t\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *(worker\_thread\_vector\_.at(index));\ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs::worker\_thread}}\&\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}(\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ index)\ \{\ \textcolor{keywordflow}{return}\ *(worker\_thread\_vector\_.at(index));\ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs::worker\_thread}}\&\ \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\_thread}}(\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *(worker\_thread\_vector\_.at(index));\ \}}
 \DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ is\_running()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ is\_running\_.load(std::memory\_order\_acquire);\ \};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ is\_running()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ is\_running\_.load(std::memory\_order\_acquire);\ \};}
 \DoxyCodeLine{00069\ }
 \DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{pac::semaphore}}\&\ ready\_semaphore()\ \{\ \textcolor{keywordflow}{return}\ ready\_semaphore\_;\ \}}
 \DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{pac::semaphore}}\&\ ready\_semaphore()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ready\_semaphore\_;\ \}}

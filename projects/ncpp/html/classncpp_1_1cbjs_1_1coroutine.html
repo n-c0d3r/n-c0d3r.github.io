@@ -111,34 +111,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ec6c765586310a4dbfd0bf8a77a0923"><td class="memItemLeft" align="right" valign="top"><a id="a8ec6c765586310a4dbfd0bf8a77a0923" name="a8ec6c765586310a4dbfd0bf8a77a0923"></a>
 <a class="el" href="namespacencpp_1_1cbjs.html#a35e48e1335bc568d09d6bf6eda6a159e">coroutine_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const</td></tr>
 <tr class="separator:a8ec6c765586310a4dbfd0bf8a77a0923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70237319281dd5df0566ffadfbdd7711"><td class="memItemLeft" align="right" valign="top"><a id="a70237319281dd5df0566ffadfbdd7711" name="a70237319281dd5df0566ffadfbdd7711"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_has_job</b> () const</td></tr>
-<tr class="memdesc:a70237319281dd5df0566ffadfbdd7711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicating whether job_p_ is NULL. <br /></td></tr>
-<tr class="separator:a70237319281dd5df0566ffadfbdd7711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23efe1b5449a66364b558554c048e13"><td class="memItemLeft" align="right" valign="top"><a id="af23efe1b5449a66364b558554c048e13" name="af23efe1b5449a66364b558554c048e13"></a>
+<a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>is_has_job</b> () const</td></tr>
+<tr class="memdesc:af23efe1b5449a66364b558554c048e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether job_p_ is NULL. <br /></td></tr>
+<tr class="separator:af23efe1b5449a66364b558554c048e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee70175b8cb596acecf6c2fb922feb4c"><td class="memItemLeft" align="right" valign="top"><a id="aee70175b8cb596acecf6c2fb922feb4c" name="aee70175b8cb596acecf6c2fb922feb4c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bind_thread_fiber</b> (pac::fiber &amp;thread_fiber)</td></tr>
-<tr class="memdesc:aee70175b8cb596acecf6c2fb922feb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding the thread fiber to use when job done,... <br /></td></tr>
+<tr class="memdesc:aee70175b8cb596acecf6c2fb922feb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the thread fiber to use when job done,... <br /></td></tr>
 <tr class="separator:aee70175b8cb596acecf6c2fb922feb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a22744728bc9a1006073d933141fd1"><td class="memItemLeft" align="right" valign="top"><a id="a71a22744728bc9a1006073d933141fd1" name="a71a22744728bc9a1006073d933141fd1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bind_job</b> (<a class="el" href="structncpp_1_1cbjs_1_1job.html">job</a> &amp;j)</td></tr>
-<tr class="memdesc:a71a22744728bc9a1006073d933141fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding the job to run. <br /></td></tr>
+<tr class="memdesc:a71a22744728bc9a1006073d933141fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the job to run. <br /></td></tr>
 <tr class="separator:a71a22744728bc9a1006073d933141fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be66adee15a21f99bd1c702dce7d60d"><td class="memTemplParams" colspan="2"><a id="a5be66adee15a21f99bd1c702dce7d60d" name="a5be66adee15a21f99bd1c702dce7d60d"></a>
 template&lt;typename state_updater_type , typename... arg_types&gt; </td></tr>
 <tr class="memitem:a5be66adee15a21f99bd1c702dce7d60d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>yield_t</b> (arg_types &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a5be66adee15a21f99bd1c702dce7d60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changing the state updater by auto creating it from the passed arguments and switch to the owner thread fiber. <br /></td></tr>
+<tr class="memdesc:a5be66adee15a21f99bd1c702dce7d60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state updater by auto creating it from the passed arguments and switch to the owner thread fiber. <br /></td></tr>
 <tr class="separator:a5be66adee15a21f99bd1c702dce7d60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32e08deb7eb9c083e5d31f0400b4618"><td class="memItemLeft" align="right" valign="top"><a id="ab32e08deb7eb9c083e5d31f0400b4618" name="ab32e08deb7eb9c083e5d31f0400b4618"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>yield</b> (<a class="el" href="classncpp_1_1cbjs_1_1coroutine__state__updater.html">coroutine_state_updater</a> &amp;state_updater)</td></tr>
-<tr class="memdesc:ab32e08deb7eb9c083e5d31f0400b4618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changing the state updater and switch to the owner thread fiber. <br /></td></tr>
+<tr class="memdesc:ab32e08deb7eb9c083e5d31f0400b4618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state updater and switch to the owner thread fiber. <br /></td></tr>
 <tr class="separator:ab32e08deb7eb9c083e5d31f0400b4618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3452ebbedca138715c2c3e76389dad"><td class="memItemLeft" align="right" valign="top"><a id="a9d3452ebbedca138715c2c3e76389dad" name="a9d3452ebbedca138715c2c3e76389dad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>switch_to_this</b> ()</td></tr>
-<tr class="memdesc:a9d3452ebbedca138715c2c3e76389dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switching from owner thread fiber to the coroutine's fiber. <br /></td></tr>
+<tr class="memdesc:a9d3452ebbedca138715c2c3e76389dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches from owner thread fiber to the coroutine's fiber. <br /></td></tr>
 <tr class="separator:a9d3452ebbedca138715c2c3e76389dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ab4d96813b7c2b458121e8de6866073"><td class="memItemLeft" align="right" valign="top"><a id="a1ab4d96813b7c2b458121e8de6866073" name="a1ab4d96813b7c2b458121e8de6866073"></a>
 <a class="el" href="namespacencpp_1_1cbjs.html#a35e48e1335bc568d09d6bf6eda6a159e">coroutine_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>update_state</b> ()</td></tr>
-<tr class="memdesc:a1ab4d96813b7c2b458121e8de6866073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating the state by calling state_updater_p_-&gt;update(). <br /></td></tr>
+<tr class="memdesc:a1ab4d96813b7c2b458121e8de6866073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state by calling state_updater_p_-&gt;update(). <br /></td></tr>
 <tr class="separator:a1ab4d96813b7c2b458121e8de6866073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -148,7 +148,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
 <tr class="memdesc:a3d7202645b2de22c80e42bfad0cccc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main worker loop. <br /></td></tr>
 <tr class="separator:a3d7202645b2de22c80e42bfad0cccc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae762cb99a24d6bb13a1e01c71d523775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1cbjs_1_1coroutine.html#ae762cb99a24d6bb13a1e01c71d523775">yield</a> ()</td></tr>
-<tr class="memdesc:ae762cb99a24d6bb13a1e01c71d523775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changing the state updater to default and switch to the owner thread fiber.  <br /></td></tr>
+<tr class="memdesc:ae762cb99a24d6bb13a1e01c71d523775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state updater to default and switch to the owner thread fiber.  <br /></td></tr>
 <tr class="separator:ae762cb99a24d6bb13a1e01c71d523775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -176,7 +176,7 @@ pac::fiber *&#160;</td><td class="memItemRight" valign="bottom"><b>thread_fiber_
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A coroutine is a function that can suspend execution to be resumed later. </p>
-<p>It contain a fiber to run the main worker loop, be able switch back to the owner thread fiber and resumed later by switching to that fiber. </p>
+<p>It contain a fiber to run the main worker loop, be able to switch back to the owner thread fiber and resumed later by switching to that fiber. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae762cb99a24d6bb13a1e01c71d523775" name="ae762cb99a24d6bb13a1e01c71d523775"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae762cb99a24d6bb13a1e01c71d523775">&#9670;&#160;</a></span>yield()</h2>
@@ -201,7 +201,7 @@ pac::fiber *&#160;</td><td class="memItemRight" valign="bottom"><b>thread_fiber_
 </table>
 </div><div class="memdoc">
 
-<p>Changing the state updater to default and switch to the owner thread fiber. </p>
+<p>Changes the state updater to default and switch to the owner thread fiber. </p>
 <p>Also resetting job_p_ to NULL and state_ to coroutine_state::RUNNABLE. Be private because this function only need to call by the coroutine its self to switch back to the owner thread fiber when the coroutine is ready to take a new job. </p>
 
 </div>

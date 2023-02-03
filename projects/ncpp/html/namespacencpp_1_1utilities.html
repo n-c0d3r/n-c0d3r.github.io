@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('namespacencpp_1_1utilities.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>Containing the utilities in ncpp project.  
+<p>Contains the utilities in ncpp library.  
 <a href="namespacencpp_1_1utilities.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">nth_template_arg_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finding out the nth template argument.  <a href="structncpp_1_1utilities_1_1nth__template__arg__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds out the nth template argument.  <a href="structncpp_1_1utilities_1_1nth__template__arg__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1utilities_1_1singleton__t.html">singleton_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton template.  <a href="classncpp_1_1utilities_1_1singleton__t.html#details">More...</a><br /></td></tr>
@@ -120,23 +120,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0ed33b938e311979d486ec708f2c7389"><td class="memTemplParams" colspan="2"><a id="a0ed33b938e311979d486ec708f2c7389" name="a0ed33b938e311979d486ec708f2c7389"></a>
 template&lt;typename... arg_types&gt; </td></tr>
 <tr class="memitem:a0ed33b938e311979d486ec708f2c7389"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>first_template_arg_t</b> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">nth_template_arg_t</a>&lt; 0, arg_types... &gt;</td></tr>
-<tr class="memdesc:a0ed33b938e311979d486ec708f2c7389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finding out the first template argument. <br /></td></tr>
+<tr class="memdesc:a0ed33b938e311979d486ec708f2c7389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds out the first template argument. <br /></td></tr>
 <tr class="separator:a0ed33b938e311979d486ec708f2c7389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab008427113e7c7327730df2affe1842"><td class="memTemplParams" colspan="2"><a id="aab008427113e7c7327730df2affe1842" name="aab008427113e7c7327730df2affe1842"></a>
 template&lt;typename... arg_types&gt; </td></tr>
 <tr class="memitem:aab008427113e7c7327730df2affe1842"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>last_template_arg_t</b> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">nth_template_arg_t</a>&lt; sizeof...(arg_types) - 1, arg_types... &gt;</td></tr>
-<tr class="memdesc:aab008427113e7c7327730df2affe1842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finding out the last template argument. <br /></td></tr>
+<tr class="memdesc:aab008427113e7c7327730df2affe1842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds out the last template argument. <br /></td></tr>
 <tr class="separator:aab008427113e7c7327730df2affe1842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memTemplParams" colspan="2">template&lt;template&lt; size_t index &gt; typename f_type_t, size_t begin, size_t end, typename... arg_types&gt; </td></tr>
+<tr class="memitem:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memTemplParams" colspan="2">template&lt;template&lt; <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> index &gt; typename f_type_t, <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> begin, <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> end, typename... arg_types&gt; </td></tr>
 <tr class="memitem:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacencpp_1_1utilities.html#a61b43c2ee122a2c1598b54b61d3b3027">templated_for_t</a> (arg_types &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a61b43c2ee122a2c1598b54b61d3b3027"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function template helping run a loop which the index be a template argument.  <br /></td></tr>
 <tr class="separator:a61b43c2ee122a2c1598b54b61d3b3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Containing the utilities in ncpp project. </p>
+<div class="textblock"><p>Contains the utilities in ncpp library. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a61b43c2ee122a2c1598b54b61d3b3027" name="a61b43c2ee122a2c1598b54b61d3b3027"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61b43c2ee122a2c1598b54b61d3b3027">&#9670;&#160;</a></span>templated_for_t()</h2>
@@ -144,7 +144,7 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; size_t index &gt; typename f_type_t, size_t begin, size_t end, typename... arg_types&gt; </div>
+template&lt;template&lt; <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> index &gt; typename f_type_t, <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> begin, <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> end, typename... arg_types&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

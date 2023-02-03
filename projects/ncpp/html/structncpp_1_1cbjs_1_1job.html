@@ -117,7 +117,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42a7697abcaa24ec6520257313cd63cc"><td class="memItemLeft" align="right" valign="top"><a id="a42a7697abcaa24ec6520257313cd63cc" name="a42a7697abcaa24ec6520257313cd63cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
-<tr class="memdesc:a42a7697abcaa24ec6520257313cd63cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resetting the states to be kicked again. <br /></td></tr>
+<tr class="memdesc:a42a7697abcaa24ec6520257313cd63cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the states to be kicked again. <br /></td></tr>
 <tr class="separator:a42a7697abcaa24ec6520257313cd63cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -126,12 +126,12 @@ Public Attributes</h2></td></tr>
 <a class="el" href="structncpp_1_1cbjs_1_1job.html#a08a26d62b683762dfb333a5db45830e3">functor_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>functor</b></td></tr>
 <tr class="memdesc:a9c6e38b2d18de4ba219da559eb826d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function of the job. <br /></td></tr>
 <tr class="separator:a9c6e38b2d18de4ba219da559eb826d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511f35b52c49a2cad9e62c2f7c6c9eb5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1cbjs_1_1job.html#a511f35b52c49a2cad9e62c2f7c6c9eb5">priority</a> = 0</td></tr>
-<tr class="memdesc:a511f35b52c49a2cad9e62c2f7c6c9eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storing the priority of the job when scheduling.  <br /></td></tr>
-<tr class="separator:a511f35b52c49a2cad9e62c2f7c6c9eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31270575f4bbce61d06e6614bf47b2ad"><td class="memItemLeft" align="right" valign="top"><a id="a31270575f4bbce61d06e6614bf47b2ad" name="a31270575f4bbce61d06e6614bf47b2ad"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_done</b> = 0</td></tr>
-<tr class="separator:a31270575f4bbce61d06e6614bf47b2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971511b357e730310c6a5995850c2bab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1cbjs_1_1job.html#a971511b357e730310c6a5995850c2bab">priority</a> = 0</td></tr>
+<tr class="memdesc:a971511b357e730310c6a5995850c2bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the priority of the job when scheduling.  <br /></td></tr>
+<tr class="separator:a971511b357e730310c6a5995850c2bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43423e02f382f6cdd6b83266fd54ec2"><td class="memItemLeft" align="right" valign="top"><a id="ab43423e02f382f6cdd6b83266fd54ec2" name="ab43423e02f382f6cdd6b83266fd54ec2"></a>
+<a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>is_done</b> = 0</td></tr>
+<tr class="separator:ab43423e02f382f6cdd6b83266fd54ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -147,7 +147,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>coroutine</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Be a function, and also storing job's informations (priority, is_done,...). </p>
-<p>Can be allocated in the stack and owned by a coroutine after scheduled. </p>
+<p>Usually allocated in the stack and owned by a coroutine after scheduling. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a08a26d62b683762dfb333a5db45830e3" name="a08a26d62b683762dfb333a5db45830e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08a26d62b683762dfb333a5db45830e3">&#9670;&#160;</a></span>functor_type</h2>
@@ -174,19 +174,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>coroutine</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a511f35b52c49a2cad9e62c2f7c6c9eb5" name="a511f35b52c49a2cad9e62c2f7c6c9eb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a511f35b52c49a2cad9e62c2f7c6c9eb5">&#9670;&#160;</a></span>priority</h2>
+<a id="a971511b357e730310c6a5995850c2bab" name="a971511b357e730310c6a5995850c2bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971511b357e730310c6a5995850c2bab">&#9670;&#160;</a></span>priority</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t ncpp::cbjs::job::priority = 0</td>
+          <td class="memname"><a class="el" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> ncpp::cbjs::job::priority = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Storing the priority of the job when scheduling. </p>
+<p>Stores the priority of the job when scheduling. </p>
 <p>The strongest value is 0 (the highest priority). </p>
 
 </div>

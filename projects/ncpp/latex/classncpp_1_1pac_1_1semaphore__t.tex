@@ -2,7 +2,7 @@
 \label{classncpp_1_1pac_1_1semaphore__t}\index{ncpp::pac::semaphore\_t$<$ Mutex, CondVar $>$@{ncpp::pac::semaphore\_t$<$ Mutex, CondVar $>$}}
 
 
-Implementing semaphore.  
+Implements semaphore.  
 
 
 
@@ -18,8 +18,8 @@ using {\bfseries native\+\_\+handle\+\_\+type} = typename Cond\+Var\+::native\+\
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a775a326ebab8e6fbade09a1ffe75a5a5}\label{classncpp_1_1pac_1_1semaphore__t_a775a326ebab8e6fbade09a1ffe75a5a5}} 
-{\bfseries semaphore\+\_\+t} (size\+\_\+t count=0)
+\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a0dca4cde2653d17db16cdd4e0d3e7cbd}\label{classncpp_1_1pac_1_1semaphore__t_a0dca4cde2653d17db16cdd4e0d3e7cbd}} 
+{\bfseries semaphore\+\_\+t} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} count=0)
 \item 
 \mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_aae2958bd15cb69b67e848c2bb590e249}\label{classncpp_1_1pac_1_1semaphore__t_aae2958bd15cb69b67e848c2bb590e249}} 
 {\bfseries semaphore\+\_\+t} (const \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\+\_\+t}} \&)=delete
@@ -39,14 +39,14 @@ void {\bfseries notify} ()
 \mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_aa26537685630e2bfa7658b08df06aec7}\label{classncpp_1_1pac_1_1semaphore__t_aa26537685630e2bfa7658b08df06aec7}} 
 void {\bfseries wait} ()
 \item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a65bac0c9242db1b1c30bda331c0d0400}\label{classncpp_1_1pac_1_1semaphore__t_a65bac0c9242db1b1c30bda331c0d0400}} 
-bool {\bfseries try\+\_\+wait} ()
+\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_ad420f26a02c342966d3d4ecd49e77dc2}\label{classncpp_1_1pac_1_1semaphore__t_ad420f26a02c342966d3d4ecd49e77dc2}} 
+\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries try\+\_\+wait} ()
 \item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_adfefcd5602bb06663790292995012625}\label{classncpp_1_1pac_1_1semaphore__t_adfefcd5602bb06663790292995012625}} 
-{\footnotesize template$<$class Rep , class Period $>$ }\\bool {\bfseries wait\+\_\+for} (const std\+::chrono\+::duration$<$ Rep, Period $>$ \&d)
+\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a81e27963e37eb1cfc525adf1aabedcc7}\label{classncpp_1_1pac_1_1semaphore__t_a81e27963e37eb1cfc525adf1aabedcc7}} 
+{\footnotesize template$<$class Rep , class Period $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries wait\+\_\+for} (const std\+::chrono\+::duration$<$ Rep, Period $>$ \&d)
 \item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a15fb74c55e9ecc252d67bf1f493735e2}\label{classncpp_1_1pac_1_1semaphore__t_a15fb74c55e9ecc252d67bf1f493735e2}} 
-{\footnotesize template$<$class Clock , class Duration $>$ }\\bool {\bfseries wait\+\_\+until} (const std\+::chrono\+::time\+\_\+point$<$ Clock, Duration $>$ \&t)
+\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_aba475ed0a7b4fc65f3406ff571d21c5d}\label{classncpp_1_1pac_1_1semaphore__t_aba475ed0a7b4fc65f3406ff571d21c5d}} 
+{\footnotesize template$<$class Clock , class Duration $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries wait\+\_\+until} (const std\+::chrono\+::time\+\_\+point$<$ Clock, Duration $>$ \&t)
 \item 
 \mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_aad7cc4ffedf0bf42eb101d09d421c0a9}\label{classncpp_1_1pac_1_1semaphore__t_aad7cc4ffedf0bf42eb101d09d421c0a9}} 
 native\+\_\+handle\+\_\+type {\bfseries native\+\_\+handle} ()
@@ -60,15 +60,15 @@ Mutex {\bfseries m\+Mutex}
 \mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a3138101225fd2199d8a13ab56a360d87}\label{classncpp_1_1pac_1_1semaphore__t_a3138101225fd2199d8a13ab56a360d87}} 
 Cond\+Var {\bfseries m\+Cv}
 \item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a332b25a9a13263d288f2e8d96220e0a8}\label{classncpp_1_1pac_1_1semaphore__t_a332b25a9a13263d288f2e8d96220e0a8}} 
-size\+\_\+t {\bfseries m\+Count}
+\mbox{\Hypertarget{classncpp_1_1pac_1_1semaphore__t_a67601754d72aafb2d0bc196aa815ec83}\label{classncpp_1_1pac_1_1semaphore__t_a67601754d72aafb2d0bc196aa815ec83}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries m\+Count}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \subsubsection*{template$<$typename Mutex, typename Cond\+Var$>$\newline
 class ncpp\+::pac\+::semaphore\+\_\+t$<$ Mutex, Cond\+Var $>$}
-Implementing semaphore. 
+Implements semaphore. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

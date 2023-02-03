@@ -2,7 +2,7 @@
 \label{templated__for_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/utilities/templated\_for.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/utilities/templated\_for.hpp}}
 
 
-Containing macros and functions to create the loop template.  
+Contains macros and functions to create the loop template.  
 
 
 {\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
@@ -20,9 +20,9 @@ struct \mbox{\hyperlink{structncpp_1_1utilities_1_1templated__for__helper_1_1ste
 \begin{DoxyCompactItemize}
 \item 
 namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
-\begin{DoxyCompactList}\small\item\em The root namespace of ncpp project. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\item 
 namespace \mbox{\hyperlink{namespacencpp_1_1utilities}{ncpp\+::utilities}}
-\begin{DoxyCompactList}\small\item\em Containing the utilities in ncpp project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Contains the utilities in ncpp library. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,14 +32,14 @@ namespace \mbox{\hyperlink{namespacencpp_1_1utilities}{ncpp\+::utilities}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{templated__for_8hpp_a7594ed1866e8967ae00b609c173c7772}\label{templated__for_8hpp_a7594ed1866e8967ae00b609c173c7772}} 
-{\footnotesize template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, bool is\+\_\+end, size\+\_\+t end, size\+\_\+t index, typename... arg\+\_\+types$>$ }\\void {\bfseries ncpp\+::utilities\+::templated\+\_\+for\+\_\+helper\+::step\+\_\+invoke\+\_\+t} (arg\+\_\+types \&\&... args)
+{\footnotesize template$<$template$<$ sz index $>$ typename f\+\_\+type\+\_\+t, b8 is\+\_\+end, sz end, sz index, typename... arg\+\_\+types$>$ }\\void {\bfseries ncpp\+::utilities\+::templated\+\_\+for\+\_\+helper\+::step\+\_\+invoke\+\_\+t} (arg\+\_\+types \&\&... args)
 \item 
-{\footnotesize template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, size\+\_\+t begin, size\+\_\+t end, typename... arg\+\_\+types$>$ }\\void \mbox{\hyperlink{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}{ncpp\+::utilities\+::templated\+\_\+for\+\_\+t}} (arg\+\_\+types \&\&... args)
+{\footnotesize template$<$template$<$ sz index $>$ typename f\+\_\+type\+\_\+t, sz begin, sz end, typename... arg\+\_\+types$>$ }\\void \mbox{\hyperlink{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}{ncpp\+::utilities\+::templated\+\_\+for\+\_\+t}} (arg\+\_\+types \&\&... args)
 \begin{DoxyCompactList}\small\item\em The function template helping run a loop which the index be a template argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Containing macros and functions to create the loop template. 
+Contains macros and functions to create the loop template. 
 
 
 
@@ -52,7 +52,7 @@ Containing macros and functions to create the loop template.
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}\ index>\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{template}<sz\ index>\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }Name\ \{\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ invoke\ Params\ \{\ Body;\ \};\ \(\backslash\)}

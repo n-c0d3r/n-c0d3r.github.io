@@ -19,7 +19,7 @@
 \DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }native\_handle\_type\ =\ \textcolor{keyword}{typename}\ CondVar::native\_handle\_type;}
 \DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}(\textcolor{keywordtype}{size\_t}\ count\ =\ 0);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ count\ =\ 0);}
 \DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}\&)\ =\ \textcolor{keyword}{delete};}
 \DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}(\mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}\&\&)\ =\ \textcolor{keyword}{delete};}
 \DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t}}\&)\ =\ \textcolor{keyword}{delete};}
@@ -27,24 +27,24 @@
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ notify();}
 \DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ wait();}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ try\_wait();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ try\_wait();}
 \DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Rep,\ \textcolor{keyword}{class}\ Period>}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ wait\_for(\textcolor{keyword}{const}\ std::chrono::duration<Rep,\ Period>\&\ d);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ wait\_for(\textcolor{keyword}{const}\ std::chrono::duration<Rep,\ Period>\&\ d);}
 \DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Clock,\ \textcolor{keyword}{class}\ Duration>}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ wait\_until(\textcolor{keyword}{const}\ std::chrono::time\_point<Clock,\ Duration>\&\ t);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ wait\_until(\textcolor{keyword}{const}\ std::chrono::time\_point<Clock,\ Duration>\&\ t);}
 \DoxyCodeLine{00041\ }
 \DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ native\_handle\_type\ native\_handle();}
 \DoxyCodeLine{00043\ }
 \DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ Mutex\ \ \ mMutex;}
 \DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ CondVar\ mCv;}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \ mCount;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ \ mCount;}
 \DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00049\ }
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore}}\ =\ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t<std::mutex,\ std::condition\_variable>}};}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Mutex,\ \textcolor{keyword}{typename}\ CondVar>}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t<Mutex,\ CondVar>::semaphore\_t}}(\textcolor{keywordtype}{size\_t}\ count)}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{semaphore\_t<Mutex,\ CondVar>::semaphore\_t}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ count)}
 \DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ :\ mCount\{count\}}
 \DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \{\}}
 \DoxyCodeLine{00056\ }
@@ -63,7 +63,7 @@
 \DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00070\ }
 \DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Mutex,\ \textcolor{keyword}{typename}\ CondVar>}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ semaphore\_t<Mutex,\ CondVar>::try\_wait()\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ semaphore\_t<Mutex,\ CondVar>::try\_wait()\ \{}
 \DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ std::lock\_guard<Mutex>\ lock\{mMutex\};}
 \DoxyCodeLine{00074\ }
 \DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mCount\ >\ 0)\ \{}
@@ -76,7 +76,7 @@
 \DoxyCodeLine{00082\ }
 \DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Mutex,\ \textcolor{keyword}{typename}\ CondVar>}
 \DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Rep,\ \textcolor{keyword}{class}\ Period>}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ semaphore\_t<Mutex,\ CondVar>::wait\_for(\textcolor{keyword}{const}\ std::chrono::duration<Rep,\ Period>\&\ d)\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ semaphore\_t<Mutex,\ CondVar>::wait\_for(\textcolor{keyword}{const}\ std::chrono::duration<Rep,\ Period>\&\ d)\ \{}
 \DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_lock<Mutex>\ lock\{mMutex\};}
 \DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ finished\ =\ mCv.wait\_for(lock,\ d,\ [\&]\{\ \textcolor{keywordflow}{return}\ mCount\ >\ 0;\ \});}
 \DoxyCodeLine{00088\ }
@@ -88,7 +88,7 @@
 \DoxyCodeLine{00094\ }
 \DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Mutex,\ \textcolor{keyword}{typename}\ CondVar>}
 \DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Clock,\ \textcolor{keyword}{class}\ Duration>}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ semaphore\_t<Mutex,\ CondVar>::wait\_until(\textcolor{keyword}{const}\ std::chrono::time\_point<Clock,\ Duration>\&\ t)\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ semaphore\_t<Mutex,\ CondVar>::wait\_until(\textcolor{keyword}{const}\ std::chrono::time\_point<Clock,\ Duration>\&\ t)\ \{}
 \DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_lock<Mutex>\ lock\{mMutex\};}
 \DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ finished\ =\ mCv.wait\_until(lock,\ t,\ [\&]\{\ \textcolor{keywordflow}{return}\ mCount\ >\ 0;\ \});}
 \DoxyCodeLine{00100\ }

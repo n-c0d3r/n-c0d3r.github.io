@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['f32_0',['f32',['../namespacencpp.html#a609d57fd0d903f667c43c803493f958f',1,'ncpp']]],
-  ['f64_1',['f64',['../namespacencpp.html#a233bba7d356dd21e50b35340c3290306',1,'ncpp']]],
-  ['first_5ftemplate_5farg_5ft_2',['first_template_arg_t',['../namespacencpp_1_1utilities.html#a0ed33b938e311979d486ec708f2c7389',1,'ncpp::utilities']]],
-  ['functor_5ftype_3',['functor_type',['../structncpp_1_1cbjs_1_1job.html#a08a26d62b683762dfb333a5db45830e3',1,'ncpp::cbjs::job']]]
+  ['i16_0',['i16',['../namespacencpp.html#a2e4d3b7ee4bc1aebc5f3316c2fcd35fc',1,'ncpp']]],
+  ['i32_1',['i32',['../namespacencpp.html#a2cfcadebf19da9723133123bbf3d9bbc',1,'ncpp']]],
+  ['i64_2',['i64',['../namespacencpp.html#a6210edcd44290f3f8b4a34ac7ff37b19',1,'ncpp']]],
+  ['i8_3',['i8',['../namespacencpp.html#a2effbb72917027f50063789945039aed',1,'ncpp']]]
 ];

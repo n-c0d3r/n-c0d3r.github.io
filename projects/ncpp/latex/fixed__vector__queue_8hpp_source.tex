@@ -29,9 +29,9 @@
 \DoxyCodeLine{00035\ \textcolor{preprocessor}{\#pragma\ region\ Properties}}
 \DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ item\_vector\_type\ item\_vector\_;}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ begin\_index\_;}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ end\_index\_;}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ capacity\_;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ begin\_index\_;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ end\_index\_;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ capacity\_;}
 \DoxyCodeLine{00041\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00042\ }
 \DoxyCodeLine{00043\ }
@@ -48,14 +48,14 @@
 \DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ item\_type\&\ back()\ \{\ \textcolor{keywordflow}{return}\ *(item\_vector\_.data()\ +\ (end\_index\_\ -\/\ 1)\ \%\ capacity\_);\ \}}
 \DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ item\_type\&\ back()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ *(item\_vector\_.data()\ +\ (end\_index\_\ -\/\ 1)\ \%\ capacity\_);\ \}}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{size\_t}\ size()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ end\_index\_\ -\/\ begin\_index\_;\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ end\_index\_\ -\/\ begin\_index\_;\ \}}
 \DoxyCodeLine{00058\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00059\ }
 \DoxyCodeLine{00060\ }
 \DoxyCodeLine{00061\ }
 \DoxyCodeLine{00062\ \textcolor{preprocessor}{\#pragma\ region\ Constructors,\ Destructor\ and\ Operators}}
 \DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__queue__t_a9f32206f5be4e12d4e56c17e834914c9}{fixed\_vector\_queue\_t}}(\textcolor{keywordtype}{size\_t}\ capacity)\ :}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__queue__t_a61f9e2aeae8bed3387f5b987def7c16e}{fixed\_vector\_queue\_t}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ capacity)\ :}
 \DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ begin\_index\_(0),}
 \DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ end\_index\_(0),}
 \DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ capacity\_(capacity)}
@@ -150,7 +150,7 @@
 \DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00191\ }
-\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__queue__t_a85fa55b5f3c44daf68974c5985a1e945}{resize}}(\textcolor{keywordtype}{size\_t}\ size)\ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__queue__t_a93d897e80fb71364666e2440429cc4e7}{resize}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size)\ \{}
 \DoxyCodeLine{00196\ }
 \DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ end\_index\_\ =\ begin\_index\_\ +\ size;}
 \DoxyCodeLine{00198\ }

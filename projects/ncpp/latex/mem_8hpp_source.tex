@@ -28,41 +28,41 @@
 \DoxyCodeLine{00036\ }
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }NCPP\_DEFAULT\_ALIGN\ \mbox{\hyperlink{structncpp_1_1allocation__desc}{allocation\_desc}}\ \{}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ actual\_size;}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ flag\ :\ 32;}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ align\ :\ 1;}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ alignment\_shift\ :\ 1;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ actual\_size;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ flag\ :\ 32;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align\ :\ 1;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ alignment\_shift\ :\ 1;}
 \DoxyCodeLine{00046\ }
 \DoxyCodeLine{00047\ \ \ \ \ \};}
 \DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ is\_allocated\_by\_ncpp(\textcolor{keywordtype}{void}*\ ptr)\ \{\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ is\_allocated\_by\_ncpp(\textcolor{keywordtype}{void}*\ ptr)\ \{\ }
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{structncpp_1_1allocation__desc}{allocation\_desc}}*\textcolor{keyword}{>}(ptr)\ -\/\ 1)-\/>flag\ ==\ \mbox{\hyperlink{mem_8hpp_aca480a4d5842f4307cfb146a6ba572c5}{NCPP\_MEMORY\_ALLOCATION\_FLAG}};}
 \DoxyCodeLine{00051\ \ \ \ \ \}}
 \DoxyCodeLine{00052\ }
 \DoxyCodeLine{00053\ }
 \DoxyCodeLine{00054\ }
 \DoxyCodeLine{00055\ \textcolor{preprocessor}{\#pragma\ region\ Implement\ aligned\ allocation,...}}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{inline}\ uintptr\_t\ align\_address(uintptr\_t\ addr,\ \textcolor{keywordtype}{size\_t}\ align)}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{inline}\ uintptr\_t\ align\_address(uintptr\_t\ addr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00057\ \ \ \ \ \{}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ mask\ =\ align\ -\/\ 1;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ mask\ =\ align\ -\/\ 1;}
 \DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ assert((align\ \&\ mask)\ ==\ 0\ \&\&\ \textcolor{stringliteral}{"{}align\ value\ must\ be\ power\ of\ 2"{}});}
 \DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (addr\ +\ mask)\ \&\ \string~mask;}
 \DoxyCodeLine{00061\ \ \ \ \ \}}
 \DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ data\_type>}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{inline}\ data\_type*\ align\_pointer(data\_type*\ ptr,\ \textcolor{keywordtype}{size\_t}\ align)}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{inline}\ data\_type*\ align\_pointer(data\_type*\ ptr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00064\ \ \ \ \ \{}
 \DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uintptr\_t\ addr\ =\ \textcolor{keyword}{reinterpret\_cast<}uintptr\_t\textcolor{keyword}{>}(ptr);}
 \DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{reinterpret\_cast<}data\_type*\textcolor{keyword}{>}(align\_address(addr,\ align));}
 \DoxyCodeLine{00067\ \ \ \ \ \}}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ aligned\_alloc(\textcolor{keywordtype}{size\_t}\ size,\ \textcolor{keywordtype}{size\_t}\ align)}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ aligned\_alloc(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00069\ \ \ \ \ \{}
 \DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ desc\_shift\ =\ max(align,\ \textcolor{keyword}{sizeof}(allocation\_desc));}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ actual\_size\ =\ size\ +\ desc\_shift\ +\ align;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ desc\_shift\ =\ max(align,\ \textcolor{keyword}{sizeof}(allocation\_desc));}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ actual\_size\ =\ size\ +\ desc\_shift\ +\ align;}
 \DoxyCodeLine{00073\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ u8*\ raw\_ptr\ =\ \textcolor{keyword}{reinterpret\_cast<}u8*\textcolor{keyword}{>}(malloc(actual\_size));}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ raw\_ptr\ =\ \textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\textcolor{keyword}{>}(malloc(actual\_size));}
 \DoxyCodeLine{00075\ }
-\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ u8*\ aligned\_ptr\ =\ align\_pointer(raw\_ptr,\ align);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ aligned\_ptr\ =\ align\_pointer(raw\_ptr,\ align);}
 \DoxyCodeLine{00077\ }
 \DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ allocation\_desc*\ alloc\_desc\_p\ =\ \textcolor{keyword}{reinterpret\_cast<}allocation\_desc*\textcolor{keyword}{>}(aligned\_ptr);}
 \DoxyCodeLine{00079\ }
@@ -71,7 +71,7 @@
 \DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ alloc\_desc\_p-\/>align\ =\ align;}
 \DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ alloc\_desc\_p-\/>alignment\_shift\ =\ aligned\_ptr\ -\/\ raw\_ptr;}
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a7d656db3106ca56bbfebf1198bca5277}{increase\_memory\_usage}}(actual\_size);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08fb1004cceef529719fdea3942e69eb}{increase\_memory\_usage}}(actual\_size);}
 \DoxyCodeLine{00086\ }
 \DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ alloc\_desc\_p\ +\ 1;}
 \DoxyCodeLine{00088\ \ \ \ \ \}}
@@ -80,9 +80,9 @@
 \DoxyCodeLine{00091\ }
 \DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ allocation\_desc*\ alloc\_desc\_p\ =\ (allocation\_desc*)ptr\ -\/\ 1;}
 \DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ u8*\ raw\_ptr\ =\ \textcolor{keyword}{reinterpret\_cast<}u8*\textcolor{keyword}{>}(alloc\_desc\_p)\ -\/\ alloc\_desc\_p-\/>alignment\_shift;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ raw\_ptr\ =\ \textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\textcolor{keyword}{>}(alloc\_desc\_p)\ -\/\ alloc\_desc\_p-\/>alignment\_shift;}
 \DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a3cf02ad48705eed06ac23a15cfe9870b}{decrease\_memory\_usage}}(alloc\_desc\_p-\/>actual\_size);}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a104f618c43e42b65fbb2f7047d21cdfc}{decrease\_memory\_usage}}(alloc\_desc\_p-\/>actual\_size);}
 \DoxyCodeLine{00097\ }
 \DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ free(raw\_ptr);}
 \DoxyCodeLine{00099\ }
@@ -95,28 +95,24 @@
 \DoxyCodeLine{00106\ }
 \DoxyCodeLine{00107\ }
 \DoxyCodeLine{00108\ \textcolor{preprocessor}{\#pragma\ region\ new\ and\ delete\ operators}}
-\DoxyCodeLine{00109\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\textcolor{keywordtype}{size\_t}\ size)\ \{}
+\DoxyCodeLine{00109\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{ncpp::sz}}\ size)\ \{}
 \DoxyCodeLine{00110\ }
 \DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{return}\ ncpp::aligned\_alloc(size,\ NCPP\_DEFAULT\_ALIGNMENT);}
 \DoxyCodeLine{00112\ \}}
-\DoxyCodeLine{00113\ \textcolor{comment}{//inline\ void*\ operator\ new(size\_t\ size,\ ncpp::placeholder,\ size\_t\ align)\ \{}}
+\DoxyCodeLine{00113\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}(\textcolor{keywordtype}{void}*\ ptr)\ \{}
 \DoxyCodeLine{00114\ }
-\DoxyCodeLine{00115\ \textcolor{comment}{//\ \ return\ ncpp::aligned\_alloc(size,\ align);}}
-\DoxyCodeLine{00116\ \textcolor{comment}{//\}}}
-\DoxyCodeLine{00117\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}(\textcolor{keywordtype}{void}*\ ptr)\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{if}\ (ncpp::is\_allocated\_by\_ncpp)\ \{}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ ncpp::aligned\_free(ptr);}
 \DoxyCodeLine{00118\ }
-\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordflow}{if}\ (ncpp::is\_allocated\_by\_ncpp)\ \{}
-\DoxyCodeLine{00120\ }
-\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ ncpp::aligned\_free(ptr);}
-\DoxyCodeLine{00122\ }
-\DoxyCodeLine{00123\ \ \ \ \ \}}
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00125\ }
-\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ free(ptr);}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ free(ptr);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00127\ }
-\DoxyCodeLine{00128\ \ \ \ \ \}}
-\DoxyCodeLine{00129\ \}}
-\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#pragma\ endregion}}
-\DoxyCodeLine{00131\ }
 
 \end{DoxyCode}

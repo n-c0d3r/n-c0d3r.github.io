@@ -2,7 +2,7 @@
 \label{namespacencpp_1_1cbjs}\index{ncpp::cbjs@{ncpp::cbjs}}
 
 
-Implementing coroutine based job system.  
+Implements coroutine based job system.  
 
 
 \doxysubsection*{Classes}
@@ -11,15 +11,15 @@ Implementing coroutine based job system.
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}}
 \begin{DoxyCompactList}\small\item\em A coroutine is a function that can suspend execution to be resumed later. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__pool}{coroutine\+\_\+pool}}
-\begin{DoxyCompactList}\small\item\em Storing coroutines. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Stores and manages coroutines. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine__state__updater}{coroutine\+\_\+state\+\_\+updater}}
 \begin{DoxyCompactList}\small\item\em Responsible for updating the coroutine state. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structncpp_1_1cbjs_1_1job}{job}}
 \begin{DoxyCompactList}\small\item\em Be a function, and also storing job\textquotesingle{}s informations (priority, is\+\_\+done,...). \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1system}{system}}
-\begin{DoxyCompactList}\small\item\em Managing worker threads and overall states. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Manages worker threads and overall states. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings}{system\+\_\+settings}}
-\begin{DoxyCompactList}\small\item\em Storing the settings to create job system. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Describes the settings to create job system. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1wait__job__done}{wait\+\_\+job\+\_\+done}}
 \begin{DoxyCompactList}\small\item\em A coroutine state updater that only update coroutine state to coroutine\+\_\+state\+::\+RUNNABLE after the indicated job done. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}}
@@ -31,7 +31,7 @@ class \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}}
 enum struct \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a159e}{coroutine\+\_\+state}} \{ {\bfseries WAITING} = 0
 , {\bfseries RUNNABLE} = 1
  \}
-\begin{DoxyCompactList}\small\item\em Indicating whether the coroutine is able to run . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Indicates whether the coroutine is able to run . \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,7 +40,7 @@ enum struct \mbox{\hyperlink{namespacencpp_1_1cbjs_a35e48e1335bc568d09d6bf6eda6a
 
 
 \doxysubsection{Detailed Description}
-Implementing coroutine based job system. 
+Implements coroutine based job system. 
 
 \doxysubsection{Variable Documentation}
 \mbox{\Hypertarget{namespacencpp_1_1cbjs_a4b034e1de85bf3e9c38ce195d498f21b}\label{namespacencpp_1_1cbjs_a4b034e1de85bf3e9c38ce195d498f21b}} 

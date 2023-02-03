@@ -2,7 +2,7 @@
 \label{classncpp_1_1cbjs_1_1system}\index{ncpp::cbjs::system@{ncpp::cbjs::system}}
 
 
-Managing worker threads and overall states.  
+Manages worker threads and overall states.  
 
 
 
@@ -21,14 +21,14 @@ Inheritance diagram for ncpp\+::cbjs\+::system\+:\begin{figure}[H]
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_afe8ab4adb9c253264af4977064dad86a}\label{classncpp_1_1cbjs_1_1system_afe8ab4adb9c253264af4977064dad86a}} 
 const \mbox{\hyperlink{structncpp_1_1cbjs_1_1system__settings}{system\+\_\+settings}} \& {\bfseries settings} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a42585faf192eb54a5841070341321abb}\label{classncpp_1_1cbjs_1_1system_a42585faf192eb54a5841070341321abb}} 
-\mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs\+::worker\+\_\+thread}} \& {\bfseries worker\+\_\+thread} (uint32\+\_\+t index)
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a5f7453d5eb42b23c63b7d6f400c368d2}\label{classncpp_1_1cbjs_1_1system_a5f7453d5eb42b23c63b7d6f400c368d2}} 
+\mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs\+::worker\+\_\+thread}} \& {\bfseries worker\+\_\+thread} (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}} index)
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a26acac9c2bb41d4750b7c3a9b8003910}\label{classncpp_1_1cbjs_1_1system_a26acac9c2bb41d4750b7c3a9b8003910}} 
-const \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs\+::worker\+\_\+thread}} \& {\bfseries worker\+\_\+thread} (uint32\+\_\+t index) const
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a3dddd0f710f6bb8693f068ebfdc1419d}\label{classncpp_1_1cbjs_1_1system_a3dddd0f710f6bb8693f068ebfdc1419d}} 
+const \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{cbjs\+::worker\+\_\+thread}} \& {\bfseries worker\+\_\+thread} (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}} index) const
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_ae2a6eea896f74744b3434cb275c8b656}\label{classncpp_1_1cbjs_1_1system_ae2a6eea896f74744b3434cb275c8b656}} 
-bool {\bfseries is\+\_\+running} () const
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a7dde00f38a0661ee35bba120f65454c9}\label{classncpp_1_1cbjs_1_1system_a7dde00f38a0661ee35bba120f65454c9}} 
+\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries is\+\_\+running} () const
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a04d43939cd72c5eaa8b43d76533276a1}\label{classncpp_1_1cbjs_1_1system_a04d43939cd72c5eaa8b43d76533276a1}} 
 \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{pac\+::semaphore}} \& {\bfseries ready\+\_\+semaphore} ()
@@ -41,16 +41,16 @@ const \mbox{\hyperlink{classncpp_1_1pac_1_1semaphore__t}{pac\+::semaphore}} \& {
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_a87b576fa9d0a1ab2ff153fde516e4317}\label{classncpp_1_1cbjs_1_1system_a87b576fa9d0a1ab2ff153fde516e4317}} 
 void {\bfseries start} ()
-\begin{DoxyCompactList}\small\item\em Starting the job system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Starts the job system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_ac70d7fac24ef0388ff96999ce7d1b24e}\label{classncpp_1_1cbjs_1_1system_ac70d7fac24ef0388ff96999ce7d1b24e}} 
 void {\bfseries request\+\_\+stop} ()
-\begin{DoxyCompactList}\small\item\em Requesting job system to stop, can be used by the main worker thread. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Requests job system to stop, can be used by the main worker thread. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1system_af8469e75193d52d769a0a9dfec57f6af}\label{classncpp_1_1cbjs_1_1system_af8469e75193d52d769a0a9dfec57f6af}} 
 void {\bfseries join} ()
-\begin{DoxyCompactList}\small\item\em Waiting worker threads done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Waits worker threads done. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -82,7 +82,7 @@ static system \& {\bfseries instance} ()
 
 
 \doxysubsection{Detailed Description}
-Managing worker threads and overall states. 
+Manages worker threads and overall states. 
 
 To initialize cbjs, we need to create the job system and run it. 
 

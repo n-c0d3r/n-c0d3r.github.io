@@ -2,14 +2,14 @@
 \label{namespacencpp_1_1utilities}\index{ncpp::utilities@{ncpp::utilities}}
 
 
-Containing the utilities in ncpp project.  
+Contains the utilities in ncpp library.  
 
 
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}
-\begin{DoxyCompactList}\small\item\em Finding out the nth template argument. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Finds out the nth template argument. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1utilities_1_1singleton__t}{singleton\+\_\+t}}
 \begin{DoxyCompactList}\small\item\em Singleton template. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{unique\+\_\+lock\+\_\+t}}
@@ -19,26 +19,26 @@ class \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{unique\+\_\+lo
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1utilities_a0ed33b938e311979d486ec708f2c7389}\label{namespacencpp_1_1utilities_a0ed33b938e311979d486ec708f2c7389}} 
 {\footnotesize template$<$typename... arg\+\_\+types$>$ }\\using {\bfseries first\+\_\+template\+\_\+arg\+\_\+t} = typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ 0, arg\+\_\+types... $>$
-\begin{DoxyCompactList}\small\item\em Finding out the first template argument. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Finds out the first template argument. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespacencpp_1_1utilities_aab008427113e7c7327730df2affe1842}\label{namespacencpp_1_1utilities_aab008427113e7c7327730df2affe1842}} 
 {\footnotesize template$<$typename... arg\+\_\+types$>$ }\\using {\bfseries last\+\_\+template\+\_\+arg\+\_\+t} = typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ sizeof...(arg\+\_\+types) -\/ 1, arg\+\_\+types... $>$
-\begin{DoxyCompactList}\small\item\em Finding out the last template argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Finds out the last template argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, size\+\_\+t begin, size\+\_\+t end, typename... arg\+\_\+types$>$ }\\void \mbox{\hyperlink{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}{templated\+\_\+for\+\_\+t}} (arg\+\_\+types \&\&... args)
+{\footnotesize template$<$template$<$ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} index $>$ typename f\+\_\+type\+\_\+t, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} begin, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} end, typename... arg\+\_\+types$>$ }\\void \mbox{\hyperlink{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}{templated\+\_\+for\+\_\+t}} (arg\+\_\+types \&\&... args)
 \begin{DoxyCompactList}\small\item\em The function template helping run a loop which the index be a template argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Containing the utilities in ncpp project. 
+Contains the utilities in ncpp library. 
 
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}\label{namespacencpp_1_1utilities_a61b43c2ee122a2c1598b54b61d3b3027}} 
 \index{ncpp::utilities@{ncpp::utilities}!templated\_for\_t@{templated\_for\_t}}
 \index{templated\_for\_t@{templated\_for\_t}!ncpp::utilities@{ncpp::utilities}}
 \doxysubsubsection{\texorpdfstring{templated\_for\_t()}{templated\_for\_t()}}
-{\footnotesize\ttfamily template$<$template$<$ size\+\_\+t index $>$ typename f\+\_\+type\+\_\+t, size\+\_\+t begin, size\+\_\+t end, typename... arg\+\_\+types$>$ \\
+{\footnotesize\ttfamily template$<$template$<$ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} index $>$ typename f\+\_\+type\+\_\+t, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} begin, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} end, typename... arg\+\_\+types$>$ \\
 void ncpp\+::utilities\+::templated\+\_\+for\+\_\+t (\begin{DoxyParamCaption}\item[{arg\+\_\+types \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 

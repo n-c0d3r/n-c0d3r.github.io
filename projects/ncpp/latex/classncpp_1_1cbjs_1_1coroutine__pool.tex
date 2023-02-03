@@ -2,7 +2,7 @@
 \label{classncpp_1_1cbjs_1_1coroutine__pool}\index{ncpp::cbjs::coroutine\_pool@{ncpp::cbjs::coroutine\_pool}}
 
 
-Storing coroutines.  
+Stores and manages coroutines.  
 
 
 
@@ -12,8 +12,8 @@ Storing coroutines.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_af6f113e19e5fb7224f56992114cf0cd4}\label{classncpp_1_1cbjs_1_1coroutine__pool_af6f113e19e5fb7224f56992114cf0cd4}} 
-size\+\_\+t {\bfseries capacity} () const
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_ad018ffcf5d7e5e750cba39239848614f}\label{classncpp_1_1cbjs_1_1coroutine__pool_ad018ffcf5d7e5e750cba39239848614f}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries capacity} () const
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_a24996cf8940e2d3fc1ffe897eda2816d}\label{classncpp_1_1cbjs_1_1coroutine__pool_a24996cf8940e2d3fc1ffe897eda2816d}} 
 \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}} \& {\bfseries get\+\_\+worker\+\_\+thread} ()
@@ -21,20 +21,20 @@ size\+\_\+t {\bfseries capacity} () const
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_aeb3073f372fdb1da0dad5c21310b2e49}\label{classncpp_1_1cbjs_1_1coroutine__pool_aeb3073f372fdb1da0dad5c21310b2e49}} 
 const \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}} \& {\bfseries get\+\_\+worker\+\_\+thread} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_ac5b850badaf6b8c2a6d3132cd0bf0ae8}\label{classncpp_1_1cbjs_1_1coroutine__pool_ac5b850badaf6b8c2a6d3132cd0bf0ae8}} 
-{\bfseries coroutine\+\_\+pool} (size\+\_\+t capacity, \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}} \&wt\+\_\+)
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_a055f6f86eb2198a07419d55415671c6b}\label{classncpp_1_1cbjs_1_1coroutine__pool_a055f6f86eb2198a07419d55415671c6b}} 
+{\bfseries coroutine\+\_\+pool} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} capacity, \mbox{\hyperlink{classncpp_1_1cbjs_1_1worker__thread}{worker\+\_\+thread}} \&wt\+\_\+)
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_afba727db343e4e8a0257b5986284b721}\label{classncpp_1_1cbjs_1_1coroutine__pool_afba727db343e4e8a0257b5986284b721}} 
 void {\bfseries push} (\mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}} $\ast$c)
-\begin{DoxyCompactList}\small\item\em Push a coroutine pointer back to the coroutine pointer stack. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pushes a coroutine pointer back to the coroutine pointer stack. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_a99cf4c5f12947f6ad86f1a932c4c1498}\label{classncpp_1_1cbjs_1_1coroutine__pool_a99cf4c5f12947f6ad86f1a932c4c1498}} 
 \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}} $\ast$ {\bfseries pop} ()
-\begin{DoxyCompactList}\small\item\em Pop a coroutine pointer from the coroutine pointer stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pops a coroutine pointer from the coroutine pointer stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_aa5cf66e941bbc785fe47dd72c94b4329}\label{classncpp_1_1cbjs_1_1coroutine__pool_aa5cf66e941bbc785fe47dd72c94b4329}} 
-size\+\_\+t {\bfseries capacity\+\_\+}
+\mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_a261b3b1d77fd840cfa62c57e58cb9805}\label{classncpp_1_1cbjs_1_1coroutine__pool_a261b3b1d77fd840cfa62c57e58cb9805}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries capacity\+\_\+}
 \item 
 \mbox{\Hypertarget{classncpp_1_1cbjs_1_1coroutine__pool_aef2715137b540d2c9709d75f3ff0bdd3}\label{classncpp_1_1cbjs_1_1coroutine__pool_aef2715137b540d2c9709d75f3ff0bdd3}} 
 \mbox{\hyperlink{classncpp_1_1containers_1_1fixed__vector__stack__t}{containers\+::fixed\+\_\+vector\+\_\+stack\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}} $\ast$ $>$ {\bfseries coroutine\+\_\+p\+\_\+stack\+\_\+}
@@ -48,9 +48,9 @@ std\+::vector$<$ \mbox{\hyperlink{classncpp_1_1cbjs_1_1coroutine}{coroutine}} $>
 
 
 \doxysubsection{Detailed Description}
-Storing coroutines. 
+Stores and manages coroutines. 
 
-Can pop a coroutine to use and push it back again. 
+Capable of popping a coroutine to use and pushing it back again. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
