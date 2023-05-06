@@ -1,0 +1,77 @@
+\hypertarget{classncpp_1_1rtti_1_1robject__i}{}\doxysection{ncpp\+::rtti\+::robject\+\_\+i Class Reference}
+\label{classncpp_1_1rtti_1_1robject__i}\index{ncpp::rtti::robject\_i@{ncpp::rtti::robject\_i}}
+
+
+Reflected object interface.  
+
+
+
+
+{\ttfamily \#include $<$robject.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a0a2de0356dc7e88f6d0e907d21c6025a}\label{classncpp_1_1rtti_1_1robject__i_a0a2de0356dc7e88f6d0e907d21c6025a}} 
+using {\bfseries name\+\_\+to\+\_\+variable\+\_\+map\+\_\+type} = typename containers\+::native\+\_\+unordered\+\_\+map\+\_\+t$<$ containers\+::native\+\_\+string, \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__variable__handle}{robject\+\_\+variable\+\_\+handle}} $>$
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_aac072fa7f32bd7dffd8f20d141872c68}\label{classncpp_1_1rtti_1_1robject__i_aac072fa7f32bd7dffd8f20d141872c68}} 
+using {\bfseries name\+\_\+to\+\_\+function\+\_\+handle\+\_\+map\+\_\+type} = typename containers\+::native\+\_\+unordered\+\_\+map\+\_\+t$<$ containers\+::native\+\_\+string, \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__handle}{robject\+\_\+function\+\_\+handle}} $>$
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a75f00d3c1b1761ca42529f488d9369d9}\label{classncpp_1_1rtti_1_1robject__i_a75f00d3c1b1761ca42529f488d9369d9}} 
+using {\bfseries name\+\_\+reflecter\+\_\+type} = \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{ncpp\+::rtti\+::robject\+\_\+variable\+\_\+reflecter\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{current\+\_\+rclass}}, containers\+::native\+\_\+string, decltype(\&current\+\_\+rclass\+::name\+\_\+name\+\_\+cstr), \&current\+\_\+rclass\+::name\+\_\+name\+\_\+cstr, decltype(\&current\+\_\+rclass\+::name\+\_\+args), \&current\+\_\+rclass\+::name\+\_\+args, decltype(\&current\+\_\+rclass\+::name), \&current\+\_\+rclass\+::name $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a313d6b3ab6e98a90a1a54aa609e10ef2}\label{classncpp_1_1rtti_1_1robject__i_a313d6b3ab6e98a90a1a54aa609e10ef2}} 
+virtual \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp\+::rtti\+::rclass\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{ncpp\+::rtti\+::robject\+\_\+i}} $>$ {\bfseries get\+\_\+rclass} ()
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a9b44022a8909292352b923918b8be50f}\label{classncpp_1_1rtti_1_1robject__i_a9b44022a8909292352b923918b8be50f}} 
+void {\bfseries add\+\_\+rvariable\+\_\+handle} (const containers\+::native\+\_\+string \&var\+\_\+name, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__variable__handle}{robject\+\_\+variable\+\_\+handle}} \&var)
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ab3aa55622ee3c2f29a52c0cd0aa8c3b4}\label{classncpp_1_1rtti_1_1robject__i_ab3aa55622ee3c2f29a52c0cd0aa8c3b4}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__variable__handle}{robject\+\_\+variable\+\_\+handle}} \& {\bfseries get\+\_\+rvariable\+\_\+handle} (const containers\+::native\+\_\+string \&var\+\_\+name)
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a47240180461debd9ef80e422285fff85}\label{classncpp_1_1rtti_1_1robject__i_a47240180461debd9ef80e422285fff85}} 
+{\footnotesize template$<$typename variable\+\_\+type\+\_\+\+\_\+ $>$ }\\variable\+\_\+type\+\_\+\+\_\+ \& {\bfseries get\+\_\+rvariable\+\_\+t} (const containers\+::native\+\_\+string \&var\+\_\+name)
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_af1902cddbe59e3d8a1f8abb1d370d44b}\label{classncpp_1_1rtti_1_1robject__i_af1902cddbe59e3d8a1f8abb1d370d44b}} 
+void {\bfseries add\+\_\+rfunction\+\_\+handle} (const containers\+::native\+\_\+string \&func\+\_\+name, \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__handle}{robject\+\_\+function\+\_\+handle}} func\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a9810f488b942bd5d33d5ab57fde8e7ed}\label{classncpp_1_1rtti_1_1robject__i_a9810f488b942bd5d33d5ab57fde8e7ed}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__handle}{robject\+\_\+function\+\_\+handle}} \& {\bfseries get\+\_\+rfunction\+\_\+handle} (const containers\+::native\+\_\+string \&func\+\_\+name)
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a389f9bbac1b804945ecaa11630cf79f0}\label{classncpp_1_1rtti_1_1robject__i_a389f9bbac1b804945ecaa11630cf79f0}} 
+{\footnotesize template$<$typename function\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::function$<$ function\+\_\+type\+\_\+\+\_\+ $>$ \& {\bfseries get\+\_\+rfunction\+\_\+t} (const containers\+::native\+\_\+string \&func\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a07cef1b6a5949665256b37c3b17ef3c4}\label{classncpp_1_1rtti_1_1robject__i_a07cef1b6a5949665256b37c3b17ef3c4}} 
+containers\+::native\+\_\+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ae805a9ebe49f6993047412b569cde8dd}\label{classncpp_1_1rtti_1_1robject__i_ae805a9ebe49f6993047412b569cde8dd}} 
+char {\bfseries name\+\_\+name\+\_\+cstr} \mbox{[}sizeof(\char`\"{}name\char`\"{})\mbox{]} = \char`\"{}name\char`\"{}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_aeab96e15dda7800da614f7c75eaae541}\label{classncpp_1_1rtti_1_1robject__i_aeab96e15dda7800da614f7c75eaae541}} 
+ncpp\+::rtti\+::robject\+\_\+member\+\_\+args\+\_\+t {\bfseries name\+\_\+args} = \{\}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_addbfd7c2edb4c547a812ce1cb59aa76c}\label{classncpp_1_1rtti_1_1robject__i_addbfd7c2edb4c547a812ce1cb59aa76c}} 
+\mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{name\+\_\+reflecter\+\_\+type}} {\bfseries name\+\_\+reflecter}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a8b95c5ed2ca5133082db7a38c7622c62}\label{classncpp_1_1rtti_1_1robject__i_a8b95c5ed2ca5133082db7a38c7622c62}} 
+class {\bfseries name\+\_\+reflecter\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reflected object interface. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/rtti/\mbox{\hyperlink{robject_8hpp}{robject.\+hpp}}\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/rtti/robject.\+cpp\end{DoxyCompactItemize}
