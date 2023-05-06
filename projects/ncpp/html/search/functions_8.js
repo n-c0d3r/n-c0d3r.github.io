@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['operator_3d_0',['operator=',['../classncpp_1_1containers_1_1fixed__vector__queue__t.html#a8f6bae31d679ac0e337b799cd965923b',1,'ncpp::containers::fixed_vector_queue_t::operator=(const fixed_vector_queue_t &amp;other)'],['../classncpp_1_1containers_1_1fixed__vector__queue__t.html#a8c985c81cc97f8b9f83846284054f5ca',1,'ncpp::containers::fixed_vector_queue_t::operator=(fixed_vector_queue_t &amp;&amp;other)'],['../classncpp_1_1containers_1_1fixed__vector__stack__t.html#adcf56378bf248347e0107c968b1089ff',1,'ncpp::containers::fixed_vector_stack_t::operator=(const fixed_vector_stack_t &amp;other)'],['../classncpp_1_1containers_1_1fixed__vector__stack__t.html#a89c0be1ad5eafd9ab07d1cf570dd3548',1,'ncpp::containers::fixed_vector_stack_t::operator=(fixed_vector_stack_t &amp;&amp;other)']]]
-];
