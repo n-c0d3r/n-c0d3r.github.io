@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('classncpp_1_1containers_1_1fixed__vect
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classncpp_1_1containers_1_1fixed__vector__stack__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ncpp::containers::fixed_vector_stack_t&lt; item_type__, allocator_type__ &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -225,6 +227,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> size)</td></tr>
 <tr class="memdesc:a264c2c79e557f860ddf2b8bccaafd47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the stack. <br /></td></tr>
 <tr class="separator:a264c2c79e557f860ddf2b8bccaafd47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a372803a6ac80c48bf8940d8caf7f59c8"><td class="memTemplParams" colspan="2"><a id="a372803a6ac80c48bf8940d8caf7f59c8" name="a372803a6ac80c48bf8940d8caf7f59c8"></a>
+template&lt;typename item_param_type &gt; </td></tr>
+<tr class="memitem:a372803a6ac80c48bf8940d8caf7f59c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>push_main_t</b> (item_param_type &amp;&amp;item)</td></tr>
+<tr class="separator:a372803a6ac80c48bf8940d8caf7f59c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acfc4bc5e22bd4c943bff8b66389d507a"><td class="memItemLeft" align="right" valign="top"><a id="acfc4bc5e22bd4c943bff8b66389d507a" name="acfc4bc5e22bd4c943bff8b66389d507a"></a>
+item_vector_type&#160;</td><td class="memItemRight" valign="bottom"><b>item_vector_</b></td></tr>
+<tr class="separator:acfc4bc5e22bd4c943bff8b66389d507a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4960b0e54cbcb9cebc07642c86d0b550"><td class="memItemLeft" align="right" valign="top"><a id="a4960b0e54cbcb9cebc07642c86d0b550" name="a4960b0e54cbcb9cebc07642c86d0b550"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end_index_</b></td></tr>
+<tr class="separator:a4960b0e54cbcb9cebc07642c86d0b550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33a9aac4fcd2e38c643f6589ea170e7"><td class="memItemLeft" align="right" valign="top"><a id="ab33a9aac4fcd2e38c643f6589ea170e7" name="ab33a9aac4fcd2e38c643f6589ea170e7"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>capacity_</b></td></tr>
+<tr class="separator:ab33a9aac4fcd2e38c643f6589ea170e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename item_type__, class allocator_type__ = NCPP_DEFAULT_ALLOCATOR_TEMPLATE&lt;item_type__&gt;&gt;<br />

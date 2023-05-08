@@ -43,6 +43,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -59,8 +60,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_8hpp_source.html",
-"classncpp_1_1tagged__heap__t.html",
-"structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html"
+"classncpp_1_1rtti_1_1rclass__t.html#aad047b7ba1b1f28b6a0d80fb9fbcad87",
+"rclass_8hpp.html#a330cb437508fd902c142781d57fdf637"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -319,19 +319,19 @@
 \DoxyCodeLine{00414\ }
 \DoxyCodeLine{00418\ }
 \DoxyCodeLine{00419\ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00423\ \ \ \ \ \textcolor{keyword}{inline}\ uintptr\_t\ align\_address(uintptr\_t\ addr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
+\DoxyCodeLine{00423\ \ \ \ \ \textcolor{keyword}{inline}\ uintptr\_t\ \mbox{\hyperlink{structncpp_1_1stack_aeb45b5115f939c0845acafc0aeebd0f3}{align\_address}}(uintptr\_t\ addr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00424\ \ \ \ \ \{}
 \DoxyCodeLine{00425\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ mask\ =\ align\ -\/\ 1;}
 \DoxyCodeLine{00426\ \ \ \ \ \ \ assert((align\ \&\ mask)\ ==\ 0\ \&\&\ \textcolor{stringliteral}{"{}align\ value\ must\ be\ power\ of\ 2"{}});}
 \DoxyCodeLine{00427\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (addr\ +\ mask)\ \&\ \string~mask;}
 \DoxyCodeLine{00428\ \ \ \ \ \}}
 \DoxyCodeLine{00432\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ data\_type>}
-\DoxyCodeLine{00433\ \ \ \ \ \textcolor{keyword}{inline}\ data\_type*\ align\_pointer(data\_type*\ ptr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
+\DoxyCodeLine{00433\ \ \ \ \ \textcolor{keyword}{inline}\ data\_type*\ \mbox{\hyperlink{structncpp_1_1stack_a704fa46e731c0b5521ffde2ce8fcef27}{align\_pointer}}(data\_type*\ ptr,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00434\ \ \ \ \ \{}
 \DoxyCodeLine{00435\ \ \ \ \ \ \ \textcolor{keyword}{const}\ uintptr\_t\ addr\ =\ \textcolor{keyword}{reinterpret\_cast<}uintptr\_t\textcolor{keyword}{>}(ptr);}
-\DoxyCodeLine{00436\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{reinterpret\_cast<}data\_type*\textcolor{keyword}{>}(align\_address(addr,\ align));}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{reinterpret\_cast<}data\_type*\textcolor{keyword}{>}(\mbox{\hyperlink{structncpp_1_1stack_aeb45b5115f939c0845acafc0aeebd0f3}{align\_address}}(addr,\ align));}
 \DoxyCodeLine{00437\ \ \ \ \ \}}
-\DoxyCodeLine{00441\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ aligned\_alloc(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
+\DoxyCodeLine{00441\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ \mbox{\hyperlink{structncpp_1_1stack_abd9f923c73f3e06f8fa29e2f8b307c06}{aligned\_alloc}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align)}
 \DoxyCodeLine{00442\ \ \ \ \ \{}
 \DoxyCodeLine{00443\ }
 \DoxyCodeLine{00444\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ actual\_size\ =\ size\ +\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\_allocation}})\ +\ align;}
@@ -339,7 +339,7 @@
 \DoxyCodeLine{00446\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ raw\_ptr\ =\ pushable\_pointer();}
 \DoxyCodeLine{00447\ \ \ \ \ \ \ usage\_\ +=\ actual\_size;}
 \DoxyCodeLine{00448\ }
-\DoxyCodeLine{00449\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ aligned\_ptr\ =\ align\_pointer(raw\_ptr,\ align);}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ aligned\_ptr\ =\ \mbox{\hyperlink{structncpp_1_1stack_a704fa46e731c0b5521ffde2ce8fcef27}{align\_pointer}}(raw\_ptr,\ align);}
 \DoxyCodeLine{00450\ }
 \DoxyCodeLine{00451\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (aligned\_ptr\ ==\ raw\_ptr)}
 \DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ aligned\_ptr\ +=\ align;}
@@ -365,9 +365,9 @@
 \DoxyCodeLine{00472\ \ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00473\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*\ allocate(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align\ =\ 1)\ \{}
 \DoxyCodeLine{00474\ }
-\DoxyCodeLine{00475\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aligned\_alloc(size,\ align);}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structncpp_1_1stack_abd9f923c73f3e06f8fa29e2f8b307c06}{aligned\_alloc}}(size,\ align);}
 \DoxyCodeLine{00476\ \ \ \ \ \}}
-\DoxyCodeLine{00477\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ deallocate(\mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\_allocation}}*\ allocation\_p)\ \{}
+\DoxyCodeLine{00477\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ deallocate(stack\_allocation*\ allocation\_p)\ \{}
 \DoxyCodeLine{00478\ }
 \DoxyCodeLine{00479\ }
 \DoxyCodeLine{00480\ }
@@ -1110,7 +1110,7 @@
 \DoxyCodeLine{01361\ \ \ \ \ \ \ allocator\_.deallocate((\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}}*)\&chunk,\ allocation\_size);}
 \DoxyCodeLine{01362\ \ \ \ \ \}}
 \DoxyCodeLine{01363\ }
-\DoxyCodeLine{01364\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structncpp_1_1stack}{stack}}\&\ pick\_a\_stack(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align\ =\ 1)\ \{}
+\DoxyCodeLine{01364\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structncpp_1_1stack}{stack}}\&\ \mbox{\hyperlink{classncpp_1_1stack__heap__t_a9cd6dddfe7f4a8940cedca5240f0ccd7}{pick\_a\_stack}}(\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ size,\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ align\ =\ 1)\ \{}
 \DoxyCodeLine{01365\ }
 \DoxyCodeLine{01366\ }
 \DoxyCodeLine{01367\ }
@@ -1173,7 +1173,7 @@
 \DoxyCodeLine{01426\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{01427\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
 \DoxyCodeLine{01428\ }
-\DoxyCodeLine{01429\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack}{stack}}\&\ s\ =\ pick\_a\_stack(size,\ align);}
+\DoxyCodeLine{01429\ \ \ \ \ \ \ \ \ stack\&\ s\ =\ \mbox{\hyperlink{classncpp_1_1stack__heap__t_a9cd6dddfe7f4a8940cedca5240f0ccd7}{pick\_a\_stack}}(size,\ align);}
 \DoxyCodeLine{01430\ }
 \DoxyCodeLine{01431\ \ \ \ \ \ \ \ \ group.out\_stack\_list().insert(s);}
 \DoxyCodeLine{01432\ }
@@ -1185,16 +1185,16 @@
 \DoxyCodeLine{01438\ }
 \DoxyCodeLine{01439\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
 \DoxyCodeLine{01440\ \ \ \ \ \}}
-\DoxyCodeLine{01441\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ deallocate(\mbox{\hyperlink{structncpp_1_1stack__group}{stack\_group}}\&\ group,\ \textcolor{keywordtype}{void}*\ ptr)\ \{}
+\DoxyCodeLine{01441\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ deallocate(stack\_group\&\ group,\ \textcolor{keywordtype}{void}*\ ptr)\ \{}
 \DoxyCodeLine{01442\ }
-\DoxyCodeLine{01443\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{utilities::unique\_lock\_t<lock\_type>}}\ lock\_guard(lock\_);}
+\DoxyCodeLine{01443\ \ \ \ \ \ \ utilities::unique\_lock\_t<lock\_type>\ lock\_guard(lock\_);}
 \DoxyCodeLine{01444\ }
-\DoxyCodeLine{01445\ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\_allocation}}*\ allocation\_p\ =\ \textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\_allocation}}*\textcolor{keyword}{>}(ptr)\ -\/\ 1;}
+\DoxyCodeLine{01445\ \ \ \ \ \ \ stack\_allocation*\ allocation\_p\ =\ \textcolor{keyword}{reinterpret\_cast<}stack\_allocation*\textcolor{keyword}{>}(ptr)\ -\/\ 1;}
 \DoxyCodeLine{01446\ }
 \DoxyCodeLine{01447\ }
 \DoxyCodeLine{01448\ }
-\DoxyCodeLine{01449\ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack}{stack}}\&\ s\ =\ allocation\_p-\/>stack();}
-\DoxyCodeLine{01450\ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\_chunk}}\&\ chunk\ =\ s.chunk();}
+\DoxyCodeLine{01449\ \ \ \ \ \ \ stack\&\ s\ =\ allocation\_p-\/>stack();}
+\DoxyCodeLine{01450\ \ \ \ \ \ \ stack\_chunk\&\ chunk\ =\ s.chunk();}
 \DoxyCodeLine{01451\ }
 \DoxyCodeLine{01452\ \ \ \ \ \ \ s.deallocate(allocation\_p);}
 \DoxyCodeLine{01453\ }
@@ -1224,16 +1224,16 @@
 \DoxyCodeLine{01477\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{01478\ }
 \DoxyCodeLine{01479\ \ \ \ \ \}}
-\DoxyCodeLine{01480\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ clear\_group(\mbox{\hyperlink{structncpp_1_1stack__group}{stack\_group}}\&\ group)\ \{}
+\DoxyCodeLine{01480\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ clear\_group(stack\_group\&\ group)\ \{}
 \DoxyCodeLine{01481\ }
-\DoxyCodeLine{01482\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{utilities::unique\_lock\_t<lock\_type>}}\ lock\_guard(lock\_);}
+\DoxyCodeLine{01482\ \ \ \ \ \ \ utilities::unique\_lock\_t<lock\_type>\ lock\_guard(lock\_);}
 \DoxyCodeLine{01483\ }
-\DoxyCodeLine{01484\ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack}{stack}}*\ stack\_p\ =\ \&(group.out\_stack\_list().tail());}
+\DoxyCodeLine{01484\ \ \ \ \ \ \ stack*\ stack\_p\ =\ \&(group.out\_stack\_list().tail());}
 \DoxyCodeLine{01485\ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (stack\_p\ !=\ 0)\ \{}
 \DoxyCodeLine{01486\ }
-\DoxyCodeLine{01487\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack}{stack}}*\ prev\_stack\_p\ =\ \&(stack\_p-\/>out\_prev());}
+\DoxyCodeLine{01487\ \ \ \ \ \ \ \ \ stack*\ prev\_stack\_p\ =\ \&(stack\_p-\/>out\_prev());}
 \DoxyCodeLine{01488\ }
-\DoxyCodeLine{01489\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\_chunk}}\&\ chunk\ =\ stack\_p-\/>chunk();}
+\DoxyCodeLine{01489\ \ \ \ \ \ \ \ \ stack\_chunk\&\ chunk\ =\ stack\_p-\/>chunk();}
 \DoxyCodeLine{01490\ }
 \DoxyCodeLine{01491\ \ \ \ \ \ \ \ \ stack\_p-\/>chunk().erase\_stack(*stack\_p);}
 \DoxyCodeLine{01492\ \ \ \ \ \ \ \ \ }
@@ -1263,12 +1263,12 @@
 \DoxyCodeLine{01516\ }
 \DoxyCodeLine{01517\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ clear()\ \{}
 \DoxyCodeLine{01518\ }
-\DoxyCodeLine{01519\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{utilities::unique\_lock\_t<lock\_type>}}\ lock\_guard(lock\_);}
+\DoxyCodeLine{01519\ \ \ \ \ \ \ utilities::unique\_lock\_t<lock\_type>\ lock\_guard(lock\_);}
 \DoxyCodeLine{01520\ }
-\DoxyCodeLine{01521\ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\_chunk}}*\ chunk\_p\ =\ \&(empty\_chunk\_list\_.head());}
+\DoxyCodeLine{01521\ \ \ \ \ \ \ stack\_chunk*\ chunk\_p\ =\ \&(empty\_chunk\_list\_.head());}
 \DoxyCodeLine{01522\ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (chunk\_p\ !=\ 0)\ \{}
 \DoxyCodeLine{01523\ }
-\DoxyCodeLine{01524\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\_chunk}}*\ next\_chunk\_p\ =\ \&(chunk\_p-\/>next());}
+\DoxyCodeLine{01524\ \ \ \ \ \ \ \ \ stack\_chunk*\ next\_chunk\_p\ =\ \&(chunk\_p-\/>next());}
 \DoxyCodeLine{01525\ }
 \DoxyCodeLine{01526\ \ \ \ \ \ \ \ \ release\_chunk(*chunk\_p);}
 \DoxyCodeLine{01527\ }
@@ -1280,7 +1280,7 @@
 \DoxyCodeLine{01533\ \ \ \ \ \ \ chunk\_p\ =\ \&(available\_chunk\_list\_.head());}
 \DoxyCodeLine{01534\ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (chunk\_p\ !=\ 0)\ \{}
 \DoxyCodeLine{01535\ }
-\DoxyCodeLine{01536\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\_chunk}}*\ next\_chunk\_p\ =\ \&(chunk\_p-\/>next());}
+\DoxyCodeLine{01536\ \ \ \ \ \ \ \ \ stack\_chunk*\ next\_chunk\_p\ =\ \&(chunk\_p-\/>next());}
 \DoxyCodeLine{01537\ }
 \DoxyCodeLine{01538\ \ \ \ \ \ \ \ \ release\_chunk(*chunk\_p);}
 \DoxyCodeLine{01539\ }

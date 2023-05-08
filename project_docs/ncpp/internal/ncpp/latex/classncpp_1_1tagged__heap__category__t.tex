@@ -60,6 +60,48 @@ void {\bfseries reset\+\_\+blocks} ()
 \mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a9def8fdbacbe50eecdb21b8ac6cb1043}\label{classncpp_1_1tagged__heap__category__t_a9def8fdbacbe50eecdb21b8ac6cb1043}} 
 \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}} {\bfseries block\+\_\+count} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a5d31d68f776a28c9e0c020a3611f5cd8}\label{classncpp_1_1tagged__heap__category__t_a5d31d68f776a28c9e0c020a3611f5cd8}} 
+\mbox{\hyperlink{structncpp_1_1tagged__heap__block}{block\+\_\+type}} $\ast$ {\bfseries push\+\_\+block} ()
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a4c94d4a5ff8cfcf9526ff940f75ca22a}\label{classncpp_1_1tagged__heap__category__t_a4c94d4a5ff8cfcf9526ff940f75ca22a}} 
+\mbox{\hyperlink{structncpp_1_1tagged__heap__block}{block\+\_\+type}} $\ast$ {\bfseries pick\+\_\+a\+\_\+block} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} offset)
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a6516620338e673a7ed06ee30ba93d84a}\label{classncpp_1_1tagged__heap__category__t_a6516620338e673a7ed06ee30ba93d84a}} 
+void {\bfseries internal\+\_\+clear} (\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} thread\+\_\+index)
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_ae5e53060a7f57688b72dc983a52b1855}\label{classncpp_1_1tagged__heap__category__t_ae5e53060a7f57688b72dc983a52b1855}} 
+void {\bfseries internal\+\_\+deallocate} (\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} thread\+\_\+index)
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a5fbd4f9d3109472f4fd90fb7ccf91396}\label{classncpp_1_1tagged__heap__category__t_a5fbd4f9d3109472f4fd90fb7ccf91396}} 
+void {\bfseries internal\+\_\+reset\+\_\+blocks} (\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} thread\+\_\+index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a51415a3a75e2cf90022b2413a60bf631}\label{classncpp_1_1tagged__heap__category__t_a51415a3a75e2cf90022b2413a60bf631}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries block\+\_\+capacity\+\_\+}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a6b3886022901f22661d291b62a8ee12a}\label{classncpp_1_1tagged__heap__category__t_a6b3886022901f22661d291b62a8ee12a}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries min\+\_\+block\+\_\+count\+\_\+}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_ab3376c6e66aa41dfe4b02b677a061768}\label{classncpp_1_1tagged__heap__category__t_ab3376c6e66aa41dfe4b02b677a061768}} 
+\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}} {\bfseries block\+\_\+count\+\_\+array\+\_\+} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a81f18b17b3feaa130942b67a885a5d36}\label{classncpp_1_1tagged__heap__category__t_a81f18b17b3feaa130942b67a885a5d36}} 
+\mbox{\hyperlink{structncpp_1_1tagged__heap__block}{block\+\_\+type}} $\ast$ {\bfseries head\+\_\+block\+\_\+p\+\_\+array\+\_\+} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a42a97903be82b7ffa71ec8c9989dfb68}\label{classncpp_1_1tagged__heap__category__t_a42a97903be82b7ffa71ec8c9989dfb68}} 
+\mbox{\hyperlink{structncpp_1_1tagged__heap__block}{block\+\_\+type}} $\ast$ {\bfseries tail\+\_\+block\+\_\+p\+\_\+array\+\_\+} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_a2bb3f482b041f0f19baf4be367f35c75}\label{classncpp_1_1tagged__heap__category__t_a2bb3f482b041f0f19baf4be367f35c75}} 
+\mbox{\hyperlink{structncpp_1_1tagged__heap__block}{block\+\_\+type}} $\ast$ {\bfseries curr\+\_\+block\+\_\+p\+\_\+array\+\_\+} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{classncpp_1_1tagged__heap__category__t_aa489f62f6352354071baaa3a98653eaa}\label{classncpp_1_1tagged__heap__category__t_aa489f62f6352354071baaa3a98653eaa}} 
+allocator\+\_\+type {\bfseries allocator\+\_\+}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

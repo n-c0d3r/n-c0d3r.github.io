@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('classncpp_1_1tagged__heap__category__t
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classncpp_1_1tagged__heap__category__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ncpp::tagged_heap_category_t&lt; allocator_type__ &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -158,6 +160,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_blocks</b> ()</
 <tr class="memitem:a9def8fdbacbe50eecdb21b8ac6cb1043"><td class="memItemLeft" align="right" valign="top"><a id="a9def8fdbacbe50eecdb21b8ac6cb1043" name="a9def8fdbacbe50eecdb21b8ac6cb1043"></a>
 <a class="el" href="namespacencpp.html#a74cd32b52d6ec0fc0972bfe75223751a">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>block_count</b> ()</td></tr>
 <tr class="separator:a9def8fdbacbe50eecdb21b8ac6cb1043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5d31d68f776a28c9e0c020a3611f5cd8"><td class="memItemLeft" align="right" valign="top"><a id="a5d31d68f776a28c9e0c020a3611f5cd8" name="a5d31d68f776a28c9e0c020a3611f5cd8"></a>
+<a class="el" href="structncpp_1_1tagged__heap__block.html">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>push_block</b> ()</td></tr>
+<tr class="separator:a5d31d68f776a28c9e0c020a3611f5cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c94d4a5ff8cfcf9526ff940f75ca22a"><td class="memItemLeft" align="right" valign="top"><a id="a4c94d4a5ff8cfcf9526ff940f75ca22a" name="a4c94d4a5ff8cfcf9526ff940f75ca22a"></a>
+<a class="el" href="structncpp_1_1tagged__heap__block.html">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pick_a_block</b> (<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> offset)</td></tr>
+<tr class="separator:a4c94d4a5ff8cfcf9526ff940f75ca22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6516620338e673a7ed06ee30ba93d84a"><td class="memItemLeft" align="right" valign="top"><a id="a6516620338e673a7ed06ee30ba93d84a" name="a6516620338e673a7ed06ee30ba93d84a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>internal_clear</b> (<a class="el" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> thread_index)</td></tr>
+<tr class="separator:a6516620338e673a7ed06ee30ba93d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e53060a7f57688b72dc983a52b1855"><td class="memItemLeft" align="right" valign="top"><a id="ae5e53060a7f57688b72dc983a52b1855" name="ae5e53060a7f57688b72dc983a52b1855"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>internal_deallocate</b> (<a class="el" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> thread_index)</td></tr>
+<tr class="separator:ae5e53060a7f57688b72dc983a52b1855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbd4f9d3109472f4fd90fb7ccf91396"><td class="memItemLeft" align="right" valign="top"><a id="a5fbd4f9d3109472f4fd90fb7ccf91396" name="a5fbd4f9d3109472f4fd90fb7ccf91396"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>internal_reset_blocks</b> (<a class="el" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> thread_index)</td></tr>
+<tr class="separator:a5fbd4f9d3109472f4fd90fb7ccf91396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a51415a3a75e2cf90022b2413a60bf631"><td class="memItemLeft" align="right" valign="top"><a id="a51415a3a75e2cf90022b2413a60bf631" name="a51415a3a75e2cf90022b2413a60bf631"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>block_capacity_</b></td></tr>
+<tr class="separator:a51415a3a75e2cf90022b2413a60bf631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3886022901f22661d291b62a8ee12a"><td class="memItemLeft" align="right" valign="top"><a id="a6b3886022901f22661d291b62a8ee12a" name="a6b3886022901f22661d291b62a8ee12a"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>min_block_count_</b></td></tr>
+<tr class="separator:a6b3886022901f22661d291b62a8ee12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3376c6e66aa41dfe4b02b677a061768"><td class="memItemLeft" align="right" valign="top"><a id="ab3376c6e66aa41dfe4b02b677a061768" name="ab3376c6e66aa41dfe4b02b677a061768"></a>
+<a class="el" href="namespacencpp.html#a74cd32b52d6ec0fc0972bfe75223751a">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>block_count_array_</b> [64]</td></tr>
+<tr class="separator:ab3376c6e66aa41dfe4b02b677a061768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f18b17b3feaa130942b67a885a5d36"><td class="memItemLeft" align="right" valign="top"><a id="a81f18b17b3feaa130942b67a885a5d36" name="a81f18b17b3feaa130942b67a885a5d36"></a>
+<a class="el" href="structncpp_1_1tagged__heap__block.html">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>head_block_p_array_</b> [64]</td></tr>
+<tr class="separator:a81f18b17b3feaa130942b67a885a5d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a97903be82b7ffa71ec8c9989dfb68"><td class="memItemLeft" align="right" valign="top"><a id="a42a97903be82b7ffa71ec8c9989dfb68" name="a42a97903be82b7ffa71ec8c9989dfb68"></a>
+<a class="el" href="structncpp_1_1tagged__heap__block.html">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tail_block_p_array_</b> [64]</td></tr>
+<tr class="separator:a42a97903be82b7ffa71ec8c9989dfb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb3f482b041f0f19baf4be367f35c75"><td class="memItemLeft" align="right" valign="top"><a id="a2bb3f482b041f0f19baf4be367f35c75" name="a2bb3f482b041f0f19baf4be367f35c75"></a>
+<a class="el" href="structncpp_1_1tagged__heap__block.html">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>curr_block_p_array_</b> [64]</td></tr>
+<tr class="separator:a2bb3f482b041f0f19baf4be367f35c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa489f62f6352354071baaa3a98653eaa"><td class="memItemLeft" align="right" valign="top"><a id="aa489f62f6352354071baaa3a98653eaa" name="aa489f62f6352354071baaa3a98653eaa"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_</b></td></tr>
+<tr class="separator:aa489f62f6352354071baaa3a98653eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class allocator_type__&gt;<br />

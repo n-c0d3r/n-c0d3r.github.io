@@ -1,5 +1,14 @@
 \hypertarget{structncpp_1_1rtti_1_1robject__member__handle}{}\doxysection{ncpp\+::rtti\+::robject\+\_\+member\+\_\+handle Struct Reference}
 \label{structncpp_1_1rtti_1_1robject__member__handle}\index{ncpp::rtti::robject\_member\_handle@{ncpp::rtti::robject\_member\_handle}}
+
+
+Stores member\textquotesingle{}s arguments pointer, robject pointer and member pointer.  
+
+
+
+
+{\ttfamily \#include $<$robject.\+hpp$>$}
+
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -8,9 +17,11 @@ struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__a
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}\label{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}} 
-{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\using {\bfseries recorrected\+\_\+type\+\_\+t} = typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{utilities\+::nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t}{utilities\+::is\+\_\+function\+\_\+t}}$<$ type\+\_\+\+\_\+ $>$\+::value, type\+\_\+\+\_\+, typename std\+::function$<$ type\+\_\+\+\_\+ $>$ $>$\+::type
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_aa73e8718f0c065236c449862e8ca2d6f}\label{structncpp_1_1rtti_1_1robject__member__handle_aa73e8718f0c065236c449862e8ca2d6f}} 
+using {\bfseries logger\+\_\+func\+\_\+type} = void($\ast$)(std\+::ostream \&os, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&member\+\_\+handle)
+\item 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\using \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}{recorrected\+\_\+type\+\_\+t}} = typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{utilities\+::nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t}{utilities\+::is\+\_\+function\+\_\+t}}$<$ type\+\_\+\+\_\+ $>$\+::value, type\+\_\+\+\_\+, typename std\+::function$<$ type\+\_\+\+\_\+ $>$ $>$\+::type
+\begin{DoxyCompactList}\small\item\em The type that is recorrected by the rules\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,27 +32,75 @@ struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__a
 \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \& {\bfseries operator=} (const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&other)
 \item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a64060ab7515a0ec305c261d7a85a3df7}\label{structncpp_1_1rtti_1_1robject__member__handle_a64060ab7515a0ec305c261d7a85a3df7}} 
-{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\recorrected\+\_\+type\+\_\+t$<$ type\+\_\+\+\_\+ $>$ \& {\bfseries to\+\_\+t} ()
-\item 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}{recorrected\+\_\+type\+\_\+t}}$<$ type\+\_\+\+\_\+ $>$ \& {\bfseries to\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em Casts to recorrected type\+\_\+\+\_\+. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_afff6a8f36fa8818e47d00dbe2ae806f5}\label{structncpp_1_1rtti_1_1robject__member__handle_afff6a8f36fa8818e47d00dbe2ae806f5}} 
-{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\recorrected\+\_\+type\+\_\+t$<$ const type\+\_\+\+\_\+ $>$ \& {\bfseries to\+\_\+t} () const
-\item 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}{recorrected\+\_\+type\+\_\+t}}$<$ const type\+\_\+\+\_\+ $>$ \& {\bfseries to\+\_\+t} () const
+\begin{DoxyCompactList}\small\item\em Casts to recorrected type\+\_\+\+\_\+. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a57b836663c32bb83689ee842e0c8bb40}\label{structncpp_1_1rtti_1_1robject__member__handle_a57b836663c32bb83689ee842e0c8bb40}} 
 {\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \& {\bfseries operator=} (type\+\_\+\+\_\+ \&\&other)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the value of member data from other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_ad756fbe38cf7c174189cd51eeb1bb9a5}\label{structncpp_1_1rtti_1_1robject__member__handle_ad756fbe38cf7c174189cd51eeb1bb9a5}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator==} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data equal to other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_ab2b4c5a876fb90bbfb8ff5e0567b28c8}\label{structncpp_1_1rtti_1_1robject__member__handle_ab2b4c5a876fb90bbfb8ff5e0567b28c8}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator!=} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data not equal to other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a02d3cb7a4884d188a13c03b312817f55}\label{structncpp_1_1rtti_1_1robject__member__handle_a02d3cb7a4884d188a13c03b312817f55}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator$>$} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data greater than other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a72b23cb7e2518e6f53916583d83598c5}\label{structncpp_1_1rtti_1_1robject__member__handle_a72b23cb7e2518e6f53916583d83598c5}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator$<$} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data less than other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a38a4957e71e1930c4a636a0b5f49b416}\label{structncpp_1_1rtti_1_1robject__member__handle_a38a4957e71e1930c4a636a0b5f49b416}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator$>$=} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data greater than or equal to other data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a976768bb68b5f587408e74cafab4cc08}\label{structncpp_1_1rtti_1_1robject__member__handle_a976768bb68b5f587408e74cafab4cc08}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries operator$<$=} (type\+\_\+\+\_\+ \&\&other)
+\begin{DoxyCompactList}\small\item\em Checks if the value of member data less than or equal to other data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_ab100608563c560b94688454a8c6d4368}\label{structncpp_1_1rtti_1_1robject__member__handle_ab100608563c560b94688454a8c6d4368}} 
 \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type}{args\+\_\+array\+\_\+type}} {\bfseries args\+\_\+array}
 \item 
-\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_ac68497841593e228e74e8cde16c540b7}\label{structncpp_1_1rtti_1_1robject__member__handle_ac68497841593e228e74e8cde16c540b7}} 
-\mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $\ast$ {\bfseries robject\+\_\+p} = 0
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a32b960a133dac7924d2525a259b7dd96}\label{structncpp_1_1rtti_1_1robject__member__handle_a32b960a133dac7924d2525a259b7dd96}} 
+\mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries is\+\_\+function} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a64b8c253d79bf507767564fdb2d44862}\label{structncpp_1_1rtti_1_1robject__member__handle_a64b8c253d79bf507767564fdb2d44862}} 
+logger\+\_\+func\+\_\+type {\bfseries logger\+\_\+func\+\_\+ptr} = 0
 \item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_adf657d984774032551ed320f8a99abc4}\label{structncpp_1_1rtti_1_1robject__member__handle_adf657d984774032551ed320f8a99abc4}} 
 void $\ast$ {\bfseries member\+\_\+ptr\+\_\+p} = 0
 \end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a0a2dfbb7f49e3ff936a38b1593455c30}\label{structncpp_1_1rtti_1_1robject__member__handle_a0a2dfbb7f49e3ff936a38b1593455c30}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&member\+\_\+handle)
+\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Stores member\textquotesingle{}s arguments pointer, robject pointer and member pointer. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}\label{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}} 
+\index{ncpp::rtti::robject\_member\_handle@{ncpp::rtti::robject\_member\_handle}!recorrected\_type\_t@{recorrected\_type\_t}}
+\index{recorrected\_type\_t@{recorrected\_type\_t}!ncpp::rtti::robject\_member\_handle@{ncpp::rtti::robject\_member\_handle}}
+\doxysubsubsection{\texorpdfstring{recorrected\_type\_t}{recorrected\_type\_t}}
+{\footnotesize\ttfamily template$<$typename type\+\_\+\+\_\+ $>$ \\
+using \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}{ncpp\+::rtti\+::robject\+\_\+member\+\_\+handle\+::recorrected\+\_\+type\+\_\+t}} =  typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{utilities\+::nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t}{utilities\+::is\+\_\+function\+\_\+t}}$<$type\+\_\+\+\_\+$>$\+::value, type\+\_\+\+\_\+, typename std\+::function$<$type\+\_\+\+\_\+$>$ $>$\+::type}
+
+
+
+The type that is recorrected by the rules\+: 
+
+
+\begin{DoxyEnumerate}
+\item if type\+\_\+\+\_\+ is function type, return std\+::function$<$type\+\_\+\+\_\+$>$.
+\item if type\+\_\+\+\_\+ is not function type, return type\+\_\+\+\_\+. 
+\end{DoxyEnumerate}
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

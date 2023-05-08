@@ -72,8 +72,8 @@
 \DoxyCodeLine{00140\ \textcolor{preprocessor}{\#pragma\ region\ Properties}}
 \DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00142\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_1_1pac_a60446d445abb1985eb31f68a7413cf85}{fiber\_creation\_mode}}\ creation\_mode\_;}
-\DoxyCodeLine{00146\ \ \ \ \ \ \ LPVOID\ \_\_platform\_\_fiber\_;}
-\DoxyCodeLine{00150\ \ \ \ \ \ \ functor\_type\ functor\_;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ LPVOID\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_adbab279c17da6d66a0f7c3cc9ded1ff0}{\_\_platform\_\_fiber\_}};}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ functor\_type\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_a1d336d2bf95f3a430692269802e669d8}{functor\_}};}
 \DoxyCodeLine{00151\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ stack\_size\_;}
 \DoxyCodeLine{00152\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00153\ }
@@ -83,7 +83,7 @@
 \DoxyCodeLine{00160\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespacencpp_1_1pac_a60446d445abb1985eb31f68a7413cf85}{fiber\_creation\_mode}}\ creation\_mode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ creation\_mode\_;\ \}}
 \DoxyCodeLine{00161\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ LPVOID\ \_\_platform\_\_fiber()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_\_platform\_\_fiber\_;\ \}}
 \DoxyCodeLine{00162\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ functor\_type\&\ functor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ functor\_;\ \}}
-\DoxyCodeLine{00163\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ stack\_size()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ stack\_size\_;\ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ sz\ stack\_size()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ stack\_size\_;\ \}}
 \DoxyCodeLine{00164\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00165\ }
 \DoxyCodeLine{00169\ }
@@ -127,11 +127,11 @@
 \DoxyCodeLine{00217\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00221\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_a7c7fbd2009dad637e5e50d1a228a3e56}{win\_fiber::\string~win\_fiber}}()\ \{}
 \DoxyCodeLine{00222\ }
-\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_platform\_\_fiber\_\ ==\ 0)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_adbab279c17da6d66a0f7c3cc9ded1ff0}{\_\_platform\_\_fiber\_}}\ ==\ 0)\ \textcolor{keywordflow}{return};}
 \DoxyCodeLine{00224\ }
 \DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (creation\_mode\_\ ==\ fiber\_creation\_mode::NEW\ ||\ creation\_mode\_\ ==\ \mbox{\hyperlink{namespacencpp_1_1pac_a60446d445abb1985eb31f68a7413cf85a465671a85660e784a23c1e5dad2a7625}{fiber\_creation\_mode::NEW\_DI}})\ \{}
 \DoxyCodeLine{00226\ }
-\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ DeleteFiber(\_\_platform\_\_fiber\_);}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ DeleteFiber(\mbox{\hyperlink{classncpp_1_1pac_1_1win__fiber_adbab279c17da6d66a0f7c3cc9ded1ff0}{\_\_platform\_\_fiber\_}});}
 \DoxyCodeLine{00228\ }
 \DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}

@@ -1,10 +1,28 @@
 \hypertarget{classncpp_1_1rtti_1_1robject__constructor__scope}{}\doxysection{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope Class Reference}
 \label{classncpp_1_1rtti_1_1robject__constructor__scope}\index{ncpp::rtti::robject\_constructor\_scope@{ncpp::rtti::robject\_constructor\_scope}}
+
+
+Responsible of changing the current constructing object to the target robject and restoring the current constructing object back to the prev robject when the destructor called.  
+
+
+
+
+{\ttfamily \#include $<$robject.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__constructor__scope_a373f661e6aa42a8790c45237dedb36c1}\label{classncpp_1_1rtti_1_1robject__constructor__scope_a373f661e6aa42a8790c45237dedb36c1}} 
 {\bfseries robject\+\_\+constructor\+\_\+scope} (\mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&robject\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__constructor__scope_a12e87c838c0b35f16302e621053736e5}\label{classncpp_1_1rtti_1_1robject__constructor__scope_a12e87c838c0b35f16302e621053736e5}} 
+\mbox{\hyperlink{namespacencpp_1_1utilities_aac8793b5c8100c55124fa2cac242bfc1}{utilities\+::lref\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries prev\+\_\+robject\+\_\+ref\+\_\+}
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__constructor__scope_a5f4e91210b7e2a104382c3d731c16201}\label{classncpp_1_1rtti_1_1robject__constructor__scope_a5f4e91210b7e2a104382c3d731c16201}} 
+\mbox{\hyperlink{namespacencpp_1_1utilities_aac8793b5c8100c55124fa2cac242bfc1}{utilities\+::lref\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries target\+\_\+robject\+\_\+ref\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -13,6 +31,9 @@
 class {\bfseries robject\+\_\+i}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Responsible of changing the current constructing object to the target robject and restoring the current constructing object back to the prev robject when the destructor called. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

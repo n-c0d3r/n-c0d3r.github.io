@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('classncpp_1_1pac_1_1win__fiber.html','
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classncpp_1_1pac_1_1win__fiber-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ncpp::pac::win_fiber Class Reference</div></div>
 </div><!--header-->
@@ -170,6 +171,23 @@ Static Public Member Functions</h2></td></tr>
 static VOID WINAPI&#160;</td><td class="memItemRight" valign="bottom"><b>proc</b> (LPVOID data)</td></tr>
 <tr class="memdesc:a515dc99aae1703dc1c7d360e62c71f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main procedure of the fiber. <br /></td></tr>
 <tr class="separator:a515dc99aae1703dc1c7d360e62c71f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4a3bce531e8b53363502ea0ec7f935ae"><td class="memItemLeft" align="right" valign="top"><a id="a4a3bce531e8b53363502ea0ec7f935ae" name="a4a3bce531e8b53363502ea0ec7f935ae"></a>
+<a class="el" href="namespacencpp_1_1pac.html#a60446d445abb1985eb31f68a7413cf85">fiber_creation_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>creation_mode_</b></td></tr>
+<tr class="separator:a4a3bce531e8b53363502ea0ec7f935ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbab279c17da6d66a0f7c3cc9ded1ff0"><td class="memItemLeft" align="right" valign="top"><a id="adbab279c17da6d66a0f7c3cc9ded1ff0" name="adbab279c17da6d66a0f7c3cc9ded1ff0"></a>
+LPVOID&#160;</td><td class="memItemRight" valign="bottom"><b>__platform__fiber_</b></td></tr>
+<tr class="memdesc:adbab279c17da6d66a0f7c3cc9ded1ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The WinAPI fiber. <br /></td></tr>
+<tr class="separator:adbab279c17da6d66a0f7c3cc9ded1ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d336d2bf95f3a430692269802e669d8"><td class="memItemLeft" align="right" valign="top"><a id="a1d336d2bf95f3a430692269802e669d8" name="a1d336d2bf95f3a430692269802e669d8"></a>
+functor_type&#160;</td><td class="memItemRight" valign="bottom"><b>functor_</b></td></tr>
+<tr class="memdesc:a1d336d2bf95f3a430692269802e669d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function to be run inside the fiber. <br /></td></tr>
+<tr class="separator:a1d336d2bf95f3a430692269802e669d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b5c419a2e5d2729ddef8a15e77e508"><td class="memItemLeft" align="right" valign="top"><a id="a11b5c419a2e5d2729ddef8a15e77e508" name="a11b5c419a2e5d2729ddef8a15e77e508"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stack_size_</b></td></tr>
+<tr class="separator:a11b5c419a2e5d2729ddef8a15e77e508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Windows platform fiber. </p>

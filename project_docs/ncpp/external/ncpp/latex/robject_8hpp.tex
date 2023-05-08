@@ -14,10 +14,12 @@ Implements reflected object.
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope}}
+class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+begin\+\_\+scope}}
+\item 
+class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+end\+\_\+scope}}
 \item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{ncpp\+::rtti\+::robject\+\_\+member\+\_\+handle}}
-\item 
+\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments pointer, robject pointer and member pointer. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type}{ncpp\+::rtti\+::robject\+\_\+member\+\_\+handle\+::args\+\_\+array\+\_\+type}}
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{ncpp\+::rtti\+::robject\+\_\+variable\+\_\+reflecter\+\_\+t$<$ object\+\_\+type\+\_\+\+\_\+, variable\+\_\+type\+\_\+\+\_\+, name\+\_\+member\+\_\+ptr\+\_\+type, name\+\_\+member\+\_\+ptr, args\+\_\+member\+\_\+ptr\+\_\+type, args\+\_\+member\+\_\+ptr, member\+\_\+ptr\+\_\+type, member\+\_\+ptr $>$}}
@@ -43,25 +45,27 @@ namespace \mbox{\hyperlink{namespacencpp_1_1rtti}{ncpp\+::rtti}}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{robject_8hpp_a8980170a5532aa53aa1082f3a98fa3d5}{NCPP\+\_\+\+RCLASS}}(Class\+Name)
-\item 
-\mbox{\Hypertarget{robject_8hpp_a89da187c96d1459452f52e945b2a986e}\label{robject_8hpp_a89da187c96d1459452f52e945b2a986e}} 
-\#define {\bfseries NCPP\+\_\+\+RCSCOPE}(Class\+Name)~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+scope\+\_\+\+\_\+($\ast$this);
-\item 
+\begin{DoxyCompactList}\small\item\em Indicates a class need to be reflected. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{robject_8hpp_a89da187c96d1459452f52e945b2a986e}{NCPP\+\_\+\+RCSCOPE}}(Class\+Name)~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+end\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+end\+\_\+scope\+\_\+\+\_\+($\ast$this, $\ast$(\+\_\+\+\_\+\#\#Class\+Name\#\#\+\_\+constructor\+\_\+begin\+\_\+scope\+\_\+\+\_\+.\+prev\+\_\+robject\+\_\+ref));
+\begin{DoxyCompactList}\small\item\em Setups the constructing scope of a reflected class. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{robject_8hpp_aa1ec722378555c397d953512da64a24c}{NCPP\+\_\+\+RCVARIABLE}}(Member\+Type,  Member\+Name, ...)
-\item 
+\begin{DoxyCompactList}\small\item\em Declares a reflected member variable. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{robject_8hpp_a36212674bee22b00e7c9635ec646604f}{NCPP\+\_\+\+RCFUNCTION}}(Member\+Function\+Type,  Member\+Name, ...)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Declares a reflected member function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}\label{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}} 
 {\footnotesize template$<$sz... args\+\_\+\+\_\+$>$ }\\using {\bfseries ncpp\+::rtti\+::robject\+\_\+member\+\_\+args\+\_\+t} = typename std\+::array$<$ sz, sizeof...(args\+\_\+\+\_\+)$>$
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_aa8f88c2876637921b8958dd5c4315866}\label{namespacencpp_1_1rtti_aa8f88c2876637921b8958dd5c4315866}} 
 robject\+\_\+i \& {\bfseries ncpp\+::rtti\+::current\+\_\+constructing\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Gets the current constructing object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}\label{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}} 
+std\+::ostream \& {\bfseries ncpp\+::rtti\+::operator$<$$<$} (std\+::ostream \&os, const robject\+\_\+i \&obj)
 \end{DoxyCompactItemize}
 
 
@@ -82,7 +86,7 @@ Implements reflected object.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_type\ =\ MemberFunctionType;\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberName\#\#\_type\ MemberName;\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ MemberName\#\#\_name\_cstr[\textcolor{keyword}{sizeof}(\#MemberName)]\ =\ \#MemberName;\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>\ MemberName\#\#\_args\ =\ \{\_\_VA\_ARGS\_\_\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ \mbox{\hyperlink{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}{ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>}}\ MemberName\#\#\_args\ =\ \{\_\_VA\_ARGS\_\_\};\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_reflecter\_type\ =\ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__function__reflecter__t}{ncpp::rtti::robject\_function\_reflecter\_t}}<\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ current\_rclass,\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ MemberFunctionType,\ \(\backslash\)}
@@ -97,6 +101,10 @@ Implements reflected object.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberName\#\#\_reflecter\_type\ MemberName\#\#\_reflecter;}
 
 \end{DoxyCode}
+
+
+Declares a reflected member function. 
+
 \mbox{\Hypertarget{robject_8hpp_a8980170a5532aa53aa1082f3a98fa3d5}\label{robject_8hpp_a8980170a5532aa53aa1082f3a98fa3d5}} 
 \index{robject.hpp@{robject.hpp}!NCPP\_RCLASS@{NCPP\_RCLASS}}
 \index{NCPP\_RCLASS@{NCPP\_RCLASS}!robject.hpp@{robject.hpp}}
@@ -107,6 +115,7 @@ Implements reflected object.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{private}:\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }current\_rclass\ =\ ClassName;\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{ncpp::rtti::robject\_constructor\_begin\_scope}}\ \_\_\#\#ClassName\#\#\_constructor\_begin\_scope\_\_;\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{public}:\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ncpp::rtti::robject\_i>}}\ get\_rclass()\{\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
@@ -118,7 +127,21 @@ Implements reflected object.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{robject_8hpp_aa1ec722378555c397d953512da64a24c}\label{robject_8hpp_aa1ec722378555c397d953512da64a24c}} 
+
+
+Indicates a class need to be reflected. 
+
+Must be added first in class body. \mbox{\Hypertarget{robject_8hpp_a89da187c96d1459452f52e945b2a986e}\label{robject_8hpp_a89da187c96d1459452f52e945b2a986e}} 
+\index{robject.hpp@{robject.hpp}!NCPP\_RCSCOPE@{NCPP\_RCSCOPE}}
+\index{NCPP\_RCSCOPE@{NCPP\_RCSCOPE}!robject.hpp@{robject.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_RCSCOPE}{NCPP\_RCSCOPE}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+RCSCOPE(\begin{DoxyParamCaption}\item[{}]{Class\+Name }\end{DoxyParamCaption})~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+end\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+end\+\_\+scope\+\_\+\+\_\+($\ast$this, $\ast$(\+\_\+\+\_\+\#\#Class\+Name\#\#\+\_\+constructor\+\_\+begin\+\_\+scope\+\_\+\+\_\+.\+prev\+\_\+robject\+\_\+ref));}
+
+
+
+Setups the constructing scope of a reflected class. 
+
+Must be added first in constructor body. \mbox{\Hypertarget{robject_8hpp_aa1ec722378555c397d953512da64a24c}\label{robject_8hpp_aa1ec722378555c397d953512da64a24c}} 
 \index{robject.hpp@{robject.hpp}!NCPP\_RCVARIABLE@{NCPP\_RCVARIABLE}}
 \index{NCPP\_RCVARIABLE@{NCPP\_RCVARIABLE}!robject.hpp@{robject.hpp}}
 \doxysubsubsection{\texorpdfstring{NCPP\_RCVARIABLE}{NCPP\_RCVARIABLE}}
@@ -128,7 +151,7 @@ Implements reflected object.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberType\ MemberName;\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ MemberName\#\#\_name\_cstr[\textcolor{keyword}{sizeof}(\#MemberName)]\ =\ \#MemberName;\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_args\_type\ =\ \textcolor{keyword}{typename}\ ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>;\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_args\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}{ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>}};\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberName\#\#\_args\_type\ MemberName\#\#\_args\ =\ \{\_\_VA\_ARGS\_\_\};\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_reflecter\_type\ =\ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{ncpp::rtti::robject\_variable\_reflecter\_t}}<\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ current\_rclass,\ \(\backslash\)}
@@ -144,3 +167,7 @@ Implements reflected object.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberName\#\#\_reflecter\_type\ MemberName\#\#\_reflecter;}
 
 \end{DoxyCode}
+
+
+Declares a reflected member variable. 
+

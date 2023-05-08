@@ -1,5 +1,14 @@
 \hypertarget{classncpp_1_1rtti_1_1robject__constructor__scope}{}\doxysection{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope Class Reference}
 \label{classncpp_1_1rtti_1_1robject__constructor__scope}\index{ncpp::rtti::robject\_constructor\_scope@{ncpp::rtti::robject\_constructor\_scope}}
+
+
+Responsible of changing the current constructing object to the target robject and restoring the current constructing object back to the prev robject when the destructor called.  
+
+
+
+
+{\ttfamily \#include $<$robject.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,6 +22,9 @@
 class {\bfseries robject\+\_\+i}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Responsible of changing the current constructing object to the target robject and restoring the current constructing object back to the prev robject when the destructor called. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

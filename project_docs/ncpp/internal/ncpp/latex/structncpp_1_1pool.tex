@@ -48,6 +48,51 @@
 \mbox{\Hypertarget{structncpp_1_1pool_af9fc9c50fe3a44fa9696ee5279109427}\label{structncpp_1_1pool_af9fc9c50fe3a44fa9696ee5279109427}} 
 void {\bfseries deallocate} (\mbox{\hyperlink{structncpp_1_1pool__allocation}{pool\+\_\+allocation}} $\ast$allocation\+\_\+p)
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a6053ef6b3dec3e91d14ca1ec2b6a541e}\label{structncpp_1_1pool_a6053ef6b3dec3e91d14ca1ec2b6a541e}} 
+uintptr\+\_\+t {\bfseries align\+\_\+address} (uintptr\+\_\+t addr, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
+\begin{DoxyCompactList}\small\item\em Returns aligned address shifting by the given address and align. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a3d06523e80e3d9f1c83c68d36a13e66b}\label{structncpp_1_1pool_a3d06523e80e3d9f1c83c68d36a13e66b}} 
+{\footnotesize template$<$typename data\+\_\+type $>$ }\\data\+\_\+type $\ast$ {\bfseries align\+\_\+pointer} (data\+\_\+type $\ast$ptr, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
+\begin{DoxyCompactList}\small\item\em Returns aligned pointer shifting by the given pointer and align. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a9a1ec1b9afc78f6649fa2eb1e373d1ea}\label{structncpp_1_1pool_a9a1ec1b9afc78f6649fa2eb1e373d1ea}} 
+\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} $\ast$ {\bfseries aligned\+\_\+alloc} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} size, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
+\begin{DoxyCompactList}\small\item\em Aligned allocates a memory block by given size and align. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a27dd1afdfe4865bc6d291db173b68f08}\label{structncpp_1_1pool_a27dd1afdfe4865bc6d291db173b68f08}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries capacity\+\_\+}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_afe85c70c3a30117ba443951d57a12adb}\label{structncpp_1_1pool_afe85c70c3a30117ba443951d57a12adb}} 
+\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries usage\+\_\+}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_aebb1826dfd31930e1bb8b27f7a29187a}\label{structncpp_1_1pool_aebb1826dfd31930e1bb8b27f7a29187a}} 
+\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} $\ast$ {\bfseries data\+\_\+p\+\_\+}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a2cd6c1629c8e83a557ce698db0ccda31}\label{structncpp_1_1pool_a2cd6c1629c8e83a557ce698db0ccda31}} 
+\mbox{\hyperlink{structncpp_1_1pool__chunk}{pool\+\_\+chunk}} $\ast$ {\bfseries chunk\+\_\+p\+\_\+}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_ac37034cc77fae39820df03b33cb4b0e7}\label{structncpp_1_1pool_ac37034cc77fae39820df03b33cb4b0e7}} 
+\mbox{\hyperlink{structncpp_1_1pool}{pool}} $\ast$ {\bfseries out\+\_\+prev\+\_\+p\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a7c9887c02e4ae69729b4f2304282234d}\label{structncpp_1_1pool_a7c9887c02e4ae69729b4f2304282234d}} 
+\mbox{\hyperlink{structncpp_1_1pool}{pool}} $\ast$ {\bfseries out\+\_\+next\+\_\+p\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_af76939fab91bfb8bb6b4141cc570ac26}\label{structncpp_1_1pool_af76939fab91bfb8bb6b4141cc570ac26}} 
+\mbox{\hyperlink{structncpp_1_1pool}{pool}} $\ast$ {\bfseries in\+\_\+prev\+\_\+p\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_a631a5fc98df6c98129f4580a7bdd7a4d}\label{structncpp_1_1pool_a631a5fc98df6c98129f4580a7bdd7a4d}} 
+\mbox{\hyperlink{structncpp_1_1pool}{pool}} $\ast$ {\bfseries in\+\_\+next\+\_\+p\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_af50af491393e20192ce83a13b7b2a30b}\label{structncpp_1_1pool_af50af491393e20192ce83a13b7b2a30b}} 
+\mbox{\hyperlink{structncpp_1_1pool__allocation__list}{pool\+\_\+allocation\+\_\+list}} {\bfseries allocation\+\_\+list\+\_\+}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pool_ae9ead2dcedeec185f1fb6f64bca1411d}\label{structncpp_1_1pool_ae9ead2dcedeec185f1fb6f64bca1411d}} 
+\mbox{\hyperlink{structncpp_1_1pool__allocation__list}{pool\+\_\+allocation\+\_\+list}} {\bfseries empty\+\_\+list\+\_\+}
+\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 

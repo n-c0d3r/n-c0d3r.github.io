@@ -97,10 +97,16 @@ $(document).ready(function(){initNavTree('structncpp_1_1rtti_1_1robject__member_
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structncpp_1_1rtti_1_1robject__member__handle-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ncpp::rtti::robject_member_handle Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores member's arguments pointer, robject pointer and member pointer.  
+ <a href="structncpp_1_1rtti_1_1robject__member__handle.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="robject_8hpp_source.html">robject.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -109,9 +115,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplParams" colspan="2"><a id="a7bc2093ba4a1364abba1616af808a977" name="a7bc2093ba4a1364abba1616af808a977"></a>
-template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>recorrected_type_t</b> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt; type__ &gt;::value, type__, typename std::function&lt; type__ &gt; &gt;::type</td></tr>
+<tr class="memitem:aa73e8718f0c065236c449862e8ca2d6f"><td class="memItemLeft" align="right" valign="top"><a id="aa73e8718f0c065236c449862e8ca2d6f" name="aa73e8718f0c065236c449862e8ca2d6f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>logger_func_type</b> = void(*)(std::ostream &amp;os, const <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;member_handle)</td></tr>
+<tr class="separator:aa73e8718f0c065236c449862e8ca2d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplParams" colspan="2">template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt; type__ &gt;::value, type__, typename std::function&lt; type__ &gt; &gt;::type</td></tr>
+<tr class="memdesc:a7bc2093ba4a1364abba1616af808a977"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type that is recorrected by the rules:  <br /></td></tr>
 <tr class="separator:a7bc2093ba4a1364abba1616af808a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,29 +133,96 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af7065323aedaa65acea82080331f7738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplParams" colspan="2"><a id="a64060ab7515a0ec305c261d7a85a3df7" name="a64060ab7515a0ec305c261d7a85a3df7"></a>
 template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplItemLeft" align="right" valign="top">recorrected_type_t&lt; type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> ()</td></tr>
+<tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a>&lt; type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> ()</td></tr>
+<tr class="memdesc:a64060ab7515a0ec305c261d7a85a3df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts to recorrected type__. <br /></td></tr>
 <tr class="separator:a64060ab7515a0ec305c261d7a85a3df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplParams" colspan="2"><a id="afff6a8f36fa8818e47d00dbe2ae806f5" name="afff6a8f36fa8818e47d00dbe2ae806f5"></a>
 template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplItemLeft" align="right" valign="top">recorrected_type_t&lt; const type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> () const</td></tr>
+<tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a>&lt; const type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> () const</td></tr>
+<tr class="memdesc:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts to recorrected type__. <br /></td></tr>
 <tr class="separator:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b836663c32bb83689ee842e0c8bb40"><td class="memTemplParams" colspan="2"><a id="a57b836663c32bb83689ee842e0c8bb40" name="a57b836663c32bb83689ee842e0c8bb40"></a>
 template&lt;typename type__ &gt; </td></tr>
 <tr class="memitem:a57b836663c32bb83689ee842e0c8bb40"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a57b836663c32bb83689ee842e0c8bb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of member data from other data. <br /></td></tr>
 <tr class="separator:a57b836663c32bb83689ee842e0c8bb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="memTemplParams" colspan="2"><a id="ad756fbe38cf7c174189cd51eeb1bb9a5" name="ad756fbe38cf7c174189cd51eeb1bb9a5"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data equal to other data. <br /></td></tr>
+<tr class="separator:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b4c5a876fb90bbfb8ff5e0567b28c8"><td class="memTemplParams" colspan="2"><a id="ab2b4c5a876fb90bbfb8ff5e0567b28c8" name="ab2b4c5a876fb90bbfb8ff5e0567b28c8"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:ab2b4c5a876fb90bbfb8ff5e0567b28c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:ab2b4c5a876fb90bbfb8ff5e0567b28c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data not equal to other data. <br /></td></tr>
+<tr class="separator:ab2b4c5a876fb90bbfb8ff5e0567b28c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d3cb7a4884d188a13c03b312817f55"><td class="memTemplParams" colspan="2"><a id="a02d3cb7a4884d188a13c03b312817f55" name="a02d3cb7a4884d188a13c03b312817f55"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:a02d3cb7a4884d188a13c03b312817f55"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a02d3cb7a4884d188a13c03b312817f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data greater than other data. <br /></td></tr>
+<tr class="separator:a02d3cb7a4884d188a13c03b312817f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b23cb7e2518e6f53916583d83598c5"><td class="memTemplParams" colspan="2"><a id="a72b23cb7e2518e6f53916583d83598c5" name="a72b23cb7e2518e6f53916583d83598c5"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:a72b23cb7e2518e6f53916583d83598c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a72b23cb7e2518e6f53916583d83598c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data less than other data. <br /></td></tr>
+<tr class="separator:a72b23cb7e2518e6f53916583d83598c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a4957e71e1930c4a636a0b5f49b416"><td class="memTemplParams" colspan="2"><a id="a38a4957e71e1930c4a636a0b5f49b416" name="a38a4957e71e1930c4a636a0b5f49b416"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:a38a4957e71e1930c4a636a0b5f49b416"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;=</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a38a4957e71e1930c4a636a0b5f49b416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data greater than or equal to other data. <br /></td></tr>
+<tr class="separator:a38a4957e71e1930c4a636a0b5f49b416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976768bb68b5f587408e74cafab4cc08"><td class="memTemplParams" colspan="2"><a id="a976768bb68b5f587408e74cafab4cc08" name="a976768bb68b5f587408e74cafab4cc08"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:a976768bb68b5f587408e74cafab4cc08"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;=</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a976768bb68b5f587408e74cafab4cc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the value of member data less than or equal to other data. <br /></td></tr>
+<tr class="separator:a976768bb68b5f587408e74cafab4cc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab100608563c560b94688454a8c6d4368"><td class="memItemLeft" align="right" valign="top"><a id="ab100608563c560b94688454a8c6d4368" name="ab100608563c560b94688454a8c6d4368"></a>
 <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type.html">args_array_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>args_array</b></td></tr>
 <tr class="separator:ab100608563c560b94688454a8c6d4368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac68497841593e228e74e8cde16c540b7"><td class="memItemLeft" align="right" valign="top"><a id="ac68497841593e228e74e8cde16c540b7" name="ac68497841593e228e74e8cde16c540b7"></a>
-<a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>robject_p</b> = 0</td></tr>
-<tr class="separator:ac68497841593e228e74e8cde16c540b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b960a133dac7924d2525a259b7dd96"><td class="memItemLeft" align="right" valign="top"><a id="a32b960a133dac7924d2525a259b7dd96" name="a32b960a133dac7924d2525a259b7dd96"></a>
+<a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>is_function</b> = 0</td></tr>
+<tr class="separator:a32b960a133dac7924d2525a259b7dd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b8c253d79bf507767564fdb2d44862"><td class="memItemLeft" align="right" valign="top"><a id="a64b8c253d79bf507767564fdb2d44862" name="a64b8c253d79bf507767564fdb2d44862"></a>
+logger_func_type&#160;</td><td class="memItemRight" valign="bottom"><b>logger_func_ptr</b> = 0</td></tr>
+<tr class="separator:a64b8c253d79bf507767564fdb2d44862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf657d984774032551ed320f8a99abc4"><td class="memItemLeft" align="right" valign="top"><a id="adf657d984774032551ed320f8a99abc4" name="adf657d984774032551ed320f8a99abc4"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>member_ptr_p</b> = 0</td></tr>
 <tr class="separator:adf657d984774032551ed320f8a99abc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0a2dfbb7f49e3ff936a38b1593455c30"><td class="memItemLeft" align="right" valign="top"><a id="a0a2dfbb7f49e3ff936a38b1593455c30" name="a0a2dfbb7f49e3ff936a38b1593455c30"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;member_handle)</td></tr>
+<tr class="separator:a0a2dfbb7f49e3ff936a38b1593455c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores member's arguments pointer, robject pointer and member pointer. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7bc2093ba4a1364abba1616af808a977" name="a7bc2093ba4a1364abba1616af808a977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc2093ba4a1364abba1616af808a977">&#9670;&#160;</a></span>recorrected_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename type__ &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">ncpp::rtti::robject_member_handle::recorrected_type_t</a> =  typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt;type__&gt;::value, type__, typename std::function&lt;type__&gt; &gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type that is recorrected by the rules: </p>
+<ol type="1">
+<li>if type__ is function type, return std::function&lt;type__&gt;.</li>
+<li>if type__ is not function type, return type__. </li>
+</ol>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>F:/NCoder/NCPP/ncpp/source/ncpp/rtti/<a class="el" href="robject_8hpp_source.html">robject.hpp</a></li>
 </ul>

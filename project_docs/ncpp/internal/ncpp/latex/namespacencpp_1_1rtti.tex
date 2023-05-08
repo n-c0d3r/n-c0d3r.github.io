@@ -10,7 +10,9 @@ Implements runtime type information.
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\+\_\+t}}
 \begin{DoxyCompactList}\small\item\em Reflected class template. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__scope}{robject\+\_\+constructor\+\_\+scope}}
+class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{robject\+\_\+constructor\+\_\+begin\+\_\+scope}}
+\item 
+class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{robject\+\_\+constructor\+\_\+end\+\_\+scope}}
 \item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t}{robject\+\_\+function\+\_\+reflecter\+\_\+executer\+\_\+get\+\_\+t}}
 \item 
@@ -23,7 +25,7 @@ class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__function__reflecter__t}{rob
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}}
 \begin{DoxyCompactList}\small\item\em Reflected object interface. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}}
-\item 
+\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments pointer, robject pointer and member pointer. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{robject\+\_\+variable\+\_\+reflecter\+\_\+t}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
@@ -31,10 +33,10 @@ class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{rob
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_a330cb437508fd902c142781d57fdf637}\label{namespacencpp_1_1rtti_a330cb437508fd902c142781d57fdf637}} 
 using {\bfseries rclass} = typename \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$
-\item 
+\begin{DoxyCompactList}\small\item\em The default rclass which object\+\_\+type\+\_\+\+\_\+ is \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}\label{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}} 
 {\footnotesize template$<$sz... args\+\_\+\+\_\+$>$ }\\using {\bfseries robject\+\_\+member\+\_\+args\+\_\+t} = typename std\+::array$<$ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}, sizeof...(args\+\_\+\+\_\+)$>$
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -49,12 +51,18 @@ enum class {\bfseries rclass\+\_\+create\+\_\+mode} \{ {\bfseries DEFAULT} = 0
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_aa8f88c2876637921b8958dd5c4315866}\label{namespacencpp_1_1rtti_aa8f88c2876637921b8958dd5c4315866}} 
 \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \& {\bfseries current\+\_\+constructing\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Gets the current constructing object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}\label{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&obj)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_a21fb3518496e668e80b0d22459038b7b}\label{namespacencpp_1_1rtti_a21fb3518496e668e80b0d22459038b7b}} 
 thread\+\_\+local \mbox{\hyperlink{namespacencpp_1_1utilities_aac8793b5c8100c55124fa2cac242bfc1}{utilities\+::lref\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries current\+\_\+constructing\+\_\+robject\+\_\+ref\+\_\+g}
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1rtti_a6a347531c1fc9e4983de777cc3db0048}\label{namespacencpp_1_1rtti_a6a347531c1fc9e4983de777cc3db0048}} 
+thread\+\_\+local \mbox{\hyperlink{namespacencpp_1_1utilities_aac8793b5c8100c55124fa2cac242bfc1}{utilities\+::lref\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries last\+\_\+constructor\+\_\+called\+\_\+robject\+\_\+ref\+\_\+g}
 \end{DoxyCompactItemize}
 
 

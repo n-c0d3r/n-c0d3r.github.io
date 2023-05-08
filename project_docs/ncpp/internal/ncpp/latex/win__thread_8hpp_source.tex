@@ -96,15 +96,15 @@
 \DoxyCodeLine{00187\ }
 \DoxyCodeLine{00188\ \textcolor{preprocessor}{\#pragma\ region\ Nested\ Types}}
 \DoxyCodeLine{00189\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00190\ \ \ \ \ \ \ \textcolor{keyword}{struct\ }main\_thread\_creation\_placeholder\ \{\};}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder}{main\_thread\_creation\_placeholder}}\ \{\};}
 \DoxyCodeLine{00191\ \textcolor{preprocessor}{\#pragma\ endregion}}
 \DoxyCodeLine{00192\ }
 \DoxyCodeLine{00196\ }
 \DoxyCodeLine{00197\ \textcolor{preprocessor}{\#pragma\ region\ Properties}}
 \DoxyCodeLine{00198\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00202\ \ \ \ \ \ \ HANDLE\ \_\_platform\_\_thread\_;}
-\DoxyCodeLine{00206\ \ \ \ \ \ \ DWORD\ \_\_platform\_\_id\_;}
-\DoxyCodeLine{00210\ \ \ \ \ \ \ functor\_type\ functor\_;}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ HANDLE\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}{\_\_platform\_\_thread\_}};}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ DWORD\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a5fd1120ab3efe07aa6716ceb2d1a1df9}{\_\_platform\_\_id\_}};}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ functor\_type\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a3d6999a67c31aa5808a9ed24a51ce64d}{functor\_}};}
 \DoxyCodeLine{00211\ \ \ \ \ \ \ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ stack\_size\_;}
 \DoxyCodeLine{00212\ \ \ \ \ \ \ std::atomic\_bool\ is\_ready\_;}
 \DoxyCodeLine{00213\ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_main\_;}
@@ -119,7 +119,7 @@
 \DoxyCodeLine{00225\ \ \ \ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00226\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ LPVOID\ \_\_platform\_\_thread()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_\_platform\_\_thread\_;\ \}}
 \DoxyCodeLine{00227\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ DWORD\ \_\_platform\_\_id()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_\_platform\_\_id\_;\ \}}
-\DoxyCodeLine{00228\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ u32\ id()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_\_platform\_\_id\_;\ \}}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ id()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_\_platform\_\_id\_;\ \}}
 \DoxyCodeLine{00229\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ functor\_type\&\ functor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ functor\_;\ \}}
 \DoxyCodeLine{00230\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ is\_done()\textcolor{keyword}{\ const\ }\{}
 \DoxyCodeLine{00231\ }
@@ -140,7 +140,7 @@
 \DoxyCodeLine{00249\ }
 \DoxyCodeLine{00250\ \textcolor{preprocessor}{\#pragma\ region\ Constructors,\ Destrutor\ and\ Operators}}
 \DoxyCodeLine{00251\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00255\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ win\_thread::win\_thread(main\_thread\_creation\_placeholder)\ :}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \textcolor{keyword}{inline}\ win\_thread::win\_thread(\mbox{\hyperlink{structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder}{main\_thread\_creation\_placeholder}})\ :}
 \DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \_\_platform\_\_thread\_(GetCurrentThread()),}
 \DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \_\_platform\_\_id\_(GetCurrentThreadId()),}
 \DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ stack\_size\_(0),}
@@ -161,7 +161,7 @@
 \DoxyCodeLine{00273\ }
 \DoxyCodeLine{00274\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00275\ }
-\DoxyCodeLine{00276\ \ \ \ \ \ \ \textcolor{keyword}{static}\ win\_thread\ main\_thread\_g;}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread}{win\_thread}}\ main\_thread\_g;}
 \DoxyCodeLine{00277\ }
 \DoxyCodeLine{00281\ }
 \DoxyCodeLine{00282\ \ \ \ \ \textcolor{keyword}{public}:}
@@ -194,29 +194,29 @@
 \DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ is\_main\_(0)}
 \DoxyCodeLine{00317\ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00318\ }
-\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \_\_platform\_\_thread\_\ =\ CreateThread(}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}{\_\_platform\_\_thread\_}}\ =\ CreateThread(}
 \DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ 0,}
 \DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \ \ stack\_size,}
 \DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a10daae40101e87aec6734d1764f4645c}{proc}},}
 \DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{this},}
 \DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ STACK\_SIZE\_PARAM\_IS\_A\_RESERVATION,}
-\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \&\_\_platform\_\_id\_}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a5fd1120ab3efe07aa6716ceb2d1a1df9}{\_\_platform\_\_id\_}}}
 \DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00327\ }
-\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ assert(\_\_platform\_\_thread\_\ !=\ 0\ \&\&\ \textcolor{stringliteral}{"{}thread\ creating\ failed"{}});}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ assert(\mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}{\_\_platform\_\_thread\_}}\ !=\ 0\ \&\&\ \textcolor{stringliteral}{"{}thread\ creating\ failed"{}});}
 \DoxyCodeLine{00329\ }
 \DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!is\_ready\_.load(std::memory\_order\_acquire));}
 \DoxyCodeLine{00331\ }
 \DoxyCodeLine{00332\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00336\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a2effdaeabd69d8adc58b055c8797c04e}{win\_thread::\string~win\_thread}}()\ \{}
 \DoxyCodeLine{00337\ }
-\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_platform\_\_thread\_\ ==\ 0)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}{\_\_platform\_\_thread\_}}\ ==\ 0)\ \textcolor{keywordflow}{return};}
 \DoxyCodeLine{00339\ }
 \DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!is\_main\_)\ \{}
 \DoxyCodeLine{00341\ }
 \DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ assert(is\_done()\ \&\&\ \textcolor{stringliteral}{"{}Cant\ release\ currently\ running\ thread"{}});}
 \DoxyCodeLine{00343\ }
-\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \ \ CloseHandle(\_\_platform\_\_thread\_);}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \ \ CloseHandle(\mbox{\hyperlink{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}{\_\_platform\_\_thread\_}});}
 \DoxyCodeLine{00345\ }
 \DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00347\ }
