@@ -48,48 +48,6 @@
 \mbox{\Hypertarget{structncpp_1_1stack_ae7b0f472082fe2e9e4a1b35ac55c6fa3}\label{structncpp_1_1stack_ae7b0f472082fe2e9e4a1b35ac55c6fa3}} 
 void {\bfseries deallocate} (\mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\+\_\+allocation}} $\ast$allocation\+\_\+p)
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_aeb45b5115f939c0845acafc0aeebd0f3}\label{structncpp_1_1stack_aeb45b5115f939c0845acafc0aeebd0f3}} 
-uintptr\+\_\+t {\bfseries align\+\_\+address} (uintptr\+\_\+t addr, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
-\begin{DoxyCompactList}\small\item\em Returns aligned address shifting by the given address and align. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a704fa46e731c0b5521ffde2ce8fcef27}\label{structncpp_1_1stack_a704fa46e731c0b5521ffde2ce8fcef27}} 
-{\footnotesize template$<$typename data\+\_\+type $>$ }\\data\+\_\+type $\ast$ {\bfseries align\+\_\+pointer} (data\+\_\+type $\ast$ptr, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
-\begin{DoxyCompactList}\small\item\em Returns aligned pointer shifting by the given pointer and align. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structncpp_1_1stack_abd9f923c73f3e06f8fa29e2f8b307c06}\label{structncpp_1_1stack_abd9f923c73f3e06f8fa29e2f8b307c06}} 
-\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} $\ast$ {\bfseries aligned\+\_\+alloc} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} size, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align)
-\begin{DoxyCompactList}\small\item\em Aligned allocates a memory block by given size and align. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a842cfd1aa2032502bb12a3c9a8bf757d}\label{structncpp_1_1stack_a842cfd1aa2032502bb12a3c9a8bf757d}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries capacity\+\_\+}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a72518138575c251a881e02e594390bf4}\label{structncpp_1_1stack_a72518138575c251a881e02e594390bf4}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries usage\+\_\+}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a4d1a4d1bc55bbbed3f10e075585cf561}\label{structncpp_1_1stack_a4d1a4d1bc55bbbed3f10e075585cf561}} 
-\mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} $\ast$ {\bfseries data\+\_\+p\+\_\+}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a857b436cc1846d048eb108ad08593626}\label{structncpp_1_1stack_a857b436cc1846d048eb108ad08593626}} 
-\mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\+\_\+chunk}} $\ast$ {\bfseries chunk\+\_\+p\+\_\+}
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a3f3ef48daef60a9931b0d4c6e1580b5d}\label{structncpp_1_1stack_a3f3ef48daef60a9931b0d4c6e1580b5d}} 
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} $\ast$ {\bfseries out\+\_\+prev\+\_\+p\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a00fd354504efe531a08ccc04140439e2}\label{structncpp_1_1stack_a00fd354504efe531a08ccc04140439e2}} 
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} $\ast$ {\bfseries out\+\_\+next\+\_\+p\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a95d660515f01d80898fde513b69b91da}\label{structncpp_1_1stack_a95d660515f01d80898fde513b69b91da}} 
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} $\ast$ {\bfseries in\+\_\+prev\+\_\+p\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_a7e6ceec101d42bd00ee1fa9a9f09fd1c}\label{structncpp_1_1stack_a7e6ceec101d42bd00ee1fa9a9f09fd1c}} 
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} $\ast$ {\bfseries in\+\_\+next\+\_\+p\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{structncpp_1_1stack_ac2b3e1a82ec2229e38a81724922be6d5}\label{structncpp_1_1stack_ac2b3e1a82ec2229e38a81724922be6d5}} 
-\mbox{\hyperlink{structncpp_1_1stack__allocation__list}{stack\+\_\+allocation\+\_\+list}} {\bfseries allocation\+\_\+list\+\_\+}
-\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 

@@ -121,10 +121,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type.html">ncpp::rtti::robject_member_handle::args_array_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__variable__handle.html">ncpp::rtti::robject_variable_handle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__function__handle.html">ncpp::rtti::robject_function_handle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t&lt; object_type__, variable_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classncpp_1_1rtti_1_1robject__function__reflecter__t.html">ncpp::rtti::robject_function_reflecter_t&lt; object_type__, function_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr &gt;</a></td></tr>
@@ -152,9 +148,9 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a8980170a5532aa53aa1082f3a98fa3d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robject_8hpp.html#a8980170a5532aa53aa1082f3a98fa3d5">NCPP_RCLASS</a>(ClassName)</td></tr>
 <tr class="separator:a8980170a5532aa53aa1082f3a98fa3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5bdb4b8a130bc5f29b3b0df38aa0879"><td class="memItemLeft" align="right" valign="top"><a id="aa5bdb4b8a130bc5f29b3b0df38aa0879" name="aa5bdb4b8a130bc5f29b3b0df38aa0879"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NCPP_REFLECT_CLASS</b>(ClassName)&#160;&#160;&#160;        <a class="el" href="classncpp_1_1rtti_1_1robject__constructor__scope.html">ncpp::rtti::robject_constructor_scope</a> __robject_constructor_scope__(*this);</td></tr>
-<tr class="separator:aa5bdb4b8a130bc5f29b3b0df38aa0879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89da187c96d1459452f52e945b2a986e"><td class="memItemLeft" align="right" valign="top"><a id="a89da187c96d1459452f52e945b2a986e" name="a89da187c96d1459452f52e945b2a986e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NCPP_RCSCOPE</b>(ClassName)&#160;&#160;&#160;        <a class="el" href="classncpp_1_1rtti_1_1robject__constructor__scope.html">ncpp::rtti::robject_constructor_scope</a> __robject_constructor_scope__(*this);</td></tr>
+<tr class="separator:a89da187c96d1459452f52e945b2a986e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ec722378555c397d953512da64a24c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robject_8hpp.html#aa1ec722378555c397d953512da64a24c">NCPP_RCVARIABLE</a>(MemberType,  MemberName, ...)</td></tr>
 <tr class="separator:aa1ec722378555c397d953512da64a24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36212674bee22b00e7c9635ec646604f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robject_8hpp.html#a36212674bee22b00e7c9635ec646604f">NCPP_RCFUNCTION</a>(MemberFunctionType,  MemberName, ...)</td></tr>
@@ -223,7 +219,7 @@ robject_i &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::rtti
 <div class="line">        &gt;; \</div>
 <div class="line">        <span class="keyword">friend</span> <span class="keyword">class </span>MemberName##_reflecter_type; \</div>
 <div class="line">        MemberName##_reflecter_type MemberName##_reflecter;</div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__function__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__function__reflecter__t.html">ncpp::rtti::robject_function_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:389</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__function__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__function__reflecter__t.html">ncpp::rtti::robject_function_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:377</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,8 +244,12 @@ robject_i &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::rtti
 <div class="line">            <span class="keyword">virtual</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ncpp::rtti::robject_i&gt;</a> get_rclass(){\</div>
 <div class="line">                \</div>
 <div class="line">                <span class="keywordflow">return</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ClassName&gt;</a>();\</div>
+<div class="line">            }\</div>
+<div class="line">            <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ClassName&gt;</a> get_static_rclass() {\</div>
+<div class="line">                \</div>
+<div class="line">                <span class="keywordflow">return</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ClassName&gt;</a>(); \</div>
 <div class="line">            }</div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1rclass__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t</a></div><div class="ttdoc">Reflected class template.</div><div class="ttdef"><b>Definition:</b> rclass.hpp:100</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1rclass__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t</a></div><div class="ttdoc">Reflected class template.</div><div class="ttdef"><b>Definition:</b> rclass.hpp:96</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,7 +286,8 @@ robject_i &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::rtti
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        MemberType MemberName;\</div>
 <div class="line">        <span class="keywordtype">char</span> MemberName##_name_cstr[<span class="keyword">sizeof</span>(#MemberName)] = #MemberName;\</div>
-<div class="line">        <span class="keyword">typename</span> ncpp::rtti::robject_member_args_t&lt;__VA_ARGS__&gt; MemberName##_args = {__VA_ARGS__}; \</div>
+<div class="line">        <span class="keyword">using </span>MemberName##_args_type = <span class="keyword">typename</span> ncpp::rtti::robject_member_args_t&lt;__VA_ARGS__&gt;;\</div>
+<div class="line">        MemberName##_args_type MemberName##_args = {__VA_ARGS__}; \</div>
 <div class="line">        <span class="keyword">using </span>MemberName##_reflecter_type = <a class="code hl_class" href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t</a>&lt;\</div>
 <div class="line">            current_rclass, \</div>
 <div class="line">            MemberType, \</div>
@@ -299,7 +300,7 @@ robject_i &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::rtti
 <div class="line">        &gt;; \</div>
 <div class="line">        <span class="keyword">friend</span> <span class="keyword">class </span>MemberName##_reflecter_type; \</div>
 <div class="line">        MemberName##_reflecter_type MemberName##_reflecter;</div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__variable__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:354</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__variable__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:342</div></div>
 </div><!-- fragment -->
 </div>
 </div>

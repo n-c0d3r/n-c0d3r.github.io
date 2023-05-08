@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('thread_8hpp_source.html',''); initResi
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacencpp.html">ncpp</a> {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">namespace </span>pac {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">namespace </span>pac {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('thread_8hpp_source.html',''); initResi
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">class </span>win_thread;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">class </span>win_thread;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
@@ -139,10 +139,10 @@ $(document).ready(function(){initNavTree('thread_8hpp_source.html',''); initResi
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="namespacencpp_1_1pac.html#a0eee1b086ba0a00e3f9ef0a36b839e49">   97</a></span>        <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> <a class="code hl_function" href="namespacencpp_1_1pac.html#a0eee1b086ba0a00e3f9ef0a36b839e49">hardware_concurrency</a>() {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="namespacencpp_1_1pac.html#a0eee1b086ba0a00e3f9ef0a36b839e49">   97</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacencpp.html#a08f4f1f708c47978eedb7b5fdb926c1c">u8</a> <a class="code hl_function" href="namespacencpp_1_1pac.html#a0eee1b086ba0a00e3f9ef0a36b839e49">hardware_concurrency</a>() {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">return</span> std::thread::hardware_concurrency();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">return</span> std::thread::hardware_concurrency();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
@@ -152,10 +152,10 @@ $(document).ready(function(){initNavTree('thread_8hpp_source.html',''); initResi
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#ifdef NCPP_WINDOWS_PLATFORM</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">using </span>thread = win_thread;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">using </span>thread = win_thread;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  }</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="anamespacencpp_1_1pac_html_a0eee1b086ba0a00e3f9ef0a36b839e49"><div class="ttname"><a href="namespacencpp_1_1pac.html#a0eee1b086ba0a00e3f9ef0a36b839e49">ncpp::pac::hardware_concurrency</a></div><div class="ttdeci">static u8 hardware_concurrency()</div><div class="ttdoc">Returns the thread count of CPUs.</div><div class="ttdef"><b>Definition:</b> thread.hpp:97</div></div>

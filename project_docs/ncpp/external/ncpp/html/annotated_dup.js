@@ -24,15 +24,12 @@ var annotated_dup =
       [ "rtti", "namespacencpp_1_1rtti.html", [
         [ "rclass_t", "classncpp_1_1rtti_1_1rclass__t.html", null ],
         [ "robject_constructor_scope", "classncpp_1_1rtti_1_1robject__constructor__scope.html", null ],
-        [ "robject_function_handle", "structncpp_1_1rtti_1_1robject__function__handle.html", null ],
         [ "robject_function_reflecter_executer_get_t", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html", null ],
         [ "robject_function_reflecter_executer_get_t< object_type__, function_type__, false, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01f554b7fa30c3d264b43afaa45331b1ce8.html", null ],
         [ "robject_function_reflecter_executer_get_t< object_type__, function_type__, true, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01fe195d6b5b8e8176fd43c865278558cb9.html", null ],
         [ "robject_function_reflecter_t", "classncpp_1_1rtti_1_1robject__function__reflecter__t.html", "classncpp_1_1rtti_1_1robject__function__reflecter__t" ],
         [ "robject_i", "classncpp_1_1rtti_1_1robject__i.html", null ],
         [ "robject_member_handle", "structncpp_1_1rtti_1_1robject__member__handle.html", "structncpp_1_1rtti_1_1robject__member__handle" ],
-        [ "robject_t", "classncpp_1_1rtti_1_1robject__t.html", null ],
-        [ "robject_variable_handle", "structncpp_1_1rtti_1_1robject__variable__handle.html", null ],
         [ "robject_variable_reflecter_t", "classncpp_1_1rtti_1_1robject__variable__reflecter__t.html", null ]
       ] ],
       [ "static_warning_helper", null, [
@@ -58,6 +55,8 @@ var annotated_dup =
         [ "allocator_deleter_t", "structncpp_1_1utilities_1_1allocator__deleter__t.html", null ],
         [ "function_traits_t", "structncpp_1_1utilities_1_1function__traits__t.html", null ],
         [ "function_traits_t< return_type__(arg_types__...)>", "structncpp_1_1utilities_1_1function__traits__t_3_01return__type_____07arg__types_____8_8_8_08_4.html", null ],
+        [ "is_function_t", "structncpp_1_1utilities_1_1is__function__t.html", null ],
+        [ "is_function_t< return_type__(arg_types__...)>", "structncpp_1_1utilities_1_1is__function__t_3_01return__type_____07arg__types_____8_8_8_08_4.html", null ],
         [ "na_lref_t", "structncpp_1_1utilities_1_1na__lref__t.html", "structncpp_1_1utilities_1_1na__lref__t" ],
         [ "nth_template_arg_t", "structncpp_1_1utilities_1_1nth__template__arg__t.html", null ],
         [ "singleton_t", "classncpp_1_1utilities_1_1singleton__t.html", "classncpp_1_1utilities_1_1singleton__t" ],

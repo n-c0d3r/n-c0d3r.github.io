@@ -13,5 +13,8 @@ var searchData=
   ['is_5fderived_5ffrom_2ehpp_10',['is_derived_from.hpp',['../is__derived__from_8hpp.html',1,'']]],
   ['is_5fderived_5ffrom_5ft_11',['is_derived_from_t',['../namespacencpp_1_1utilities.html#ad6d1b9a8a2edfd9b5702ccecf71e15cc',1,'ncpp::utilities']]],
   ['is_5ffull_12',['is_full',['../structncpp_1_1tagged__heap__block.html#aa35f3115f9720a6abf31dce506a224e4',1,'ncpp::tagged_heap_block']]],
-  ['is_5fnull_13',['is_null',['../structncpp_1_1utilities_1_1na__lref__t.html#a7db464a93743246b2b84f10d96691508',1,'ncpp::utilities::na_lref_t::is_null()'],['../structncpp_1_1utilities_1_1a__lref__t.html#a4eeb1c58a35e7520b559758d522a6ab0',1,'ncpp::utilities::a_lref_t::is_null()']]]
+  ['is_5ffunction_2ehpp_13',['is_function.hpp',['../is__function_8hpp.html',1,'']]],
+  ['is_5ffunction_5ft_14',['is_function_t',['../structncpp_1_1utilities_1_1is__function__t.html',1,'ncpp::utilities']]],
+  ['is_5ffunction_5ft_3c_20return_5ftype_5f_5f_28arg_5ftypes_5f_5f_2e_2e_2e_29_3e_15',['is_function_t&lt; return_type__(arg_types__...)&gt;',['../structncpp_1_1utilities_1_1is__function__t_3_01return__type_____07arg__types_____8_8_8_08_4.html',1,'ncpp::utilities']]],
+  ['is_5fnull_16',['is_null',['../structncpp_1_1utilities_1_1na__lref__t.html#a7db464a93743246b2b84f10d96691508',1,'ncpp::utilities::na_lref_t::is_null()'],['../structncpp_1_1utilities_1_1a__lref__t.html#a4eeb1c58a35e7520b559758d522a6ab0',1,'ncpp::utilities::a_lref_t::is_null()']]]
 ];

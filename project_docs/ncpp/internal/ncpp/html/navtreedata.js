@@ -25,6 +25,8 @@
 var NAVTREE =
 [
   [ "NCPP", "index.html", [
+    [ "Overview", "index.html", "index" ],
+    [ "Convention", "md__f___n_coder__n_c_p_p_documentations_doxygen_markdown__convention.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -41,7 +43,6 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -58,8 +59,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_8hpp_source.html",
-"classncpp_1_1rtti_1_1robject__t.html",
-"structncpp_1_1out__stack__list.html"
+"classncpp_1_1tagged__heap__t.html",
+"structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

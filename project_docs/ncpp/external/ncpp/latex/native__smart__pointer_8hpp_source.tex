@@ -46,24 +46,36 @@
 \DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }native\_unique\_ptr\_t\ =\ std::unique\_ptr<class\_\_,\ native\_allocator\_delete\_t<class\_\_>>;}
 \DoxyCodeLine{00083\ }
 \DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ class\_\_,\ \textcolor{keyword}{typename}...\ arg\_types\_\_>}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ native\_unique\_ptr\_t<class\_\_>\ native\_allocate\_unique\_t(arg\_types\_\_\&\&...\ args)\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ native\_unique\_ptr\_t<class\_\_>\ native\_allocate\_unique\_t(arg\_types\_\_\&\&...\ args)\ \{}
 \DoxyCodeLine{00086\ }
 \DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ allocate\_unique\_t<class\_\_,\ native\_allocator\_t<class\_\_>,\ arg\_types\_\_...>(native\_allocator\_t<class\_\_>(),\ std::forward<arg\_types\_\_>(args)...);}
 \DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \textcolor{keyword}{class}\_\_>}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }native\_shared\_ptr\_t\ =\ std::shared\_ptr<class\_\_>;}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ class\_\_,\ \textcolor{keyword}{typename}...\ arg\_types\_\_>}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ native\_shared\_ptr\_t<class\_\_>\ native\_allocate\_shared\_t(arg\_types\_\_\&\&...\ args)\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ to\_type\_\_,\ \textcolor{keyword}{typename}\ from\_type\_\_>}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ native\_unique\_ptr\_t<to\_type\_\_>\ native\_unique\_ptr\_cast\_t(native\_unique\_ptr\_t<from\_type\_\_>\&\ unique\_ptr)\ \{}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ native\_unique\_ptr\_t<to\_type\_\_>(\textcolor{keyword}{static\_cast<}to\_type\_\_*\textcolor{keyword}{>}(unique\_ptr.release()));}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
 \DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::allocate\_shared<class\_\_,\ native\_allocator\_t<class\_\_>>(native\_allocator\_t<class\_\_>(),\ std::forward<arg\_types\_\_>(args)...);}
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \textcolor{keyword}{class}\_\_>}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }native\_shared\_ptr\_t\ =\ std::shared\_ptr<class\_\_>;}
 \DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \ \ \ \ \}}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ class\_\_,\ \textcolor{keyword}{typename}...\ arg\_types\_\_>}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ native\_shared\_ptr\_t<class\_\_>\ native\_allocate\_shared\_t(arg\_types\_\_\&\&...\ args)\ \{}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::allocate\_shared<class\_\_,\ native\_allocator\_t<class\_\_>>(native\_allocator\_t<class\_\_>(),\ std::forward<arg\_types\_\_>(args)...);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ to\_type\_\_,\ \textcolor{keyword}{typename}\ from\_type\_\_>}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ native\_shared\_ptr\_t<to\_type\_\_>\ native\_shared\_ptr\_cast\_t(native\_shared\_ptr\_t<from\_type\_\_>\ \textcolor{keyword}{const}\ \&\ shared\_ptr)\ \{}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::static\_pointer\_cast<to\_type\_\_>(shared\_ptr);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \}}
 
 \end{DoxyCode}

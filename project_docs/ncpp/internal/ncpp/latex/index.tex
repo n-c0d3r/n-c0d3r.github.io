@@ -1,0 +1,127 @@
+\label{index_mainpage}%
+\Hypertarget{index_mainpage}%
+
+
+\hypertarget{index_autotoc_md2}{}\doxysection{Features}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Memory management\+:
+\begin{DoxyItemize}
+\item Native memory\+:
+\begin{DoxyItemize}
+\item Tagged heap, tagged heap allocator
+\item Stack heap, stack heap allocator
+\item Pool heap, pool heap allocator
+\item Aligned allocator (default native allocator)
+\item Current runtime allocator
+\item Memory counting (not supports crt\+\_\+allocator)
+\begin{DoxyItemize}
+\item Allocated memory counting
+\item Used heap memory counting
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Logging\+:
+\begin{DoxyItemize}
+\item Vector
+\item Handle map
+\end{DoxyItemize}
+\item Utilities\+:
+\begin{DoxyItemize}
+\item First template argument getter
+\item Function traits
+\item Is derived from checker
+\item Left value reference wrapper
+\item Templated for loop
+\item ...
+\end{DoxyItemize}
+\item Containers\+:
+\begin{DoxyItemize}
+\item Fixed vector queue
+\item Fixed vector stack
+\item Concurrent fixed vector queue
+\item Free list supported vector
+\item Handle map
+\item Native containers (std containers and ncpp containers)
+\end{DoxyItemize}
+\item PAC (parallelism and concurrency)\+:
+\begin{DoxyItemize}
+\item Thread (Windows platform only)
+\item Fiber (Windows platform only)
+\item Locks\+:
+\begin{DoxyItemize}
+\item Spinlock
+\item Nonelock
+\item Weaklock
+\end{DoxyItemize}
+\item Semaphore
+\end{DoxyItemize}
+\item RTTI\+:
+\begin{DoxyItemize}
+\item Object reflection\+:
+\begin{DoxyItemize}
+\item Member variable reflection
+\item Member function reflection
+\item Member arguments
+\item Class representation object
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{Getting Started}\label{index_autotoc_md3}
+
+\begin{DoxyItemize}
+\item {\bfseries{Requirements}}
+\begin{DoxyItemize}
+\item Windows ({\bfseries{only support Windows}})\+:
+\begin{DoxyItemize}
+\item Visual Studio 2022 with essential C++, SDK Installation
+\item CMake
+\item Doxygen
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Building}}
+\begin{DoxyItemize}
+\item Windows ({\bfseries{only support Windows}})\+:
+\begin{DoxyItemize}
+\item Step 1\+: Clone \href{https://github.com/n-c0d3r/ncpp}{\texttt{ NCPP git repository}} from Git\+Hub ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/n-\/c0d3r/ncpp.git\ -\/-\/recurse-\/submodules}
+\DoxyCodeLine{cd\ ncpp}
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/n-\/c0d3r/ncpp.git}
+\DoxyCodeLine{cd\ ncpp}
+\DoxyCodeLine{git\ submodule\ update\ -\/-\/init\ -\/-\/recursive}
+
+\end{DoxyCode}
+
+\item Step 2\+: Generate Visual Studio 2022 solution by running {\bfseries{generate\+\_\+vs2022.\+bat}}
+\item Step 3\+: Navigate to {\bfseries{path/to/your/ncpp/build/vs2022}}
+\item Step 4\+: Open {\bfseries{npp.\+sln}}
+\item Step 5\+: Set {\bfseries{ncpp.\+samples.\+firt\+\_\+sample}} as startup project
+\item Step 6\+: Run and enjoy!
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Documentation Pages}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item NCPP has 2 documentations pages\+:
+\begin{DoxyItemize}
+\item \href{https://n-c0d3r.github.io/project_docs/ncpp/external/ncpp/html}{\texttt{ External Documentations}} \+:
+\begin{DoxyItemize}
+\item Hide private members.
+\item For who just want to use ncpp.
+\end{DoxyItemize}
+\item \href{https://n-c0d3r.github.io/project_docs/ncpp/internal/ncpp/html}{\texttt{ Internal Documentations}} \+:
+\begin{DoxyItemize}
+\item Show private members.
+\item For who want to use ncpp or contribute to ncpp project.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{License}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item NCPP is licensed under the \href{https://github.com/n-c0d3r/NCPP/blob/main/LICENSE}{\texttt{ MIT license}} 
+\end{DoxyItemize}

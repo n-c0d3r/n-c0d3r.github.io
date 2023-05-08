@@ -1,0 +1,66 @@
+\hypertarget{md__f___n_coder__n_c_p_p_documentations_doxygen_markdown__convention_autotoc_md1}{}\doxysubsection{Naming}\label{md__f___n_coder__n_c_p_p_documentations_doxygen_markdown__convention_autotoc_md1}
+
+\begin{DoxyItemize}
+\item {\bfseries{Sufixes}}
+\begin{DoxyItemize}
+\item It is more helpful in {\ttfamily distinguishing} and {\ttfamily identifying} the type of items.
+\item {\ttfamily Syntax highlight} is good at distinguishing the type of items but its not good at identifying them because {\ttfamily the syntax high color} is different among {\ttfamily IDEs}, {\ttfamily Text Editors}, and {\ttfamily Themes}.
+\item List of Sufixes\+:
+\begin{DoxyItemize}
+\item Interface, Enum\+:
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+i} \+: {\ttfamily Interface} (allow multiple inheritable but not allow public constructor)
+\end{DoxyItemize}
+\item Variable, Constant\+:
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+} \+: {\ttfamily Member Variable} (use for private or protected member only)
+\item {\ttfamily \+\_\+s} \+: {\ttfamily Static Variable}
+\item {\ttfamily \+\_\+g} \+: {\ttfamily Global Variable}
+\item {\ttfamily \+\_\+p} \+: {\ttfamily Pointer}
+\item {\ttfamily \+\_\+pp} \+: {\ttfamily 2nd Level Pointer}
+\item {\ttfamily \+\_\+ppp...} ({\bfseries{there are n \char`\"{}p\char`\"{}}}) \+: {\ttfamily n-\/th Level Pointer}
+\end{DoxyItemize}
+\item Template\+:
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+t} \+: {\ttfamily Template}
+\item {\ttfamily \+\_\+\+\_\+} \+: {\ttfamily Template Argument}
+\end{DoxyItemize}
+\item Multiple Prefixes\+:
+\begin{DoxyItemize}
+\item Non-\/template\+:
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+p\+\_\+} \+: {\ttfamily Member Pointer}
+\item {\ttfamily \+\_\+ps} \+: {\ttfamily Static Pointer}
+\item {\ttfamily \+\_\+pg} \+: {\ttfamily Global Pointer}
+\end{DoxyItemize}
+\item Template\+:
+\begin{DoxyItemize}
+\item {\ttfamily \+\_\+pt} \+: {\ttfamily Pointer Template}
+\item {\ttfamily \+\_\+pt\+\_\+} \+: {\ttfamily Member Pointer Template}
+\item {\ttfamily \+\_\+pst} \+: {\ttfamily Static Pointer Template}
+\item {\ttfamily \+\_\+pgt} \+: {\ttfamily Global Pointer Template}
+\item {\ttfamily \+\_\+it} \+: {\ttfamily Interface Template}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Casings}}
+\begin{DoxyItemize}
+\item Camel Case\+:
+\begin{DoxyItemize}
+\item {\ttfamily Variable} ({\bfseries{lower case}})
+\end{DoxyItemize}
+\item Snake Case\+:
+\begin{DoxyItemize}
+\item {\ttfamily Macro} ({\bfseries{upper case}})
+\item {\ttfamily Constant} ({\bfseries{upper case}})
+\item {\ttfamily Struct} ({\bfseries{lower case}})
+\item {\ttfamily Class} ({\bfseries{lower case}})
+\item {\ttfamily Enum} ({\bfseries{lower case}})
+\item {\ttfamily Union} ({\bfseries{lower case}})
+\item {\ttfamily Function} ({\bfseries{lower case}})
+\item {\ttfamily Template} ({\bfseries{lower case}})
+\item {\ttfamily Namespace} ({\bfseries{lower case}}) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

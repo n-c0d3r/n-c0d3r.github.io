@@ -8,7 +8,5 @@ var classncpp_1_1pac_1_1win__fiber =
     [ "proc", "classncpp_1_1pac_1_1win__fiber.html#a515dc99aae1703dc1c7d360e62c71f8f", null ],
     [ "switch_to_this", "classncpp_1_1pac_1_1win__fiber.html#aa6dc86ef3a4e9c131d02540ef5166728", null ],
     [ "win_fiber::win_fiber", "classncpp_1_1pac_1_1win__fiber.html#a8b1151fddd5ed9f99b052e6ad1f59c38", null ],
-    [ "win_fiber::win_fiber", "classncpp_1_1pac_1_1win__fiber.html#aba947472fab060bce9caac0299c6b4d5", null ],
-    [ "__platform__fiber_", "classncpp_1_1pac_1_1win__fiber.html#adbab279c17da6d66a0f7c3cc9ded1ff0", null ],
-    [ "functor_", "classncpp_1_1pac_1_1win__fiber.html#a1d336d2bf95f3a430692269802e669d8", null ]
+    [ "win_fiber::win_fiber", "classncpp_1_1pac_1_1win__fiber.html#aba947472fab060bce9caac0299c6b4d5", null ]
 ];

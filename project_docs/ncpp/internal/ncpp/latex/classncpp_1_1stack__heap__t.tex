@@ -63,44 +63,6 @@ void {\bfseries clear\+\_\+group} (\mbox{\hyperlink{structncpp_1_1stack__group}{
 \mbox{\Hypertarget{classncpp_1_1stack__heap__t_a65b4d6bcaf7ee92d6b12dd6e22683299}\label{classncpp_1_1stack__heap__t_a65b4d6bcaf7ee92d6b12dd6e22683299}} 
 void {\bfseries clear} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a57975baaffb9f310239871248dec0f7d}\label{classncpp_1_1stack__heap__t_a57975baaffb9f310239871248dec0f7d}} 
-\mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\+\_\+chunk}} \& {\bfseries create\+\_\+chunk} ()
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a8cc7e13a8571c5150a856784a849fd03}\label{classncpp_1_1stack__heap__t_a8cc7e13a8571c5150a856784a849fd03}} 
-\mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\+\_\+chunk}} \& {\bfseries push\+\_\+chunk} ()
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a98191755aa453c2090a946d53e141877}\label{classncpp_1_1stack__heap__t_a98191755aa453c2090a946d53e141877}} 
-void {\bfseries release\+\_\+chunk} (\mbox{\hyperlink{structncpp_1_1stack__chunk}{stack\+\_\+chunk}} \&chunk)
-\item 
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} \& \mbox{\hyperlink{classncpp_1_1stack__heap__t_a9cd6dddfe7f4a8940cedca5240f0ccd7}{pick\+\_\+a\+\_\+stack}} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} size, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align=1)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a700a4fbe7232012e286694f885c0d687}\label{classncpp_1_1stack__heap__t_a700a4fbe7232012e286694f885c0d687}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries stack\+\_\+capacity\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a829c2202d84be09bab0c721ef9435390}\label{classncpp_1_1stack__heap__t_a829c2202d84be09bab0c721ef9435390}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries stack\+\_\+count\+\_\+per\+\_\+chunk\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a1e63be505b341d2584eea0d14e20a0d7}\label{classncpp_1_1stack__heap__t_a1e63be505b341d2584eea0d14e20a0d7}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries min\+\_\+chunk\+\_\+count\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a60c8442f3f9d924320a1c1df169019a9}\label{classncpp_1_1stack__heap__t_a60c8442f3f9d924320a1c1df169019a9}} 
-\mbox{\hyperlink{structncpp_1_1stack__chunk__list}{stack\+\_\+chunk\+\_\+list}} {\bfseries available\+\_\+chunk\+\_\+list\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a95bf9169cb740092a9fe5e2292914abd}\label{classncpp_1_1stack__heap__t_a95bf9169cb740092a9fe5e2292914abd}} 
-\mbox{\hyperlink{structncpp_1_1stack__chunk__list}{stack\+\_\+chunk\+\_\+list}} {\bfseries empty\+\_\+chunk\+\_\+list\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_ad6ddb2cb919fc43d7ea8a78dacaa83b4}\label{classncpp_1_1stack__heap__t_ad6ddb2cb919fc43d7ea8a78dacaa83b4}} 
-allocator\+\_\+type\+\_\+\+\_\+ {\bfseries allocator\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_abd1156fe826a670888b539e52796caac}\label{classncpp_1_1stack__heap__t_abd1156fe826a670888b539e52796caac}} 
-lock\+\_\+type\+\_\+\+\_\+ {\bfseries lock\+\_\+}
-\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -129,18 +91,6 @@ struct {\bfseries stack\+\_\+allocation}
 struct {\bfseries stack\+\_\+allocation\+\_\+list}
 \end{DoxyCompactItemize}
 
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classncpp_1_1stack__heap__t_a9cd6dddfe7f4a8940cedca5240f0ccd7}\label{classncpp_1_1stack__heap__t_a9cd6dddfe7f4a8940cedca5240f0ccd7}} 
-\index{ncpp::stack\_heap\_t$<$ allocator\_type\_\_, lock\_type\_\_ $>$@{ncpp::stack\_heap\_t$<$ allocator\_type\_\_, lock\_type\_\_ $>$}!pick\_a\_stack@{pick\_a\_stack}}
-\index{pick\_a\_stack@{pick\_a\_stack}!ncpp::stack\_heap\_t$<$ allocator\_type\_\_, lock\_type\_\_ $>$@{ncpp::stack\_heap\_t$<$ allocator\_type\_\_, lock\_type\_\_ $>$}}
-\doxysubsubsection{\texorpdfstring{pick\_a\_stack()}{pick\_a\_stack()}}
-{\footnotesize\ttfamily template$<$class allocator\+\_\+type\+\_\+\+\_\+  = typename NCPP\+\_\+\+DEFAULT\+\_\+\+ALLOCATOR\+\_\+\+TEMPLATE$<$u8$>$, class lock\+\_\+type\+\_\+\+\_\+  = pac\+::spinlock$>$ \\
-\mbox{\hyperlink{structncpp_1_1stack}{stack}} \& \mbox{\hyperlink{classncpp_1_1stack__heap__t}{ncpp\+::stack\+\_\+heap\+\_\+t}}$<$ allocator\+\_\+type\+\_\+\+\_\+, lock\+\_\+type\+\_\+\+\_\+ $>$\+::pick\+\_\+a\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}}]{size,  }\item[{\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}}]{align = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-pick a chunk
-
-pick a stack from the chunk
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

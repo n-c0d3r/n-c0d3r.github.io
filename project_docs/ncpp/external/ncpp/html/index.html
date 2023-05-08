@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NCPP: Main Page</title>
+<title>NCPP: Overview</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,10 +91,131 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">NCPP Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Overview </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
+<p><img src="https://i.ibb.co/VxJhd4b/BG4-wide-0-25x.png" alt="" border="0" width="100%" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Features</h1>
+<ul>
+<li>Memory management:<ul>
+<li>Native memory:<ul>
+<li>Tagged heap, tagged heap allocator</li>
+<li>Stack heap, stack heap allocator</li>
+<li>Pool heap, pool heap allocator</li>
+<li>Aligned allocator (default native allocator)</li>
+<li>Current runtime allocator</li>
+<li>Memory counting (not supports crt_allocator)<ul>
+<li>Allocated memory counting</li>
+<li>Used heap memory counting</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Logging:<ul>
+<li>Vector</li>
+<li>Handle map</li>
+</ul>
+</li>
+<li>Utilities:<ul>
+<li>First template argument getter</li>
+<li>Function traits</li>
+<li>Is derived from checker</li>
+<li>Left value reference wrapper</li>
+<li>Templated for loop</li>
+<li>...</li>
+</ul>
+</li>
+<li>Containers:<ul>
+<li>Fixed vector queue</li>
+<li>Fixed vector stack</li>
+<li>Concurrent fixed vector queue</li>
+<li>Free list supported vector</li>
+<li>Handle map</li>
+<li>Native containers (std containers and ncpp containers)</li>
+</ul>
+</li>
+<li>PAC (parallelism and concurrency):<ul>
+<li>Thread (Windows platform only)</li>
+<li>Fiber (Windows platform only)</li>
+<li>Locks:<ul>
+<li>Spinlock</li>
+<li>Nonelock</li>
+<li>Weaklock</li>
+</ul>
+</li>
+<li>Semaphore</li>
+</ul>
+</li>
+<li>RTTI:<ul>
+<li>Object reflection:<ul>
+<li>Member variable reflection</li>
+<li>Member function reflection</li>
+<li>Member arguments</li>
+<li>Class representation object</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Getting Started</h1>
+<ul>
+<li><b>Requirements</b><ul>
+<li>Windows (<b>only support Windows</b>):<ul>
+<li>Visual Studio 2022 with essential C++, SDK Installation</li>
+<li>CMake</li>
+<li>Doxygen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Building</b><ul>
+<li>Windows (<b>only support Windows</b>):<ul>
+<li>Step 1: Clone <a href="https://github.com/n-c0d3r/ncpp">NCPP git repository</a> from GitHub <br  />
+ <div class="fragment"><div class="line">git clone https://github.com/n-c0d3r/ncpp.git --recurse-submodules</div>
+<div class="line">cd ncpp</div>
+</div><!-- fragment --> or <div class="fragment"><div class="line">git clone https://github.com/n-c0d3r/ncpp.git</div>
+<div class="line">cd ncpp</div>
+<div class="line">git submodule update --init --recursive</div>
+</div><!-- fragment --></li>
+<li>Step 2: Generate Visual Studio 2022 solution by running <b>generate_vs2022.bat</b></li>
+<li>Step 3: Navigate to <b>path/to/your/ncpp/build/vs2022</b></li>
+<li>Step 4: Open <b>npp.sln</b></li>
+<li>Step 5: Set <b>ncpp.samples.firt_sample</b> as startup project</li>
+<li>Step 6: Run and enjoy!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Documentation Pages</h1>
+<ul>
+<li>NCPP has 2 documentations pages:<ul>
+<li><a href="https://n-c0d3r.github.io/project_docs/ncpp/external/ncpp/html">External Documentations</a> :<ul>
+<li>Hide private members.</li>
+<li>For who just want to use ncpp.</li>
+</ul>
+</li>
+<li><a href="https://n-c0d3r.github.io/project_docs/ncpp/internal/ncpp/html">Internal Documentations</a> :<ul>
+<li>Show private members.</li>
+<li>For who want to use ncpp or contribute to ncpp project.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+License</h1>
+<ul>
+<li>NCPP is licensed under the <a href="https://github.com/n-c0d3r/NCPP/blob/main/LICENSE">MIT license</a> </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

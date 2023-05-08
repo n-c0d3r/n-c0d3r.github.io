@@ -20,10 +20,6 @@ struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{ncpp\+::r
 \item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type}{ncpp\+::rtti\+::robject\+\_\+member\+\_\+handle\+::args\+\_\+array\+\_\+type}}
 \item 
-struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__variable__handle}{ncpp\+::rtti\+::robject\+\_\+variable\+\_\+handle}}
-\item 
-struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__handle}{ncpp\+::rtti\+::robject\+\_\+function\+\_\+handle}}
-\item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{ncpp\+::rtti\+::robject\+\_\+variable\+\_\+reflecter\+\_\+t$<$ object\+\_\+type\+\_\+\+\_\+, variable\+\_\+type\+\_\+\+\_\+, name\+\_\+member\+\_\+ptr\+\_\+type, name\+\_\+member\+\_\+ptr, args\+\_\+member\+\_\+ptr\+\_\+type, args\+\_\+member\+\_\+ptr, member\+\_\+ptr\+\_\+type, member\+\_\+ptr $>$}}
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__function__reflecter__t}{ncpp\+::rtti\+::robject\+\_\+function\+\_\+reflecter\+\_\+t$<$ object\+\_\+type\+\_\+\+\_\+, function\+\_\+type\+\_\+\+\_\+, name\+\_\+member\+\_\+ptr\+\_\+type, name\+\_\+member\+\_\+ptr, args\+\_\+member\+\_\+ptr\+\_\+type, args\+\_\+member\+\_\+ptr, member\+\_\+ptr\+\_\+type, member\+\_\+ptr $>$}}
@@ -48,8 +44,8 @@ namespace \mbox{\hyperlink{namespacencpp_1_1rtti}{ncpp\+::rtti}}
 \item 
 \#define \mbox{\hyperlink{robject_8hpp_a8980170a5532aa53aa1082f3a98fa3d5}{NCPP\+\_\+\+RCLASS}}(Class\+Name)
 \item 
-\mbox{\Hypertarget{robject_8hpp_aa5bdb4b8a130bc5f29b3b0df38aa0879}\label{robject_8hpp_aa5bdb4b8a130bc5f29b3b0df38aa0879}} 
-\#define {\bfseries NCPP\+\_\+\+REFLECT\+\_\+\+CLASS}(Class\+Name)~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+scope\+\_\+\+\_\+($\ast$this);
+\mbox{\Hypertarget{robject_8hpp_a89da187c96d1459452f52e945b2a986e}\label{robject_8hpp_a89da187c96d1459452f52e945b2a986e}} 
+\#define {\bfseries NCPP\+\_\+\+RCSCOPE}(Class\+Name)~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+scope\+\_\+\+\_\+($\ast$this);
 \item 
 \#define \mbox{\hyperlink{robject_8hpp_aa1ec722378555c397d953512da64a24c}{NCPP\+\_\+\+RCVARIABLE}}(Member\+Type,  Member\+Name, ...)
 \item 
@@ -115,6 +111,10 @@ Implements reflected object.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ncpp::rtti::robject\_i>}}\ get\_rclass()\{\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}();\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}\ get\_static\_rclass()\ \{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}();\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
 
 \end{DoxyCode}
@@ -128,7 +128,8 @@ Implements reflected object.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ MemberType\ MemberName;\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ MemberName\#\#\_name\_cstr[\textcolor{keyword}{sizeof}(\#MemberName)]\ =\ \#MemberName;\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>\ MemberName\#\#\_args\ =\ \{\_\_VA\_ARGS\_\_\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_args\_type\ =\ \textcolor{keyword}{typename}\ ncpp::rtti::robject\_member\_args\_t<\_\_VA\_ARGS\_\_>;\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ MemberName\#\#\_args\_type\ MemberName\#\#\_args\ =\ \{\_\_VA\_ARGS\_\_\};\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }MemberName\#\#\_reflecter\_type\ =\ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{ncpp::rtti::robject\_variable\_reflecter\_t}}<\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ current\_rclass,\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ MemberType,\ \(\backslash\)}

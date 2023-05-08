@@ -66,47 +66,6 @@ void {\bfseries clear\+\_\+group} (\mbox{\hyperlink{structncpp_1_1pool__group}{p
 \mbox{\Hypertarget{classncpp_1_1pool__heap__t_a26b96afd642e67e0f285172ec757e038}\label{classncpp_1_1pool__heap__t_a26b96afd642e67e0f285172ec757e038}} 
 void {\bfseries clear} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a9fcda3c46f5c2bd6b71dec229b331459}\label{classncpp_1_1pool__heap__t_a9fcda3c46f5c2bd6b71dec229b331459}} 
-\mbox{\hyperlink{structncpp_1_1pool__chunk}{pool\+\_\+chunk}} \& {\bfseries create\+\_\+chunk} ()
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_ad9e7a1d7c2aa1702c1803f1eb90039b6}\label{classncpp_1_1pool__heap__t_ad9e7a1d7c2aa1702c1803f1eb90039b6}} 
-\mbox{\hyperlink{structncpp_1_1pool__chunk}{pool\+\_\+chunk}} \& {\bfseries push\+\_\+chunk} ()
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_aba1813b1c2912e419bc65384ae93ad2c}\label{classncpp_1_1pool__heap__t_aba1813b1c2912e419bc65384ae93ad2c}} 
-void {\bfseries release\+\_\+chunk} (\mbox{\hyperlink{structncpp_1_1pool__chunk}{pool\+\_\+chunk}} \&chunk)
-\item 
-\mbox{\hyperlink{structncpp_1_1pool}{pool}} \& \mbox{\hyperlink{classncpp_1_1pool__heap__t_af27bfcf11c166ff6e8b99d3525ded1c2}{pick\+\_\+a\+\_\+pool}} (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} size, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} align=1)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a8ad84e7c82aaefba5c56c86ca9b9e80c}\label{classncpp_1_1pool__heap__t_a8ad84e7c82aaefba5c56c86ca9b9e80c}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries max\+\_\+object\+\_\+count\+\_\+per\+\_\+pool\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a02a744b08dfeb0e82f5e2651df48c6fc}\label{classncpp_1_1pool__heap__t_a02a744b08dfeb0e82f5e2651df48c6fc}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries pool\+\_\+capacity\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_ace7d73997dcc276ea3fddb1be3ed5a70}\label{classncpp_1_1pool__heap__t_ace7d73997dcc276ea3fddb1be3ed5a70}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries pool\+\_\+count\+\_\+per\+\_\+chunk\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_af6d3899cd0f389ca98dda5513337fc4b}\label{classncpp_1_1pool__heap__t_af6d3899cd0f389ca98dda5513337fc4b}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries min\+\_\+chunk\+\_\+count\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a8bdf5a8581fce3f1b8d50e2c0ff978f2}\label{classncpp_1_1pool__heap__t_a8bdf5a8581fce3f1b8d50e2c0ff978f2}} 
-\mbox{\hyperlink{structncpp_1_1pool__chunk__list}{pool\+\_\+chunk\+\_\+list}} {\bfseries available\+\_\+chunk\+\_\+list\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_aba4925f207ee0f7e6a6ab0cc2be91cb9}\label{classncpp_1_1pool__heap__t_aba4925f207ee0f7e6a6ab0cc2be91cb9}} 
-\mbox{\hyperlink{structncpp_1_1pool__chunk__list}{pool\+\_\+chunk\+\_\+list}} {\bfseries empty\+\_\+chunk\+\_\+list\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a527e74ee9919961e198a46a9f5b1a02c}\label{classncpp_1_1pool__heap__t_a527e74ee9919961e198a46a9f5b1a02c}} 
-allocator\+\_\+type\+\_\+\+\_\+ {\bfseries allocator\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_a1ea15aff53236cf4cfe714746c3756f0}\label{classncpp_1_1pool__heap__t_a1ea15aff53236cf4cfe714746c3756f0}} 
-lock\+\_\+type\+\_\+\+\_\+ {\bfseries lock\+\_\+}
-\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -135,18 +94,6 @@ struct {\bfseries pool\+\_\+allocation}
 struct {\bfseries pool\+\_\+allocation\+\_\+list}
 \end{DoxyCompactItemize}
 
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classncpp_1_1pool__heap__t_af27bfcf11c166ff6e8b99d3525ded1c2}\label{classncpp_1_1pool__heap__t_af27bfcf11c166ff6e8b99d3525ded1c2}} 
-\index{ncpp::pool\_heap\_t$<$ object\_type\_\_, allocator\_type\_\_, lock\_type\_\_ $>$@{ncpp::pool\_heap\_t$<$ object\_type\_\_, allocator\_type\_\_, lock\_type\_\_ $>$}!pick\_a\_pool@{pick\_a\_pool}}
-\index{pick\_a\_pool@{pick\_a\_pool}!ncpp::pool\_heap\_t$<$ object\_type\_\_, allocator\_type\_\_, lock\_type\_\_ $>$@{ncpp::pool\_heap\_t$<$ object\_type\_\_, allocator\_type\_\_, lock\_type\_\_ $>$}}
-\doxysubsubsection{\texorpdfstring{pick\_a\_pool()}{pick\_a\_pool()}}
-{\footnotesize\ttfamily template$<$class object\+\_\+type\+\_\+\+\_\+ , class allocator\+\_\+type\+\_\+\+\_\+  = typename NCPP\+\_\+\+DEFAULT\+\_\+\+ALLOCATOR\+\_\+\+TEMPLATE$<$u8$>$, class lock\+\_\+type\+\_\+\+\_\+  = pac\+::spinlock$>$ \\
-\mbox{\hyperlink{structncpp_1_1pool}{pool}} \& \mbox{\hyperlink{classncpp_1_1pool__heap__t}{ncpp\+::pool\+\_\+heap\+\_\+t}}$<$ object\+\_\+type\+\_\+\+\_\+, allocator\+\_\+type\+\_\+\+\_\+, lock\+\_\+type\+\_\+\+\_\+ $>$\+::pick\+\_\+a\+\_\+pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}}]{size,  }\item[{\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}}]{align = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-pick a chunk
-
-pick a pool from the chunk
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

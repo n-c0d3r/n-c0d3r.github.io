@@ -115,6 +115,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1function__traits__t_3_01return__type_____07arg__types_____8_8_8_08_4.html">function_traits_t&lt; return_type__(arg_types__...)&gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">is_function_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1is__function__t_3_01return__type_____07arg__types_____8_8_8_08_4.html">is_function_t&lt; return_type__(arg_types__...)&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1utilities_1_1na__lref__t.html">na_lref_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-atomic lvalue reference template.  <a href="structncpp_1_1utilities_1_1na__lref__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,10 +177,18 @@ template&lt;typename class_type__ , typename member_type__ &gt; </td></tr>
 template&lt;typename class__ , typename... arg_types__&gt; </td></tr>
 <tr class="memitem:aa49fef9ae8d0ec35fdb5b7b738bdaeca"><td class="memTemplItemLeft" align="right" valign="top">native_unique_ptr_t&lt; class__ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>native_allocate_unique_t</b> (arg_types__ &amp;&amp;... args)</td></tr>
 <tr class="separator:aa49fef9ae8d0ec35fdb5b7b738bdaeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8d5f17aa85abb8ca0cb263b1079441"><td class="memTemplParams" colspan="2"><a id="a2d8d5f17aa85abb8ca0cb263b1079441" name="a2d8d5f17aa85abb8ca0cb263b1079441"></a>
+template&lt;typename to_type__ , typename from_type__ &gt; </td></tr>
+<tr class="memitem:a2d8d5f17aa85abb8ca0cb263b1079441"><td class="memTemplItemLeft" align="right" valign="top">native_unique_ptr_t&lt; to_type__ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>native_unique_ptr_cast_t</b> (native_unique_ptr_t&lt; from_type__ &gt; &amp;unique_ptr)</td></tr>
+<tr class="separator:a2d8d5f17aa85abb8ca0cb263b1079441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbfb0397fc5a16b7cbda049a1f9be8f"><td class="memTemplParams" colspan="2"><a id="a6fbfb0397fc5a16b7cbda049a1f9be8f" name="a6fbfb0397fc5a16b7cbda049a1f9be8f"></a>
 template&lt;typename class__ , typename... arg_types__&gt; </td></tr>
 <tr class="memitem:a6fbfb0397fc5a16b7cbda049a1f9be8f"><td class="memTemplItemLeft" align="right" valign="top">native_shared_ptr_t&lt; class__ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>native_allocate_shared_t</b> (arg_types__ &amp;&amp;... args)</td></tr>
 <tr class="separator:a6fbfb0397fc5a16b7cbda049a1f9be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ad991d8da75f1920827691c4a75b98"><td class="memTemplParams" colspan="2"><a id="a20ad991d8da75f1920827691c4a75b98" name="a20ad991d8da75f1920827691c4a75b98"></a>
+template&lt;typename to_type__ , typename from_type__ &gt; </td></tr>
+<tr class="memitem:a20ad991d8da75f1920827691c4a75b98"><td class="memTemplItemLeft" align="right" valign="top">native_shared_ptr_t&lt; to_type__ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>native_shared_ptr_cast_t</b> (native_shared_ptr_t&lt; from_type__ &gt; const &amp;shared_ptr)</td></tr>
+<tr class="separator:a20ad991d8da75f1920827691c4a75b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a95f68b0dbe4cd54405e514106df589"><td class="memTemplParams" colspan="2"><a id="a2a95f68b0dbe4cd54405e514106df589" name="a2a95f68b0dbe4cd54405e514106df589"></a>
 template&lt;typename class__ , typename allocator_type__ , typename... Args&gt; </td></tr>
 <tr class="memitem:a2a95f68b0dbe4cd54405e514106df589"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate_unique_t</b> (const allocator_type__ &amp;alloc, Args &amp;&amp;... args)</td></tr>

@@ -1,17 +1,18 @@
 var searchData=
 [
-  ['rclass_5ft_0',['rclass_t',['../classncpp_1_1rtti_1_1rclass__t.html',1,'ncpp::rtti']]],
-  ['rebind_1',['rebind',['../structncpp_1_1aligned__allocator__t_1_1rebind.html',1,'ncpp::aligned_allocator_t&lt; value_type__ &gt;::rebind&lt; U &gt;'],['../structncpp_1_1crt__allocator__t_1_1rebind.html',1,'ncpp::crt_allocator_t&lt; value_type__ &gt;::rebind&lt; U &gt;'],['../structncpp_1_1native__allocator__t_1_1rebind.html',1,'ncpp::native_allocator_t&lt; value_type__ &gt;::rebind&lt; U &gt;'],['../structncpp_1_1pool__allocator__t_1_1rebind.html',1,'ncpp::pool_allocator_t&lt; value_type__, pool_heap_type__ &gt;::rebind&lt; U &gt;'],['../structncpp_1_1stack__allocator__t_1_1rebind.html',1,'ncpp::stack_allocator_t&lt; value_type__, stack_heap_type__ &gt;::rebind&lt; U &gt;'],['../structncpp_1_1tgh__allocator__t_1_1rebind.html',1,'ncpp::tgh_allocator_t&lt; value_type__, tagged_heap_type__ &gt;::rebind&lt; U &gt;']]],
-  ['robject_5fconstructor_5fscope_2',['robject_constructor_scope',['../classncpp_1_1rtti_1_1robject__constructor__scope.html',1,'ncpp::rtti']]],
-  ['robject_5ffunction_5fhandle_3',['robject_function_handle',['../structncpp_1_1rtti_1_1robject__function__handle.html',1,'ncpp::rtti']]],
-  ['robject_5ffunction_5freflecter_5fexecuter_5fget_5ft_4',['robject_function_reflecter_executer_get_t',['../structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html',1,'ncpp::rtti']]],
-  ['robject_5ffunction_5freflecter_5fexecuter_5fget_5ft_3c_20object_5ftype_5f_5f_2c_20function_5ftype_5f_5f_2c_20false_2c_20name_5fmember_5fptr_5ftype_2c_20name_5fmember_5fptr_2c_20args_5fmember_5fptr_5ftype_2c_20args_5fmember_5fptr_2c_20member_5fptr_5ftype_2c_20member_5fptr_20_3e_5',['robject_function_reflecter_executer_get_t&lt; object_type__, function_type__, false, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr &gt;',['../structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01f554b7fa30c3d264b43afaa45331b1ce8.html',1,'ncpp::rtti']]],
-  ['robject_5ffunction_5freflecter_5fexecuter_5fget_5ft_3c_20object_5ftype_5f_5f_2c_20function_5ftype_5f_5f_2c_20true_2c_20name_5fmember_5fptr_5ftype_2c_20name_5fmember_5fptr_2c_20args_5fmember_5fptr_5ftype_2c_20args_5fmember_5fptr_2c_20member_5fptr_5ftype_2c_20member_5fptr_20_3e_6',['robject_function_reflecter_executer_get_t&lt; object_type__, function_type__, true, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr &gt;',['../structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01fe195d6b5b8e8176fd43c865278558cb9.html',1,'ncpp::rtti']]],
-  ['robject_5ffunction_5freflecter_5ft_7',['robject_function_reflecter_t',['../classncpp_1_1rtti_1_1robject__function__reflecter__t.html',1,'ncpp::rtti']]],
-  ['robject_5fi_8',['robject_i',['../classncpp_1_1rtti_1_1robject__i.html',1,'ncpp::rtti']]],
-  ['robject_5fmember_5fhandle_9',['robject_member_handle',['../structncpp_1_1rtti_1_1robject__member__handle.html',1,'ncpp::rtti']]],
-  ['robject_5ft_10',['robject_t',['../classncpp_1_1rtti_1_1robject__t.html',1,'ncpp::rtti']]],
-  ['robject_5fvariable_5fhandle_11',['robject_variable_handle',['../structncpp_1_1rtti_1_1robject__variable__handle.html',1,'ncpp::rtti']]],
-  ['robject_5fvariable_5freflecter_5ft_12',['robject_variable_reflecter_t',['../classncpp_1_1rtti_1_1robject__variable__reflecter__t.html',1,'ncpp::rtti']]],
-  ['robject_5fvariable_5freflecter_5ft_3c_20current_5frclass_2c_20containers_3a_3anative_5fstring_2c_20decltype_28_26current_5frclass_3a_3aname_5fname_5fcstr_29_2c_20_26current_5frclass_3a_3aname_5fname_5fcstr_2c_20decltype_28_26current_5frclass_3a_3aname_5fargs_29_2c_20_26current_5frclass_3a_3aname_5fargs_2c_20decltype_28_26current_5frclass_3a_3aname_29_2c_20_26current_5frclass_3a_3aname_20_3e_13',['robject_variable_reflecter_t&lt; current_rclass, containers::native_string, decltype(&amp;current_rclass::name_name_cstr), &amp;current_rclass::name_name_cstr, decltype(&amp;current_rclass::name_args), &amp;current_rclass::name_args, decltype(&amp;current_rclass::name), &amp;current_rclass::name &gt;',['../classncpp_1_1rtti_1_1robject__variable__reflecter__t.html',1,'ncpp::rtti']]]
+  ['semaphore_5ft_0',['semaphore_t',['../classncpp_1_1pac_1_1semaphore__t.html',1,'ncpp::pac']]],
+  ['singleton_5ft_1',['singleton_t',['../classncpp_1_1utilities_1_1singleton__t.html',1,'ncpp::utilities']]],
+  ['singleton_5ft_3c_20job_5fsystem_20_3e_2',['singleton_t&lt; job_system &gt;',['../classncpp_1_1utilities_1_1singleton__t.html',1,'ncpp::utilities']]],
+  ['spinlock_3',['spinlock',['../classncpp_1_1pac_1_1spinlock.html',1,'ncpp::pac']]],
+  ['stack_4',['stack',['../structncpp_1_1stack.html',1,'ncpp']]],
+  ['stack_5fallocation_5',['stack_allocation',['../structncpp_1_1stack__allocation.html',1,'ncpp']]],
+  ['stack_5fallocation_5flist_6',['stack_allocation_list',['../structncpp_1_1stack__allocation__list.html',1,'ncpp']]],
+  ['stack_5fallocator_5ft_7',['stack_allocator_t',['../classncpp_1_1stack__allocator__t.html',1,'ncpp']]],
+  ['stack_5fchunk_8',['stack_chunk',['../structncpp_1_1stack__chunk.html',1,'ncpp']]],
+  ['stack_5fchunk_5flist_9',['stack_chunk_list',['../structncpp_1_1stack__chunk__list.html',1,'ncpp']]],
+  ['stack_5fgroup_10',['stack_group',['../structncpp_1_1stack__group.html',1,'ncpp']]],
+  ['stack_5fheap_5ft_11',['stack_heap_t',['../classncpp_1_1stack__heap__t.html',1,'ncpp']]],
+  ['step_5ft_12',['step_t',['../structncpp_1_1utilities_1_1templated__for__helper_1_1step__t.html',1,'ncpp::utilities::templated_for_helper']]],
+  ['step_5ft_3c_20f_5ftype_5ft_5f_5f_2c_20false_2c_20end_5f_5f_2c_20index_5f_5f_2c_20arg_5ftypes_5f_5f_2e_2e_2e_20_3e_13',['step_t&lt; f_type_t__, false, end__, index__, arg_types__... &gt;',['../structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_____00_01false_00_01e803adec8ed1656356ae5bf1fe698db3.html',1,'ncpp::utilities::templated_for_helper']]],
+  ['step_5ft_3c_20f_5ftype_5ft_5f_5f_2c_20true_2c_20end_5f_5f_2c_20index_5f_5f_2c_20arg_5ftypes_5f_5f_2e_2e_2e_20_3e_14',['step_t&lt; f_type_t__, true, end__, index__, arg_types__... &gt;',['../structncpp_1_1utilities_1_1templated__for__helper_1_1step__t_3_01f__type__t_____00_01true_00_01eb921587f08bb3cb26bce416f152d073d.html',1,'ncpp::utilities::templated_for_helper']]]
 ];

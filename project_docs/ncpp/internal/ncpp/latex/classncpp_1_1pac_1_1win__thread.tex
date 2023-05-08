@@ -9,11 +9,6 @@ The windows platform version of pac\+::thread.
 
 {\ttfamily \#include $<$win\+\_\+thread.\+hpp$>$}
 
-\doxysubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder}{main\+\_\+thread\+\_\+creation\+\_\+placeholder}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -78,39 +73,6 @@ void {\bfseries wait} ()
 \mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_a10daae40101e87aec6734d1764f4645c}\label{classncpp_1_1pac_1_1win__thread_a10daae40101e87aec6734d1764f4645c}} 
 static DWORD WINAPI {\bfseries proc} (LPVOID lp\+Param)
 \begin{DoxyCompactList}\small\item\em The main procedure of the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_ac9ee8c7cade572548e7bab8757c48725}\label{classncpp_1_1pac_1_1win__thread_ac9ee8c7cade572548e7bab8757c48725}} 
-{\bfseries win\+\_\+thread\+::win\+\_\+thread} (\mbox{\hyperlink{structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder}{main\+\_\+thread\+\_\+creation\+\_\+placeholder}})
-\begin{DoxyCompactList}\small\item\em The constructor to create main thread instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}\label{classncpp_1_1pac_1_1win__thread_a8e7dce03d648dbb8d8b87faab0ecefbe}} 
-HANDLE {\bfseries \+\_\+\+\_\+platform\+\_\+\+\_\+thread\+\_\+}
-\begin{DoxyCompactList}\small\item\em The Win\+API thread. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_a5fd1120ab3efe07aa6716ceb2d1a1df9}\label{classncpp_1_1pac_1_1win__thread_a5fd1120ab3efe07aa6716ceb2d1a1df9}} 
-DWORD {\bfseries \+\_\+\+\_\+platform\+\_\+\+\_\+id\+\_\+}
-\begin{DoxyCompactList}\small\item\em The id of \+\_\+\+\_\+platform\+\_\+\+\_\+thread\+\_\+. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_a3d6999a67c31aa5808a9ed24a51ce64d}\label{classncpp_1_1pac_1_1win__thread_a3d6999a67c31aa5808a9ed24a51ce64d}} 
-functor\+\_\+type {\bfseries functor\+\_\+}
-\begin{DoxyCompactList}\small\item\em The main function to be run inside the thread. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_af2b2eb17720b62e32fdde80ea7dadf45}\label{classncpp_1_1pac_1_1win__thread_af2b2eb17720b62e32fdde80ea7dadf45}} 
-\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} {\bfseries stack\+\_\+size\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_a6ade81fec9ae0e7a5fa05dcae7289987}\label{classncpp_1_1pac_1_1win__thread_a6ade81fec9ae0e7a5fa05dcae7289987}} 
-std\+::atomic\+\_\+bool {\bfseries is\+\_\+ready\+\_\+}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_ab9686908826e8f2b033adda09d1ffed4}\label{classncpp_1_1pac_1_1win__thread_ab9686908826e8f2b033adda09d1ffed4}} 
-bool {\bfseries is\+\_\+main\+\_\+}
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1pac_1_1win__thread_ad99ea2862ba3ed3d4af59b80b32f0ca5}\label{classncpp_1_1pac_1_1win__thread_ad99ea2862ba3ed3d4af59b80b32f0ca5}} 
-static \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread}{win\+\_\+thread}} {\bfseries main\+\_\+thread\+\_\+g} = \mbox{\hyperlink{classncpp_1_1pac_1_1win__thread}{win\+\_\+thread}}(\mbox{\hyperlink{structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder}{win\+\_\+thread\+::main\+\_\+thread\+\_\+creation\+\_\+placeholder}}())
-\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
