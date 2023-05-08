@@ -20,6 +20,8 @@ struct \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t}{is\+\_\+func
 \item 
 struct \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t_3_01return__type_____07arg__types_____8_8_8_08_4}{is\+\_\+function\+\_\+t$<$ return\+\_\+type\+\_\+\+\_\+(arg\+\_\+types\+\_\+\+\_\+...)$>$}}
 \item 
+class \mbox{\hyperlink{classncpp_1_1utilities_1_1is__streamable__t}{is\+\_\+streamable\+\_\+t}}
+\item 
 struct \mbox{\hyperlink{structncpp_1_1utilities_1_1na__lref__t}{na\+\_\+lref\+\_\+t}}
 \begin{DoxyCompactList}\small\item\em non-\/atomic lvalue reference template. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{nth\+\_\+template\+\_\+arg\+\_\+t}}
@@ -69,6 +71,12 @@ class \mbox{\hyperlink{classncpp_1_1utilities_1_1unique__lock__t}{unique\+\_\+lo
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1utilities_a20ad991d8da75f1920827691c4a75b98}\label{namespacencpp_1_1utilities_a20ad991d8da75f1920827691c4a75b98}} 
 {\footnotesize template$<$typename to\+\_\+type\+\_\+\+\_\+ , typename from\+\_\+type\+\_\+\+\_\+ $>$ }\\native\+\_\+shared\+\_\+ptr\+\_\+t$<$ to\+\_\+type\+\_\+\+\_\+ $>$ {\bfseries native\+\_\+shared\+\_\+ptr\+\_\+cast\+\_\+t} (native\+\_\+shared\+\_\+ptr\+\_\+t$<$ from\+\_\+type\+\_\+\+\_\+ $>$ const \&shared\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1utilities_ac5dd8711b4c1828c43947423d70b1cce}\label{namespacencpp_1_1utilities_ac5dd8711b4c1828c43947423d70b1cce}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const native\+\_\+unique\+\_\+ptr\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ \&ptr)
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1utilities_acc646ae93a50de4b845966f08f84d65e}\label{namespacencpp_1_1utilities_acc646ae93a50de4b845966f08f84d65e}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const native\+\_\+shared\+\_\+ptr\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ \&ptr)
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1utilities_a2a95f68b0dbe4cd54405e514106df589}\label{namespacencpp_1_1utilities_a2a95f68b0dbe4cd54405e514106df589}} 
 {\footnotesize template$<$typename class\+\_\+\+\_\+ , typename allocator\+\_\+type\+\_\+\+\_\+ , typename... Args$>$ }\\auto {\bfseries allocate\+\_\+unique\+\_\+t} (const allocator\+\_\+type\+\_\+\+\_\+ \&alloc, Args \&\&... args)

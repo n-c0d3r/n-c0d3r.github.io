@@ -93,7 +93,9 @@ $(document).ready(function(){initNavTree('iostream_8hpp.html',''); initResizable
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">iostream.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -102,14 +104,31 @@ $(document).ready(function(){initNavTree('iostream_8hpp.html',''); initResizable
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="prerequisites_8hpp_source.html">ncpp/prerequisites.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="native__allocator_8hpp_source.html">ncpp/native_allocator.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="is__streamable_8hpp_source.html">ncpp/utilities/is_streamable.hpp</a>&gt;</code><br />
 </div>
 <p><a href="iostream_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__stream__forwarder__t.html">ncpp::safe_stream_forwarder_t&lt; stream_type__, type__, is_streamable__ &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__stream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4.html">ncpp::safe_stream_forwarder_t&lt; stream_type__, type__, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__stream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4.html">ncpp::safe_stream_forwarder_t&lt; stream_type__, type__, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacencpp"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacencpp.html">ncpp</a></td></tr>
 <tr class="memdesc:namespacencpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root namespace of ncpp library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acf878d911128546c7e09ab6a3bee579b"><td class="memTemplParams" colspan="2"><a id="acf878d911128546c7e09ab6a3bee579b" name="acf878d911128546c7e09ab6a3bee579b"></a>
+template&lt;typename stream_type__ , typename type__ &gt; </td></tr>
+<tr class="memitem:acf878d911128546c7e09ab6a3bee579b"><td class="memTemplItemLeft" align="right" valign="top">stream_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::safe_stream_t</b> (stream_type__ &amp;stream, type__ &amp;&amp;data)</td></tr>
+<tr class="separator:acf878d911128546c7e09ab6a3bee579b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implement iostream with custom allocators,... </p>

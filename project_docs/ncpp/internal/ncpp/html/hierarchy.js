@@ -21,6 +21,7 @@ var hierarchy =
     [ "ncpp::in_stack_list", "structncpp_1_1in__stack__list.html", null ],
     [ "ncpp::utilities::is_function_t< type__ >", "structncpp_1_1utilities_1_1is__function__t.html", null ],
     [ "ncpp::utilities::is_function_t< return_type__(arg_types__...)>", "structncpp_1_1utilities_1_1is__function__t_3_01return__type_____07arg__types_____8_8_8_08_4.html", null ],
+    [ "ncpp::utilities::is_streamable_t< stream_type__, type__ >", "classncpp_1_1utilities_1_1is__streamable__t.html", null ],
     [ "ncpp::dop::job_description", "structncpp_1_1dop_1_1job__description.html", null ],
     [ "ncpp::dop::job_system_setting", "structncpp_1_1dop_1_1job__system__setting.html", null ],
     [ "ncpp::pac::win_thread::main_thread_creation_placeholder", "structncpp_1_1pac_1_1win__thread_1_1main__thread__creation__placeholder.html", null ],
@@ -73,6 +74,9 @@ var hierarchy =
     [ "ncpp::rtti::robject_i", "classncpp_1_1rtti_1_1robject__i.html", null ],
     [ "ncpp::rtti::robject_member_handle", "structncpp_1_1rtti_1_1robject__member__handle.html", null ],
     [ "ncpp::rtti::robject_variable_reflecter_t< object_type__, variable_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "classncpp_1_1rtti_1_1robject__variable__reflecter__t.html", null ],
+    [ "ncpp::safe_stream_forwarder_t< stream_type__, type__, is_streamable__ >", "structncpp_1_1safe__stream__forwarder__t.html", null ],
+    [ "ncpp::safe_stream_forwarder_t< stream_type__, type__, false >", "structncpp_1_1safe__stream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4.html", null ],
+    [ "ncpp::safe_stream_forwarder_t< stream_type__, type__, true >", "structncpp_1_1safe__stream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4.html", null ],
     [ "ncpp::pac::semaphore_t< mutex_type__, cond_var__ >", "classncpp_1_1pac_1_1semaphore__t.html", null ],
     [ "ncpp::utilities::singleton_t< class__ >", "classncpp_1_1utilities_1_1singleton__t.html", null ],
     [ "ncpp::utilities::singleton_t< job_system >", "classncpp_1_1utilities_1_1singleton__t.html", [
