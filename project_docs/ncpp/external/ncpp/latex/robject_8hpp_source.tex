@@ -552,7 +552,7 @@
 \DoxyCodeLine{00748\ }
 \DoxyCodeLine{00749\ \ \ \ \ \ \ \ \ \ \ \ \ rvar\_handle.logger\_func\_ptr\ =\ [](std::ostream\&\ os,\ \textcolor{keyword}{const}\ robject\_member\_handle\&\ member\_handle)\ \{}
 \DoxyCodeLine{00750\ }
-\DoxyCodeLine{00751\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_stream\_t(os,\ *\textcolor{keyword}{reinterpret\_cast<}variable\_type\_\_*\textcolor{keyword}{>}(member\_handle.member\_ptr\_p));}
+\DoxyCodeLine{00751\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_ostream\_t(os,\ *\textcolor{keyword}{reinterpret\_cast<}variable\_type\_\_*\textcolor{keyword}{>}(member\_handle.member\_ptr\_p));}
 \DoxyCodeLine{00752\ }
 \DoxyCodeLine{00753\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00754\ }
@@ -643,7 +643,7 @@
 \DoxyCodeLine{00848\ }
 \DoxyCodeLine{00849\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{keyword}{typeid}(function\_type\_\_).name()\ <<\ \textcolor{stringliteral}{"{}\ \{\ "{}};}
 \DoxyCodeLine{00850\ }
-\DoxyCodeLine{00851\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_stream\_t(os,\ member\_handle.member\_ptr\_p);}
+\DoxyCodeLine{00851\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_ostream\_t(os,\ member\_handle.member\_ptr\_p);}
 \DoxyCodeLine{00852\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00853\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\ \}"{}};}
 \DoxyCodeLine{00854\ }
@@ -796,7 +796,7 @@
 \DoxyCodeLine{01001\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{01002\ }
 \DoxyCodeLine{01003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{charliteral}{'"{}'}\ <<\ member\_handle.first\ <<\ \textcolor{charliteral}{'"{}'}\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
-\DoxyCodeLine{01004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_stream\_t(os,\ member\_handle.second);}
+\DoxyCodeLine{01004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ safe\_ostream\_t(os,\ member\_handle.second);}
 \DoxyCodeLine{01005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ std::endl;}
 \DoxyCodeLine{01006\ }
 \DoxyCodeLine{01007\ \ \ \ \ \ \ \ \ \ \ \ \ \}}

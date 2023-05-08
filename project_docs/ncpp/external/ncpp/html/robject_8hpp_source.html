@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('robject_8hpp_source.html',''); initRes
 <div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>            rvar_handle.logger_func_ptr = [](std::ostream&amp; os, <span class="keyword">const</span> robject_member_handle&amp; member_handle) {</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>                safe_stream_t(os, *<span class="keyword">reinterpret_cast&lt;</span>variable_type__*<span class="keyword">&gt;</span>(member_handle.member_ptr_p));</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>                safe_ostream_t(os, *<span class="keyword">reinterpret_cast&lt;</span>variable_type__*<span class="keyword">&gt;</span>(member_handle.member_ptr_p));</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>            };</div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
@@ -736,7 +736,7 @@ $(document).ready(function(){initNavTree('robject_8hpp_source.html',''); initRes
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
 <div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>                os &lt;&lt; <span class="keyword">typeid</span>(function_type__).name() &lt;&lt; <span class="stringliteral">&quot; { &quot;</span>;</div>
 <div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>                safe_stream_t(os, member_handle.member_ptr_p);</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>                safe_ostream_t(os, member_handle.member_ptr_p);</div>
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>                </div>
 <div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>                os &lt;&lt; <span class="stringliteral">&quot; }&quot;</span>;</div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
@@ -889,7 +889,7 @@ $(document).ready(function(){initNavTree('robject_8hpp_source.html',''); initRes
 <div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>                }</div>
 <div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
 <div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>                os &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; member_handle.first &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>                safe_stream_t(os, member_handle.second);</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>                safe_ostream_t(os, member_handle.second);</div>
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>                os &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
 <div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>            }</div>
@@ -924,9 +924,9 @@ $(document).ready(function(){initNavTree('robject_8hpp_source.html',''); initRes
 <div class="ttc" id="anamespacencpp_1_1rtti_html_ac1f1ad6c787a8c0aa30abac56159de9c"><div class="ttname"><a href="namespacencpp_1_1rtti.html#ac1f1ad6c787a8c0aa30abac56159de9c">ncpp::rtti::robject_member_args_t</a></div><div class="ttdeci">typename std::array&lt; sz, sizeof...(args__)&gt; robject_member_args_t</div><div class="ttdoc">Stores member's arguments.</div><div class="ttdef"><b>Definition:</b> robject.hpp:175</div></div>
 <div class="ttc" id="anamespacencpp_1_1utilities_html_aac8793b5c8100c55124fa2cac242bfc1"><div class="ttname"><a href="namespacencpp_1_1utilities.html#aac8793b5c8100c55124fa2cac242bfc1">ncpp::utilities::lref_t</a></div><div class="ttdeci">typename utilities::nth_template_arg_t&lt;(sz) is_atomic__, typename na_lref_t&lt; type__ &gt;, typename a_lref_t&lt; type__ &gt; &gt;::type lref_t</div><div class="ttdoc">lvalue reference template.</div><div class="ttdef"><b>Definition:</b> lref.hpp:377</div></div>
 <div class="ttc" id="anamespacencpp_html"><div class="ttname"><a href="namespacencpp.html">ncpp</a></div><div class="ttdoc">The root namespace of ncpp library.</div><div class="ttdef"><b>Definition:</b> .cpp:5</div></div>
-<div class="ttc" id="anamespacencpp_html_a791b88810c88f77c9ad90748af867efa"><div class="ttname"><a href="namespacencpp.html#a791b88810c88f77c9ad90748af867efa">ncpp::asz</a></div><div class="ttdeci">std::atomic_size_t asz</div><div class="ttdoc">the same as size_t but is atomic.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:313</div></div>
-<div class="ttc" id="anamespacencpp_html_a82bf51a534e48e8f4ce2b1cd4e9586e5"><div class="ttname"><a href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">ncpp::b8</a></div><div class="ttdeci">bool b8</div><div class="ttdoc">8bit boolean.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:281</div></div>
-<div class="ttc" id="anamespacencpp_html_a9c908a636a39a8df2bbc0cd4b6399eb4"><div class="ttname"><a href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">ncpp::sz</a></div><div class="ttdeci">size_t sz</div><div class="ttdoc">the same as size_t.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:284</div></div>
+<div class="ttc" id="anamespacencpp_html_a791b88810c88f77c9ad90748af867efa"><div class="ttname"><a href="namespacencpp.html#a791b88810c88f77c9ad90748af867efa">ncpp::asz</a></div><div class="ttdeci">std::atomic_size_t asz</div><div class="ttdoc">the same as size_t but is atomic.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:314</div></div>
+<div class="ttc" id="anamespacencpp_html_a82bf51a534e48e8f4ce2b1cd4e9586e5"><div class="ttname"><a href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">ncpp::b8</a></div><div class="ttdeci">bool b8</div><div class="ttdoc">8bit boolean.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:282</div></div>
+<div class="ttc" id="anamespacencpp_html_a9c908a636a39a8df2bbc0cd4b6399eb4"><div class="ttname"><a href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">ncpp::sz</a></div><div class="ttdeci">size_t sz</div><div class="ttdoc">the same as size_t.</div><div class="ttdef"><b>Definition:</b> prerequisites.hpp:285</div></div>
 <div class="ttc" id="aprerequisites_8hpp_html"><div class="ttname"><a href="prerequisites_8hpp.html">prerequisites.hpp</a></div><div class="ttdoc">The file that is always included on the top.</div></div>
 <div class="ttc" id="arclass_8hpp_html"><div class="ttname"><a href="rclass_8hpp.html">rclass.hpp</a></div><div class="ttdoc">Implements reflected class.</div></div>
 <div class="ttc" id="arobject_8hpp_html_a8980170a5532aa53aa1082f3a98fa3d5"><div class="ttname"><a href="robject_8hpp.html#a8980170a5532aa53aa1082f3a98fa3d5">NCPP_RCLASS</a></div><div class="ttdeci">#define NCPP_RCLASS(ClassName)</div><div class="ttdoc">Indicates a class need to be reflected.</div><div class="ttdef"><b>Definition:</b> robject.hpp:92</div></div>

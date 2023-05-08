@@ -35,7 +35,7 @@
 \DoxyCodeLine{00068\ }
 \DoxyCodeLine{00069\ }
 \DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1utilities_1_1is__streamable__t}{is\_streamable\_t}}\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1utilities_1_1is__ostreamable__t}{is\_ostreamable\_t}}\ }
 \DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ SS,\ \textcolor{keyword}{typename}\ TT>}
 \DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ test(\textcolor{keywordtype}{int})}
@@ -48,8 +48,22 @@
 \DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ value\ =\ \textcolor{keyword}{decltype}(test<stream\_type\_\_,\ type\_\_>(0))::value;}
 \DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \ \ \}}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1utilities_1_1is__istreamable__t}{is\_istreamable\_t}}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ SS,\ \textcolor{keyword}{typename}\ TT>}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ test(\textcolor{keywordtype}{int})}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>\ \textcolor{keyword}{decltype}(std::declval<SS\&>()\ >>\ std::declval<TT\&>(),\ std::true\_type());}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename},\ \textcolor{keyword}{typename}>}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ test(...)\ -\/>\ std::false\_type;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ value\ =\ \textcolor{keyword}{decltype}(test<stream\_type\_\_,\ type\_\_>(0))::value;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \}}
 
 \end{DoxyCode}
