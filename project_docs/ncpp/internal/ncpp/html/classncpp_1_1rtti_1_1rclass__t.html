@@ -149,18 +149,21 @@ const create_instance_func_ptr_type &amp;&#160;</td><td class="memItemRight" val
 <tr class="memitem:a7e96ee904f76f49017ccf1057460205f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classncpp_1_1rtti_1_1rclass__t.html">rclass_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classncpp_1_1rtti_1_1rclass__t.html#a7e96ee904f76f49017ccf1057460205f">operator=</a> (<a class="el" href="classncpp_1_1rtti_1_1rclass__t.html">rclass_t</a>&lt; other_object_type__ &gt; &amp;&amp;other)</td></tr>
 <tr class="memdesc:a7e96ee904f76f49017ccf1057460205f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move operator.  <br /></td></tr>
 <tr class="separator:a7e96ee904f76f49017ccf1057460205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ada1c0f83ca67e0748d74ce68a03d01"><td class="memItemLeft" align="right" valign="top"><a id="a0ada1c0f83ca67e0748d74ce68a03d01" name="a0ada1c0f83ca67e0748d74ce68a03d01"></a>
-object_type__ &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>create_instance</b> ()</td></tr>
-<tr class="memdesc:a0ada1c0f83ca67e0748d74ce68a03d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance reference. <br /></td></tr>
-<tr class="separator:a0ada1c0f83ca67e0748d74ce68a03d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35125b36e229114cf1a39d457526b074"><td class="memItemLeft" align="right" valign="top"><a id="a35125b36e229114cf1a39d457526b074" name="a35125b36e229114cf1a39d457526b074"></a>
-utilities::native_shared_ptr_t&lt; object_type__ &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create_shared_instance</b> ()</td></tr>
-<tr class="memdesc:a35125b36e229114cf1a39d457526b074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance shared pointer. <br /></td></tr>
-<tr class="separator:a35125b36e229114cf1a39d457526b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7d4665251019987e37bf1a7257e7cb"><td class="memItemLeft" align="right" valign="top"><a id="a8d7d4665251019987e37bf1a7257e7cb" name="a8d7d4665251019987e37bf1a7257e7cb"></a>
-utilities::native_unique_ptr_t&lt; object_type__ &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create_unique_instance</b> ()</td></tr>
-<tr class="memdesc:a8d7d4665251019987e37bf1a7257e7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance unique pointer. <br /></td></tr>
-<tr class="separator:a8d7d4665251019987e37bf1a7257e7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38ab7e6160f35fb5d9d8b219d58fa14"><td class="memItemLeft" align="right" valign="top"><a id="ab38ab7e6160f35fb5d9d8b219d58fa14" name="ab38ab7e6160f35fb5d9d8b219d58fa14"></a>
+object_type__ &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>create_instance</b> () const</td></tr>
+<tr class="memdesc:ab38ab7e6160f35fb5d9d8b219d58fa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance reference. <br /></td></tr>
+<tr class="separator:ab38ab7e6160f35fb5d9d8b219d58fa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b438cbccb111ffaa12d69d43bc1aae5"><td class="memItemLeft" align="right" valign="top"><a id="a8b438cbccb111ffaa12d69d43bc1aae5" name="a8b438cbccb111ffaa12d69d43bc1aae5"></a>
+utilities::native_shared_ptr_t&lt; object_type__ &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create_shared_instance</b> () const</td></tr>
+<tr class="memdesc:a8b438cbccb111ffaa12d69d43bc1aae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance shared pointer. <br /></td></tr>
+<tr class="separator:a8b438cbccb111ffaa12d69d43bc1aae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36b1473c5acb46e0ea730f0ec9d4e90"><td class="memItemLeft" align="right" valign="top"><a id="ac36b1473c5acb46e0ea730f0ec9d4e90" name="ac36b1473c5acb46e0ea730f0ec9d4e90"></a>
+utilities::native_unique_ptr_t&lt; object_type__ &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create_unique_instance</b> () const</td></tr>
+<tr class="memdesc:ac36b1473c5acb46e0ea730f0ec9d4e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instance and returns instance unique pointer. <br /></td></tr>
+<tr class="separator:ac36b1473c5acb46e0ea730f0ec9d4e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c23a8d9d03de17cf3ce9b342f62b0d3"><td class="memItemLeft" align="right" valign="top"><a id="a7c23a8d9d03de17cf3ce9b342f62b0d3" name="a7c23a8d9d03de17cf3ce9b342f62b0d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_instance</b> (object_type__ &amp;robject) const</td></tr>
+<tr class="separator:a7c23a8d9d03de17cf3ce9b342f62b0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a3853b850ae3685d69db389e9ef94c"><td class="memItemLeft" align="right" valign="top"><a id="a56a3853b850ae3685d69db389e9ef94c" name="a56a3853b850ae3685d69db389e9ef94c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="memdesc:a56a3853b850ae3685d69db389e9ef94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the create "object_type__" instance function pointer. <br /></td></tr>

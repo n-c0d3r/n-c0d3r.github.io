@@ -47,6 +47,8 @@ namespace \mbox{\hyperlink{namespacencpp_1_1rtti}{ncpp\+::rtti}}
 \item 
 \#define \mbox{\hyperlink{robject_8hpp_a8980170a5532aa53aa1082f3a98fa3d5}{NCPP\+\_\+\+RCLASS}}(Class\+Name)
 \begin{DoxyCompactList}\small\item\em Indicates a class need to be reflected. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{robject_8hpp_aa629ad6573cd1d320228b55ef43972b9}{NCPP\+\_\+\+RCCOPY}}(From\+Var\+Type,  From\+Var\+Name)
+\item 
 \#define \mbox{\hyperlink{robject_8hpp_a89da187c96d1459452f52e945b2a986e}{NCPP\+\_\+\+RCSCOPE}}(Class\+Name)~        \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+end\+\_\+scope}} \+\_\+\+\_\+robject\+\_\+constructor\+\_\+end\+\_\+scope\+\_\+\+\_\+($\ast$this, $\ast$(\+\_\+\+\_\+\#\#Class\+Name\#\#\+\_\+constructor\+\_\+begin\+\_\+scope\+\_\+\+\_\+.\+prev\+\_\+robject\+\_\+ref));
 \begin{DoxyCompactList}\small\item\em Setups the constructing scope of a reflected class. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{robject_8hpp_aa1ec722378555c397d953512da64a24c}{NCPP\+\_\+\+RCVARIABLE}}(Member\+Type,  Member\+Name, ...)
@@ -76,6 +78,28 @@ Implements reflected object.
 
 
 \doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{robject_8hpp_aa629ad6573cd1d320228b55ef43972b9}\label{robject_8hpp_aa629ad6573cd1d320228b55ef43972b9}} 
+\index{robject.hpp@{robject.hpp}!NCPP\_RCCOPY@{NCPP\_RCCOPY}}
+\index{NCPP\_RCCOPY@{NCPP\_RCCOPY}!robject.hpp@{robject.hpp}}
+\doxysubsubsection{\texorpdfstring{NCPP\_RCCOPY}{NCPP\_RCCOPY}}
+{\footnotesize\ttfamily \#define NCPP\+\_\+\+RCCOPY(\begin{DoxyParamCaption}\item[{}]{From\+Var\+Type,  }\item[{}]{From\+Var\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ current\_rclass(FromVarType\ FromVarName)\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ current\_rclass()\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ *\textcolor{keyword}{this}\ =\ FromVarName;\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ current\_rclass\&\ operator\ =\ (FromVarType\ FromVarName)\ \{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_\_\#\#ClassName\#\#\_copy\_from\_\_(FromVarName);\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_\_\#\#ClassName\#\#\_copy\_from\_\_(FromVarType\ FromVarName)}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{robject_8hpp_a36212674bee22b00e7c9635ec646604f}\label{robject_8hpp_a36212674bee22b00e7c9635ec646604f}} 
 \index{robject.hpp@{robject.hpp}!NCPP\_RCFUNCTION@{NCPP\_RCFUNCTION}}
 \index{NCPP\_RCFUNCTION@{NCPP\_RCFUNCTION}!robject.hpp@{robject.hpp}}
@@ -118,7 +142,7 @@ Declares a reflected member function.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }current\_rclass\ =\ ClassName;\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{ncpp::rtti::robject\_constructor\_begin\_scope}}\ \_\_\#\#ClassName\#\#\_constructor\_begin\_scope\_\_;\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{public}:\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ncpp::rtti::robject\_i>}}\ get\_rclass()\{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ncpp::rtti::robject\_i>}}\ get\_rclass()\textcolor{keyword}{\ const\ }\{\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}();\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)}
@@ -126,11 +150,7 @@ Declares a reflected member function.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}();\ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{public}:\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName(\textcolor{keyword}{const}\ ClassName\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName\&\ operator\ =\ (\textcolor{keyword}{const}\ ClassName\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName(ClassName\&\&)\ =\ \textcolor{keyword}{delete};\ \(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName\&\ operator\ =\ (ClassName\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
 
 \end{DoxyCode}
 
