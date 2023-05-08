@@ -125,7 +125,12 @@ Declares a reflected member function.
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}\ get\_static\_rclass()\ \{\(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp::rtti::rclass\_t<ClassName>}}();\ \(\backslash\)}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{public}:\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName(\textcolor{keyword}{const}\ ClassName\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName\&\ operator\ =\ (\textcolor{keyword}{const}\ ClassName\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName(ClassName\&\&)\ =\ \textcolor{keyword}{delete};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ClassName\&\ operator\ =\ (ClassName\&\&)\ =\ \textcolor{keyword}{delete};}
 
 \end{DoxyCode}
 

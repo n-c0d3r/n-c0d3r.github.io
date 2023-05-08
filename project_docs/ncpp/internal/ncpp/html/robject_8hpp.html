@@ -231,8 +231,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::r
 <div class="line">        &gt;; \</div>
 <div class="line">        <span class="keyword">friend</span> <span class="keyword">class </span>MemberName##_reflecter_type; \</div>
 <div class="line">        MemberName##_reflecter_type MemberName##_reflecter;</div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__function__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__function__reflecter__t.html">ncpp::rtti::robject_function_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:520</div></div>
-<div class="ttc" id="anamespacencpp_1_1rtti_html_ac1f1ad6c787a8c0aa30abac56159de9c"><div class="ttname"><a href="namespacencpp_1_1rtti.html#ac1f1ad6c787a8c0aa30abac56159de9c">ncpp::rtti::robject_member_args_t</a></div><div class="ttdeci">typename std::array&lt; sz, sizeof...(args__)&gt; robject_member_args_t</div><div class="ttdoc">Stores member's arguments.</div><div class="ttdef"><b>Definition:</b> robject.hpp:175</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__function__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__function__reflecter__t.html">ncpp::rtti::robject_function_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:525</div></div>
+<div class="ttc" id="anamespacencpp_1_1rtti_html_ac1f1ad6c787a8c0aa30abac56159de9c"><div class="ttname"><a href="namespacencpp_1_1rtti.html#ac1f1ad6c787a8c0aa30abac56159de9c">ncpp::rtti::robject_member_args_t</a></div><div class="ttdeci">typename std::array&lt; sz, sizeof...(args__)&gt; robject_member_args_t</div><div class="ttdoc">Stores member's arguments.</div><div class="ttdef"><b>Definition:</b> robject.hpp:180</div></div>
 </div><!-- fragment -->
 <p>Declares a reflected member function. </p>
 
@@ -264,9 +264,14 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::r
 <div class="line">            <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ClassName&gt;</a> get_static_rclass() {\</div>
 <div class="line">                \</div>
 <div class="line">                <span class="keywordflow">return</span> <a class="code hl_class" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t&lt;ClassName&gt;</a>(); \</div>
-<div class="line">            }</div>
+<div class="line">            }\</div>
+<div class="line">        <span class="keyword">public</span>:\</div>
+<div class="line">            ClassName(<span class="keyword">const</span> ClassName&amp;) = <span class="keyword">delete</span>;\</div>
+<div class="line">            ClassName&amp; operator = (<span class="keyword">const</span> ClassName&amp;) = <span class="keyword">delete</span>;\</div>
+<div class="line">            ClassName(ClassName&amp;&amp;) = <span class="keyword">delete</span>; \</div>
+<div class="line">            ClassName&amp; operator = (ClassName&amp;&amp;) = <span class="keyword">delete</span>;</div>
 <div class="ttc" id="aclassncpp_1_1rtti_1_1rclass__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t</a></div><div class="ttdoc">Reflected class template.</div><div class="ttdef"><b>Definition:</b> rclass.hpp:96</div></div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__constructor__begin__scope_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__constructor__begin__scope.html">ncpp::rtti::robject_constructor_begin_scope</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:208</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__constructor__begin__scope_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__constructor__begin__scope.html">ncpp::rtti::robject_constructor_begin_scope</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:213</div></div>
 </div><!-- fragment -->
 <p>Indicates a class need to be reflected. </p>
 <p>Must be added first in class body. </p>
@@ -341,7 +346,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ncpp::r
 <div class="line">        &gt;; \</div>
 <div class="line">        <span class="keyword">friend</span> <span class="keyword">class </span>MemberName##_reflecter_type; \</div>
 <div class="line">        MemberName##_reflecter_type MemberName##_reflecter;</div>
-<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__variable__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:485</div></div>
+<div class="ttc" id="aclassncpp_1_1rtti_1_1robject__variable__reflecter__t_html"><div class="ttname"><a href="classncpp_1_1rtti_1_1robject__variable__reflecter__t.html">ncpp::rtti::robject_variable_reflecter_t</a></div><div class="ttdef"><b>Definition:</b> robject.hpp:490</div></div>
 </div><!-- fragment -->
 <p>Declares a reflected member variable. </p>
 
