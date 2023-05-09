@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('iostream_8hpp.html',''); initResizable
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">iostream.hpp File Reference</div></div>
 </div><!--header-->
@@ -116,6 +117,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4.html">ncpp::safe_ostream_forwarder_t&lt; stream_type__, type__, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__ostream__with__tab__forwarder__t.html">ncpp::safe_ostream_with_tab_forwarder_t&lt; stream_type__, input_type__, is_streamable__ &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01true_01_4.html">ncpp::safe_ostream_with_tab_forwarder_t&lt; stream_type__, input_type__, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01false_01_4.html">ncpp::safe_ostream_with_tab_forwarder_t&lt; stream_type__, input_type__, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__istream__forwarder__t.html">ncpp::safe_istream_forwarder_t&lt; stream_type__, type__, is_streamable__ &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncpp_1_1safe__istream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4.html">ncpp::safe_istream_forwarder_t&lt; stream_type__, type__, true &gt;</a></td></tr>
@@ -129,12 +136,23 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacencpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root namespace of ncpp library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:abc4906770f64c16040e4c0be9bd577e1"><td class="memTemplParams" colspan="2"><a id="abc4906770f64c16040e4c0be9bd577e1" name="abc4906770f64c16040e4c0be9bd577e1"></a>
+template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:abc4906770f64c16040e4c0be9bd577e1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::ostream_input_t</b> = typename std::pair&lt; const type__ &amp;, i32 &gt;</td></tr>
+<tr class="separator:abc4906770f64c16040e4c0be9bd577e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a18c9a7e0be5cb0b7a787f0ca8bde3114"><td class="memTemplParams" colspan="2"><a id="a18c9a7e0be5cb0b7a787f0ca8bde3114" name="a18c9a7e0be5cb0b7a787f0ca8bde3114"></a>
 template&lt;typename stream_type__ , typename type__ &gt; </td></tr>
 <tr class="memitem:a18c9a7e0be5cb0b7a787f0ca8bde3114"><td class="memTemplItemLeft" align="right" valign="top">stream_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::safe_ostream_t</b> (stream_type__ &amp;stream, type__ &amp;&amp;data)</td></tr>
 <tr class="separator:a18c9a7e0be5cb0b7a787f0ca8bde3114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f547cdd8107a81f8fbf609eead7413f"><td class="memTemplParams" colspan="2"><a id="a7f547cdd8107a81f8fbf609eead7413f" name="a7f547cdd8107a81f8fbf609eead7413f"></a>
+template&lt;typename stream_type__ , typename type__ , typename input_type__  = typename ostream_input_t&lt;type__&gt;&gt; </td></tr>
+<tr class="memitem:a7f547cdd8107a81f8fbf609eead7413f"><td class="memTemplItemLeft" align="right" valign="top">stream_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::safe_ostream_with_tab_t</b> (stream_type__ &amp;stream, input_type__ &amp;&amp;input)</td></tr>
+<tr class="separator:a7f547cdd8107a81f8fbf609eead7413f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a1eddc7ed951530d827da3daccf880"><td class="memTemplParams" colspan="2"><a id="a11a1eddc7ed951530d827da3daccf880" name="a11a1eddc7ed951530d827da3daccf880"></a>
 template&lt;typename stream_type__ , typename type__ &gt; </td></tr>
 <tr class="memitem:a11a1eddc7ed951530d827da3daccf880"><td class="memTemplItemLeft" align="right" valign="top">stream_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ncpp::safe_istream_t</b> (stream_type__ &amp;stream, type__ &amp;&amp;data)</td></tr>

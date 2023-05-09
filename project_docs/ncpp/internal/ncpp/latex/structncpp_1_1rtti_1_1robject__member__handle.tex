@@ -17,8 +17,11 @@ struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_1_1args__a
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_aa73e8718f0c065236c449862e8ca2d6f}\label{structncpp_1_1rtti_1_1robject__member__handle_aa73e8718f0c065236c449862e8ca2d6f}} 
-using {\bfseries logger\+\_\+func\+\_\+type} = void($\ast$)(std\+::ostream \&os, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&member\+\_\+handle)
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a9b9574ee1dfaa34510bf86cc50ff49d7}\label{structncpp_1_1rtti_1_1robject__member__handle_a9b9574ee1dfaa34510bf86cc50ff49d7}} 
+using {\bfseries logger\+\_\+func\+\_\+ptr\+\_\+type} = void($\ast$)(std\+::ostream \&os, const ostream\+\_\+input\+\_\+t$<$ \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} $>$ \&input)
+\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a814eede8b0ef74160bd73ce7079df860}\label{structncpp_1_1rtti_1_1robject__member__handle_a814eede8b0ef74160bd73ce7079df860}} 
+using {\bfseries copy\+\_\+func\+\_\+ptr\+\_\+type} = void($\ast$)(const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&from, \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&to)
 \item 
 {\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\using \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle_a7bc2093ba4a1364abba1616af808a977}{recorrected\+\_\+type\+\_\+t}} = typename \mbox{\hyperlink{structncpp_1_1utilities_1_1nth__template__arg__t}{utilities\+::nth\+\_\+template\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{structncpp_1_1utilities_1_1is__function__t}{utilities\+::is\+\_\+function\+\_\+t}}$<$ type\+\_\+\+\_\+ $>$\+::value, type\+\_\+\+\_\+, typename std\+::function$<$ type\+\_\+\+\_\+ $>$ $>$\+::type
 \begin{DoxyCompactList}\small\item\em The type that is recorrected by the rules\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -67,14 +70,20 @@ using {\bfseries logger\+\_\+func\+\_\+type} = void($\ast$)(std\+::ostream \&os,
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a32b960a133dac7924d2525a259b7dd96}\label{structncpp_1_1rtti_1_1robject__member__handle_a32b960a133dac7924d2525a259b7dd96}} 
 \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}} {\bfseries is\+\_\+function} = 0
 \item 
-\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a64b8c253d79bf507767564fdb2d44862}\label{structncpp_1_1rtti_1_1robject__member__handle_a64b8c253d79bf507767564fdb2d44862}} 
-logger\+\_\+func\+\_\+type {\bfseries logger\+\_\+func\+\_\+ptr} = 0
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a19d93ce547ed0226c552375b05ba6d42}\label{structncpp_1_1rtti_1_1robject__member__handle_a19d93ce547ed0226c552375b05ba6d42}} 
+logger\+\_\+func\+\_\+ptr\+\_\+type {\bfseries logger\+\_\+func\+\_\+ptr} = 0
 \item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_adf657d984774032551ed320f8a99abc4}\label{structncpp_1_1rtti_1_1robject__member__handle_adf657d984774032551ed320f8a99abc4}} 
 void $\ast$ {\bfseries member\+\_\+ptr\+\_\+p} = 0
+\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a0230e3cf8cf064009510572f7db4514a}\label{structncpp_1_1rtti_1_1robject__member__handle_a0230e3cf8cf064009510572f7db4514a}} 
+copy\+\_\+func\+\_\+ptr\+\_\+type {\bfseries copy\+\_\+func\+\_\+ptr} = 0
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_ae093b3dd3229cda420e7a30271684e23}\label{structncpp_1_1rtti_1_1robject__member__handle_ae093b3dd3229cda420e7a30271684e23}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const ostream\+\_\+input\+\_\+t$<$ \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} $>$ \&input)
 \item 
 \mbox{\Hypertarget{structncpp_1_1rtti_1_1robject__member__handle_a0a2dfbb7f49e3ff936a38b1593455c30}\label{structncpp_1_1rtti_1_1robject__member__handle_a0a2dfbb7f49e3ff936a38b1593455c30}} 
 std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&member\+\_\+handle)

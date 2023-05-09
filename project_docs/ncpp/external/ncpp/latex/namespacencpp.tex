@@ -71,6 +71,12 @@ struct \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t_3_01stream__ty
 \item 
 struct \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4}{safe\+\_\+ostream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, true $>$}}
 \item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01false_01_4}{safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, input\+\_\+type\+\_\+\+\_\+, false $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01true_01_4}{safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, input\+\_\+type\+\_\+\+\_\+, true $>$}}
+\item 
 struct \mbox{\hyperlink{structncpp_1_1stack}{stack}}
 \item 
 struct \mbox{\hyperlink{structncpp_1_1stack__allocation}{stack\+\_\+allocation}}
@@ -97,6 +103,9 @@ class \mbox{\hyperlink{classncpp_1_1tgh__allocator__t}{tgh\+\_\+allocator\+\_\+t
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_abc4906770f64c16040e4c0be9bd577e1}\label{namespacencpp_abc4906770f64c16040e4c0be9bd577e1}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\using {\bfseries ostream\+\_\+input\+\_\+t} = typename std\+::pair$<$ const type\+\_\+\+\_\+ \&, \mbox{\hyperlink{namespacencpp_a2cfcadebf19da9723133123bbf3d9bbc}{i32}} $>$
 \item 
 \mbox{\Hypertarget{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}\label{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}} 
 using {\bfseries u8} = uint8\+\_\+t
@@ -179,11 +188,20 @@ using {\bfseries tagged\+\_\+heap} = \mbox{\hyperlink{classncpp_1_1tagged__heap_
 \mbox{\Hypertarget{namespacencpp_a18c9a7e0be5cb0b7a787f0ca8bde3114}\label{namespacencpp_a18c9a7e0be5cb0b7a787f0ca8bde3114}} 
 {\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ $>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries safe\+\_\+ostream\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, type\+\_\+\+\_\+ \&\&data)
 \item 
+\mbox{\Hypertarget{namespacencpp_a7f547cdd8107a81f8fbf609eead7413f}\label{namespacencpp_a7f547cdd8107a81f8fbf609eead7413f}} 
+{\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ , typename input\+\_\+type\+\_\+\+\_\+  = typename ostream\+\_\+input\+\_\+t$<$type\+\_\+\+\_\+$>$$>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, input\+\_\+type\+\_\+\+\_\+ \&\&input)
+\item 
 \mbox{\Hypertarget{namespacencpp_a11a1eddc7ed951530d827da3daccf880}\label{namespacencpp_a11a1eddc7ed951530d827da3daccf880}} 
 {\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ $>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries safe\+\_\+istream\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, type\+\_\+\+\_\+ \&\&data)
 \item 
+\mbox{\Hypertarget{namespacencpp_a114c7e1101979151b0f65894e8425e30}\label{namespacencpp_a114c7e1101979151b0f65894e8425e30}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , class allocator\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const ostream\+\_\+input\+\_\+t$<$ std\+::vector$<$ item\+\_\+type\+\_\+\+\_\+, allocator\+\_\+type\+\_\+\+\_\+ $>$ $>$ \&input)
+\item 
 \mbox{\Hypertarget{namespacencpp_adad87be8fbd8a8d77b849782717c46f6}\label{namespacencpp_adad87be8fbd8a8d77b849782717c46f6}} 
 {\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , class allocator\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const std\+::vector$<$ item\+\_\+type\+\_\+\+\_\+, allocator\+\_\+type\+\_\+\+\_\+ $>$ \&v)
+\item 
+\mbox{\Hypertarget{namespacencpp_ab92cc6b378e76574ad0395d1cee4add8}\label{namespacencpp_ab92cc6b378e76574ad0395d1cee4add8}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , class id\+\_\+allocator\+\_\+type\+\_\+\+\_\+ , class cell\+\_\+allocator\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const ostream\+\_\+input\+\_\+t$<$ \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{containers\+::handle\+\_\+map\+\_\+t}}$<$ item\+\_\+type\+\_\+\+\_\+, id\+\_\+allocator\+\_\+type\+\_\+\+\_\+, cell\+\_\+allocator\+\_\+type\+\_\+\+\_\+ $>$ $>$ \&input)
 \item 
 \mbox{\Hypertarget{namespacencpp_af6fe5db29b97a78e84101146b8c0d11a}\label{namespacencpp_af6fe5db29b97a78e84101146b8c0d11a}} 
 {\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , class id\+\_\+allocator\+\_\+type\+\_\+\+\_\+ , class cell\+\_\+allocator\+\_\+type\+\_\+\+\_\+ $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classncpp_1_1containers_1_1handle__map__t}{containers\+::handle\+\_\+map\+\_\+t}}$<$ item\+\_\+type\+\_\+\+\_\+, id\+\_\+allocator\+\_\+type\+\_\+\+\_\+, cell\+\_\+allocator\+\_\+type\+\_\+\+\_\+ $>$ \&handle\+\_\+map)

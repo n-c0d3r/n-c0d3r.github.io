@@ -4,7 +4,7 @@ var hierarchy =
     [ "ncpp::utilities::allocator_deleter_t< allocator_type__ >", "structncpp_1_1utilities_1_1allocator__deleter__t.html", null ],
     [ "ncpp::rtti::robject_member_handle::args_array_type", "structncpp_1_1rtti_1_1robject__member__handle_1_1args__array__type.html", null ],
     [ "ncpp::containers::cfv_queue_t< item_type__, allocator_type__ >", "classncpp_1_1containers_1_1cfv__queue__t.html", null ],
-    [ "ncpp::rtti::robject_function_reflecter_t< object_type__, function_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >::executer_get_t< is_void_return__ >", "structncpp_1_1rtti_1_1robject__function__reflecter__t_1_1executer__get__t.html", null ],
+    [ "ncpp::rtti::robject_function_reflecter_t< object_type__, function_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, functor_member_ptr_type, functor_member_ptr, member_ptr_type, member_ptr >::executer_get_t< is_void_return__ >", "structncpp_1_1rtti_1_1robject__function__reflecter__t_1_1executer__get__t.html", null ],
     [ "ncpp::static_warning_helper::false_type", "structncpp_1_1static__warning__helper_1_1false__type.html", [
       [ "ncpp::static_warning_helper::converter< 0 >", "structncpp_1_1static__warning__helper_1_1converter_3_010_01_4.html", null ]
     ] ],
@@ -67,10 +67,10 @@ var hierarchy =
     [ "ncpp::tgh_allocator_t< value_type__, tagged_heap_type__ >::rebind< U >", "structncpp_1_1tgh__allocator__t_1_1rebind.html", null ],
     [ "ncpp::rtti::robject_constructor_begin_scope", "classncpp_1_1rtti_1_1robject__constructor__begin__scope.html", null ],
     [ "ncpp::rtti::robject_constructor_end_scope", "classncpp_1_1rtti_1_1robject__constructor__end__scope.html", null ],
-    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, is_void_return__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html", null ],
-    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, false, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01f554b7fa30c3d264b43afaa45331b1ce8.html", null ],
-    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, true, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01fe195d6b5b8e8176fd43c865278558cb9.html", null ],
-    [ "ncpp::rtti::robject_function_reflecter_t< object_type__, function_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "classncpp_1_1rtti_1_1robject__function__reflecter__t.html", null ],
+    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, is_void_return__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, functor_member_ptr_type, functor_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t.html", null ],
+    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, false, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, functor_member_ptr_type, functor_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01f5604d081a864d955d62d2cc55afa9d33.html", null ],
+    [ "ncpp::rtti::robject_function_reflecter_executer_get_t< object_type__, function_type__, true, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, functor_member_ptr_type, functor_member_ptr, member_ptr_type, member_ptr >", "structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01ff94395fd5247e5763b718e7b0561a09f.html", null ],
+    [ "ncpp::rtti::robject_function_reflecter_t< object_type__, function_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, functor_member_ptr_type, functor_member_ptr, member_ptr_type, member_ptr >", "classncpp_1_1rtti_1_1robject__function__reflecter__t.html", null ],
     [ "ncpp::rtti::robject_i", "classncpp_1_1rtti_1_1robject__i.html", null ],
     [ "ncpp::rtti::robject_member_handle", "structncpp_1_1rtti_1_1robject__member__handle.html", null ],
     [ "ncpp::rtti::robject_variable_reflecter_t< object_type__, variable_type__, name_member_ptr_type, name_member_ptr, args_member_ptr_type, args_member_ptr, member_ptr_type, member_ptr >", "classncpp_1_1rtti_1_1robject__variable__reflecter__t.html", null ],
@@ -80,6 +80,9 @@ var hierarchy =
     [ "ncpp::safe_ostream_forwarder_t< stream_type__, type__, is_streamable__ >", "structncpp_1_1safe__ostream__forwarder__t.html", null ],
     [ "ncpp::safe_ostream_forwarder_t< stream_type__, type__, false >", "structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4.html", null ],
     [ "ncpp::safe_ostream_forwarder_t< stream_type__, type__, true >", "structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4.html", null ],
+    [ "ncpp::safe_ostream_with_tab_forwarder_t< stream_type__, input_type__, is_streamable__ >", "structncpp_1_1safe__ostream__with__tab__forwarder__t.html", null ],
+    [ "ncpp::safe_ostream_with_tab_forwarder_t< stream_type__, input_type__, false >", "structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01false_01_4.html", null ],
+    [ "ncpp::safe_ostream_with_tab_forwarder_t< stream_type__, input_type__, true >", "structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01true_01_4.html", null ],
     [ "ncpp::pac::semaphore_t< mutex_type__, cond_var__ >", "classncpp_1_1pac_1_1semaphore__t.html", null ],
     [ "ncpp::utilities::singleton_t< class__ >", "classncpp_1_1utilities_1_1singleton__t.html", null ],
     [ "ncpp::utilities::singleton_t< job_system >", "classncpp_1_1utilities_1_1singleton__t.html", [

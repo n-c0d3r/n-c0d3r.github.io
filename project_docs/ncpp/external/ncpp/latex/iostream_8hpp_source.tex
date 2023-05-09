@@ -41,97 +41,148 @@
 \DoxyCodeLine{00079\ }
 \DoxyCodeLine{00080\ }
 \DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_,\ b8\ is\_streamable\_\_>}
-\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}\ \{}
+\DoxyCodeLine{00082\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{using\ }ostream\_input\_t\ =\ \textcolor{keyword}{typename}\ std::pair<const\ type\_\_\&,\ i32>;}
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \ \ \};}
+\DoxyCodeLine{00085\ }
 \DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00088\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ true>\ \{}
+\DoxyCodeLine{00087\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_,\ b8\ is\_streamable\_\_>}
+\DoxyCodeLine{00088\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}\ \{}
 \DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00090\ \ \ \};}
 \DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \ \ stream\ <<\ data;}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
-\DoxyCodeLine{00095\ \ \ \ \ \}}
-\DoxyCodeLine{00096\ \ \ \};}
-\DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00099\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ false>\ \{}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00092\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ true>\ \{}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ stream\ <<\ data;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00100\ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \};}
 \DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
-\DoxyCodeLine{00106\ \ \ \ \ \}}
-\DoxyCodeLine{00107\ \ \ \};}
+\DoxyCodeLine{00103\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00104\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ false>\ \{}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00107\ }
 \DoxyCodeLine{00108\ }
 \DoxyCodeLine{00109\ }
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00112\ \ \ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ safe\_ostream\_t(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \};}
 \DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{using\ }safe\_ostream\_forward\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<}
-\DoxyCodeLine{00115\ \ \ \ \ \ \ stream\_type\_\_,}
-\DoxyCodeLine{00116\ \ \ \ \ \ \ type\_\_,}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1is__ostreamable__t}{utilities::is\_ostreamable\_t}}<}
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ stream\_type\_\_,}
-\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ type\_\_}
-\DoxyCodeLine{00120\ \ \ \ \ \ \ >::value}
-\DoxyCodeLine{00121\ \ \ \ \ >;}
-\DoxyCodeLine{00122\ \ \ \ \ \ \ }
-\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{return}\ safe\_ostream\_forward\_type::forward(stream,\ std::forward<type\_\_>(data));}
-\DoxyCodeLine{00124\ \ \ \}}
-\DoxyCodeLine{00125\ }
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00127\ }
-\DoxyCodeLine{00128\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_,\ b8\ is\_streamable\_\_>}
-\DoxyCodeLine{00129\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}\ \{}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00117\ \ \ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ safe\_ostream\_t(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{using\ }safe\_ostream\_forward\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{safe\_ostream\_forwarder\_t}}<}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ type\_\_,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1is__ostreamable__t}{utilities::is\_ostreamable\_t}}<}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ type\_\_}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ >::value}
+\DoxyCodeLine{00126\ \ \ \ \ >;}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordflow}{return}\ safe\_ostream\_forward\_type::forward(stream,\ std::forward<type\_\_>(data));}
+\DoxyCodeLine{00129\ \ \ \}}
 \DoxyCodeLine{00130\ }
-\DoxyCodeLine{00131\ \ \ \};}
+\DoxyCodeLine{00131\ }
 \DoxyCodeLine{00132\ }
-\DoxyCodeLine{00133\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00134\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ true>\ \{}
+\DoxyCodeLine{00133\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ input\_type\_\_,\ b8\ is\_streamable\_\_>}
+\DoxyCodeLine{00134\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{safe\_ostream\_with\_tab\_forwarder\_t}}\ \{}
 \DoxyCodeLine{00135\ }
-\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00136\ \ \ \};}
 \DoxyCodeLine{00137\ }
-\DoxyCodeLine{00138\ \ \ \ \ \ \ stream\ >>\ data;}
-\DoxyCodeLine{00139\ }
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
-\DoxyCodeLine{00141\ \ \ \ \ \}}
-\DoxyCodeLine{00142\ \ \ \};}
-\DoxyCodeLine{00143\ }
-\DoxyCodeLine{00144\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00145\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ false>\ \{}
-\DoxyCodeLine{00146\ }
-\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00138\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ input\_type\_\_>}
+\DoxyCodeLine{00139\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{safe\_ostream\_with\_tab\_forwarder\_t}}<stream\_type\_\_,\ input\_type\_\_,\ true>\ \{}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ input\_type\_\_\&\&\ input)\ \{}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ stream\ <<\ input;}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00146\ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \};}
 \DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ }
-\DoxyCodeLine{00150\ }
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
-\DoxyCodeLine{00152\ \ \ \ \ \}}
-\DoxyCodeLine{00153\ \ \ \};}
-\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00149\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ input\_type\_\_>}
+\DoxyCodeLine{00150\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{safe\_ostream\_with\_tab\_forwarder\_t}}<stream\_type\_\_,\ input\_type\_\_,\ false>\ \{}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ input\_type\_\_\&\&\ input)\ \{}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ safe\_ostream\_t(stream,\ input.first);}
 \DoxyCodeLine{00155\ }
-\DoxyCodeLine{00156\ }
-\DoxyCodeLine{00157\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
-\DoxyCodeLine{00158\ \ \ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ safe\_istream\_t(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \};}
 \DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keyword}{using\ }safe\_istream\_forward\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<}
-\DoxyCodeLine{00161\ \ \ \ \ \ \ stream\_type\_\_,}
-\DoxyCodeLine{00162\ \ \ \ \ \ \ type\_\_,}
-\DoxyCodeLine{00163\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1is__istreamable__t}{utilities::is\_istreamable\_t}}<}
-\DoxyCodeLine{00164\ \ \ \ \ \ \ stream\_type\_\_,}
-\DoxyCodeLine{00165\ \ \ \ \ \ \ type\_\_}
-\DoxyCodeLine{00166\ \ \ \ \ \ \ >::value}
-\DoxyCodeLine{00167\ \ \ \ \ >;}
-\DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordflow}{return}\ safe\_istream\_forward\_type::forward(stream,\ std::forward<type\_\_>(data));}
-\DoxyCodeLine{00170\ \ \ \}}
-\DoxyCodeLine{00171\ }
-\DoxyCodeLine{00172\ \}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_,\ \textcolor{keyword}{typename}\ input\_type\_\_\ =\ \textcolor{keyword}{typename}\ ostream\_input\_t<type\_\_>>}
+\DoxyCodeLine{00163\ \ \ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ safe\_ostream\_with\_tab\_t(stream\_type\_\_\&\ stream,\ input\_type\_\_\&\&\ input)\ \{}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{using\ }safe\_ostream\_with\_tab\_forward\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{safe\_ostream\_with\_tab\_forwarder\_t}}<}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ input\_type\_\_,}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1is__ostreamable__t}{utilities::is\_ostreamable\_t}}<}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ input\_type\_\_}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ >::value}
+\DoxyCodeLine{00172\ \ \ \ \ >;}
 \DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{return}\ safe\_ostream\_with\_tab\_forward\_type::forward(stream,\ std::forward<input\_type\_\_>(input));}
+\DoxyCodeLine{00175\ \ \ \}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_,\ b8\ is\_streamable\_\_>}
+\DoxyCodeLine{00180\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}\ \{}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00185\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ true>\ \{}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ stream\ >>\ data;}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00192\ \ \ \ \ \}}
+\DoxyCodeLine{00193\ \ \ \};}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00196\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<stream\_type\_\_,\ type\_\_,\ false>\ \{}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ forward(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00203\ \ \ \ \ \}}
+\DoxyCodeLine{00204\ \ \ \};}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ stream\_type\_\_,\ \textcolor{keyword}{typename}\ type\_\_>}
+\DoxyCodeLine{00209\ \ \ \textcolor{keyword}{inline}\ stream\_type\_\_\&\ safe\_istream\_t(stream\_type\_\_\&\ stream,\ type\_\_\&\&\ data)\ \{}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keyword}{using\ }safe\_istream\_forward\_type\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{safe\_istream\_forwarder\_t}}<}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ type\_\_,}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1utilities_1_1is__istreamable__t}{utilities::is\_istreamable\_t}}<}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ stream\_type\_\_,}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ type\_\_}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ >::value}
+\DoxyCodeLine{00218\ \ \ \ \ >;}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{return}\ safe\_istream\_forward\_type::forward(stream,\ std::forward<type\_\_>(data));}
+\DoxyCodeLine{00221\ \ \ \}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \}}
+\DoxyCodeLine{00224\ }
 
 \end{DoxyCode}

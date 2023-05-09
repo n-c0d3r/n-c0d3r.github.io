@@ -37,60 +37,114 @@
 \DoxyCodeLine{00072\ }
 \DoxyCodeLine{00073\ }
 \DoxyCodeLine{00074\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ item\_type\_\_,\ \textcolor{keyword}{class}\ allocator\_type\_\_>}
-\DoxyCodeLine{00075\ \ \ std::ostream\&\ operator\ <<\ (std::ostream\&\ os,\ \textcolor{keyword}{const}\ std::vector<item\_type\_\_,\ allocator\_type\_\_>\&\ v)}
-\DoxyCodeLine{00076\ \ \ \{}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\{"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ i\ =\ 0;\ i\ <\ v.size();\ ++i)\ \{}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \ \ \ \ \ \ os\ <<\ i\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ \ \ safe\_ostream\_t(os,\ v[i]);}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ !=\ v.size()\ -\/\ 1)}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00075\ \ \ std::ostream\&\ operator\ <<\ (}
+\DoxyCodeLine{00076\ \ \ \ \ std::ostream\&\ os,\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{const}\ ostream\_input\_t<}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ std::vector<item\_type\_\_,\ allocator\_type\_\_>}
+\DoxyCodeLine{00079\ \ \ \ \ >\&\ input}
+\DoxyCodeLine{00080\ \ \ )}
+\DoxyCodeLine{00081\ \ \ \{}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\{"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ i\ =\ 0;\ i\ <\ input.first.size();\ ++i)\ \{}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ j\ =\ 0;\ j\ <\ (input.second\ +\ 1)\ *\ NCPP\_TAB\_SIZE;\ ++j)\ \{}
 \DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
 \DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\}"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ os\ <<\ i\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
 \DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
-\DoxyCodeLine{00096\ \ \ \}}
-\DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ safe\_ostream\_with\_tab\_t<std::ostream,\ item\_type\_\_>(os,\ \{\ input.first[i],\ input.second\ +\ 1\ \});}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ input.first.size()\ -\/\ 1)}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}};}
 \DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ \ \ \textcolor{keyword}{template}<}
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{typename}\ item\_type\_\_,}
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{class\ }id\_allocator\_type\_\_,}
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{class\ }cell\_allocator\_type\_\_}
-\DoxyCodeLine{00104\ \ \ >}
-\DoxyCodeLine{00105\ \ \ std::ostream\&\ operator\ <<\ (std::ostream\&\ os,\ \textcolor{keyword}{const}\ containers::handle\_map\_t<item\_type\_\_,\ id\_allocator\_type\_\_,\ cell\_allocator\_type\_\_>\&\ handle\_map)}
-\DoxyCodeLine{00106\ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ os\ <<\ std::endl;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ j\ =\ 0;\ j\ <\ (input.second)\ *\ NCPP\_TAB\_SIZE;\ ++j)\ \{}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
 \DoxyCodeLine{00107\ }
-\DoxyCodeLine{00108\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\{"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00109\ }
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ i\ =\ 0;\ i\ <\ handle\_map.count();\ ++i)\ \{}
-\DoxyCodeLine{00111\ }
-\DoxyCodeLine{00112\ \ \ \ \ \ \ os\ <<\ handle\_map[i].outer\_index\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
+\DoxyCodeLine{00108\ \ \ \ \ \}}
+\DoxyCodeLine{00109\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\}"{}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00112\ \ \ \}}
 \DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \ \ \ \ \ \ safe\_ostream\_t(os,\ handle\_map[i].item);}
-\DoxyCodeLine{00115\ }
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ handle\_map.count()\ -\/\ 1)}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}};}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00119\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00120\ }
-\DoxyCodeLine{00121\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ item\_type\_\_,\ \textcolor{keyword}{class}\ allocator\_type\_\_>}
+\DoxyCodeLine{00115\ \ \ std::ostream\&\ operator\ <<\ (std::ostream\&\ os,\ \textcolor{keyword}{const}\ std::vector<item\_type\_\_,\ allocator\_type\_\_>\&\ v)}
+\DoxyCodeLine{00116\ \ \ \{}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ os\ <<\ ostream\_input\_t<std::vector<item\_type\_\_,\ allocator\_type\_\_>>\ \{\ v,\ 0\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00121\ \ \ \}}
 \DoxyCodeLine{00122\ }
-\DoxyCodeLine{00123\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\}"{}};}
+\DoxyCodeLine{00123\ }
 \DoxyCodeLine{00124\ }
-\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
-\DoxyCodeLine{00126\ \ \ \}}
-\DoxyCodeLine{00127\ }
-\DoxyCodeLine{00128\ \}}
-\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00125\ \ \ \textcolor{keyword}{template}<}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{typename}\ item\_type\_\_,}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{class\ }id\_allocator\_type\_\_,}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{class\ }cell\_allocator\_type\_\_}
+\DoxyCodeLine{00129\ \ \ >}
+\DoxyCodeLine{00130\ \ \ std::ostream\&\ operator\ <<\ (}
+\DoxyCodeLine{00131\ \ \ \ \ std::ostream\&\ os,\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{const}\ ostream\_input\_t<}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ containers::handle\_map\_t<item\_type\_\_,\ id\_allocator\_type\_\_,\ cell\_allocator\_type\_\_>}
+\DoxyCodeLine{00134\ \ \ \ \ >\&\ input}
+\DoxyCodeLine{00135\ \ \ )}
+\DoxyCodeLine{00136\ \ \ \{}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\{"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}\ i\ =\ 0;\ i\ <\ input.first.count();\ ++i)\ \{}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ j\ =\ 0;\ j\ <\ (input.second\ +\ 1)\ *\ NCPP\_TAB\_SIZE;\ ++j)\ \{}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ os\ <<\ input.first[i].outer\_index\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ safe\_ostream\_with\_tab\_t<std::ostream,\ item\_type\_\_>(os,\ \{\ input.first[i].item,\ input.second\ +\ 1\ \});}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ input.first.count()\ -\/\ 1)}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ os\ <<\ std::endl;}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespacencpp_a74cd32b52d6ec0fc0972bfe75223751a}{u32}}\ j\ =\ 0;\ j\ <\ (input.second)\ *\ NCPP\_TAB\_SIZE;\ ++j)\ \{}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\}"{}};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00167\ \ \ \}}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \textcolor{keyword}{template}<}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keyword}{typename}\ item\_type\_\_,}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{class\ }id\_allocator\_type\_\_,}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keyword}{class\ }cell\_allocator\_type\_\_}
+\DoxyCodeLine{00173\ \ \ >}
+\DoxyCodeLine{00174\ \ \ std::ostream\&\ operator\ <<\ (std::ostream\&\ os,\ \textcolor{keyword}{const}\ containers::handle\_map\_t<item\_type\_\_,\ id\_allocator\_type\_\_,\ cell\_allocator\_type\_\_>\&\ handle\_map)}
+\DoxyCodeLine{00175\ \ \ \{}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ os\ <<\ ostream\_input\_t<containers::handle\_map\_t<item\_type\_\_,\ id\_allocator\_type\_\_,\ cell\_allocator\_type\_\_>>\ \{\ handle\_map,\ 0\ \};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00180\ \ \ \}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \}}
+\DoxyCodeLine{00183\ }
 
 \end{DoxyCode}
