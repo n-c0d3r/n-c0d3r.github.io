@@ -14,16 +14,18 @@ class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__end__scope}{robject\+\_\+constructor\+\_\+end\+\_\+scope}}
 \item 
-struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t}{robject\+\_\+function\+\_\+reflecter\+\_\+executer\+\_\+get\+\_\+t}}
+struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__executer__impl__t}{robject\+\_\+function\+\_\+executer\+\_\+impl\+\_\+t}}
 \item 
-struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01f5604d081a864d955d62d2cc55afa9d33}{robject\+\_\+function\+\_\+reflecter\+\_\+executer\+\_\+get\+\_\+t$<$ object\+\_\+type\+\_\+\+\_\+, function\+\_\+type\+\_\+\+\_\+, false, name\+\_\+member\+\_\+ptr\+\_\+type, name\+\_\+member\+\_\+ptr, args\+\_\+member\+\_\+ptr\+\_\+type, args\+\_\+member\+\_\+ptr, functor\+\_\+member\+\_\+ptr\+\_\+type, functor\+\_\+member\+\_\+ptr, member\+\_\+ptr\+\_\+type, member\+\_\+ptr $>$}}
+struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__executer__impl__t_3_01return__type_____07arg__types_____8_8_8_08_00_01false_01_4}{robject\+\_\+function\+\_\+executer\+\_\+impl\+\_\+t$<$ return\+\_\+type\+\_\+\+\_\+(arg\+\_\+types\+\_\+\+\_\+...), false $>$}}
 \item 
-struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__reflecter__executer__get__t_3_01object__type_____00_01ff94395fd5247e5763b718e7b0561a09f}{robject\+\_\+function\+\_\+reflecter\+\_\+executer\+\_\+get\+\_\+t$<$ object\+\_\+type\+\_\+\+\_\+, function\+\_\+type\+\_\+\+\_\+, true, name\+\_\+member\+\_\+ptr\+\_\+type, name\+\_\+member\+\_\+ptr, args\+\_\+member\+\_\+ptr\+\_\+type, args\+\_\+member\+\_\+ptr, functor\+\_\+member\+\_\+ptr\+\_\+type, functor\+\_\+member\+\_\+ptr, member\+\_\+ptr\+\_\+type, member\+\_\+ptr $>$}}
+struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__executer__impl__t_3_01return__type_____07arg__types_____8_8_8_08_00_01true_01_4}{robject\+\_\+function\+\_\+executer\+\_\+impl\+\_\+t$<$ return\+\_\+type\+\_\+\+\_\+(arg\+\_\+types\+\_\+\+\_\+...), true $>$}}
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__function__reflecter__t}{robject\+\_\+function\+\_\+reflecter\+\_\+t}}
 \item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}}
 \begin{DoxyCompactList}\small\item\em Reflected object interface. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{robject\+\_\+iterator\+\_\+t}}
+\item 
 struct \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}}
 \begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments pointer, robject pointer and member pointer. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__variable__reflecter__t}{robject\+\_\+variable\+\_\+reflecter\+\_\+t}}
@@ -36,7 +38,10 @@ using {\bfseries rclass} = typename \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass
 \begin{DoxyCompactList}\small\item\em The default rclass which object\+\_\+type\+\_\+\+\_\+ is \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}\label{namespacencpp_1_1rtti_ac1f1ad6c787a8c0aa30abac56159de9c}} 
 {\footnotesize template$<$sz... args\+\_\+\+\_\+$>$ }\\using {\bfseries robject\+\_\+member\+\_\+args\+\_\+t} = typename std\+::array$<$ \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}}, sizeof...(args\+\_\+\+\_\+)$>$
-\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stores member\textquotesingle{}s arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacencpp_1_1rtti_acb6de393112096eeb5ba4314b9936005}\label{namespacencpp_1_1rtti_acb6de393112096eeb5ba4314b9936005}} 
+{\footnotesize template$<$typename function\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries robject\+\_\+function\+\_\+executer\+\_\+t} = typename \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__function__executer__impl__t}{robject\+\_\+function\+\_\+executer\+\_\+impl\+\_\+t}}$<$ function\+\_\+type\+\_\+\+\_\+, std\+::is\+\_\+same\+\_\+v$<$ typename \mbox{\hyperlink{structncpp_1_1utilities_1_1function__traits__t}{utilities\+::function\+\_\+traits\+\_\+t}}$<$ function\+\_\+type\+\_\+\+\_\+ $>$\+::return\+\_\+type, void $>$ $>$
+\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,6 +63,9 @@ std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const ostream
 \item 
 \mbox{\Hypertarget{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}\label{namespacencpp_1_1rtti_afce4cd2d20ca5469643d5fd09f0395af}} 
 std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&obj)
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1rtti_a672c857bdae1504d684087c285909802}\label{namespacencpp_1_1rtti_a672c857bdae1504d684087c285909802}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const ostream\+\_\+input\+\_\+t$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{rtti\+::robject\+\_\+i}} $\ast$ $>$ \&input)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}

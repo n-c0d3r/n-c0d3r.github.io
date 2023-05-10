@@ -118,16 +118,16 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9b9574ee1dfaa34510bf86cc50ff49d7"><td class="memItemLeft" align="right" valign="top"><a id="a9b9574ee1dfaa34510bf86cc50ff49d7" name="a9b9574ee1dfaa34510bf86cc50ff49d7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>logger_func_ptr_type</b> = void(*)(std::ostream &amp;os, const ostream_input_t&lt; <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &gt; &amp;input)</td></tr>
 <tr class="separator:a9b9574ee1dfaa34510bf86cc50ff49d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814eede8b0ef74160bd73ce7079df860"><td class="memItemLeft" align="right" valign="top"><a id="a814eede8b0ef74160bd73ce7079df860" name="a814eede8b0ef74160bd73ce7079df860"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>copy_func_ptr_type</b> = void(*)(const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;from, <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;to)</td></tr>
-<tr class="separator:a814eede8b0ef74160bd73ce7079df860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplParams" colspan="2">template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:a7bc2093ba4a1364abba1616af808a977"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt; type__ &gt;::value, type__, typename std::function&lt; type__ &gt; &gt;::type</td></tr>
-<tr class="memdesc:a7bc2093ba4a1364abba1616af808a977"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type that is recorrected by the rules:  <br /></td></tr>
-<tr class="separator:a7bc2093ba4a1364abba1616af808a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89dc09423e7c530e2c3c7f70a188246"><td class="memTemplParams" colspan="2">template&lt;typename type__ &gt; </td></tr>
+<tr class="memitem:ad89dc09423e7c530e2c3c7f70a188246"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#ad89dc09423e7c530e2c3c7f70a188246">recorrected_type_t</a> = typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt; type__ &gt;::value, type__, typename robject_function_executer_t&lt; type__ &gt; &gt;::type</td></tr>
+<tr class="memdesc:ad89dc09423e7c530e2c3c7f70a188246"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type that is recorrected by the rules:  <br /></td></tr>
+<tr class="separator:ad89dc09423e7c530e2c3c7f70a188246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac62f063e9fbcf5b272b6c4715b7bf70c"><td class="memItemLeft" align="right" valign="top"><a id="ac62f063e9fbcf5b272b6c4715b7bf70c" name="ac62f063e9fbcf5b272b6c4715b7bf70c"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>member_p</b> () const</td></tr>
+<tr class="separator:ac62f063e9fbcf5b272b6c4715b7bf70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9a4d428e3a94937f195fd01820b3eb2"><td class="memItemLeft" align="right" valign="top"><a id="ad9a4d428e3a94937f195fd01820b3eb2" name="ad9a4d428e3a94937f195fd01820b3eb2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>robject_member_handle</b> (const <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;other)</td></tr>
 <tr class="separator:ad9a4d428e3a94937f195fd01820b3eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,19 +136,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af7065323aedaa65acea82080331f7738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplParams" colspan="2"><a id="a64060ab7515a0ec305c261d7a85a3df7" name="a64060ab7515a0ec305c261d7a85a3df7"></a>
 template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a>&lt; type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> ()</td></tr>
+<tr class="memitem:a64060ab7515a0ec305c261d7a85a3df7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#ad89dc09423e7c530e2c3c7f70a188246">recorrected_type_t</a>&lt; type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> ()</td></tr>
 <tr class="memdesc:a64060ab7515a0ec305c261d7a85a3df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts to recorrected type__. <br /></td></tr>
 <tr class="separator:a64060ab7515a0ec305c261d7a85a3df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplParams" colspan="2"><a id="afff6a8f36fa8818e47d00dbe2ae806f5" name="afff6a8f36fa8818e47d00dbe2ae806f5"></a>
 template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">recorrected_type_t</a>&lt; const type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> () const</td></tr>
+<tr class="memitem:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#ad89dc09423e7c530e2c3c7f70a188246">recorrected_type_t</a>&lt; const type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_t</b> () const</td></tr>
 <tr class="memdesc:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts to recorrected type__. <br /></td></tr>
 <tr class="separator:afff6a8f36fa8818e47d00dbe2ae806f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa44fd7f57c1922d1321656dd6b537bc6"><td class="memTemplParams" colspan="2"><a id="aa44fd7f57c1922d1321656dd6b537bc6" name="aa44fd7f57c1922d1321656dd6b537bc6"></a>
+<tr class="memitem:a57b836663c32bb83689ee842e0c8bb40"><td class="memTemplParams" colspan="2"><a id="a57b836663c32bb83689ee842e0c8bb40" name="a57b836663c32bb83689ee842e0c8bb40"></a>
 template&lt;typename type__ &gt; </td></tr>
-<tr class="memitem:aa44fd7f57c1922d1321656dd6b537bc6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; std::is_same_v&lt; type__, <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &gt;, type__, void &gt;::type &amp;&amp;other)</td></tr>
-<tr class="memdesc:aa44fd7f57c1922d1321656dd6b537bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of member data from other data. <br /></td></tr>
-<tr class="separator:aa44fd7f57c1922d1321656dd6b537bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b836663c32bb83689ee842e0c8bb40"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (type__ &amp;&amp;other)</td></tr>
+<tr class="memdesc:a57b836663c32bb83689ee842e0c8bb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of member data from other data. <br /></td></tr>
+<tr class="separator:a57b836663c32bb83689ee842e0c8bb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="memTemplParams" colspan="2"><a id="ad756fbe38cf7c174189cd51eeb1bb9a5" name="ad756fbe38cf7c174189cd51eeb1bb9a5"></a>
 template&lt;typename type__ &gt; </td></tr>
 <tr class="memitem:ad756fbe38cf7c174189cd51eeb1bb9a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacencpp.html#a82bf51a534e48e8f4ce2b1cd4e9586e5">b8</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (type__ &amp;&amp;other)</td></tr>
@@ -191,12 +191,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a19d93ce547ed0226c552375b05ba6d42"><td class="memItemLeft" align="right" valign="top"><a id="a19d93ce547ed0226c552375b05ba6d42" name="a19d93ce547ed0226c552375b05ba6d42"></a>
 logger_func_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>logger_func_ptr</b> = 0</td></tr>
 <tr class="separator:a19d93ce547ed0226c552375b05ba6d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf657d984774032551ed320f8a99abc4"><td class="memItemLeft" align="right" valign="top"><a id="adf657d984774032551ed320f8a99abc4" name="adf657d984774032551ed320f8a99abc4"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>member_ptr_p</b> = 0</td></tr>
-<tr class="separator:adf657d984774032551ed320f8a99abc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0230e3cf8cf064009510572f7db4514a"><td class="memItemLeft" align="right" valign="top"><a id="a0230e3cf8cf064009510572f7db4514a" name="a0230e3cf8cf064009510572f7db4514a"></a>
-copy_func_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>copy_func_ptr</b> = 0</td></tr>
-<tr class="separator:a0230e3cf8cf064009510572f7db4514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae213856ed0d67eef89117fac02511807"><td class="memItemLeft" align="right" valign="top"><a id="ae213856ed0d67eef89117fac02511807" name="ae213856ed0d67eef89117fac02511807"></a>
+<a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a>&#160;</td><td class="memItemRight" valign="bottom"><b>member_offset</b> = 0</td></tr>
+<tr class="separator:ae213856ed0d67eef89117fac02511807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -210,8 +207,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores member's arguments pointer, robject pointer and member pointer. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7bc2093ba4a1364abba1616af808a977" name="a7bc2093ba4a1364abba1616af808a977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc2093ba4a1364abba1616af808a977">&#9670;&#160;</a></span>recorrected_type_t</h2>
+<a id="ad89dc09423e7c530e2c3c7f70a188246" name="ad89dc09423e7c530e2c3c7f70a188246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89dc09423e7c530e2c3c7f70a188246">&#9670;&#160;</a></span>recorrected_type_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +216,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 template&lt;typename type__ &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#a7bc2093ba4a1364abba1616af808a977">ncpp::rtti::robject_member_handle::recorrected_type_t</a> =  typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt;type__&gt;::value, type__, typename std::function&lt;type__&gt; &gt;::type</td>
+          <td class="memname">using <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html#ad89dc09423e7c530e2c3c7f70a188246">ncpp::rtti::robject_member_handle::recorrected_type_t</a> =  typename <a class="el" href="structncpp_1_1utilities_1_1nth__template__arg__t.html">utilities::nth_template_arg_t</a>&lt; <a class="el" href="structncpp_1_1utilities_1_1is__function__t.html">utilities::is_function_t</a>&lt;type__&gt;::value, type__, typename robject_function_executer_t&lt;type__&gt; &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

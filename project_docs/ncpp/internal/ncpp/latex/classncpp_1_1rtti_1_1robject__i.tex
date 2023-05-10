@@ -12,20 +12,20 @@ Reflected object interface.
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ae8310730aaf62aecdcf11e87c4679426}\label{classncpp_1_1rtti_1_1robject__i_ae8310730aaf62aecdcf11e87c4679426}} 
-using {\bfseries name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type} = typename containers\+::native\+\_\+unordered\+\_\+map\+\_\+t$<$ containers\+::native\+\_\+string, \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} $>$
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_abb504ff11f7466ba5188bcb41b3ea8e0}\label{classncpp_1_1rtti_1_1robject__i_abb504ff11f7466ba5188bcb41b3ea8e0}} 
+using {\bfseries name\+\_\+to\+\_\+member\+\_\+handle\+\_\+offset\+\_\+map\+\_\+type} = typename containers\+::native\+\_\+unordered\+\_\+map\+\_\+t$<$ containers\+::native\+\_\+string, \mbox{\hyperlink{namespacencpp_a9c908a636a39a8df2bbc0cd4b6399eb4}{sz}} $>$
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a72e2b59245f472a57da5a3b8a80f6e61}\label{classncpp_1_1rtti_1_1robject__i_a72e2b59245f472a57da5a3b8a80f6e61}} 
+using {\bfseries iterator} = \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{robject\+\_\+iterator\+\_\+t}}$<$ name\+\_\+to\+\_\+member\+\_\+handle\+\_\+offset\+\_\+map\+\_\+type\+::iterator $>$
+\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_af46f35eb43cdcb0e50c406a0ae48d6df}\label{classncpp_1_1rtti_1_1robject__i_af46f35eb43cdcb0e50c406a0ae48d6df}} 
+using {\bfseries const\+\_\+iterator} = \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{robject\+\_\+iterator\+\_\+t}}$<$ name\+\_\+to\+\_\+member\+\_\+handle\+\_\+offset\+\_\+map\+\_\+type\+::const\+\_\+iterator $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a4258f8ce78f6494716530c09a5c89921}\label{classncpp_1_1rtti_1_1robject__i_a4258f8ce78f6494716530c09a5c89921}} 
 virtual \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp\+::rtti\+::rclass\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{ncpp\+::rtti\+::robject\+\_\+i}} $>$ {\bfseries get\+\_\+rclass} () const
-\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_abf0164594d20cf83ffe4827edadc319f}\label{classncpp_1_1rtti_1_1robject__i_abf0164594d20cf83ffe4827edadc319f}} 
-{\bfseries robject\+\_\+i} (const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&other)
-\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a6613f8a158066965ff8b008f090ce2ff}\label{classncpp_1_1rtti_1_1robject__i_a6613f8a158066965ff8b008f090ce2ff}} 
-\mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \& {\bfseries operator=} (const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&other)
 \item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_aa19766ce97c116b4da8d2f3d31bfa14d}\label{classncpp_1_1rtti_1_1robject__i_aa19766ce97c116b4da8d2f3d31bfa14d}} 
 \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \& {\bfseries instantiate} () const
@@ -36,26 +36,23 @@ ncpp\+::utilities\+::native\+\_\+shared\+\_\+ptr\+\_\+t$<$ \mbox{\hyperlink{clas
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ae73b886e44ece6736b2d900b41bf9981}\label{classncpp_1_1rtti_1_1robject__i_ae73b886e44ece6736b2d900b41bf9981}} 
 ncpp\+::utilities\+::native\+\_\+unique\+\_\+ptr\+\_\+t$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries unique\+\_\+instantiate} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a04cfda2aad1d7563dcb2c9bafd926474}\label{classncpp_1_1rtti_1_1robject__i_a04cfda2aad1d7563dcb2c9bafd926474}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::iterator {\bfseries begin} ()
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a8ce9bce28bd6a2d46b320a398de0c86b}\label{classncpp_1_1rtti_1_1robject__i_a8ce9bce28bd6a2d46b320a398de0c86b}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{iterator}} {\bfseries begin} ()
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_abf6095617571c1f8d0cc5f3da2fe0c8b}\label{classncpp_1_1rtti_1_1robject__i_abf6095617571c1f8d0cc5f3da2fe0c8b}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::const\+\_\+iterator {\bfseries begin} () const
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a25f9d49283f335dde52da2cdc7a43df0}\label{classncpp_1_1rtti_1_1robject__i_a25f9d49283f335dde52da2cdc7a43df0}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{const\+\_\+iterator}} {\bfseries begin} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a11bb8ee0ca9632a95edbddd4bafc7404}\label{classncpp_1_1rtti_1_1robject__i_a11bb8ee0ca9632a95edbddd4bafc7404}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::const\+\_\+iterator {\bfseries cbegin} () const
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a99618e39c3207195859add95628bcdef}\label{classncpp_1_1rtti_1_1robject__i_a99618e39c3207195859add95628bcdef}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{const\+\_\+iterator}} {\bfseries cbegin} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a5d5cffb8b857dffb0a1962ebe5877417}\label{classncpp_1_1rtti_1_1robject__i_a5d5cffb8b857dffb0a1962ebe5877417}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::iterator {\bfseries end} ()
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ac5330934a4d29391faa405e0291e9620}\label{classncpp_1_1rtti_1_1robject__i_ac5330934a4d29391faa405e0291e9620}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{iterator}} {\bfseries end} ()
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_af87cfb73404c5e60f37e460f31c4eece}\label{classncpp_1_1rtti_1_1robject__i_af87cfb73404c5e60f37e460f31c4eece}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::const\+\_\+iterator {\bfseries end} () const
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a7cbb4f3a528e883aa18b31522f7cc035}\label{classncpp_1_1rtti_1_1robject__i_a7cbb4f3a528e883aa18b31522f7cc035}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{const\+\_\+iterator}} {\bfseries end} () const
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_af3d9134b387ca5b6b94b42e94ac92205}\label{classncpp_1_1rtti_1_1robject__i_af3d9134b387ca5b6b94b42e94ac92205}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type\+::const\+\_\+iterator {\bfseries cend} () const
-\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a240e1fdbb088f3f3b39247a22b6ecb4a}\label{classncpp_1_1rtti_1_1robject__i_a240e1fdbb088f3f3b39247a22b6ecb4a}} 
-virtual void {\bfseries copy} (const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&other)
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ae7f1af70c5bba697a1169491716116e8}\label{classncpp_1_1rtti_1_1robject__i_ae7f1af70c5bba697a1169491716116e8}} 
+\mbox{\hyperlink{structncpp_1_1rtti_1_1robject__iterator__t}{const\+\_\+iterator}} {\bfseries cend} () const
 \item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a0b27befda4ea441b9918a457fa79bf76}\label{classncpp_1_1rtti_1_1robject__i_a0b27befda4ea441b9918a457fa79bf76}} 
 \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const containers\+::native\+\_\+string \&member\+\_\+name)
@@ -69,15 +66,15 @@ const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a0e0a8f9d6caaa60a89f6cf030d02e1cb}\label{classncpp_1_1rtti_1_1robject__i_a0e0a8f9d6caaa60a89f6cf030d02e1cb}} 
 void {\bfseries add\+\_\+member\+\_\+handle} (const containers\+::native\+\_\+string \&member\+\_\+name, const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \&handle)
 \begin{DoxyCompactList}\small\item\em Adds a member handle into name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a25c4693e6eddeb9916d58f82fdfb0b08}\label{classncpp_1_1rtti_1_1robject__i_a25c4693e6eddeb9916d58f82fdfb0b08}} 
-{\footnotesize template$<$typename variable\+\_\+type\+\_\+\+\_\+ $>$ }\\variable\+\_\+type\+\_\+\+\_\+ \& {\bfseries var\+\_\+t} (const containers\+::native\+\_\+string \&var\+\_\+name)
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_af9d6c44d4127e056d04d0ecdd171c077}\label{classncpp_1_1rtti_1_1robject__i_af9d6c44d4127e056d04d0ecdd171c077}} 
+{\footnotesize template$<$typename variable\+\_\+type\+\_\+\+\_\+ $>$ }\\variable\+\_\+type\+\_\+\+\_\+ \& {\bfseries var\+\_\+t} (const containers\+::native\+\_\+string \&member\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Gets reflected variable by name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a54e6f25305bcf2ccb4bb1f98293dbbb4}\label{classncpp_1_1rtti_1_1robject__i_a54e6f25305bcf2ccb4bb1f98293dbbb4}} 
-{\footnotesize template$<$typename function\+\_\+type\+\_\+\+\_\+ $>$ }\\const std\+::function$<$ function\+\_\+type\+\_\+\+\_\+ $>$ \& {\bfseries func\+\_\+t} (const containers\+::native\+\_\+string \&func\+\_\+name) const
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a468399861e4d1028f43ec4c28c354c0f}\label{classncpp_1_1rtti_1_1robject__i_a468399861e4d1028f43ec4c28c354c0f}} 
+{\footnotesize template$<$typename variable\+\_\+type\+\_\+\+\_\+ $>$ }\\const variable\+\_\+type\+\_\+\+\_\+ \& {\bfseries var\+\_\+t} (const containers\+::native\+\_\+string \&member\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Gets reflected variable by name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_ad79293b3196423b3dfe770811c592ab8}\label{classncpp_1_1rtti_1_1robject__i_ad79293b3196423b3dfe770811c592ab8}} 
+{\footnotesize template$<$typename function\+\_\+type\+\_\+\+\_\+ $>$ }\\const std\+::function$<$ function\+\_\+type\+\_\+\+\_\+ $>$ \& {\bfseries func\+\_\+t} (const containers\+::native\+\_\+string \&member\+\_\+name) const
 \begin{DoxyCompactList}\small\item\em Gets reflected function by name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a2a5aabf393e915fc504282ff41594d49}\label{classncpp_1_1rtti_1_1robject__i_a2a5aabf393e915fc504282ff41594d49}} 
-{\footnotesize template$<$typename variable\+\_\+type\+\_\+\+\_\+ $>$ }\\const variable\+\_\+type\+\_\+\+\_\+ \& {\bfseries var\+\_\+t} (const containers\+::native\+\_\+string \&var\+\_\+name) const
-\begin{DoxyCompactList}\small\item\em Gets reflected variable by name. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a22c09a4a76565d95c1152e3731955d32}\label{classncpp_1_1rtti_1_1robject__i_a22c09a4a76565d95c1152e3731955d32}} 
 \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\_\+member\+\_\+handle}} \& {\bfseries at} (const containers\+::native\+\_\+string \&member\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Gets member handle by name. \end{DoxyCompactList}\item 
@@ -89,15 +86,6 @@ const \mbox{\hyperlink{structncpp_1_1rtti_1_1robject__member__handle}{robject\+\
 \item 
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a2996ce9e79fcb53015a176ab4672d443}\label{classncpp_1_1rtti_1_1robject__i_a2996ce9e79fcb53015a176ab4672d443}} 
 static \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{ncpp\+::rtti\+::rclass\+\_\+t}}$<$ \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} $>$ {\bfseries get\+\_\+static\+\_\+rclass} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_acf24c6c5731394e4b9c7201536bdad09}\label{classncpp_1_1rtti_1_1robject__i_acf24c6c5731394e4b9c7201536bdad09}} 
-void {\bfseries copy\+\_\+variable\+\_\+members} (const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&other)
-\item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a14f2c997e88c41ddf0cba815afb9377a}\label{classncpp_1_1rtti_1_1robject__i_a14f2c997e88c41ddf0cba815afb9377a}} 
-void {\bfseries copy\+\_\+variable\+\_\+member} (const \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__i}{robject\+\_\+i}} \&other, const containers\+::native\+\_\+string \&member\+\_\+name)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -111,8 +99,8 @@ using {\bfseries current\+\_\+rclass} = \mbox{\hyperlink{classncpp_1_1rtti_1_1ro
 \mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a0847e116662a382f74aea105d84e07fe}\label{classncpp_1_1rtti_1_1robject__i_a0847e116662a382f74aea105d84e07fe}} 
 \mbox{\hyperlink{classncpp_1_1rtti_1_1robject__constructor__begin__scope}{ncpp\+::rtti\+::robject\+\_\+constructor\+\_\+begin\+\_\+scope}} {\bfseries \+\_\+\+\_\+robject\+\_\+i\+\_\+constructor\+\_\+begin\+\_\+scope\+\_\+\+\_\+}
 \item 
-\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a069e761c269b91efa14ef8c49c98cbfc}\label{classncpp_1_1rtti_1_1robject__i_a069e761c269b91efa14ef8c49c98cbfc}} 
-name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+type {\bfseries name\+\_\+to\+\_\+member\+\_\+handle\+\_\+map\+\_\+}
+\mbox{\Hypertarget{classncpp_1_1rtti_1_1robject__i_a8ebea949bf3dc7ab0ea341ecf50781bc}\label{classncpp_1_1rtti_1_1robject__i_a8ebea949bf3dc7ab0ea341ecf50781bc}} 
+name\+\_\+to\+\_\+member\+\_\+handle\+\_\+offset\+\_\+map\+\_\+type {\bfseries name\+\_\+to\+\_\+member\+\_\+handle\+\_\+offset\+\_\+map\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}

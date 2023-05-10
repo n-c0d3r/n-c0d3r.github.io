@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('classncpp_1_1rtti_1_1robject__i.html',
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -112,21 +111,21 @@ $(document).ready(function(){initNavTree('classncpp_1_1rtti_1_1robject__i.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae8310730aaf62aecdcf11e87c4679426"><td class="memItemLeft" align="right" valign="top"><a id="ae8310730aaf62aecdcf11e87c4679426" name="ae8310730aaf62aecdcf11e87c4679426"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>name_to_member_handle_map_type</b> = typename containers::native_unordered_map_t&lt; containers::native_string, <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &gt;</td></tr>
-<tr class="separator:ae8310730aaf62aecdcf11e87c4679426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb504ff11f7466ba5188bcb41b3ea8e0"><td class="memItemLeft" align="right" valign="top"><a id="abb504ff11f7466ba5188bcb41b3ea8e0" name="abb504ff11f7466ba5188bcb41b3ea8e0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>name_to_member_handle_offset_map_type</b> = typename containers::native_unordered_map_t&lt; containers::native_string, <a class="el" href="namespacencpp.html#a9c908a636a39a8df2bbc0cd4b6399eb4">sz</a> &gt;</td></tr>
+<tr class="separator:abb504ff11f7466ba5188bcb41b3ea8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e2b59245f472a57da5a3b8a80f6e61"><td class="memItemLeft" align="right" valign="top"><a id="a72e2b59245f472a57da5a3b8a80f6e61" name="a72e2b59245f472a57da5a3b8a80f6e61"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">robject_iterator_t</a>&lt; name_to_member_handle_offset_map_type::iterator &gt;</td></tr>
+<tr class="separator:a72e2b59245f472a57da5a3b8a80f6e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46f35eb43cdcb0e50c406a0ae48d6df"><td class="memItemLeft" align="right" valign="top"><a id="af46f35eb43cdcb0e50c406a0ae48d6df" name="af46f35eb43cdcb0e50c406a0ae48d6df"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">robject_iterator_t</a>&lt; name_to_member_handle_offset_map_type::const_iterator &gt;</td></tr>
+<tr class="separator:af46f35eb43cdcb0e50c406a0ae48d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4258f8ce78f6494716530c09a5c89921"><td class="memItemLeft" align="right" valign="top"><a id="a4258f8ce78f6494716530c09a5c89921" name="a4258f8ce78f6494716530c09a5c89921"></a>
 virtual <a class="el" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t</a>&lt; <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">ncpp::rtti::robject_i</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_rclass</b> () const</td></tr>
 <tr class="separator:a4258f8ce78f6494716530c09a5c89921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0164594d20cf83ffe4827edadc319f"><td class="memItemLeft" align="right" valign="top"><a id="abf0164594d20cf83ffe4827edadc319f" name="abf0164594d20cf83ffe4827edadc319f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>robject_i</b> (const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;other)</td></tr>
-<tr class="separator:abf0164594d20cf83ffe4827edadc319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6613f8a158066965ff8b008f090ce2ff"><td class="memItemLeft" align="right" valign="top"><a id="a6613f8a158066965ff8b008f090ce2ff" name="a6613f8a158066965ff8b008f090ce2ff"></a>
-<a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;other)</td></tr>
-<tr class="separator:a6613f8a158066965ff8b008f090ce2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa19766ce97c116b4da8d2f3d31bfa14d"><td class="memItemLeft" align="right" valign="top"><a id="aa19766ce97c116b4da8d2f3d31bfa14d" name="aa19766ce97c116b4da8d2f3d31bfa14d"></a>
 <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instantiate</b> () const</td></tr>
 <tr class="separator:aa19766ce97c116b4da8d2f3d31bfa14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,27 +135,24 @@ ncpp::utilities::native_shared_ptr_t&lt; <a class="el" href="classncpp_1_1rtti_1
 <tr class="memitem:ae73b886e44ece6736b2d900b41bf9981"><td class="memItemLeft" align="right" valign="top"><a id="ae73b886e44ece6736b2d900b41bf9981" name="ae73b886e44ece6736b2d900b41bf9981"></a>
 ncpp::utilities::native_unique_ptr_t&lt; <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>unique_instantiate</b> () const</td></tr>
 <tr class="separator:ae73b886e44ece6736b2d900b41bf9981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cfda2aad1d7563dcb2c9bafd926474"><td class="memItemLeft" align="right" valign="top"><a id="a04cfda2aad1d7563dcb2c9bafd926474" name="a04cfda2aad1d7563dcb2c9bafd926474"></a>
-name_to_member_handle_map_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a04cfda2aad1d7563dcb2c9bafd926474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6095617571c1f8d0cc5f3da2fe0c8b"><td class="memItemLeft" align="right" valign="top"><a id="abf6095617571c1f8d0cc5f3da2fe0c8b" name="abf6095617571c1f8d0cc5f3da2fe0c8b"></a>
-name_to_member_handle_map_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
-<tr class="separator:abf6095617571c1f8d0cc5f3da2fe0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bb8ee0ca9632a95edbddd4bafc7404"><td class="memItemLeft" align="right" valign="top"><a id="a11bb8ee0ca9632a95edbddd4bafc7404" name="a11bb8ee0ca9632a95edbddd4bafc7404"></a>
-name_to_member_handle_map_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const</td></tr>
-<tr class="separator:a11bb8ee0ca9632a95edbddd4bafc7404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5cffb8b857dffb0a1962ebe5877417"><td class="memItemLeft" align="right" valign="top"><a id="a5d5cffb8b857dffb0a1962ebe5877417" name="a5d5cffb8b857dffb0a1962ebe5877417"></a>
-name_to_member_handle_map_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:a5d5cffb8b857dffb0a1962ebe5877417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af87cfb73404c5e60f37e460f31c4eece"><td class="memItemLeft" align="right" valign="top"><a id="af87cfb73404c5e60f37e460f31c4eece" name="af87cfb73404c5e60f37e460f31c4eece"></a>
-name_to_member_handle_map_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
-<tr class="separator:af87cfb73404c5e60f37e460f31c4eece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d9134b387ca5b6b94b42e94ac92205"><td class="memItemLeft" align="right" valign="top"><a id="af3d9134b387ca5b6b94b42e94ac92205" name="af3d9134b387ca5b6b94b42e94ac92205"></a>
-name_to_member_handle_map_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const</td></tr>
-<tr class="separator:af3d9134b387ca5b6b94b42e94ac92205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240e1fdbb088f3f3b39247a22b6ecb4a"><td class="memItemLeft" align="right" valign="top"><a id="a240e1fdbb088f3f3b39247a22b6ecb4a" name="a240e1fdbb088f3f3b39247a22b6ecb4a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> (const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;other)</td></tr>
-<tr class="separator:a240e1fdbb088f3f3b39247a22b6ecb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce9bce28bd6a2d46b320a398de0c86b"><td class="memItemLeft" align="right" valign="top"><a id="a8ce9bce28bd6a2d46b320a398de0c86b" name="a8ce9bce28bd6a2d46b320a398de0c86b"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a8ce9bce28bd6a2d46b320a398de0c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f9d49283f335dde52da2cdc7a43df0"><td class="memItemLeft" align="right" valign="top"><a id="a25f9d49283f335dde52da2cdc7a43df0" name="a25f9d49283f335dde52da2cdc7a43df0"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a25f9d49283f335dde52da2cdc7a43df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99618e39c3207195859add95628bcdef"><td class="memItemLeft" align="right" valign="top"><a id="a99618e39c3207195859add95628bcdef" name="a99618e39c3207195859add95628bcdef"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const</td></tr>
+<tr class="separator:a99618e39c3207195859add95628bcdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5330934a4d29391faa405e0291e9620"><td class="memItemLeft" align="right" valign="top"><a id="ac5330934a4d29391faa405e0291e9620" name="ac5330934a4d29391faa405e0291e9620"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:ac5330934a4d29391faa405e0291e9620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbb4f3a528e883aa18b31522f7cc035"><td class="memItemLeft" align="right" valign="top"><a id="a7cbb4f3a528e883aa18b31522f7cc035" name="a7cbb4f3a528e883aa18b31522f7cc035"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a7cbb4f3a528e883aa18b31522f7cc035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f1af70c5bba697a1169491716116e8"><td class="memItemLeft" align="right" valign="top"><a id="ae7f1af70c5bba697a1169491716116e8" name="ae7f1af70c5bba697a1169491716116e8"></a>
+<a class="el" href="structncpp_1_1rtti_1_1robject__iterator__t.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const</td></tr>
+<tr class="separator:ae7f1af70c5bba697a1169491716116e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b27befda4ea441b9918a457fa79bf76"><td class="memItemLeft" align="right" valign="top"><a id="a0b27befda4ea441b9918a457fa79bf76" name="a0b27befda4ea441b9918a457fa79bf76"></a>
 <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const containers::native_string &amp;member_name)</td></tr>
 <tr class="memdesc:a0b27befda4ea441b9918a457fa79bf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets member handle by name. <br /></td></tr>
@@ -173,21 +169,21 @@ const <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">ro
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_member_handle</b> (const containers::native_string &amp;member_name, const <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;handle)</td></tr>
 <tr class="memdesc:a0e0a8f9d6caaa60a89f6cf030d02e1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a member handle into name_to_member_handle_map_. <br /></td></tr>
 <tr class="separator:a0e0a8f9d6caaa60a89f6cf030d02e1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c4693e6eddeb9916d58f82fdfb0b08"><td class="memTemplParams" colspan="2"><a id="a25c4693e6eddeb9916d58f82fdfb0b08" name="a25c4693e6eddeb9916d58f82fdfb0b08"></a>
+<tr class="memitem:af9d6c44d4127e056d04d0ecdd171c077"><td class="memTemplParams" colspan="2"><a id="af9d6c44d4127e056d04d0ecdd171c077" name="af9d6c44d4127e056d04d0ecdd171c077"></a>
 template&lt;typename variable_type__ &gt; </td></tr>
-<tr class="memitem:a25c4693e6eddeb9916d58f82fdfb0b08"><td class="memTemplItemLeft" align="right" valign="top">variable_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>var_t</b> (const containers::native_string &amp;var_name)</td></tr>
-<tr class="memdesc:a25c4693e6eddeb9916d58f82fdfb0b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected variable by name. <br /></td></tr>
-<tr class="separator:a25c4693e6eddeb9916d58f82fdfb0b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e6f25305bcf2ccb4bb1f98293dbbb4"><td class="memTemplParams" colspan="2"><a id="a54e6f25305bcf2ccb4bb1f98293dbbb4" name="a54e6f25305bcf2ccb4bb1f98293dbbb4"></a>
+<tr class="memitem:af9d6c44d4127e056d04d0ecdd171c077"><td class="memTemplItemLeft" align="right" valign="top">variable_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>var_t</b> (const containers::native_string &amp;member_name)</td></tr>
+<tr class="memdesc:af9d6c44d4127e056d04d0ecdd171c077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected variable by name. <br /></td></tr>
+<tr class="separator:af9d6c44d4127e056d04d0ecdd171c077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468399861e4d1028f43ec4c28c354c0f"><td class="memTemplParams" colspan="2"><a id="a468399861e4d1028f43ec4c28c354c0f" name="a468399861e4d1028f43ec4c28c354c0f"></a>
+template&lt;typename variable_type__ &gt; </td></tr>
+<tr class="memitem:a468399861e4d1028f43ec4c28c354c0f"><td class="memTemplItemLeft" align="right" valign="top">const variable_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>var_t</b> (const containers::native_string &amp;member_name) const</td></tr>
+<tr class="memdesc:a468399861e4d1028f43ec4c28c354c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected variable by name. <br /></td></tr>
+<tr class="separator:a468399861e4d1028f43ec4c28c354c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79293b3196423b3dfe770811c592ab8"><td class="memTemplParams" colspan="2"><a id="ad79293b3196423b3dfe770811c592ab8" name="ad79293b3196423b3dfe770811c592ab8"></a>
 template&lt;typename function_type__ &gt; </td></tr>
-<tr class="memitem:a54e6f25305bcf2ccb4bb1f98293dbbb4"><td class="memTemplItemLeft" align="right" valign="top">const std::function&lt; function_type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>func_t</b> (const containers::native_string &amp;func_name) const</td></tr>
-<tr class="memdesc:a54e6f25305bcf2ccb4bb1f98293dbbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected function by name. <br /></td></tr>
-<tr class="separator:a54e6f25305bcf2ccb4bb1f98293dbbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5aabf393e915fc504282ff41594d49"><td class="memTemplParams" colspan="2"><a id="a2a5aabf393e915fc504282ff41594d49" name="a2a5aabf393e915fc504282ff41594d49"></a>
-template&lt;typename variable_type__ &gt; </td></tr>
-<tr class="memitem:a2a5aabf393e915fc504282ff41594d49"><td class="memTemplItemLeft" align="right" valign="top">const variable_type__ &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>var_t</b> (const containers::native_string &amp;var_name) const</td></tr>
-<tr class="memdesc:a2a5aabf393e915fc504282ff41594d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected variable by name. <br /></td></tr>
-<tr class="separator:a2a5aabf393e915fc504282ff41594d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79293b3196423b3dfe770811c592ab8"><td class="memTemplItemLeft" align="right" valign="top">const std::function&lt; function_type__ &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>func_t</b> (const containers::native_string &amp;member_name) const</td></tr>
+<tr class="memdesc:ad79293b3196423b3dfe770811c592ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets reflected function by name. <br /></td></tr>
+<tr class="separator:ad79293b3196423b3dfe770811c592ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c09a4a76565d95c1152e3731955d32"><td class="memItemLeft" align="right" valign="top"><a id="a22c09a4a76565d95c1152e3731955d32" name="a22c09a4a76565d95c1152e3731955d32"></a>
 <a class="el" href="structncpp_1_1rtti_1_1robject__member__handle.html">robject_member_handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (const containers::native_string &amp;member_name)</td></tr>
 <tr class="memdesc:a22c09a4a76565d95c1152e3731955d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets member handle by name. <br /></td></tr>
@@ -203,15 +199,6 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="classncpp_1_1rtti_1_1rclass__t.html">ncpp::rtti::rclass_t</a>&lt; <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_static_rclass</b> ()</td></tr>
 <tr class="separator:a2996ce9e79fcb53015a176ab4672d443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:acf24c6c5731394e4b9c7201536bdad09"><td class="memItemLeft" align="right" valign="top"><a id="acf24c6c5731394e4b9c7201536bdad09" name="acf24c6c5731394e4b9c7201536bdad09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_variable_members</b> (const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;other)</td></tr>
-<tr class="separator:acf24c6c5731394e4b9c7201536bdad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f2c997e88c41ddf0cba815afb9377a"><td class="memItemLeft" align="right" valign="top"><a id="a14f2c997e88c41ddf0cba815afb9377a" name="a14f2c997e88c41ddf0cba815afb9377a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_variable_member</b> (const <a class="el" href="classncpp_1_1rtti_1_1robject__i.html">robject_i</a> &amp;other, const containers::native_string &amp;member_name)</td></tr>
-<tr class="separator:a14f2c997e88c41ddf0cba815afb9377a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:afd0a805b0882748673b5a7ef59ab4c30"><td class="memItemLeft" align="right" valign="top"><a id="afd0a805b0882748673b5a7ef59ab4c30" name="afd0a805b0882748673b5a7ef59ab4c30"></a>
@@ -223,9 +210,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0847e116662a382f74aea105d84e07fe"><td class="memItemLeft" align="right" valign="top"><a id="a0847e116662a382f74aea105d84e07fe" name="a0847e116662a382f74aea105d84e07fe"></a>
 <a class="el" href="classncpp_1_1rtti_1_1robject__constructor__begin__scope.html">ncpp::rtti::robject_constructor_begin_scope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__robject_i_constructor_begin_scope__</b></td></tr>
 <tr class="separator:a0847e116662a382f74aea105d84e07fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069e761c269b91efa14ef8c49c98cbfc"><td class="memItemLeft" align="right" valign="top"><a id="a069e761c269b91efa14ef8c49c98cbfc" name="a069e761c269b91efa14ef8c49c98cbfc"></a>
-name_to_member_handle_map_type&#160;</td><td class="memItemRight" valign="bottom"><b>name_to_member_handle_map_</b></td></tr>
-<tr class="separator:a069e761c269b91efa14ef8c49c98cbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebea949bf3dc7ab0ea341ecf50781bc"><td class="memItemLeft" align="right" valign="top"><a id="a8ebea949bf3dc7ab0ea341ecf50781bc" name="a8ebea949bf3dc7ab0ea341ecf50781bc"></a>
+name_to_member_handle_offset_map_type&#160;</td><td class="memItemRight" valign="bottom"><b>name_to_member_handle_offset_map_</b></td></tr>
+<tr class="separator:a8ebea949bf3dc7ab0ea341ecf50781bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
