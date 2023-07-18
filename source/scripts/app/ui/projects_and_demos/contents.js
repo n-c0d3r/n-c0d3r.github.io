@@ -22,7 +22,7 @@ export default function ProjectsAndDemosContents(){
 
         ContentHR(),
 
-        ContentItem("/resources/images/brdf.png", `https://www.youtube.com/watch?v=p6w_qwCLJYc`),
+        ContentItem("/resources/images/BRDF.png", `https://www.youtube.com/watch?v=p6w_qwCLJYc`),
 
         ContentHR(),
 
