@@ -4,12 +4,12 @@ import framework from "../../../framework/framework.js"
 
 export default function News(){
 
-    framework.addStyle(`${window.location.origin}/source/styles/news.css`);
+    framework.addStyle(`${window.location.origin}/source/styles/blog.css`);
     
     return (
 
         framework.UIElement("div")
-        .setId("news")
+        .setId("blog")
         .setInner(
 
             

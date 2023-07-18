@@ -49,62 +49,62 @@ export default function HeaderMenuContainerMobile(){
             .setClass("header-menu-button-mobile")
             .setInner(
 
-                "News"
-
-            )
-            .on("click", function(){
-
-                localStorage.setItem("lastPage", "news");
-                (async()=>{
-                    await framework.wait(300);
-                    window.location.reload();
-                })()
-
-            }),
-
-            framework.UIElement("div")
-            .setClass("header-menu-button-space-mobile")
-            .setInner(
-
-                
-
-            ),
-
-            framework.UIElement("div")
-            .setClass("header-menu-button-mobile")
-            .setInner(
-
-                "Posts"
-
-            )
-            .on("click", function(){
-
-                localStorage.setItem("lastPage", "posts");
-                (async()=>{
-                    await framework.wait(300);
-                    window.location.reload();
-                })()
-
-            }),
-
-            framework.UIElement("div")
-            .setClass("header-menu-button-space-mobile")
-            .setInner(
-
-                
-
-            ),
-
-            framework.UIElement("div")
-            .setClass("header-menu-button-mobile")
-            .setInner(
-
                 "Knowledge"
 
             )
             .on("click", function(){
 
                 localStorage.setItem("lastPage", "knowledge");
+                (async()=>{
+                    await framework.wait(300);
+                    window.location.reload();
+                })()
+
+            }),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-space-mobile")
+            .setInner(
+
+                
+
+            ),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-mobile")
+            .setInner(
+
+                "Projects & Demos"
+
+            )
+            .on("click", function(){
+
+                localStorage.setItem("lastPage", "projects_demos");
+                (async()=>{
+                    await framework.wait(300);
+                    window.location.reload();
+                })()
+
+            }),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-space-mobile")
+            .setInner(
+
+                
+
+            ),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-mobile")
+            .setInner(
+
+                "Blog"
+
+            )
+            .on("click", function(){
+
+                localStorage.setItem("lastPage", "blog");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();
@@ -118,15 +118,6 @@ export default function HeaderMenuContainerMobile(){
             this.state = "hidden";
 
             let headerMenuContainer = this;
-
-            document.addEventListener("click", function(e){
-
-                window.scrollTo({top: 0, behavior: 'smooth'});
-
-                if(e.target != $("#header-menu-mobile"))
-                    headerMenuContainer.hide();
-
-            });
 
             this.changeState = async function(){
 

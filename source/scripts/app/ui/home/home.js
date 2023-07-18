@@ -1,4 +1,5 @@
 import framework from "../../../framework/framework.js"
+import ContentItem from "../content_item.js"
 
 
 
@@ -23,7 +24,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-first-post")
             .setInner(
     
@@ -42,7 +43,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-second-post")
             .setInner(
     
@@ -61,7 +62,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-third-post")
             .setInner(
     
@@ -80,7 +81,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-fourth-post")
             .setInner(
     
@@ -99,7 +100,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-5th-post")
             .setInner(
     
@@ -118,7 +119,26 @@ export default function Home(){
 
             }),
 
+            ContentItem()
+            .setId("education-highschool")
+            .setInner(
+    
+                
+    
+            ),
+
             framework.UIElement("div")
+            .setStyle({
+
+                width: "100%",
+
+                backgroundColor: "rgba(102,255,255,0)",
+
+                marginTop: "7px",
+
+            }),
+
+            ContentItem()
             .setId("home-6th-post")
             .setInner(
     
@@ -142,7 +162,7 @@ export default function Home(){
 
             }),
 
-            framework.UIElement("div")
+            ContentItem()
             .setId("home-7th-post")
             .setInner(
     

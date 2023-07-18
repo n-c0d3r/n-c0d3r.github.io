@@ -60,46 +60,46 @@ export default function Header(){
                         .setClass("header-menu-button-desktop")
                         .setInner(
             
-                            "News"
-            
-                        )
-                        .on("click", function(){
-            
-                            localStorage.setItem("lastPage", "news");
-                            window.location.reload();
-            
-                        }),
-        
-                        framework.UIElement("div")
-                        .setClass("header-menu-button-space-desktop"),
-        
-                        framework.UIElement("div")
-                        .setClass("header-menu-button-desktop")
-                        .setInner(
-            
-                            "Posts"
-            
-                        )
-                        .on("click", function(){
-            
-                            localStorage.setItem("lastPage", "posts");
-                            window.location.reload();
-            
-                        }),
-        
-                        framework.UIElement("div")
-                        .setClass("header-menu-button-space-desktop"),
-        
-                        framework.UIElement("div")
-                        .setClass("header-menu-button-desktop")
-                        .setInner(
-            
                             "Knowledge"
             
                         )
                         .on("click", function(){
             
                             localStorage.setItem("lastPage", "knowledge");
+                            window.location.reload();
+            
+                        }),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-space-desktop"),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-desktop")
+                        .setInner(
+            
+                            "Projects & Demos"
+            
+                        )
+                        .on("click", function(){
+            
+                            localStorage.setItem("lastPage", "projects_demos");
+                            window.location.reload();
+            
+                        }),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-space-desktop"),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-desktop")
+                        .setInner(
+            
+                            "Blog"
+            
+                        )
+                        .on("click", function(){
+            
+                            localStorage.setItem("lastPage", "blog");
                             window.location.reload();
             
                         }),
