@@ -79,7 +79,7 @@ export default function HeaderMenuContainerMobile(){
             )
             .on("click", function(){
 
-                localStorage.setItem("lastPage", "projects_demos");
+                localStorage.setItem("lastPage", "projects_and_demos");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();

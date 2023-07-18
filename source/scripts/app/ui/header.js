@@ -82,7 +82,7 @@ export default function Header(){
                         )
                         .on("click", function(){
             
-                            localStorage.setItem("lastPage", "projects_demos");
+                            localStorage.setItem("lastPage", "projects_and_demos");
                             window.location.reload();
             
                         }),

@@ -96,11 +96,16 @@ export default function UIElement(tag){
 
     result.setInner = function(...childs){
 
+        return result.setInnerArray(childs);
+    }
+
+    result.setInnerArray = function(childsArray){
+
         result.innerHTML = "";
         
-        for(let childName in childs){
+        for(let childName in childsArray){
 
-            let child = childs[childName];
+            let child = childsArray[childName];
 
             try {
 
