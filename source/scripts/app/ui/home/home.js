@@ -61,7 +61,18 @@ export default function Home(){
     
                 
     
-            ),
+            )
+            .setStyle({
+
+                cursor : "pointer"
+
+            })
+            .on("click", function(){
+
+                localStorage.setItem("lastPage", "knowledge");
+                window.location.reload();
+                
+            }),
 
             ContentHR(),
 

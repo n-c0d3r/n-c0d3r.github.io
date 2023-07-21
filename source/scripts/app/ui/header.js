@@ -2,6 +2,10 @@ import framework from "../../framework/framework.js"
 
 
 
+const LAST_PAGE_KEY = "lastPage";
+
+
+
 export default function Header(){
 
     framework.addStyle(`${window.location.origin}/source/styles/header.css`);
@@ -48,7 +52,7 @@ export default function Header(){
                         )
                         .on("click", function(){
             
-                            localStorage.setItem("lastPage", "home");
+                            localStorage.setItem(LAST_PAGE_KEY, "home");
                             window.location.reload();
             
                         }),
@@ -65,7 +69,8 @@ export default function Header(){
                         )
                         .on("click", function(){
             
-                            localStorage.setItem("lastPage", "knowledge");
+                            localStorage.setItem(LAST_PAGE_KEY, "knowledge");
+                            localStorage.setItem("last_knowledge", "root.js");
                             window.location.reload();
             
                         }),
@@ -82,7 +87,7 @@ export default function Header(){
                         )
                         .on("click", function(){
             
-                            localStorage.setItem("lastPage", "projects_and_demos");
+                            localStorage.setItem(LAST_PAGE_KEY, "projects_and_demos");
                             window.location.reload();
             
                         }),
@@ -99,7 +104,7 @@ export default function Header(){
                         )
                         .on("click", function(){
             
-                            localStorage.setItem("lastPage", "blog");
+                            localStorage.setItem(LAST_PAGE_KEY, "blog");
                             window.location.reload();
             
                         }),

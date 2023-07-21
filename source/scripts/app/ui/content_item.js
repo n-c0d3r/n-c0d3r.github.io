@@ -5,8 +5,6 @@ import framework from "../../framework/framework.js"
 export default function ContentItem(bgURL, directURL){
 
     framework.addStyle(`${window.location.origin}/source/styles/home.css`);
-
-    console.log((bgURL == null) ? " " : `url("${bgURL}");` );
     
     return (
 

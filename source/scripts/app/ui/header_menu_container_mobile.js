@@ -5,6 +5,10 @@ import ShowHeaderMenuContainerMobile from "../animation/show_header_menu_contain
 
 
 
+const LAST_PAGE_KEY = "lastPage";
+
+
+
 export default function HeaderMenuContainerMobile(){
     
     return (
@@ -29,7 +33,7 @@ export default function HeaderMenuContainerMobile(){
             )
             .on("click", function(){
 
-                localStorage.setItem("lastPage", "home");
+                localStorage.setItem(LAST_PAGE_KEY, "home");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();
@@ -54,7 +58,8 @@ export default function HeaderMenuContainerMobile(){
             )
             .on("click", function(){
 
-                localStorage.setItem("lastPage", "knowledge");
+                localStorage.setItem(LAST_PAGE_KEY, "knowledge");
+                localStorage.setItem("last_knowledge", "root.js");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();
@@ -79,7 +84,7 @@ export default function HeaderMenuContainerMobile(){
             )
             .on("click", function(){
 
-                localStorage.setItem("lastPage", "projects_and_demos");
+                localStorage.setItem(LAST_PAGE_KEY, "projects_and_demos");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();
@@ -104,7 +109,7 @@ export default function HeaderMenuContainerMobile(){
             )
             .on("click", function(){
 
-                localStorage.setItem("lastPage", "blog");
+                localStorage.setItem(LAST_PAGE_KEY, "blog");
                 (async()=>{
                     await framework.wait(300);
                     window.location.reload();
@@ -120,6 +125,8 @@ export default function HeaderMenuContainerMobile(){
             let headerMenuContainer = this;
 
             this.changeState = async function(){
+
+                window.scrollTo({top: 0, left: 0, behavior: "smooth"})
 
                 if(headerMenuContainer.state == "hidden"){
 
@@ -138,7 +145,7 @@ export default function HeaderMenuContainerMobile(){
 
                 this.setStyle({
 
-                    height: "200px",
+                    height: "140px",
                     marginTop: "7x",
                     marginBottom: "7px",
                     filter: "opacity(1.0)",

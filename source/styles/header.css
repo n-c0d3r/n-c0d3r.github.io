@@ -256,7 +256,7 @@
         color: rgba(163, 163, 163, 0.514);
 
         font-family: monospace;
-        font-size: 15px;
+        font-size: 3vw;
 
         display: flex;
         flex-flow: column;

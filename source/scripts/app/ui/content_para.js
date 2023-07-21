@@ -2,9 +2,11 @@ import framework from "../../framework/framework.js"
 
 
 
-export default function ContentPara(){
+export default function ContentPara(useMarginTop = true, color = [100, 219, 255]){
 
     framework.addStyle(`${window.location.origin}/source/styles/home.css`);
+
+    let avgBrightness = (color[0] + color[1] + color[2]) / 3.0;
     
     return (
 
@@ -12,9 +14,11 @@ export default function ContentPara(){
         .setClass("content_para")
         .setStyle({
 
-            backgroundColor: "rgba(100, 219, 255, 0.8)",
+            backgroundColor: `rgba(${color[0]}, ${color[1]}, ${color[2]}, 1.0)`,
+            // backgroundColor: `rgba(${avgBrightness}, ${avgBrightness}, ${avgBrightness}, 0.1)`,
 
-            color: "rgba(0,0,0,1.0)",
+            color: `rgba(${avgBrightness * 0.1}, ${avgBrightness * 0.1}, ${avgBrightness * 0.1}, 1.0)`,
+            // color: `rgba(${color[0]}, ${color[1]}, ${color[2]}, 1.0)`,
 
             textAlign : "center",
 
@@ -23,7 +27,7 @@ export default function ContentPara(){
             paddingTop : "10px",
             paddingBottom : "10px",
 
-            marginTop : "100px",
+            marginTop : useMarginTop ? "calc(4vw + 20px)" : "0",
 
         })
 
