@@ -17,18 +17,6 @@ function Contents(){
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/calculus.png"),
-
-        ContentHR(),
-
-        KnowledgeItem("/resources/images/linear_algebra.png"),
-
-        ContentHR(),
-
-        KnowledgeItem("/resources/images/quaternion.png"),
-
-        ContentHR(),
-
     ];
 
 }
