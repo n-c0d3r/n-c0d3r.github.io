@@ -76,6 +76,26 @@ export default function Home(){
 
             ContentHR(),
 
+            ContentItem("/resources/images/p_n_d.png")
+            .setInner(
+    
+                
+    
+            )
+            .setStyle({
+
+                cursor : "pointer"
+
+            })
+            .on("click", function(){
+
+                localStorage.setItem("lastPage", "projects_and_demos");
+                window.location.reload();
+                
+            }),
+
+            ContentHR(),
+
             ContentItem("/resources/images/hse.png")
             .setInner(
     
@@ -85,16 +105,16 @@ export default function Home(){
 
             ContentHR(),
 
-            ContentPara()
-            .setInner(
+            // ContentPara()
+            // .setInner(
     
-                "Projects & Demos"
+            //     "Projects & Demos"
     
-            ),
+            // ),
 
-            ContentHR(),
+            // ContentHR(),
 
-            ...ProjectsAndDemosContents(),
+            // ...ProjectsAndDemosContents(),
 
         )
 

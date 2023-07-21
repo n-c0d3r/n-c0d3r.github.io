@@ -23,6 +23,10 @@ export default function Contents(){
 
         ContentHR(),
 
+        KnowledgeItem("/resources/images/gtiu.png"),
+
+        ContentHR(),
+
         KnowledgeItem("/resources/images/oop.png"),
 
         ContentHR(),
@@ -35,7 +39,11 @@ export default function Contents(){
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/game.png", "game/game.js"),
+        KnowledgeItem("/resources/images/animation.png", "advanced_animation/advanced_animation.js"),
+
+        ContentHR(),
+
+        KnowledgeItem("/resources/images/computer_graphics.png", "computer_graphics/computer_graphics.js"),
 
         ContentHR(),
 
