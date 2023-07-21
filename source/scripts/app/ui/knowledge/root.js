@@ -35,6 +35,10 @@ export default function Contents(){
 
         ContentHR(),
 
+        KnowledgeItem("/resources/images/game.png", "game/game.js"),
+
+        ContentHR(),
+
     ];
 
 }
