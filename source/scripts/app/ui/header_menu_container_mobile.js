@@ -149,7 +149,7 @@ export default function HeaderMenuContainerMobile(){
 
             let headerMenuContainer = this;
 
-            window.addEventListener("scrollend", function(){
+            window.addEventListener("touchend", function(){
 
                 if(headerMenuContainer.state != "hidden")
                     headerMenuContainer.hide();
