@@ -149,6 +149,13 @@ export default function HeaderMenuContainerMobile(){
 
             let headerMenuContainer = this;
 
+            window.addEventListener("scrollend", function(){
+
+                if(headerMenuContainer.state != "hidden")
+                    headerMenuContainer.hide();
+
+            });
+
             this.changeState = async function(){
 
                 if(headerMenuContainer.state == "hidden"){
