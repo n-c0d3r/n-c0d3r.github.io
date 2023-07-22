@@ -99,6 +99,23 @@ export default function Header(){
                         .setClass("header-menu-button-desktop")
                         .setInner(
             
+                            "Books"
+            
+                        )
+                        .on("click", function(){
+            
+                            localStorage.setItem(LAST_PAGE_KEY, "books");
+                            window.location.reload();
+            
+                        }),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-space-desktop"),
+        
+                        framework.UIElement("div")
+                        .setClass("header-menu-button-desktop")
+                        .setInner(
+            
                             "Blog"
             
                         )

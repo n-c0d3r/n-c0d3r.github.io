@@ -2,7 +2,7 @@ import framework from "../../../framework/framework.js"
 
 
 
-export default function News(){
+export default function Blog(){
 
     framework.addStyle(`${window.location.origin}/source/styles/blog.css`);
     
@@ -24,6 +24,6 @@ export default function News(){
 
 $("#content-body").appendInner(
 
-    News()
+    Blog()
 
 );

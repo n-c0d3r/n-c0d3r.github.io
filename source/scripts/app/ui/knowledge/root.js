@@ -43,6 +43,10 @@ export default function Contents(){
 
         ContentHR(),
 
+        KnowledgeItem("/resources/images/gea.png"),
+
+        ContentHR(),
+
         KnowledgeItem("/resources/images/animation.png", "advanced_animation/advanced_animation.js"),
 
         ContentHR(),

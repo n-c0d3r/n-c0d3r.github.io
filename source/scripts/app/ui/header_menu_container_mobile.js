@@ -104,6 +104,31 @@ export default function HeaderMenuContainerMobile(){
             .setClass("header-menu-button-mobile")
             .setInner(
 
+                "Books"
+
+            )
+            .on("click", function(){
+
+                localStorage.setItem(LAST_PAGE_KEY, "books");
+                (async()=>{
+                    await framework.wait(300);
+                    window.location.reload();
+                })()
+
+            }),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-space-mobile")
+            .setInner(
+
+                
+
+            ),
+
+            framework.UIElement("div")
+            .setClass("header-menu-button-mobile")
+            .setInner(
+
                 "Blog"
 
             )
