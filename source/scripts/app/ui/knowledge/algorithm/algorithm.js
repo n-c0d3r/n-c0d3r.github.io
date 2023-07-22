@@ -13,21 +13,25 @@ function Contents(){
     
     return [
 
-        KnowledgeBack("advanced_animation/advanced_animation.js"),
+        KnowledgeBack("algorithm/algorithm.js"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/distance_matching.png", null, "https://www.youtube.com/watch?v=FbWhEf3iBuk"),
+        KnowledgeItem("/resources/images/sorts.png"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/foot_placement.png", null, "https://www.youtube.com/watch?v=0jOpu6XEZ58"),
+        KnowledgeItem("/resources/images/search_traversal.png"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/fpc_l.png", null, "https://www.youtube.com/watch?v=8yr5bNBZKJs"),
+        KnowledgeItem("/resources/images/dp.png"),
 
         ContentHR(),
+
+        // KnowledgeItem("/resources/images/pps.png", null, "https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda"),
+
+        // ContentHR(),
 
     ];
 

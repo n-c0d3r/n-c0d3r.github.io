@@ -17,11 +17,11 @@ function Contents(){
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/dx11.png"),
+        KnowledgeItem("/resources/images/dx11.png", null, "https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/bgfx.png"),
+        KnowledgeItem("/resources/images/bgfx.png", null, "https://bkaradzic.github.io/bgfx/"),
 
         ContentHR(),
 
@@ -49,6 +49,10 @@ function Contents(){
 
         ContentHR(),
 
+        KnowledgeItem("/resources/images/u_srp.png"),
+
+        ContentHR(),
+        
     ];
 
 }

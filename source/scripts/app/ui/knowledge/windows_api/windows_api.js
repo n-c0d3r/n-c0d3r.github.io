@@ -1,8 +1,8 @@
-import framework from "../../../../../framework/framework.js"
-import ContentHR from "../../../content_hr.js"
+import framework from "../../../../framework/framework.js"
+import ContentHR from "../../content_hr.js"
 
-import KnowledgeItem from "../../knowledge_item.js"
-import KnowledgeBack from "../../knowledge_back.js"
+import KnowledgeItem from "../knowledge_item.js"
+import KnowledgeBack from "../knowledge_back.js"
 
 
 
@@ -13,7 +13,7 @@ function Contents(){
     
     return [
 
-        KnowledgeBack("computer_science/windows_api/windows_api.js"),
+        KnowledgeBack("windows_api/windows_api.js"),
 
         ContentHR(),
 

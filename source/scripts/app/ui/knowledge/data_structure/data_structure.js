@@ -13,23 +13,31 @@ function Contents(){
     
     return [
 
-        KnowledgeBack("computer_science/computer_science.js"),
+        KnowledgeBack("data_structure/data_structure.js"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/hardware_architecture.png", "computer_science/hardware/hardware.js"),
+        KnowledgeItem("/resources/images/array.png"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/data_structure.png", "computer_science/data_structure/data_structure.js"),
+        KnowledgeItem("/resources/images/linked_list.png"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/algorithm.png", "computer_science/algorithm/algorithm.js"),
+        KnowledgeItem("/resources/images/octree.png"),
 
         ContentHR(),
 
-        KnowledgeItem("/resources/images/windows_api.png", "computer_science/windows_api/windows_api.js"),
+        KnowledgeItem("/resources/images/quadtree.png"),
+
+        ContentHR(),
+
+        KnowledgeItem("/resources/images/handle_map.png", null, "https://www.gamedev.net/tutorials/_/technical/general-programming/game-engine-containers-handle-map-r4495/"),
+
+        ContentHR(),
+
+        KnowledgeItem("/resources/images/basic_hash_table.png"),
 
         ContentHR(),
 
