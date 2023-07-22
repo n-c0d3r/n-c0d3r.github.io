@@ -151,9 +151,9 @@ export default function HeaderMenuContainerMobile(){
 
             this.changeState = async function(){
 
-                window.scrollTo({top: 0, left: 0, behavior: "smooth"})
-
                 if(headerMenuContainer.state == "hidden"){
+
+                    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
 
                     await headerMenuContainer.show();
 
