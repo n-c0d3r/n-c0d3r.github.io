@@ -148,10 +148,36 @@ export default function HeaderMenuContainerMobile(){
             this.state = "hidden";
 
             let headerMenuContainer = this;
+            headerMenuContainer.isTouchMove = false;
+
+            window.addEventListener("touchstart", function(){
+
+                headerMenuContainer.isTouchMove = false;
+
+            });
+
+            window.addEventListener("touchmove", function(){
+
+                headerMenuContainer.isTouchMove = true;
+            });
+
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
 
             window.addEventListener("touchend", function(){
 
-                if(headerMenuContainer.state != "hidden")
+                if(
+                    headerMenuContainer.state != "hidden"
+                    && headerMenuContainer.isTouchMove
+                    && !isInViewport(headerMenuContainer)
+                )
                     headerMenuContainer.hide();
 
             });
