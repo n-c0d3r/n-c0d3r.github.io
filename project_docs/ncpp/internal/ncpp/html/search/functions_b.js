@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['rclass_5ft_0',['rclass_t',['../classncpp_1_1rtti_1_1rclass__t.html#adb8bcc9a2fd96585fbbb69168b49fae1',1,'ncpp::rtti::rclass_t::rclass_t()'],['../classncpp_1_1rtti_1_1rclass__t.html#a7ec75cdfdea57b690974ac63830fa7fe',1,'ncpp::rtti::rclass_t::rclass_t(const rclass_t &amp;other)'],['../classncpp_1_1rtti_1_1rclass__t.html#a37934a4978de6359b55b9dd27930b201',1,'ncpp::rtti::rclass_t::rclass_t(rclass_t &amp;&amp;other)'],['../classncpp_1_1rtti_1_1rclass__t.html#aad047b7ba1b1f28b6a0d80fb9fbcad87',1,'ncpp::rtti::rclass_t::rclass_t(const rclass_t&lt; other_object_type__ &gt; &amp;other)'],['../classncpp_1_1rtti_1_1rclass__t.html#a6a26c7f094002ca7b8bc99e88a151ea3',1,'ncpp::rtti::rclass_t::rclass_t(rclass_t&lt; other_object_type__ &gt; &amp;&amp;other)']]],
-  ['reset_1',['reset',['../classncpp_1_1rtti_1_1rclass__t.html#a56a3853b850ae3685d69db389e9ef94c',1,'ncpp::rtti::rclass_t::reset()'],['../structncpp_1_1tagged__heap__block.html#a0f6c71d3e13ee36548d966f081879a0c',1,'ncpp::tagged_heap_block::reset()']]],
-  ['reset_5fblocks_2',['reset_blocks',['../classncpp_1_1tagged__heap__category__t.html#a681508ab71dd7fe72cb73a3bbbf5ccbc',1,'ncpp::tagged_heap_category_t']]],
-  ['resize_3',['resize',['../classncpp_1_1containers_1_1fixed__vector__queue__t.html#ae4bba138ea1b5e25055fe614543108db',1,'ncpp::containers::fixed_vector_queue_t::resize()'],['../classncpp_1_1containers_1_1fixed__vector__stack__t.html#a264c2c79e557f860ddf2b8bccaafd47e',1,'ncpp::containers::fixed_vector_stack_t::resize()']]]
-];
