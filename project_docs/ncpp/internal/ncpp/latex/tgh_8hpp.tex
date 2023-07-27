@@ -1,0 +1,63 @@
+\hypertarget{tgh_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/containers/tgh.hpp File Reference}
+\label{tgh_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/containers/tgh.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/containers/tgh.hpp}}
+
+
+Implements tagged heap containers.  
+
+
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/tagged\+\_\+heap.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/cfv\+\_\+queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fixed\+\_\+vector\+\_\+queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fixed\+\_\+vector\+\_\+stack.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fls\+\_\+vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/handle\+\_\+map.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1containers}{ncpp\+::containers}}
+\begin{DoxyCompactList}\small\item\em Implements containers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_ae8ca7474d845d0d6ec69b5814e45aa6c}\label{namespacencpp_1_1containers_ae8ca7474d845d0d6ec69b5814e45aa6c}} 
+{\footnotesize template$<$typename char\+\_\+type\+\_\+\+\_\+  = char, typename char\+\_\+traits\+\_\+\+\_\+  = std\+::char\+\_\+traits$<$char$>$, class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+string\+\_\+t} = std\+::basic\+\_\+string$<$ char\+\_\+type\+\_\+\+\_\+, char\+\_\+traits\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ char\+\_\+type\+\_\+\+\_\+, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a213c20bff27a68fceb8a55f881758904}\label{namespacencpp_1_1containers_a213c20bff27a68fceb8a55f881758904}} 
+using {\bfseries ncpp\+::containers\+::tgh\+\_\+string} = tgh\+\_\+string\+\_\+t$<$$>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a820ffa61e92939bb049d860510257d1e}\label{namespacencpp_1_1containers_a820ffa61e92939bb049d860510257d1e}} 
+using {\bfseries ncpp\+::containers\+::tgh\+\_\+wstring} = tgh\+\_\+string\+\_\+t$<$ wchar\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_ad4a4f9b094b970eafca1e015e9e94a30}\label{namespacencpp_1_1containers_ad4a4f9b094b970eafca1e015e9e94a30}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , typename tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+vector\+\_\+t} = typename std\+::vector$<$ item\+\_\+type\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a54dfa071ce6df0b1f94353db73329c56}\label{namespacencpp_1_1containers_a54dfa071ce6df0b1f94353db73329c56}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename value\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$, class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+map\+\_\+t} = std\+::map$<$ key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ std\+::pair$<$ const key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+ $>$, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_adff0ed5ea6797382df14b5e6bde77b71}\label{namespacencpp_1_1containers_adff0ed5ea6797382df14b5e6bde77b71}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename value\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$, class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+unordered\+\_\+map\+\_\+t} = std\+::unordered\+\_\+map$<$ key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ std\+::pair$<$ const key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+ $>$, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a5e706a30c448207acfa30ea9ff758aba}\label{namespacencpp_1_1containers_a5e706a30c448207acfa30ea9ff758aba}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$, class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+set\+\_\+t} = std\+::set$<$ key\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ key\+\_\+type\+\_\+\+\_\+, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a466031c6098ccc26e708e0baa4c492bd}\label{namespacencpp_1_1containers_a466031c6098ccc26e708e0baa4c492bd}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$, class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+unordered\+\_\+set\+\_\+t} = std\+::unordered\+\_\+set$<$ key\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ key\+\_\+type\+\_\+\+\_\+, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a49f3fa8489093c6ff917c92ffc933631}\label{namespacencpp_1_1containers_a49f3fa8489093c6ff917c92ffc933631}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ , class tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+  = tagged\+\_\+heap\+\_\+t$<$$>$$>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+handle\+\_\+map\+\_\+t} = handle\+\_\+map\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ handle\+\_\+map\+\_\+id\+\_\+type$<$ item\+\_\+type\+\_\+\+\_\+ $>$, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$, tgh\+\_\+allocator\+\_\+t$<$ handle\+\_\+map\+\_\+cell\+\_\+type$<$ item\+\_\+type\+\_\+\+\_\+ $>$, tagged\+\_\+heap\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a9841855eb46e33dbd4ead0d352b5c32e}\label{namespacencpp_1_1containers_a9841855eb46e33dbd4ead0d352b5c32e}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+fv\+\_\+queue\+\_\+t} = fixed\+\_\+vector\+\_\+queue\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a029fcf8d1f68eb06f962cb5946759295}\label{namespacencpp_1_1containers_a029fcf8d1f68eb06f962cb5946759295}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::tgh\+\_\+fv\+\_\+stack\+\_\+t} = fixed\+\_\+vector\+\_\+stack\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, tgh\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements tagged heap containers. 
+

@@ -1,0 +1,58 @@
+\hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type}{}\doxysection{ncpp\+::pac\+::native\+\_\+froutine\+\_\+t\texorpdfstring{$<$}{<} type\+\_\+\+\_\+, initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, yield\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ \texorpdfstring{$>$}{>}\+::promise\+\_\+type Struct Reference}
+\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type}\index{ncpp::pac::native\_froutine\_t$<$ type\_\_, initial\_suspend\_mode\_\_, final\_suspend\_mode\_\_, yield\_suspend\_mode\_\_ $>$::promise\_type@{ncpp::pac::native\_froutine\_t$<$ type\_\_, initial\_suspend\_mode\_\_, final\_suspend\_mode\_\_, yield\_suspend\_mode\_\_ $>$::promise\_type}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a9759d2c44a4c2cbe85e43af1e0525c12}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a9759d2c44a4c2cbe85e43af1e0525c12}} 
+using {\bfseries value\+\_\+type} = type\+\_\+\+\_\+
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ac3302f48f9c379d2b01fcebab9701569}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ac3302f48f9c379d2b01fcebab9701569}} 
+using {\bfseries pointer} = typename std\+::allocator\+\_\+traits$<$ \mbox{\hyperlink{classncpp_1_1native__allocator__t}{allocator\+\_\+type}} $>$\+::pointer
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_afb2b2ea3f911b4142885c803e4849373}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_afb2b2ea3f911b4142885c803e4849373}} 
+auto {\bfseries get\+\_\+return\+\_\+object} ()
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a64079e50f6c08fc8ae09b82957b5958a}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a64079e50f6c08fc8ae09b82957b5958a}} 
+initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ {\bfseries initial\+\_\+suspend} ()
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_aa8b14a2d7544ae24b3e76fd9be151091}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_aa8b14a2d7544ae24b3e76fd9be151091}} 
+final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ {\bfseries final\+\_\+suspend} () noexcept
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a35197db6e88b419c379baeca970e218b}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a35197db6e88b419c379baeca970e218b}} 
+void {\bfseries unhandled\+\_\+exception} ()
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a2cf4ed7cc8050f0702bf6e9ffa6c2182}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a2cf4ed7cc8050f0702bf6e9ffa6c2182}} 
+void {\bfseries return\+\_\+void} ()
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ac66a49943152bb62dcbb06416f58d8ed}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ac66a49943152bb62dcbb06416f58d8ed}} 
+auto {\bfseries yield\+\_\+value} (const type\+\_\+\+\_\+ \&value)
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_af5032badaaf6120f45d9a4cb83fe02ab}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_af5032badaaf6120f45d9a4cb83fe02ab}} 
+auto {\bfseries yield\+\_\+value} (type\+\_\+\+\_\+ \&\&value)
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a181d658b0fb07b9643805977ae74f396}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a181d658b0fb07b9643805977ae74f396}} 
+void $\ast$ {\bfseries operator new} (std\+::size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a466a3e4cb65f66650a36f1b73f75848e}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a466a3e4cb65f66650a36f1b73f75848e}} 
+void {\bfseries operator delete} (void $\ast$ptr) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a98a14ad509da4b88563819441257929c}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_a98a14ad509da4b88563819441257929c}} 
+static \mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} {\bfseries get\+\_\+return\+\_\+object\+\_\+on\+\_\+allocation\+\_\+failure} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ab62414f76c201e05e1c12abd04b62221}\label{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type_ab62414f76c201e05e1c12abd04b62221}} 
+type\+\_\+\+\_\+ {\bfseries current\+\_\+value}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/pac/\mbox{\hyperlink{native__froutine_8hpp}{native\+\_\+froutine.\+hpp}}\end{DoxyCompactItemize}

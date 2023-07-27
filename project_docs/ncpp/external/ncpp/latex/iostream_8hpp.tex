@@ -1,0 +1,59 @@
+\hypertarget{iostream_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/iostream.hpp File Reference}
+\label{iostream_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/iostream.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/iostream.hpp}}
+
+
+Implement iostream with custom allocators,...  
+
+
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/native\+\_\+allocator.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/is\+\_\+streamable.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t}{ncpp\+::safe\+\_\+ostream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, is\+\_\+streamable\+\_\+\+\_\+ $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4}{ncpp\+::safe\+\_\+ostream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, true $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4}{ncpp\+::safe\+\_\+ostream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, false $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t}{ncpp\+::safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, input\+\_\+type\+\_\+\+\_\+, is\+\_\+streamable\+\_\+\+\_\+ $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01true_01_4}{ncpp\+::safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, input\+\_\+type\+\_\+\+\_\+, true $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__ostream__with__tab__forwarder__t_3_01stream__type_____00_01input__type_____00_01false_01_4}{ncpp\+::safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, input\+\_\+type\+\_\+\+\_\+, false $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t}{ncpp\+::safe\+\_\+istream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, is\+\_\+streamable\+\_\+\+\_\+ $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t_3_01stream__type_____00_01type_____00_01true_01_4}{ncpp\+::safe\+\_\+istream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, true $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1safe__istream__forwarder__t_3_01stream__type_____00_01type_____00_01false_01_4}{ncpp\+::safe\+\_\+istream\+\_\+forwarder\+\_\+t$<$ stream\+\_\+type\+\_\+\+\_\+, type\+\_\+\+\_\+, false $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_ad3aed0a3779f82c217f1f690f20603ef}\label{namespacencpp_ad3aed0a3779f82c217f1f690f20603ef}} 
+{\footnotesize template$<$typename type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::ostream\+\_\+input\+\_\+t} = typename std\+::pair$<$ const type\+\_\+\+\_\+ \&, u32 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_a18c9a7e0be5cb0b7a787f0ca8bde3114}\label{namespacencpp_a18c9a7e0be5cb0b7a787f0ca8bde3114}} 
+{\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ $>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries ncpp\+::safe\+\_\+ostream\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, type\+\_\+\+\_\+ \&\&data)
+\item 
+\mbox{\Hypertarget{namespacencpp_a7f547cdd8107a81f8fbf609eead7413f}\label{namespacencpp_a7f547cdd8107a81f8fbf609eead7413f}} 
+{\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ , typename input\+\_\+type\+\_\+\+\_\+  = ostream\+\_\+input\+\_\+t$<$type\+\_\+\+\_\+$>$$>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries ncpp\+::safe\+\_\+ostream\+\_\+with\+\_\+tab\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, input\+\_\+type\+\_\+\+\_\+ \&\&input)
+\item 
+\mbox{\Hypertarget{namespacencpp_a11a1eddc7ed951530d827da3daccf880}\label{namespacencpp_a11a1eddc7ed951530d827da3daccf880}} 
+{\footnotesize template$<$typename stream\+\_\+type\+\_\+\+\_\+ , typename type\+\_\+\+\_\+ $>$ }\\stream\+\_\+type\+\_\+\+\_\+ \& {\bfseries ncpp\+::safe\+\_\+istream\+\_\+t} (stream\+\_\+type\+\_\+\+\_\+ \&stream, type\+\_\+\+\_\+ \&\&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implement iostream with custom allocators,... 
+

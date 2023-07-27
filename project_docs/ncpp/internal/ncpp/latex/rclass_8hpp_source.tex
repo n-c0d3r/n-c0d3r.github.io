@@ -1,0 +1,271 @@
+\hypertarget{rclass_8hpp_source}{}\doxysection{rclass.\+hpp}
+\label{rclass_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/rtti/rclass.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/rtti/rclass.hpp}}
+\mbox{\hyperlink{rclass_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#pragma\ region\ Includes}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prerequisites_8hpp}{ncpp/prerequisites.hpp}}>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <ncpp/utilities/.hpp>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <ncpp/containers/.hpp>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <ncpp/dop/.hpp>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <ncpp/pac/.hpp>}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#pragma\ endregion\ }}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{namespace\ }rtti\ \{}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }robject\_i;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ rclass\_create\_mode\ \{}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ DEFAULT\ =\ 0,}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ SHARED\ =\ 1,}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ UNIQUE\ =\ 2,}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ CONSTRUCT\ =\ 3}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ \textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\ final}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }create\_instance\_func\_ptr\_type\ =\ void\ (*)(\textcolor{keywordtype}{void}*\ class\_p,\ \textcolor{keywordtype}{void}*\ output\_p,\ rclass\_create\_mode\ create\_mode);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_type\ create\_instance\_func\_ptr\_;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ create\_instance\_func\_ptr\_type\&\ create\_instance\_func\_ptr()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ create\_instance\_func\_ptr\_;\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#pragma\ region\ Constructors,\ Destructor\ and\ Operators}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_adb8bcc9a2fd96585fbbb69168b49fae1}{rclass\_t}}()\ :}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(0)}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a56a3853b850ae3685d69db389e9ef94c}{reset}}();}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{\string~rclass\_t}}()\ \{}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_adb8bcc9a2fd96585fbbb69168b49fae1}{rclass\_t}}(create\_instance\_func\_ptr\_type\ create\_instance\_func\_ptr)\ :}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(create\_instance\_func\_ptr)}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a7ec75cdfdea57b690974ac63830fa7fe}{rclass\_t}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ other)\ :}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.create\_instance\_func\_ptr\_}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_abb657b54de7686f3b4e302a4f52cd2cf}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ other)}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_\ =\ other.create\_instance\_func\_ptr\_;}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a37934a4978de6359b55b9dd27930b201}{rclass\_t}}(\mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\&\ other)\ :}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::move(other.create\_instance\_func\_ptr\_)}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.reset();}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_abb657b54de7686f3b4e302a4f52cd2cf}{operator\ =\ }}(\mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\&\ other)}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_\ =\ std::move(other.create\_instance\_func\_ptr\_);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.reset();}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_aad047b7ba1b1f28b6a0d80fb9fbcad87}{rclass\_t}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}\&\ other)\ :}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.create\_instance\_func\_ptr()}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(is\_convertible\_t<other\_object\_type\_\_>()\ \&\&\ \textcolor{stringliteral}{"{}other\ object\ type\ is\ not\ base\ of\ object\ type"{}});}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_abb657b54de7686f3b4e302a4f52cd2cf}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}\&\ other)}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(is\_convertible\_t<other\_object\_type\_\_>()\ \&\&\ \textcolor{stringliteral}{"{}other\ object\ type\ is\ not\ base\ of\ object\ type"{}});}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_\ =\ other.create\_instance\_func\_ptr();}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a6a26c7f094002ca7b8bc99e88a151ea3}{rclass\_t}}(\mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}\&\&\ other)\ :}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_(}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::move(other.create\_instance\_func\_ptr())}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(is\_convertible\_t<other\_object\_type\_\_>()\ \&\&\ \textcolor{stringliteral}{"{}other\ object\ type\ is\ not\ base\ of\ object\ type"{}});}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.reset();}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t}}\&\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_abb657b54de7686f3b4e302a4f52cd2cf}{operator\ =\ }}(\mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}\&\&\ other)}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(is\_convertible\_t<other\_object\_type\_\_>()\ \&\&\ \textcolor{stringliteral}{"{}other\ object\ type\ is\ not\ base\ of\ object\ type"{}});}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_\ =\ std::move(other.create\_instance\_func\_ptr());}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ other.reset();}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \textcolor{preprocessor}{\#pragma\ region\ Methods}}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ object\_type\_\_\&\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_ab38ab7e6160f35fb5d9d8b219d58fa14}{create\_instance}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ object\_type\_\_*\ result;}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_((\textcolor{keywordtype}{void}*)\textcolor{keyword}{this},\ (\textcolor{keywordtype}{void}*)\&result,\ rclass\_create\_mode::DEFAULT);}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *result;}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ utilities::native\_shared\_ptr\_t<object\_type\_\_>\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a8b438cbccb111ffaa12d69d43bc1aae5}{create\_shared\_instance}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00293\ }
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ utilities::native\_shared\_ptr\_t<object\_type\_\_>\ result;}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_((\textcolor{keywordtype}{void}*)\textcolor{keyword}{this},\ (\textcolor{keywordtype}{void}*)\&result,\ rclass\_create\_mode::SHARED);}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ utilities::native\_unique\_ptr\_t<object\_type\_\_>\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_ac36b1473c5acb46e0ea730f0ec9d4e90}{create\_unique\_instance}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ utilities::native\_unique\_ptr\_t<object\_type\_\_>\ result;}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_((\textcolor{keywordtype}{void}*)\textcolor{keyword}{this},\ (\textcolor{keywordtype}{void}*)\&result,\ rclass\_create\_mode::UNIQUE);}
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::move(result);}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a7c23a8d9d03de17cf3ce9b342f62b0d3}{construct\_instance}}(object\_type\_\_\&\ robject)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_((\textcolor{keywordtype}{void}*)\textcolor{keyword}{this},\ (\textcolor{keywordtype}{void}*)\&robject,\ rclass\_create\_mode::CONSTRUCT);}
+\DoxyCodeLine{00317\ }
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a56a3853b850ae3685d69db389e9ef94c}{reset}}()\ \{}
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ create\_instance\_func\_ptr\_\ =\ [](\textcolor{keywordtype}{void}*\ class\_p,\ \textcolor{keywordtype}{void}*\ output\_p,\ rclass\_create\_mode\ create\_mode)\ -\/>\ \textcolor{keywordtype}{void}\ \{}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (create\_mode)}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ncpp::rtti::rclass\_create\_mode::DEFAULT:}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *((object\_type\_\_**)output\_p)\ =\ native\_new\_t<object\_type\_\_>();}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ncpp::rtti::rclass\_create\_mode::SHARED:}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *((utilities::native\_shared\_ptr\_t<object\_type\_\_>*)output\_p)\ =\ utilities::native\_allocate\_shared\_t<object\_type\_\_>();}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ncpp::rtti::rclass\_create\_mode::UNIQUE:}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *((utilities::native\_unique\_ptr\_t<object\_type\_\_>*)output\_p)\ =\ utilities::native\_allocate\_unique\_t<object\_type\_\_>();}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ncpp::rtti::rclass\_create\_mode::CONSTRUCT:}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}((object\_type\_\_*)class\_p)\ object\_type\_\_();}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00348\ }
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_aebf286b71515e52c01b5af3f72411b2b}{rebind\_t}}()\ \{}
+\DoxyCodeLine{00354\ }
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<other\_object\_type\_\_>}}(create\_instance\_func\_ptr\_);}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ other\_\textcolor{keywordtype}{object}\_type\_\_>}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespacencpp_a82bf51a534e48e8f4ce2b1cd4e9586e5}{b8}}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t_a09522e5af9b3974b1526fe21d957b838}{is\_convertible\_t}}()\ \{}
+\DoxyCodeLine{00363\ }
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//utilities::is\_derived\_from\_t<other\_object\_type\_\_,\ object\_type\_\_>()}}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//||\ utilities::is\_derived\_from\_t<object\_type\_\_,\ other\_object\_type\_\_>()}}
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ utilities::is\_derived\_from\_t<object\_type\_\_,\ other\_object\_type\_\_>()}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00370\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00373\ }
+\DoxyCodeLine{00374\ }
+\DoxyCodeLine{00375\ }
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespacencpp_1_1rtti_a330cb437508fd902c142781d57fdf637}{rclass}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{classncpp_1_1rtti_1_1rclass__t}{rclass\_t<robject\_i>}};}
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00381\ \ \ \ \ \}}
+\DoxyCodeLine{00382\ }
+\DoxyCodeLine{00383\ \}}
+
+\end{DoxyCode}

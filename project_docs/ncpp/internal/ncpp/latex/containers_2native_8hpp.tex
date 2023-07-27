@@ -1,0 +1,63 @@
+\hypertarget{containers_2native_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/containers/native.hpp File Reference}
+\label{containers_2native_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/containers/native.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/containers/native.hpp}}
+
+
+Implements native containers.  
+
+
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/native\+\_\+allocator.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/cfv\+\_\+queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fixed\+\_\+vector\+\_\+queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fixed\+\_\+vector\+\_\+stack.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/fls\+\_\+vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/containers/handle\+\_\+map.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1containers}{ncpp\+::containers}}
+\begin{DoxyCompactList}\small\item\em Implements containers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a3cfcf9d22032b1a2bba63f52e471cb83}\label{namespacencpp_1_1containers_a3cfcf9d22032b1a2bba63f52e471cb83}} 
+{\footnotesize template$<$typename char\+\_\+type\+\_\+\+\_\+  = char, typename char\+\_\+traits\+\_\+\+\_\+  = std\+::char\+\_\+traits$<$char$>$$>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+string\+\_\+t} = std\+::basic\+\_\+string$<$ char\+\_\+type\+\_\+\+\_\+, char\+\_\+traits\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ char\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_ad4e7f55d2ec3418e39b242072e1cc4e4}\label{namespacencpp_1_1containers_ad4e7f55d2ec3418e39b242072e1cc4e4}} 
+using {\bfseries ncpp\+::containers\+::native\+\_\+string} = native\+\_\+string\+\_\+t$<$$>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_aad74fe329fd636d1e423e3f35b637b2e}\label{namespacencpp_1_1containers_aad74fe329fd636d1e423e3f35b637b2e}} 
+using {\bfseries ncpp\+::containers\+::native\+\_\+wstring} = native\+\_\+string\+\_\+t$<$ wchar\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_addce6c417a918b96857cb5f2ab74e110}\label{namespacencpp_1_1containers_addce6c417a918b96857cb5f2ab74e110}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+vector\+\_\+t} = std\+::vector$<$ item\+\_\+type\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_aa56512bfdd8ab7380640753a6ac313f3}\label{namespacencpp_1_1containers_aa56512bfdd8ab7380640753a6ac313f3}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename value\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$$>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+map\+\_\+t} = std\+::map$<$ key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ std\+::pair$<$ const key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+ $>$ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a1b3cabea480edfe9c60066f672520c5f}\label{namespacencpp_1_1containers_a1b3cabea480edfe9c60066f672520c5f}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename value\+\_\+type\+\_\+\+\_\+ , typename hs\+\_\+\+\_\+  = std\+::hash$<$key\+\_\+type\+\_\+\+\_\+$>$, typename eq\+\_\+\+\_\+  = std\+::equal\+\_\+to$<$key\+\_\+type\+\_\+\+\_\+$>$$>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+unordered\+\_\+map\+\_\+t} = std\+::unordered\+\_\+map$<$ key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+, hs\+\_\+\+\_\+, eq\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ std\+::pair$<$ const key\+\_\+type\+\_\+\+\_\+, value\+\_\+type\+\_\+\+\_\+ $>$ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_aca454b57c8062dd3426cebfbd56169da}\label{namespacencpp_1_1containers_aca454b57c8062dd3426cebfbd56169da}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename pr\+\_\+\+\_\+  = std\+::less$<$key\+\_\+type\+\_\+\+\_\+$>$$>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+set\+\_\+t} = std\+::set$<$ key\+\_\+type\+\_\+\+\_\+, pr\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ key\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a5cb9a3de4206bd5376b5e519ca4bfe92}\label{namespacencpp_1_1containers_a5cb9a3de4206bd5376b5e519ca4bfe92}} 
+{\footnotesize template$<$typename key\+\_\+type\+\_\+\+\_\+ , typename hs\+\_\+\+\_\+  = std\+::hash$<$key\+\_\+type\+\_\+\+\_\+$>$, typename eq\+\_\+\+\_\+  = std\+::equal\+\_\+to$<$key\+\_\+type\+\_\+\+\_\+$>$$>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+unordered\+\_\+set\+\_\+t} = std\+::unordered\+\_\+set$<$ key\+\_\+type\+\_\+\+\_\+, hs\+\_\+\+\_\+, eq\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ key\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a63012caf5fb6b8eec0189764fb701983}\label{namespacencpp_1_1containers_a63012caf5fb6b8eec0189764fb701983}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+handle\+\_\+map\+\_\+t} = handle\+\_\+map\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ handle\+\_\+map\+\_\+id\+\_\+type$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$, native\+\_\+allocator\+\_\+t$<$ handle\+\_\+map\+\_\+cell\+\_\+type$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_ab584f4c97b5c8bb7cb90743d4cb0c210}\label{namespacencpp_1_1containers_ab584f4c97b5c8bb7cb90743d4cb0c210}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+fv\+\_\+queue\+\_\+t} = fixed\+\_\+vector\+\_\+queue\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacencpp_1_1containers_a69d91e9741696e231aeef53d20f916ba}\label{namespacencpp_1_1containers_a69d91e9741696e231aeef53d20f916ba}} 
+{\footnotesize template$<$typename item\+\_\+type\+\_\+\+\_\+ $>$ }\\using {\bfseries ncpp\+::containers\+::native\+\_\+fv\+\_\+stack\+\_\+t} = fixed\+\_\+vector\+\_\+stack\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+, native\+\_\+allocator\+\_\+t$<$ item\+\_\+type\+\_\+\+\_\+ $>$ $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements native containers. 
+

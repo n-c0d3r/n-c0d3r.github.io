@@ -1,0 +1,37 @@
+\hypertarget{native__froutine_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/pac/native\+\_\+froutine.hpp File Reference}
+\label{native__froutine_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/pac/native\_froutine.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/pac/native\_froutine.hpp}}
+
+
+Implementing native froutine.  
+
+
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{ncpp\+::pac\+::native\+\_\+froutine\+\_\+t$<$ type\+\_\+\+\_\+, initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, yield\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ $>$}}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type}{ncpp\+::pac\+::native\+\_\+froutine\+\_\+t$<$ type\+\_\+\+\_\+, initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, yield\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ $>$\+::promise\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacencpp_1_1pac}{ncpp\+::pac}}
+\begin{DoxyCompactList}\small\item\em Implements parallelism and concurrency functionalities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{native__froutine_8hpp_ac82fc03e9077166d53726d4b303388c3}\label{native__froutine_8hpp_ac82fc03e9077166d53726d4b303388c3}} 
+\#define {\bfseries NCPP\+\_\+\+YIELD}(Value)~co\+\_\+yield Value;
+\item 
+\mbox{\Hypertarget{native__froutine_8hpp_ae2f84402040e7dd6bc0df9960e1c821a}\label{native__froutine_8hpp_ae2f84402040e7dd6bc0df9960e1c821a}} 
+\#define {\bfseries NCPP\+\_\+\+RETURN}(Value)~co\+\_\+return Value;
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementing native froutine. 
+

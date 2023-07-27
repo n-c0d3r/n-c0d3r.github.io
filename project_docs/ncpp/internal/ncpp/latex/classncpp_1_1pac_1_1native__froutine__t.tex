@@ -1,0 +1,63 @@
+\hypertarget{classncpp_1_1pac_1_1native__froutine__t}{}\doxysection{ncpp\+::pac\+::native\+\_\+froutine\+\_\+t\texorpdfstring{$<$}{<} type\+\_\+\+\_\+, initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+, yield\+\_\+suspend\+\_\+mode\+\_\+\+\_\+ \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classncpp_1_1pac_1_1native__froutine__t}\index{ncpp::pac::native\_froutine\_t$<$ type\_\_, initial\_suspend\_mode\_\_, final\_suspend\_mode\_\_, yield\_suspend\_mode\_\_ $>$@{ncpp::pac::native\_froutine\_t$<$ type\_\_, initial\_suspend\_mode\_\_, final\_suspend\_mode\_\_, yield\_suspend\_mode\_\_ $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type}{promise\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a3baf7803340b74abcd714d58d6c536ea}\label{classncpp_1_1pac_1_1native__froutine__t_a3baf7803340b74abcd714d58d6c536ea}} 
+using {\bfseries handle\+\_\+type} = std\+::coroutine\+\_\+handle$<$ \mbox{\hyperlink{structncpp_1_1pac_1_1native__froutine__t_1_1promise__type}{promise\+\_\+type}} $>$
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a4b142c90080a0edc461833669111b77d}\label{classncpp_1_1pac_1_1native__froutine__t_a4b142c90080a0edc461833669111b77d}} 
+using {\bfseries initial\+\_\+suspend\+\_\+mode} = initial\+\_\+suspend\+\_\+mode\+\_\+\+\_\+
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_aa06d2965b36b7d7d57405a24e9a1f03c}\label{classncpp_1_1pac_1_1native__froutine__t_aa06d2965b36b7d7d57405a24e9a1f03c}} 
+using {\bfseries final\+\_\+suspend\+\_\+mode} = final\+\_\+suspend\+\_\+mode\+\_\+\+\_\+
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a2a2a5759c9aaab44dcfd9633eaed7622}\label{classncpp_1_1pac_1_1native__froutine__t_a2a2a5759c9aaab44dcfd9633eaed7622}} 
+using {\bfseries yield\+\_\+suspend\+\_\+mode} = yield\+\_\+suspend\+\_\+mode\+\_\+\+\_\+
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_acfe359c2b473b730e4b9a532b58ecce8}\label{classncpp_1_1pac_1_1native__froutine__t_acfe359c2b473b730e4b9a532b58ecce8}} 
+using {\bfseries allocator\+\_\+type} = \mbox{\hyperlink{classncpp_1_1native__allocator__t}{native\+\_\+allocator\+\_\+t}}$<$ \mbox{\hyperlink{namespacencpp_a08f4f1f708c47978eedb7b5fdb926c1c}{u8}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_ad3f058bc36b09472458b1978c66e0201}\label{classncpp_1_1pac_1_1native__froutine__t_ad3f058bc36b09472458b1978c66e0201}} 
+const handle\+\_\+type {\bfseries handle} () const
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_ae74264292762186e54a844f8f477e7c8}\label{classncpp_1_1pac_1_1native__froutine__t_ae74264292762186e54a844f8f477e7c8}} 
+{\bfseries native\+\_\+froutine\+\_\+t} (handle\+\_\+type handle)
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_ab341161361cf1656f2f372fbb395e0ec}\label{classncpp_1_1pac_1_1native__froutine__t_ab341161361cf1656f2f372fbb395e0ec}} 
+{\bfseries native\+\_\+froutine\+\_\+t} (\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} const \&)=delete
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a8509519c76a077c442a0f6ac63c7e569}\label{classncpp_1_1pac_1_1native__froutine__t_a8509519c76a077c442a0f6ac63c7e569}} 
+{\bfseries native\+\_\+froutine\+\_\+t} (\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a1c487daf708c4addc0be0815bce00dcf}\label{classncpp_1_1pac_1_1native__froutine__t_a1c487daf708c4addc0be0815bce00dcf}} 
+\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} const \&)=delete
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_aa4d1afa791da17653029ba658d2f54ee}\label{classncpp_1_1pac_1_1native__froutine__t_aa4d1afa791da17653029ba658d2f54ee}} 
+\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classncpp_1_1pac_1_1native__froutine__t}{native\+\_\+froutine\+\_\+t}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a6d4d173eeead441b3449df71d3464118}\label{classncpp_1_1pac_1_1native__froutine__t_a6d4d173eeead441b3449df71d3464118}} 
+type\+\_\+\+\_\+ {\bfseries operator()} ()
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a1e9e94215343fbb6f0176b3f789c5219}\label{classncpp_1_1pac_1_1native__froutine__t_a1e9e94215343fbb6f0176b3f789c5219}} 
+type\+\_\+\+\_\+ {\bfseries resume} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classncpp_1_1pac_1_1native__froutine__t_a7584ef883ee5d5693dc8859553470757}\label{classncpp_1_1pac_1_1native__froutine__t_a7584ef883ee5d5693dc8859553470757}} 
+handle\+\_\+type {\bfseries handle\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/pac/\mbox{\hyperlink{native__froutine_8hpp}{native\+\_\+froutine.\+hpp}}\end{DoxyCompactItemize}

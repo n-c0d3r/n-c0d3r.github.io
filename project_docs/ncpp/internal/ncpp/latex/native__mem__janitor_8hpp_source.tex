@@ -1,0 +1,112 @@
+\hypertarget{native__mem__janitor_8hpp_source}{}\doxysection{native\+\_\+mem\+\_\+janitor.\+hpp}
+\label{native__mem__janitor_8hpp_source}\index{F:/NCoder/NCPP/ncpp/source/ncpp/native\_mem\_janitor.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/native\_mem\_janitor.hpp}}
+\mbox{\hyperlink{native__mem__janitor_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ region\ Includes}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prerequisites_8hpp}{ncpp/prerequisites.hpp}}>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{lref_8hpp}{ncpp/utilities/lref.hpp}}>}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{mem_8hpp}{ncpp/mem.hpp}}>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <ncpp/native\_heap.hpp>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{native__allocator_8hpp}{ncpp/native\_allocator.hpp}}>}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacencpp}{ncpp}}\ \{}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1native__mem__janitor}{native\_mem\_janitor}}\ \{}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{namespacencpp_1_1utilities_ae1e6083f22c9b463c2649cbe295eadb9}{utilities::lref\_t<native\_allocator\_i>}}\ last\_allocator\_ref\_;}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{namespacencpp_1_1utilities_ae1e6083f22c9b463c2649cbe295eadb9}{utilities::lref\_t<native\_allocator\_i>}}\ target\_allocator\_ref\_;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1native__allocator__i}{native\_allocator\_i}}\&\ last\_allocator()\ \{\ \textcolor{keywordflow}{return}\ *last\_allocator\_ref\_;\ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1native__allocator__i}{native\_allocator\_i}}\&\ target\_allocator()\ \{\ \textcolor{keywordflow}{return}\ *target\_allocator\_ref\_;\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1native__mem__janitor}{native\_mem\_janitor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classncpp_1_1native__allocator__i}{native\_allocator\_i}}\&\ target\_allocator)\ :}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ last\_allocator\_ref\_(current\_native\_allocator()),}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ target\_allocator\_ref\_(target\_allocator)}
+\DoxyCodeLine{00094\ \ \ \ \ \{}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!target\_allocator\_ref\_.is\_null())}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ target\_allocator\_ref\_-\/>apply\_native\_use();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classncpp_1_1native__mem__janitor}{\string~native\_mem\_janitor}}()\ \{}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ last\_allocator\_ref\_-\/>apply\_native\_use();}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ allocator\_type>}
+\DoxyCodeLine{00111\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classncpp_1_1native__mem__auto__janitor__t}{native\_mem\_auto\_janitor\_t}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classncpp_1_1native__mem__janitor}{native\_mem\_janitor}}\{}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00114\ \ \ \ \ allocator\_type\ target\_allocator\_;}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{inline}\ allocator\_type\&\ target\_allocator()\ \{\ \textcolor{keywordflow}{return}\ target\_allocator\_;\ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classncpp_1_1native__mem__auto__janitor__t}{native\_mem\_auto\_janitor\_t}}()\ :}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \mbox{\hyperlink{classncpp_1_1native__mem__janitor}{native\_mem\_janitor}}(*\mbox{\hyperlink{namespacencpp_1_1utilities_ae1e6083f22c9b463c2649cbe295eadb9}{utilities::lref\_t<allocator\_type>}}())}
+\DoxyCodeLine{00126\ \ \ \ \ \{}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ target\_allocator\_.apply\_native\_use();}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{classncpp_1_1native__mem__auto__janitor__t}{\string~native\_mem\_auto\_janitor\_t}}()\ \{}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#define\ NCPP\_NATIVE\_MEM\_JANITOR(target\_allocator,\ ...)\ ncpp::native\_native\_mem\_janitor\ mem\_janitor\_\#\#\_\_VA\_ARGS\_\_(target\_allocator);}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#define\ NCPP\_NATIVE\_MEM\_AUTO\_JANITOR(target\_allocator\_type,\ ...)\ ncpp::native\_mem\_auto\_janitor\_t<target\_allocator\_type>\ mem\_janitor\_\#\#\_\_VA\_ARGS\_\_;}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \}}
+\DoxyCodeLine{00145\ }
+
+\end{DoxyCode}

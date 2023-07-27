@@ -1,0 +1,38 @@
+\hypertarget{native__mem__janitor_8hpp}{}\doxysection{F\+:/\+NCoder/\+NCPP/ncpp/source/ncpp/native\+\_\+mem\+\_\+janitor.hpp File Reference}
+\label{native__mem__janitor_8hpp}\index{F:/NCoder/NCPP/ncpp/source/ncpp/native\_mem\_janitor.hpp@{F:/NCoder/NCPP/ncpp/source/ncpp/native\_mem\_janitor.hpp}}
+
+
+Implements native mem janitor.  
+
+
+{\ttfamily \#include $<$ncpp/prerequisites.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/utilities/lref.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/mem.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/native\+\_\+heap.\+hpp$>$}\newline
+{\ttfamily \#include $<$ncpp/native\+\_\+allocator.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classncpp_1_1native__mem__janitor}{ncpp\+::native\+\_\+mem\+\_\+janitor}}
+\item 
+class \mbox{\hyperlink{classncpp_1_1native__mem__auto__janitor__t}{ncpp\+::native\+\_\+mem\+\_\+auto\+\_\+janitor\+\_\+t$<$ allocator\+\_\+type $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacencpp}{ncpp}}
+\begin{DoxyCompactList}\small\item\em The root namespace of ncpp library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{native__mem__janitor_8hpp_a74858a468bec2b729ee0715972c45aca}\label{native__mem__janitor_8hpp_a74858a468bec2b729ee0715972c45aca}} 
+\#define {\bfseries NCPP\+\_\+\+NATIVE\+\_\+\+MEM\+\_\+\+JANITOR}(target\+\_\+allocator, ...)~ncpp\+::native\+\_\+native\+\_\+mem\+\_\+janitor mem\+\_\+janitor\+\_\+\#\#\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+(target\+\_\+allocator);
+\item 
+\mbox{\Hypertarget{native__mem__janitor_8hpp_ab20e4adfc26b91ddbc7c2d6c2a698316}\label{native__mem__janitor_8hpp_ab20e4adfc26b91ddbc7c2d6c2a698316}} 
+\#define {\bfseries NCPP\+\_\+\+NATIVE\+\_\+\+MEM\+\_\+\+AUTO\+\_\+\+JANITOR}(target\+\_\+allocator\+\_\+type, ...)~\mbox{\hyperlink{classncpp_1_1native__mem__auto__janitor__t}{ncpp\+::native\+\_\+mem\+\_\+auto\+\_\+janitor\+\_\+t}}$<$target\+\_\+allocator\+\_\+type$>$ mem\+\_\+janitor\+\_\+\#\#\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+;
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements native mem janitor. 
+
