@@ -1,0 +1,1 @@
+<span class="info-text-2">After three years of studying</span>, I shifted my focus to <span class="info-text-1">high graphics video game</span> and, <span class="info-text-3">within a year and a half</span>, I had <span class="info-text-3">published</span> <span class="info-text-0">my first small video game</span>.

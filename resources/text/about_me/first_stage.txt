@@ -1,0 +1,1 @@
+<span class="info-text-2">My journey</span> and <span class="info-text-2">my passion for technologies</span> started at the first time I created my toy by <span class="info-text-1">crafting the electric parts</span> of the broken ones.

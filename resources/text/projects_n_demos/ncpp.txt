@@ -1,0 +1,22 @@
+<span class="info-text-3">NCPP</span>, a <span class="info-text-2">game engine</span> learning aimed <span class="info-text-0">C++ library</span>
+<span class="text-tag-2">CMake</span> 
+<span class="text-tag-0">C++ 17, 20</span>
+        ⦿ <span class="info-text-1">Features</span>:
+                ○ <span class="info-text-3">Memory management</span> (tagged heap, stack heap,...)
+                ○ <span class="info-text-3">Logging</span> (for vector, handle map,...)
+                ○ <span class="info-text-3">Utilities</span> (left value reference wrapper, templated for,...)
+                ○ <span class="info-text-3">Containers</span>:
+                        • <span class="info-text-3">Fixed vector queue</span>
+                        • <span class="info-text-3">Fixed vector stack</span>
+                        • <span class="info-text-3">Concurrent fixed vector queue</span>
+                        • <span class="info-text-3">Free list supported vector</span>
+                        • <span class="info-text-3">Handle map</span>
+                ○ <span class="info-text-3">Parallelism</span> and <span class="info-text-3">Concurrency</span>:
+                        • <span class="info-text-3">Thread</span> (built with Windows API, pthread,...)
+                        • <span class="info-text-3">Fiber</span> (built with Windows API and currently only available on Windows)
+                        • <span class="info-text-3">Locks</span>
+                . . .
+        ⦿ <span class="info-text-1">Platforms</span>:
+                ○ <span class="info-text-3">Windows</span>:
+                ○ <span class="info-text-3">Unix</span>:
+        ⦿ <span class="info-text-1">Links</span>: <a href="https://github.com/INGTechnologies/ING" class="ex-link-1">GitHub 🔗</a>

@@ -1,0 +1,1 @@
+I am a programmer based in Hanoi, Vietnam, born on <span class="info-text-0">November 14, 2005</span>, who have a huge passion for <span class="info-text-0">technologies</span>, <span class="info-text-1">game engine programming</span> and <span class="info-text-2">computer graphics</span>.

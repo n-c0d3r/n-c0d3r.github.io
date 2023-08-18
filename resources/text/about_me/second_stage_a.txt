@@ -1,0 +1,1 @@
+<span class="info-text-2">At the age of 11</span>, I went to secondary school and began learning <span class="info-text-1">Pascal programming</span>. In that time, I also joined some district programming contests.

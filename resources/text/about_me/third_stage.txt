@@ -1,0 +1,1 @@
+<span class="info-text-2">In the summer 2021</span>, I started being <span class="info-text-3">trained by my mentor</span> and <span class="info-text-3">going deeply</span> into <span class="info-text-0">computer graphics</span> and <span class="info-text-1">game technologies</span>.

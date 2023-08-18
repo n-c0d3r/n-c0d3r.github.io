@@ -1,0 +1,1 @@
+I am a programmer based in Hanoi, Vietnam. I have a huge passion for <span class="info-text-0">game</span>, <span class="info-text-1">game engine programming</span> and <span class="info-text-2">computer graphics</span>.
