@@ -1,22 +1,38 @@
 <span class="info-text-3">NCPP</span>, a <span class="info-text-2">game engine</span> learning aimed <span class="info-text-0">C++ library</span>
-<span class="text-tag-2">CMake</span> 
-<span class="text-tag-0">C++ 17, 20</span>
+        <span class="text-tag-5">Private</span> <span class="text-tag-1">Abytek team</span>
+        <span class="text-tag-2">CMake</span> 
+        <span class="text-tag-0">C++ 17, 20</span>      
         ⦿ <span class="info-text-1">Features</span>:
-                ○ <span class="info-text-3">Memory management</span> (tagged heap, stack heap,...)
-                ○ <span class="info-text-3">Logging</span> (for vector, handle map,...)
-                ○ <span class="info-text-3">Utilities</span> (left value reference wrapper, templated for,...)
-                ○ <span class="info-text-3">Containers</span>:
-                        • <span class="info-text-3">Fixed vector queue</span>
-                        • <span class="info-text-3">Fixed vector stack</span>
-                        • <span class="info-text-3">Concurrent fixed vector queue</span>
-                        • <span class="info-text-3">Free list supported vector</span>
-                        • <span class="info-text-3">Handle map</span>
-                ○ <span class="info-text-3">Parallelism</span> and <span class="info-text-3">Concurrency</span>:
-                        • <span class="info-text-3">Thread</span> (built with Windows API, pthread,...)
-                        • <span class="info-text-3">Fiber</span> (built with Windows API and currently only available on Windows)
-                        • <span class="info-text-3">Locks</span>
-                . . .
+                ○ Memory management</span>:
+                        • Incremental chunk allocator</span>
+                        • Smart chunk allocator</span>
+                        • Link allocator</span>
+                        • Flexible and high performance</span>
+                ○ Logging</span>
+                        • eastl::basic_string</span>
+                        • eastl::vector</span>
+                        • eastl::array</span>
+                        • std::initialier_list</span>
+                        • ...                        
+                ○ Utilities</span>
+                        • Nth template argument getter</span>
+                        • Function traits</span>
+                        • Is derived from checker</span>
+                        • Is streamable</span>
+                        • Singleton</span>
+                        • ...
+                ○ Containers</span>:
+                        • Ring buffer</span>
+                        • Concurrent ring buffer</span>
+                ○ Parallelism</span> and Concurrency</span>:
+                        • Spinlock</span>
+                ○ RTTI</span>:
+                        • Easy to use</span>
+                        • No memory cost on reflected object</span>
+                        • Metadata supports</span>
+                        • Flexible</span>
+                        • Highly customizable</span>
         ⦿ <span class="info-text-1">Platforms</span>:
-                ○ <span class="info-text-3">Windows</span>:
-                ○ <span class="info-text-3">Unix</span>:
-        ⦿ <span class="info-text-1">Links</span>: <a href="https://github.com/INGTechnologies/ING" class="ex-link-1">GitHub 🔗</a>
+                ○ Windows</span>
+                ○ Macos</span>
+                ○ Unix</span>

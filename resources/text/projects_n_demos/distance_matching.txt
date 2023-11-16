@@ -1,4 +1,4 @@
 <span class="info-text-2">Distance Matching</span> <span class="info-text-3">animation technique</span> in <span class="info-text-1">Unreal Engine 5</span>
-<span class="text-tag-2">Unreal Engine 5</span> 
-<span class="text-tag-0">C++</span> <span class="text-tag-1">Blueprint</span> 
+        <span class="text-tag-2">Unreal Engine 5</span> 
+        <span class="text-tag-0">C++</span> <span class="text-tag-1">Blueprint</span> 
         ⦿ <span class="info-text-1">Links</span>: <a href="https://www.youtube.com/watch?v=FbWhEf3iBuk" class="ex-link-5">Youtube 🔗</a>

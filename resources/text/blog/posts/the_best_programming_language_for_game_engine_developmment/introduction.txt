@@ -1,0 +1,5 @@
+It has been more than 38 years since the first <span class="info-text-3">C++</span> compiler was released. But <span class="info-text-3">C++</span> still has an unique position in the video game industry that could never be replaced, <span class="info-text-2">the best programming language for game engine development</span>.
+
+Game engines is complex pieces of software with powerful tools and functionalities to boost game development process. They often handle various kinds of graphics, manage large data structures, complex memory and maintain high performance. This is where <span class="info-text-3">C++</span> comes to play. With low-level and flexible capabilities, <span class="info-text-3">C++</span> allows developers to have a high degree of control over system resources, compilation and hardware, which is crucial for game engine development.
+
+In this blog post, I will delve into the reasons why <span class="info-text-3">C++</span> is often chosen to develop game engine and discuss some successful game engines that have been using <span class="info-text-3">C++</span>.

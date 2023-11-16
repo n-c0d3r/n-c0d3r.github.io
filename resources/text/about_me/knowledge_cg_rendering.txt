@@ -1,0 +1,8 @@
+⦿ <span class="info-text-3">CG/Rendering</span> & <span class="info-text-3">GPGPU Programming</span>
+        <span class="ex-link-4">GPU Driven Rendering</span>
+        <span class="ex-link-5">Frustum Culling</span> <span class="ex-link-0">Occlusion Culling</span>
+        <span class="ex-link-1">Marching Cubes</span>
+        <span class="ex-link-2">DirectX 11</span>
+        <span class="ex-link-3">Physically Based Shading</span> (Cook-Torrance, GGX,...)
+        <span class="ex-link-5">Deferred Shading</span>
+        <span class="ex-link-4">Parallel Prefix Sum</span>

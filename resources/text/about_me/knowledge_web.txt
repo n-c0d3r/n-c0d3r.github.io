@@ -1,0 +1,6 @@
+⦿ <span class="info-text-3">Web Development</span>
+        <span class="text-0">○ <span class="info-text-1">Frontend</span></span>
+                <span class="ex-link-4">HTML</span> <span class="ex-link-5">CSS</span> <span class="ex-link-0">JS</span>
+                <span class="ex-link-3">Three.JS</span>
+        <span class="text-0">○ <span class="info-text-1">Backend</span></span>
+                <span class="ex-link-2">NodeJS</span>
