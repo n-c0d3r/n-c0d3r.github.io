@@ -1,4 +1,4 @@
 <span class="info-text-2">Physically Based Shading</span> with <span class="info-text-1">Cook-Torrance</span> <span class="info-text-3">GGX</span>
-<span class="text-tag-2">CMake</span> <span class="text-tag-4">DirectX 11</span>
-<span class="text-tag-0">C++ 17</span> <span class="text-tag-3">HLSL</span>
+        <span class="text-tag-2">CMake</span> <span class="text-tag-4">DirectX 11</span>
+        <span class="text-tag-0">C++ 17</span> <span class="text-tag-3">HLSL</span>
         ⦿ <span class="info-text-1">Links</span>: <a href="https://www.youtube.com/watch?v=p6w_qwCLJYc" class="ex-link-5">Youtube 🔗</a>

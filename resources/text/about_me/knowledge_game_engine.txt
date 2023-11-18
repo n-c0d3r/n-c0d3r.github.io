@@ -1,0 +1,11 @@
+⦿ <span class="info-text-3">Game Engine Architecture</span>
+        <span class="ex-link-0">Memory Management</span>
+        <span class="ex-link-1">Cross Platform</span> (Windows, Unix, MacOS)
+        <span class="ex-link-2">Job System</span>
+        <span class="ex-link-3">Plugin System</span>
+        <span class="ex-link-4">Graphics Abtraction Layer</span>
+
+⦿ <span class="info-text-3">Game Engines</span>
+        <span class="ex-link-3">Unreal Engine 5</span> (1 year)
+        <span class="ex-link-5">Unity</span> (4 years)
+        <span class="ex-link-2">Godot</span> (2 months)

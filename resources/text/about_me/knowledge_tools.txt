@@ -1,0 +1,10 @@
+⦿ <span class="info-text-3">Debug Tools</span>
+        <span class="ex-link-2">Visual Studio Debug Tool</span>
+        <span class="ex-link-5">Renderdoc</span>
+
+⦿ <span class="info-text-3">Source Version Control</span>
+        <span class="ex-link-3">Git</span>
+
+⦿ <span class="info-text-3">Package Manager</span>
+        <span class="ex-link-0">NPM</span>
+        <span class="ex-link-1">Chocolatey</span>

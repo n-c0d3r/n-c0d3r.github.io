@@ -1,3 +1,3 @@
 <span class="info-text-2">Character Controller</span> and <span class="info-text-0">Animation</span> for <span class="info-text-1">Ohhh 2</span>
-<span class="text-tag-2">Unity</span> <span class="text-tag-0">C#</span>
+        <span class="text-tag-2">Unity</span> <span class="text-tag-0">C#</span>
         ⦿ <span class="info-text-1">Links</span>: <a href="https://www.youtube.com/watch?v=ROBR3i-oPm0" class="ex-link-5">Youtube 🔗</a>

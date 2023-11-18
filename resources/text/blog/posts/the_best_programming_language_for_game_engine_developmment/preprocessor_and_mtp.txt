@@ -1,0 +1,5 @@
+Inherited from <span class="info-text-2">C</span>, <span class="info-text-3">C++</span> also has the <span class="info-text-1">preprocessor</span> feature, with macros and directive commands to write some kinds of compile-time code generation, or manipulate some compiler flags, etc. In practical, we also use macros to choose whether or not build compiler-specific and platform-specific code. 
+
+On the other hand, <span class="info-text-0">meta-template programming</span> is another feature in <span class="info-text-3">C++</span> that supports flexible compile-time computation, zero-cost abstraction and much more functionalities to do compile-time programming better. Therefore, <span class="info-text-0">meta-template programming</span> is one of the most powerful feature in <span class="info-text-3">C++</span> that make it's unique in game engine development.
+
+Hence, using <span class="info-text-3">C++</span> <span class="info-text-1">preprocessor</span> and <span class="info-text-0">meta-template programming</span> for game engines could optimize performance and extend large platform variety.

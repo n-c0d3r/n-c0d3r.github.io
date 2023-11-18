@@ -1,4 +1,4 @@
 <span class="info-text-2">Advanced Locomotion Animation</span> for <span class="info-text-3">character</span> in <span class="info-text-1">Unreal Engine 5</span>
-<span class="text-tag-2">Unreal Engine 5</span> 
-<span class="text-tag-0">C++</span> <span class="text-tag-1">Blueprint</span> 
+        <span class="text-tag-2">Unreal Engine 5</span> 
+        <span class="text-tag-0">C++</span> <span class="text-tag-1">Blueprint</span> 
         ⦿ <span class="info-text-1">Links</span>: <a href="https://www.youtube.com/watch?v=PmepmEqGyxQ" class="ex-link-5">Youtube 🔗</a>

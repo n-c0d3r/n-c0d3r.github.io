@@ -1,0 +1,3 @@
+⦿ <span class="info-text-3">Advanced Animation</span>
+        <span class="ex-link-2">Distance Matching</span>
+        <span class="ex-link-1">Foot Placement</span>
