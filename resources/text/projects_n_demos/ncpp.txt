@@ -1,8 +1,8 @@
 <span class="info-text-3">NCPP</span>, a <span class="info-text-2">game engine</span> learning aimed <span class="info-text-0">C++ library</span>
-        <span class="text-tag-5">Private</span> <span class="text-tag-1">Abytek team</span>
-        <span class="text-tag-2">CMake</span> 
-        <span class="text-tag-0">C++ 17, 20</span>      
-        ⦿ <span class="info-text-1">Features</span>:
+        <span class="ex-link-5">Private</span> <span class="ex-link-1">Abytek team</span>
+        <span class="ex-link-2">CMake</span> 
+        <span class="ex-link-0">C++ 17, 20</span>  
+        ⦿ <span>Features</span>:
                 ○ Memory management</span>:
                         • Incremental chunk allocator</span>
                         • Smart chunk allocator</span>
@@ -32,7 +32,7 @@
                         • Metadata supports</span>
                         • Flexible</span>
                         • Highly customizable</span>
-        ⦿ <span class="info-text-1">Platforms</span>:
+        ⦿ <span>Platforms</span>:
                 ○ Windows</span>
                 ○ Macos</span>
                 ○ Unix</span>
