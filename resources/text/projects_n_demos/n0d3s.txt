@@ -1,12 +1,2 @@
-<span class="info-text-3">N0d3s</span>, a set of <span class="info-text-2">build tool</span>, <span class="info-text-1">libraries</span>,... for <span class="info-text-0">web programming</span> and also what I used to build this web
-        <span class="ex-link-4">NodeJS</span>
-        <span class="ex-link-1">JS</span> <span class="ex-link-2">HTML</span> <span class="ex-link-3">CSS</span>
-        <a href="https://github.com/n-c0d3r/n0d3s" class="ex-link-1">GitHub 🔗</a>
-        ⦿ <span>Focus on static web</span>
-        ⦿ <span>Features</span>:
-                ○ Simple, Convenient UI Library</span>
-                ○ Powerful JS Build Tool</span>
-                ○ Data, Content Embeddable</span> (Text, JSON)
-                ○ Support JS Minify, Encoding</span>
-                ○ Support Single HTML Build</span>
-                . . .
+<span class="info-text-3">N0d3s</span>, a set of build tool, libraries,... for web programming and also what I used to build this web.
+<span class="ex-link-4">NodeJS</span> <span class="ex-link-1">JS</span> <span class="ex-link-2">HTML</span> <span class="ex-link-3">CSS</span> <a href="https://github.com/n-c0d3r/n0d3s" class="ex-link-1">GitHub 🔗</a>

@@ -1,13 +1,2 @@
-<span class="info-text-2">GPU-Driven</span> <span class="info-text-0">Rendering</span> with <span class="info-text-1">Unity SRP</span>
-        <span class="ex-link-2">Unity</span> <span class="ex-link-1">Unity SRP</span> <span class="ex-link-4">Vulkan</span>
-        <span class="ex-link-0">C#</span> <span class="ex-link-3">HLSL</span> <span class="ex-link-5">Unity Shaderlab</span> 
-        <a href="https://www.youtube.com/watch?v=Phhg8GvmpT4" class="ex-link-5">Youtube 🔗</a>
-        ⦿ <span>Features</span>:
-                ○ Only one CPU-GPU fence per frame</span>
-                ○ Unified mesh system</span>
-                ○ Parallel prefix sum</span>
-                ○ Depth Pyramid</span>
-                ○ Mesh Clustering</span>
-                ○ Stream compaction and expansion for instance and cluster</span>
-                ○ Frustum, Occlusion culling for instance and cluster</span>
-                . . .
+<span class="info-text-3">GPU-Driven Rendering</span> with Unity SRP.
+<span class="ex-link-2">Unity</span> <span class="ex-link-1">Unity SRP</span> <span class="ex-link-4">Vulkan</span> <span class="ex-link-0">C#</span> <span class="ex-link-3">HLSL</span> <span class="ex-link-5">Unity Shaderlab</span> <a href="https://www.youtube.com/watch?v=Phhg8GvmpT4" class="ex-link-5">Youtube 🔗</a>

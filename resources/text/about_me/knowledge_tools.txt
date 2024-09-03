@@ -1,6 +1,11 @@
 ⦿ <span class="info-text-3">Debug Tools</span>
         <span class="ex-link-2">Visual Studio Debug Tool</span>
-        <span class="ex-link-5">Renderdoc</span>
+        <span class="ex-link-0">Graphics Debugging</span>
+                <span class="ex-link-5">Renderdoc</span>
+                <span class="ex-link-4">Nvidia Nsight</span>
+
+⦿ <span class="info-text-3">Profilers</span>
+        <span class="ex-link-2">Snapdragon Profiler</span>
 
 ⦿ <span class="info-text-3">Source Version Control</span>
         <span class="ex-link-3">Git</span>

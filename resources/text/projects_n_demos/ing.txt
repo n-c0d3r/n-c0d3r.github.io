@@ -1,13 +1,2 @@
-<span class="info-text-3">ING</span>, a <span class="info-text-9">C++</span> <span class="info-text-1">game engine</span> for <span class="info-text-8">Windows</span>
-        <span class="ex-link-4">DirectX 11</span>
-        <span class="ex-link-0">C++ 17</span> <span class="ex-link-1">C#</span> 
-        ⦿ <span>Features</span>:
-                ○ Dynamic C++ Plugin System
-                ○ RTTI, Relfection System
-                ○ Event System
-                ○ Rendering:
-                        • DirectX11
-                        • Multi-Pass Shader
-                        • Layer System
-                . . .
-        ⦿ <span>Links</span>: <a href="https://github.com/INGTechnologies/ING" class="ex-link-1">GitHub 🔗</a>
+<span class="info-text-3">ING</span>, a C++ game engine for Windows.
+<span class="ex-link-4">DirectX 11</span> <span class="ex-link-0">C++ 17</span> <span class="ex-link-1">C#</span> <a href="https://github.com/INGTechnologies/ING" class="ex-link-1">GitHub 🔗</a>

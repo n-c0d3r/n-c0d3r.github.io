@@ -1,0 +1,6 @@
+The resource binding model in DirectX 12 is quite different from DirectX 11.
+In DirectX 11, we bind resources to the pipeline through resource views such as shader resource views, unordered access views, render target views,...
+In contrast, DirectX 12 supports the concept of descriptor and descriptor heap. Descriptors are objects describing how can shaders access resources. Descriptor heaps are places where descriptors are allocated onto. Each descriptor heap can be either shader-visible or non-shader-visible but only shader-visible descriptor heaps can be bound to the render pipeline.
+Because there can be only one descriptor heap for each type: CBV_SRV_UAV and SAMPLER, I implemented <span class="info-text-1">the intermediate descriptor manager</span> responsible for managing non-shader-visible descriptors.
+When a resource view is created using <span class="info-text-0">H_resource_view::create</span>, <span class="info-text-1">the intermediate descriptor manager</span> calls the descriptor allocator to find a free range on the descriptor heap to place the descriptor. 
+Similarly, when a resource view is destroyed, <span class="info-text-1">the intermediate descriptor manager</span> calls the descriptor allocator to free the corresponding descriptor range.

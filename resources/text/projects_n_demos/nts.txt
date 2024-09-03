@@ -1,0 +1,2 @@
+<span class="info-text-3">NTS</span>, a game engine learning aimed C++ task system library.
+<span class="ex-link-2">CMake</span> <span class="ex-link-0">C++ 20</span> <span class="ex-link-4">Fiber-based</span> <a href="https://github.com/n-c0d3r/NTS" class="ex-link-1">GitHub 🔗</a>

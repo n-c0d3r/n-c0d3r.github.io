@@ -1,10 +1,11 @@
 ⦿ <span class="info-text-3">Modern C++</span>
-        <span class="ex-link-1">Cross Platform</span> (Windows, Unix, MacOS, a bit of NDK)
+        <span class="ex-link-1">C++ 17</span> <span class="ex-link-0">C++ 20</span>
         <span class="ex-link-2">STL</span> <span class="ex-link-5">EASTL</span>
         <span class="ex-link-3">Meta-Template Programming</span>
         <span class="text-0">○ <span class="info-text-1">Build</span></span>
                 <span class="ex-link-0">CMake</span>
                 <span class="ex-link-4">MSBuild</span>
                 <span class="ex-link-5">GCC</span>
+                <span class="ex-link-3">Apple Clang</span>
         <span class="text-0">○ <span class="info-text-1">Documentation</span></span>
                 <span class="ex-link-2">Doxygen</span>

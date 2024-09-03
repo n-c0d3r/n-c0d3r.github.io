@@ -1,3 +1,2 @@
-<span class="info-text-2">Ohhh</span>, a <span class="info-text-1">casual</span> <span class="info-text-7">mobile game</span>
-        <span class="ex-link-2">Unity</span> <span class="ex-link-0">C#</span>
-        <a href="https://play.google.com/store/apps/details?id=com.DNGames.Ohhh_Remake" class="ex-link-2">Google Play 🔗</a>
+<span class="info-text-3">Ohhh</span>, a casual mobile game.
+<span class="ex-link-2">Unity</span> <span class="ex-link-0">C#</span> <a href="https://play.google.com/store/apps/details?id=com.DNGames.Ohhh_Remake" class="ex-link-2">Google Play 🔗</a>

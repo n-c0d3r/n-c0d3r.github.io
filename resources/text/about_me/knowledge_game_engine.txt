@@ -1,11 +1,27 @@
 ⦿ <span class="info-text-3">Game Engine Architecture</span>
         <span class="ex-link-0">Memory Management</span>
-        <span class="ex-link-1">Cross Platform</span> (Windows, Unix, MacOS)
+                <a class="ex-link-4" href="https://github.com/n-c0d3r/NCPP">Memory Management in NCPP 🔗</a>
+        <span class="ex-link-1">Cross Platform C++ Programming</span>
+                <span class="ex-link-3">Windows</span>
+                <span class="ex-link-2">Unix</span>
+                <span class="ex-link-0">MacOS</span>
+                <span class="ex-link-5">Android</span>
         <span class="ex-link-2">Job System</span>
         <span class="ex-link-3">Plugin System</span>
-        <span class="ex-link-4">Graphics Abtraction Layer</span>
+                <a class="ex-link-5" href="https://www.youtube.com/watch?v=0DaLMNVAwFM">Plugin System in ING Engine 🔗</a>
+        <span class="ex-link-0">C# Script Embedding</span>
+        <span class="ex-link-4">Render Hardware Interface Designs</span> 
+                <a class="ex-link-3" href="https://github.com/n-c0d3r/NRHI">NRHI 🔗</a>
+        <span class="ex-link-1">Shading Language Compiler</span> 
+                <a class="ex-link-0" href="https://github.com/n-c0d3r/NRHI">NCoder's Shading Language in NRHI 🔗</a>
+        <span class="ex-link-2">Surface/Window Abstraction Layer Designs</span> 
+                <a class="ex-link-3" href="https://github.com/n-c0d3r/NSurface">NSurface 🔗</a>
+        <span class="ex-link-5">SIMD-Enabled, Cross-Platform Math Library Designs</span> 
+                <a class="ex-link-1" href="https://github.com/n-c0d3r/NMath">NMath 🔗</a>
+        <span class="ex-link-4">Entity Component System</span> 
+        <span class="ex-link-0">Asset System</span> 
 
 ⦿ <span class="info-text-3">Game Engines</span>
-        <span class="ex-link-3">Unreal Engine 5</span> (1 year)
-        <span class="ex-link-5">Unity</span> (4 years)
-        <span class="ex-link-2">Godot</span> (2 months)
+        <span class="ex-link-3">Unreal Engine 5</span> (2022 -> present)
+        <span class="ex-link-5">Unity</span> (2019 -> present)
+        <span class="ex-link-2">Godot</span> (2023 -> present)

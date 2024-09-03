@@ -1,12 +1,19 @@
 ⦿ <span class="info-text-3">Fundamental</span>
         <span class="text-0">○ <span class="info-text-1">Programming</span></span>
                 <span class="ex-link-0">C/C++</span> <span class="ex-link-1">C#</span> <span class="ex-link-2">JS</span> <span class="ex-link-3">Python</span> <span class="ex-link-4">Pascal</span>
-                <span class="ex-link-3">Data Structure</span> <span class="ex-link-4">Algorith</span>
+                <span class="ex-link-5">NCoder's Shading Language</span>
+                <a class="ex-link-1" href="https://github.com/N1ghtTeam/NFramework">NLC 🔗</a>
+                <span class="ex-link-1">BGFX Shading Language</span>
+                <span class="ex-link-0">HLSL</span>
+                <span class="ex-link-4">GDScript</span>
+                <span class="ex-link-3">Data Structure</span> <span class="ex-link-4">Algorithm</span>
                 <span class="ex-link-5">CPU Architecture</span> <span class="ex-link-0">GPU Architecture</span> <span class="ex-link-1">Memory</span>
                 <span class="ex-link-2">OS Fundamental</span>
                 <span class="ex-link-0">OOP</span>
-                <span class="ex-link-1">Parallelism</span> & <span class="ex-link-3">Concurrency</span>
+                <span class="ex-link-1">Parallelism</span> <span class="ex-link-3">Concurrency</span>
         <span class="text-0">○ <span class="info-text-1">Math</span></span>
                 <span class="ex-link-3">Calculus</span>
-                <span class="ex-link-4">Linear Algebra</span>
-                <span class="ex-link-5">Quaternion</span>
+                <span class="ex-link-4">Vector Algebra</span>
+                <span class="ex-link-0">Matrix Algebra</span>
+                <span class="ex-link-2">Quaternion Algebra</span>
+                <span class="ex-link-1">Probability Theory</span>

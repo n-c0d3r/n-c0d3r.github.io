@@ -1,8 +1,52 @@
 ⦿ <span class="info-text-3">CG/Rendering</span> & <span class="info-text-3">GPGPU Programming</span>
+        <span class="ex-link-0">Graphics APIs</span>
+                <span class="ex-link-1">DirectX 12</span>
+                        <span class="ex-link-5">PIX</span>
+                <span class="ex-link-2">DirectX 11</span>
+                <span class="ex-link-3">Metal</span>
         <span class="ex-link-4">GPU Driven Rendering</span>
+        <span class="ex-link-0">Visibility Buffer</span>
         <span class="ex-link-5">Frustum Culling</span> <span class="ex-link-0">Occlusion Culling</span>
         <span class="ex-link-1">Marching Cubes</span>
-        <span class="ex-link-2">DirectX 11</span>
-        <span class="ex-link-3">Physically Based Shading</span> (Cook-Torrance, GGX,...)
-        <span class="ex-link-5">Deferred Shading</span>
-        <span class="ex-link-4">Parallel Prefix Sum</span>
+        <span class="ex-link-4">Ray Marching</span> <span class="ex-link-2">Signed-Distance Field</span>
+        <span class="ex-link-3">Render Graph</span>
+        <span class="ex-link-0">Multithreaded Rendering</span>
+        <span class="ex-link-2">Terrain</span>
+                <span class="ex-link-4">Chunking</span>
+                <span class="ex-link-1">Tools</span>
+                        <span class="ex-link-5">Material Painting</span>
+        <span class="ex-link-5">Shading Models</span>
+                <span class="ex-link-2">Blinn-Phong</span>
+                <span class="ex-link-3">Physically Based Shading</span>
+                        <span class="ex-link-4">Microfacet</span>
+                                <span class="ex-link-0">Cook-Torrance</span>
+                                <span class="ex-link-1">GGX</span>
+        <span class="ex-link-2">Deferred Shading</span> <span class="ex-link-3">Forward Shading</span>
+        <span class="ex-link-5">Tone Mapping</span>
+                <span class="ex-link-0">Reinhard</span>
+                <span class="ex-link-2">Approximated ACES</span>
+        <span class="ex-link-3">GPGPU Algorithms</span>
+                <span class="ex-link-4">Parallel Prefix Sum</span>
+        <span class="ex-link-2">Direct Lighting</span>
+                <span class="ex-link-5">Directional Light</span>
+                <span class="ex-link-0">Point Light</span>
+                <span class="ex-link-3">Spot Light</span>
+                <span class="ex-link-4">Cone Light</span>
+        <span class="ex-link-1">Precomputed Radiance Transfer</span>
+                <span class="ex-link-5">Spherical Harmonics</span>
+        <span class="ex-link-2">Monte Carlo Integration</span>
+                <span class="ex-link-0">Uniform Sampling</span>
+                <span class="ex-link-5">Importance Sampling</span>
+        <span class="ex-link-3">Image Based Sky Lighting</span>
+                <span class="ex-link-4">Diffuse</span>
+                <span class="ex-link-1">Specular</span>
+        <span class="ex-link-5">Shadow Techniques</span>
+                <span class="ex-link-2">Shadow Mapping</span>
+                        <span class="ex-link-4">Basic</span>
+                        <span class="ex-link-3">Cascaded</span>
+        <span class="ex-link-1">Toon Rendering</span>
+                <span class="ex-link-2">Sobel Algorithm</span>
+        <span class="ex-link-0">Voxel 2D Terrain (Rendering, Chunk Streaming,...)</span>
+        <span class="ex-link-4">Fluid Simulation</span> (Theory)
+        <span class="ex-link-1">Shallow Water Simulation</span> (Theory)
+        <span class="ex-link-2">CPU-Based Ray Tracing</span> (Just Basic Stuff like Shadows, Interreflection,...)

@@ -1,0 +1,2 @@
+<span class="info-text-3">NRHI</span>, a game engine learning aimed C++ render hardware interface library.
+<span class="ex-link-2">CMake</span> <span class="ex-link-0">C++ 20</span> <span class="ex-link-4">DirectX 11</span> <span class="ex-link-5">DirectX 12</span> <a href="https://github.com/n-c0d3r/NRHI" class="ex-link-1">GitHub 🔗</a>
