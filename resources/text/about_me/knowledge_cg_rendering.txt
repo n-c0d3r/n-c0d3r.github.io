@@ -5,6 +5,8 @@
                 <span class="ex-link-2">DirectX 11</span>
                 <span class="ex-link-3">Metal</span>
         <span class="ex-link-4">GPU Driven Rendering</span>
+        <span class="ex-link-1">Virtual Geometry</span>
+        <span class="ex-link-3">Order-Independent Transparency</span>
         <span class="ex-link-0">Visibility Buffer</span>
         <span class="ex-link-5">Frustum Culling</span> <span class="ex-link-0">Occlusion Culling</span>
         <span class="ex-link-1">Marching Cubes</span>

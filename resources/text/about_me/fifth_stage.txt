@@ -1,0 +1,1 @@
+<span class="info-text-2">In 2024</span>, I started making my custom render engine and successfully implemented my own order-independent transparency technique for virtual geometry. During this time, I also dropped out of colledge and going to find the third door.
